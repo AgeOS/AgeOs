@@ -23,3 +23,4 @@ A AgeOS é voltada principalmente para:
 ## Conclusão
 
 Com foco em **usabilidade** e **segurança**, a AgeOS pretende transformar a experiência digital da terceira idade, fornecendo um ambiente confiável e simples, livre de ameaças cibernéticas. a
+ a
