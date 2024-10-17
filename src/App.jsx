@@ -1,12 +1,14 @@
+import NavBar from "./Components/NavBar/NavBar"
+import './stylesheets/index.scss'
 
-function App() {
- 
+export default function App() {
 
   return (
     <>
-      
+     <div>
+      <NavBar/>
+      </div> 
     </>
   )
 }
 
-export default App
