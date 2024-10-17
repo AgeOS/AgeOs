@@ -1,4 +1,16 @@
+@media screen and (min-width: 1590px) and (max-width: 10000px) { 
+    .modal-lateral{
+        display: none !important;
+    }
+}
+
+
 @media screen and (min-width: 1200px) and (max-width: 1590px) { 
+
+    .modal-lateral{
+        display: none !important;
+    }
+
 
     ul{
         width: 44% !important;
@@ -16,6 +28,12 @@
 
 @media screen and (min-width: 1000px) and (max-width:1199px){
 
+
+    .modal-lateral{
+        display: none !important;
+    }
+
+  
 
 .logo{
     padding-left: 3px !important;
@@ -56,5 +74,11 @@
     .button-navbar{
         display: flex;
     }
+
+    // .modal-lateral{
+    //     display: flex !important;
+    // }
+
+  
 }
   

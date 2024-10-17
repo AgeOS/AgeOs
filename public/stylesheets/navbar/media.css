@@ -1,0 +1,56 @@
+@media screen and (min-width: 1590px) and (max-width: 10000px) {
+  .modal-lateral {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1590px) {
+  .modal-lateral {
+    display: none !important;
+  }
+  ul {
+    width: 44% !important;
+    gap: 25px !important;
+  }
+  button {
+    font-size: 16px !important;
+  }
+  .login {
+    width: 28% !important;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .modal-lateral {
+    display: none !important;
+  }
+  .logo {
+    padding-left: 3px !important;
+  }
+  .logo img {
+    width: 70% !important;
+  }
+  ul {
+    width: 50% !important;
+    gap: 15px !important;
+    font-size: 20px !important;
+  }
+  .theme {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  button {
+    font-size: 16px !important;
+  }
+  .login {
+    width: 25% !important;
+  }
+}
+@media screen and (min-width: 50px) and (max-width: 999px) {
+  .nav-bar {
+    display: none !important;
+  }
+  .button-navbar {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
