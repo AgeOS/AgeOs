@@ -1,4 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.hero-section {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .apresentation {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.hero-section .apresentation h1 {
+  font-size: 72px;
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+}
+.hero-section .apresentation .btn-conhecer {
+  font-size: 24px;
+  width: 15%;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  color: #393939;
+  background-color: #FFEA73;
+  font-weight: 600;
+  margin-top: 45px;
+}
+.hero-section .phone-img {
+  width: 38%;
+  display: flex;
+  height: 80vh;
+  position: relative;
+  top: 50px;
+  object-fit: cover;
+}
+.hero-section img {
+  width: 99%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-section .linha-amarela {
+  width: 100%;
+  position: absolute;
+  right: 200px;
+  min-width: 100%;
+  z-index: -1;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.hero-section .linha-amarela svg {
+  width: 500%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=index.css.map */

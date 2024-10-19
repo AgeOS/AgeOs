@@ -1,1 +1,49 @@
 @import "../variables.scss";
+
+
+@media screen and (min-width: 1530px) and (max-width: 1900px) { 
+   
+  .phone-img {
+    width: 28% !important;
+    object-fit:cover !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) { 
+
+
+    .hero-section{
+        width: 100% !important;
+        margin: 0 0px 0 20px !important;
+        
+        .apresentation {
+            width: 50%;
+            
+            h1{
+                font-size: 55px !important;
+            }
+
+           
+        }
+
+        .phone-img{
+            width: 30% !important;
+        
+            img{
+                width: 100% !important;
+                object-fit: cover !important;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1370px) { 
+
+    .btn-conhecer{
+        width: 20% !important;
+        font-size: 15px !important;
+    }
+}
+

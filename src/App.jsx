@@ -1,4 +1,4 @@
-import NavBar from "./Components/NavBar/NavBar"
+import Home from "./Components/home"
 import './stylesheets/index.scss'
 
 export default function App() {
@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
      <div>
-      <NavBar/>
+      <Home/>
       </div> 
     </>
   )

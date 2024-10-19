@@ -1,4 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@media screen and (min-width: 1530px) and (max-width: 1900px) {
+  .phone-img {
+    width: 28% !important;
+    object-fit: cover !important;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .hero-section {
+    width: 100% !important;
+    margin: 0 0px 0 20px !important;
+  }
+  .hero-section .apresentation {
+    width: 50%;
+  }
+  .hero-section .apresentation h1 {
+    font-size: 55px !important;
+  }
+  .hero-section .phone-img {
+    width: 30% !important;
+  }
+  .hero-section .phone-img img {
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1370px) {
+  .btn-conhecer {
+    width: 20% !important;
+    font-size: 15px !important;
+  }
+}
 
 /*# sourceMappingURL=medias.css.map */
