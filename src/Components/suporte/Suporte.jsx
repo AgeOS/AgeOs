@@ -6,15 +6,15 @@ import svgPessoas from '../../assets/suporte/imgs.png';
 import chatbot from '../../assets/suporte/Chatbot.png';
 
 function Suporte() {
-  // Controla o estado de cada acordeão aberto ou fechado
+  
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
-    // Se o mesmo painel for clicado, ele será fechado
+    
     if (activeIndex === index) {
       setActiveIndex(null);
     } else {
-      setActiveIndex(index); // Abre o painel clicado
+      setActiveIndex(index); 
     }
   };
 
@@ -32,12 +32,12 @@ function Suporte() {
           <div className="container">
             <img src={whats} alt="" />
             <p>Assistência por meio do nosso canal no WhatsApp, para ajudar você com dúvidas, orientações ou qualquer suporte técnico.</p>
-            <button><p>Clique Aqui</p></button>
+            <button className='botao_contato'><p>Clique Aqui</p></button>
           </div>
           <div className="container">
             <img src={email} alt="" />
             <p>Atendimento por e-mail para ajudar você com dúvidas, orientações ou qualquer suporte técnico que precisar.</p>
-            <button><p>Clique Aqui</p></button>
+            <button className='botao_contato'><p>Clique Aqui</p></button>
           </div>
         </div>
       </section>
