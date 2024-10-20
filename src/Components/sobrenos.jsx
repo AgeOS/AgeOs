@@ -4,7 +4,7 @@ import "../stylesheets/sobrenos/sobrenos.scss";
 export default function sobrenos() {
   return (
     <>
-      <div className="container">
+      <div className="containersobre">
         <img src="src/assets/imagens/inici.png" alt="Início" className="imagem" />
       </div>
 
