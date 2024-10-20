@@ -1,29 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import '../../stylesheets/suporte/suporte.scss';
 import whats from '../../assets/suporte/whats.png';
 import email from '../../assets/suporte/email.png';
 import svgPessoas from '../../assets/suporte/imgs.png';
 import chatbot from '../../assets/suporte/Chatbot.png';
 
-
 function Suporte() {
+  // Controla o estado de cada acordeão aberto ou fechado
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  useEffect(() => {
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
+  const toggleAccordion = (index) => {
+    // Se o mesmo painel for clicado, ele será fechado
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index); // Abre o painel clicado
     }
-  }, []);
+  };
 
   return (
     <section className="container_suporte">
@@ -36,19 +29,16 @@ function Suporte() {
           <h1>Canais de contato</h1>
         </div>
         <div className="atencao">
-
           <div className="container">
             <img src={whats} alt="" />
             <p>Assistência por meio do nosso canal no WhatsApp, para ajudar você com dúvidas, orientações ou qualquer suporte técnico.</p>
             <button><p>Clique Aqui</p></button>
           </div>
-
           <div className="container">
             <img src={email} alt="" />
             <p>Atendimento por e-mail para ajudar você com dúvidas, orientações ou qualquer suporte técnico que precisar.</p>
             <button><p>Clique Aqui</p></button>
           </div>
-
         </div>
       </section>
 
@@ -78,31 +68,36 @@ function Suporte() {
         <h1>Dúvidas Frequentes</h1>
         <section className="section-c">
           <div className="containerr">
-            <button className="accordion">º Preciso comprar um novo celular para usar o AgeOS?</button>
-            <div className="panel">
+            <button className="accordion" onClick={() => toggleAccordion(0)}>
+              º Preciso comprar um novo celular para usar o AgeOS?
+            </button>
+            <div className="panel" style={{ display: activeIndex === 0 ? 'block' : 'none' }}>
               <p>Não! O AgeOS pode ser instalado em qualquer dispositivo Android, oferecendo uma solução acessível e eficiente sem a necessidade de trocar de aparalho.</p>
             </div>
 
-            <button className="accordion">º Como o sistema protege contra fraudes?</button>
-            <div className="panel">
+            <button className="accordion" onClick={() => toggleAccordion(1)}>
+              º Como o sistema protege contra fraudes?
+            </button>
+            <div className="panel" style={{ display: activeIndex === 1 ? 'block' : 'none' }}>
               <p>O AgeOS possui um identificador de chamadas que alerta sobre números suspeitos e evita fraudes telefônicas, além de proteção nativa que dispensa antivírus externo.</p>
             </div>
 
-            <button className="accordion">º O AgeOS recebe atualizações?</button>
-            <div className="panel">
+            <button className="accordion" onClick={() => toggleAccordion(2)}>
+              º O AgeOS recebe atualizações?
+            </button>
+            <div className="panel" style={{ display: activeIndex === 2 ? 'block' : 'none' }}>
               <p>Sim! As atualizações são recorrentes, garantindo que o sistema esteja sempre protegido e funcionando com os recursos mais recentes.</p>
             </div>
 
-            <button className="accordion">O que acontece se houver algum problema técnico?</button>
-            <div className="panel">
+            <button className="accordion" onClick={() => toggleAccordion(3)}>
+              O que acontece se houver algum problema técnico?
+            </button>
+            <div className="panel" style={{ display: activeIndex === 3 ? 'block' : 'none' }}>
               <p>Oferecemos suporte dedicado para resolver qualquer dúvida ou problema técnico, com atendimento de longa duração conforme seu plano. Além disso, contamos com um fórum onde usuários podem compartilhar dúvidas e apoiar outras famílias.</p>
             </div>
-
           </div>
         </section>
-
       </section>
-
     </section>
   );
 }
