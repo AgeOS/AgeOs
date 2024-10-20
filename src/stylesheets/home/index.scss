@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 
   .apresentation {
     display: flex;
@@ -69,6 +70,112 @@
     }
   }
 }
+
+.telas{
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    h1{
+      font-size: 84px;
+      color: $color-purple;
+      font-family: $font-family-poppins;
+    }
+
+    p{
+      width: 73%;
+      text-align: center;
+      font-size: 34px;
+      font-family: $font-family-poppins;
+    }
+
+    .slide{
+      width: 100%;
+      margin: 10px auto;
+      overflow: hidden;
+      object-fit: cover;
+
+
+      img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+}
+
+
+.beneficios-etc{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+
+  h1{
+    font-size: 84px;
+    font-family: $font-family-poppins;
+    color: $color-purple;
+  }
+
+  p{
+    width: 69%;
+    text-align: center;
+    font-size: 34px;
+    color: $color-black;
+    font-family: $font-family-poppins;
+  }
+
+  .seguranca{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    .seguranca-text{
+      width:88%;
+      height: 600px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      z-index: 2;
+
+
+      h1{
+        color: $color-white;
+      }
+
+
+      p{
+        // position: relative;
+        width: 50%;
+        // right: 40px;
+        text-align: start;
+        color: $color-white;
+        font-size: 38px;
+        font-family: $font-family-poppins;
+      }
+    }
+
+
+    img{
+      position: absolute;
+      width: 90%;
+      z-index: 0;
+    }
+  }
+
+}
+
+
 
 
 
