@@ -175,7 +175,18 @@
 
 }
 
+.apps{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
 
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+}
 
 
 
