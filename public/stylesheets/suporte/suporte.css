@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.container_canal {
+  width: 90%;
+  height: 700px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container_canal h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+}
+
+.titulo {
+  width: 100%;
+}
+
+.atencao {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 35%;
+  height: 450px;
+  border: 1px solid #5E329D;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+.container img {
+  width: 180px;
+  height: 180px;
+}
+
+.container p {
+  font-size: 3vh;
+  text-align: center;
+  padding: 10px;
+}
+
+.container button {
+  color: white;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #5E329D;
+}
+
+button p {
+  font-size: 18px;
+}
+
+.container_imagens {
+  width: 100%;
+  height: 700px;
+}
+
+.container_imagens img {
+  width: 100%;
+  padding-top: 110px;
+  margin-top: 10px;
+}
+
+.container_solucoes {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+}
+
+.titulo2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.search input {
+  width: 90%;
+  height: 50px;
+  padding-left: 60px;
+  border-radius: 10px;
+  background-color: #FFEA73;
+  background-image: url(../../assets/suporte/lupa.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 24px 24px;
+}
+
+.chatbot {
+  display: flex;
+  width: 75%;
+  height: 400px;
+  background-color: #3D1887;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.dentro_chatbot {
+  display: flex;
+  text-align: center;
+  width: 70%;
+  padding: 10px;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  color: white;
+}
+
+.Bold {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #FFEA73;
+}
+
+.dentro_chatbot2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dentro_chatbot2 button {
+  color: #000;
+  background-color: #FFEA73;
+}
+
+.dentro_chatbot2 button a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.container_duvidas {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container_duvidas h1 {
+  color: #5E329D;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+}
+
+.containerr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.containerr h1 {
+  color: #ffca28;
+  font-size: 64px;
+}
+
+.accordion {
+  font-family: "Roboto", sans-serif;
+  background-color: #D9D9D9;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 15px;
+  width: 100%;
+  border-bottom: 1px solid #5E329D;
+  text-align: left;
+  height: 100px;
+  font-size: 24px;
+}
+
+.accordion:hover {
+  border: 3px solid white;
+}
+
+.panel {
+  font-size: 24px;
+  padding: 15px 24px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  display: none;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=suporte.css.map */
