@@ -5,6 +5,7 @@ import email from '../../assets/suporte/email.png';
 import svgPessoas from '../../assets/suporte/imgs.png';
 import chatbot from '../../assets/suporte/Chatbot.png';
 
+
 function Suporte() {
 
   useEffect(() => {
@@ -77,7 +78,6 @@ function Suporte() {
         <h1>Dúvidas Frequentes</h1>
         <section className="section-c">
           <div className="containerr">
-
             <button className="accordion">º Preciso comprar um novo celular para usar o AgeOS?</button>
             <div className="panel">
               <p>Não! O AgeOS pode ser instalado em qualquer dispositivo Android, oferecendo uma solução acessível e eficiente sem a necessidade de trocar de aparalho.</p>
