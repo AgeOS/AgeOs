@@ -43,6 +43,11 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="apps">
+            <img src="src\assets\home\apps-intuitivos.png" alt="" />
+
+            
+        </div>
 
         </div>
 
