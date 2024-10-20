@@ -12,9 +12,8 @@
   .apresentation {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    // align-items: center;
-    // justify-content: center;
+    width: 75%; 
+
 
     h1 {
       font-size: 72px;
@@ -24,7 +23,7 @@
 
     .btn-conhecer {
       font-size: 24px;
-      width: 15%;
+      width: 18%;
       height: 59px;
       display: flex;
       align-items: center;
@@ -48,6 +47,7 @@
   }
 
   img {
+    position: relative;
     width: 99%;
     height: 100%;
     object-fit: cover;
@@ -69,3 +69,12 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
