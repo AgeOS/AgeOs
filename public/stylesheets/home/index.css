@@ -21,7 +21,7 @@
 }
 .hero-section .apresentation .btn-conhecer {
   font-size: 24px;
-  width: 15%;
+  width: 18%;
   height: 59px;
   display: flex;
   align-items: center;
@@ -42,6 +42,7 @@
   object-fit: cover;
 }
 .hero-section img {
+  position: relative;
   width: 99%;
   height: 100%;
   object-fit: cover;

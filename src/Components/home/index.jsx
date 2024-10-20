@@ -16,23 +16,21 @@ export default function Home() {
         <div className="phone-img">
           <img src="src\assets\home\celular-de-lado.png" alt="" />
         </div>
-
-        <div className="linha-amarela">
-          <svg
-            width=""
-            height="108"
-            viewBox="0 0 1016 108"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M-20 106C-20 106 104.428 9.84783 417.713 2.90242C730.997 -4.04299 918.904 30.8992 1015 46.2245"
-              stroke="#FFDB10"
-              strokeWidth="3"
-            />
-          </svg>
-        </div>
       </div>
+
+
+        <div className="telas">
+          <h1>Interface Simples</h1>
+          <p>Um Sistema e intuito, que oferece praticidade e a segurança necessária para seu familiar navegar na internet com tranquilidade</p>
+
+        <div>
+          
+        </div>
+
+
+        </div>
+
+        
     </>
   );
 }
