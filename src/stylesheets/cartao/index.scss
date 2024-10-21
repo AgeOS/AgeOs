@@ -1,0 +1,87 @@
+@import "../variables.scss";
+
+.creditocontainer {
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #D9D9D980;
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  margin: 150px auto;
+  color: $color-white;
+  font-family: $font-family-poppins;
+
+  .creditoform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+
+    input, select{
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+      font-family: $font-family-roboto;}
+
+    .confirme-button{
+      padding: 10px;
+      font-size: 1rem;
+      background-color: $color-yellow;
+      border: none;
+      border-radius: 5px;
+       cursor: pointer;
+      color: $color-black;
+      font-family: $font-family-poppins;}
+  }
+
+  .creditoprev {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color:#E9E8EA ;
+    justify-content: center;
+    position: relative;
+
+    .card{
+      width: 320px;
+      height: 200px;
+      background-color:#E9E8EA;
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: $color-white;
+      position: relative;
+
+      .logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .card-number{
+        font-size: 1.2rem;}
+
+      .card-name {
+        text-transform: uppercase;}
+
+      .card-expiry{
+      font-size: 1rem;}
+    }
+
+    .card-image {
+      position: absolute;
+      top: 0;
+        left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+         background-position: center;
+      border-radius: 15px;
+    }
+  }
+}
+
