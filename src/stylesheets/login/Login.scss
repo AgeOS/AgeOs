@@ -1,0 +1,103 @@
+@import "../variables.scss";
+
+.container_login{
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lado_foto{
+    width: 60%;
+    background-color: aqua;
+    background-image: url('../../assets/login/login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.lado_login{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    // background-color: aqua;
+}
+
+
+.dentro_login{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    // background-color: bisque;
+}
+
+.logo_ageOS img{
+   width: 200px;
+   height: 200px;
+}
+
+.dentro_login h1{
+    font-size: 5vh;
+    border-bottom: 4px solid #FFEA73;
+}
+
+.dentro_login h2{
+    font-size: 4vh;
+}
+
+.checkbox-container{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+}
+
+.checkbox-container p{
+    font-size: 2vh;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Espaço entre o checkbox e o texto */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.dentro_login input{
+    padding: 10px;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.dentro_login button{
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #FFEA73;
+    font-size: 20px;
+}
+
+.dentro_login a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+}
+
+.container_contas{
+    display: flex;
+}
+
+.container_contas img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.container_contas p{
+    margin-right: 20px;
+}
+
+
