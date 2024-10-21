@@ -184,9 +184,31 @@
 
   img{
     object-fit: cover;
+    // height: 800px;
     width: 100%;
+    // position: absolute;
+    // top: 1500px;
   }
+
+  h1{
+    width: 100%;
+    position: absolute;
+    bottom:1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    p{
+      position: absolute;
+      bottom:1100px;
+      text-align: center;
+    }
+
+
 }
+
+
 
 
 

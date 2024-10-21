@@ -1,9 +1,10 @@
 import "../../stylesheets/home/index.scss";
-import '../../stylesheets/home/medias.scss'
+import "../../stylesheets/home/medias.scss";
 import NavBar from "../NavBar/NavBar";
-import Carousel from './Cards/Cards'
-export default function Home() {
+import Carousel from "./Cards/Cards";
+import contatoIcon from "../../assets/home/contatos.svg";
 
+export default function Home() {
   return (
     <>
       <NavBar />
@@ -19,41 +20,52 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="telas">
+        <h1>Interface Simples</h1>
+        <p>
+          Um Sistema e intuito, que oferece praticidade e a segurança necessária
+          para seu familiar navegar na internet com tranquilidade
+        </p>
 
-        <div className="telas">
-          <h1>Interface Simples</h1>
-          <p>Um Sistema e intuito, que oferece praticidade e a segurança necessária para seu familiar navegar na internet com tranquilidade</p>
-
-        <div className="slide">    
-        <Carousel/>
+        <div className="slide">
+          <Carousel />
         </div>
+      </div>
 
-        </div>
-
-        <div className="beneficios-etc">
-          <h1>Benefícios</h1>
-          <p>Descubra as funcionalidades que tornam o AgeOS a escolha perfeita para os seus entes queridos</p>
+      <div className="beneficios-etc">
+        <h1>Benefícios</h1>
+        <p>
+          Descubra as funcionalidades que tornam o AgeOS a escolha perfeita para
+          os seus entes queridos
+        </p>
 
         <div className="seguranca">
           <img src="src\assets\home\seguranca-garantida.png" alt="" />
 
           <div className="seguranca-text">
-         <h1>Segurança Garantida</h1>
-          <p>Mecanismo de segurança, ajudando a evitar fraudes telefônicas e digitais</p>
+            <h1>Segurança Garantida</h1>
+            <p>
+              Mecanismo de segurança, ajudando a evitar fraudes telefônicas e
+              digitais
+            </p>
           </div>
         </div>
 
         <div className="apps">
-            <img src="src\assets\home\apps-intuitivos.png" alt="" />
+          <h1>Apps intuitivos</h1>
 
-            
+          <p>
+            Experiências descomplicada, especialmente para quem não tem
+            familiaridade com a tecnologia
+          </p>
+
+          <div className="icons">
+           
+          </div>
+
+          <img src="src\assets\home\apps-intuitivos.png" alt="" />
         </div>
-
-        </div>
-
-      
+      </div>
     </>
-
   );
-  
 }
