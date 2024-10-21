@@ -8,7 +8,7 @@
 
 .lado_foto{
     width: 60%;
-    background-color: aqua;
+    // background-color: aqua;
     background-image: url('../../assets/login/login.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,6 +98,138 @@
 .container_contas p{
     font-size: 2vh;
     margin-right: 20px;
+}
+
+
+/* Estilo para dispositivos tablets (largura entre 768px e 1024px) */
+@media (max-width: 1024px) {
+    .container_login {
+        flex-direction: column;
+    }
+
+    .lado_foto {
+        width: 100%;
+        height: 500px;
+        background-size: contain;
+    }
+
+    .lado_login {
+        width: 100%;
+    }
+
+    .dentro_login {
+        width: 90%;
+    }
+
+    .logo_ageOS img {
+        width: 150px;
+        height: 120px;
+    }
+
+    .dentro_login h1 {
+        font-size: 4vh;
+    }
+
+    .dentro_login h2 {
+        font-size: 3vh;
+    }
+
+    .checkbox-container {
+        width: 90%;
+    }
+
+    .dentro_login input {
+        width: 90%;
+        height: 40px;
+    }
+
+    .dentro_login button {
+        width: 90%;
+        height: 45px;
+    }
+
+    .dentro_login a {
+        font-size: 1.8vh;
+    }
+
+    .container_contas img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container_contas p {
+        font-size: 1.8vh;
+    }
+}
+
+/* Estilo para dispositivos móveis (largura até 767px) */
+@media (max-width: 767px) {
+    .container_login {
+        flex-direction: column;
+    }
+
+    .lado_foto {
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+    }
+
+    .lado_login {
+        width: 100%;
+    }
+
+    .dentro_login {
+        width: 100%;
+    }
+
+    .logo_ageOS img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .dentro_login h1 {
+        font-size: 3.5vh;
+    }
+
+    .dentro_login h2 {
+        font-size: 2.5vh;
+    }
+
+    .checkbox-container {
+        width: 100%;
+    }
+
+    .checkbox-container p {
+        font-size: 1.5vh;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    .dentro_login input {
+        width: 95%;
+        height: 35px;
+    }
+
+    .dentro_login button {
+        width: 95%;
+        height: 40px;
+    }
+
+    .dentro_login a {
+        font-size: 1.5vh;
+    }
+
+    .container_contas img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container_contas p {
+        font-size: 1.5vh;
+    }
 }
 
 
