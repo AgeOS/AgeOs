@@ -3,10 +3,13 @@ import "../../stylesheets/qrcode/index.scss";
 import "../../stylesheets/qrcode/media.scss";
 import qrcode from "../../assets/qrimage/qrcode.jpeg"
 import intrucpix from "../../assets/qrimage/pag.jpeg"
+import NavBar from "../NavBar/NavBar"
 
 
 const Pagamento = () => {
   return (
+    <>
+    <NavBar/>
     <div className="pagamentocontainer">
       <h1>Pagamento com pix</h1>
       <div className="pagamentoinfo">
@@ -21,6 +24,7 @@ const Pagamento = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
