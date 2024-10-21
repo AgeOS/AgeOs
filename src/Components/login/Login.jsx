@@ -8,7 +8,6 @@ function Login() {
     return (
         <section className='container_login'>
             <div className='lado_foto'>
-                {/* <img src={login} alt="Dois idosos segurando um celular" /> */}
             </div>
             <div className='lado_login'>
                 <div className='dentro_login'>

@@ -22,7 +22,6 @@
     // background-color: aqua;
 }
 
-
 .dentro_login{
     display: flex;
     width: 70%;
@@ -33,7 +32,7 @@
 
 .logo_ageOS img{
    width: 200px;
-   height: 200px;
+   height: 150px;
 }
 
 .dentro_login h1{
@@ -73,7 +72,7 @@
 }
 
 .dentro_login button{
-    width: 70%;
+    width: 80%;
     height: 50px;
     border-radius: 5px;
     background-color: #FFEA73;
@@ -97,6 +96,7 @@
 }
 
 .container_contas p{
+    font-size: 2vh;
     margin-right: 20px;
 }
 

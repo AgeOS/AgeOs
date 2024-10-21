@@ -1,0 +1,99 @@
+@import "../variables.scss";
+
+.container_cadastro{
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.foto_cadastro{
+    width: 60%;
+    background-color: aqua;
+    background-image: url('../../assets/cadastre-se/cadastro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.lado_cadastro{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    background-color: #5E329D;
+}
+
+.dentro_cadastro{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    // background-color: bisque;
+}
+
+.logo_ageOSCadastro img{
+   width: 200px;
+   height: 150px;
+}
+
+.dentro_cadastro h1{
+    color: white;
+    font-size: 5vh;
+    border-bottom: 4px solid #ffff;
+}
+
+.dentro_login h2{
+    font-size: 4vh;
+}
+
+.dentro_cadastro input{
+    padding: 10px;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.dentro_cadastro button{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #FFEA73;
+    font-size: 20px;
+}
+
+.dentro_cadastro a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+}
+
+.container_contas{
+    display: flex;
+    margin-top: 20px;
+}
+
+.container_contas img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.container_contas p{
+    font-size: 2vh;
+    margin-right: 20px;
+}
+
+.politica{
+    font-size: 2vh;
+    text-align: center;
+}
+
+.politica span{
+    color: #FFDB10;
+}
+
+
+
+
+
