@@ -1,0 +1,150 @@
+// Estilo para telas grandes (desktop)
+@media (min-width: 1024px) {
+  .pagamentocontainer {
+    max-width: 80%; // Aumenta a largura máxima para telas maiores
+    margin: 200px auto;
+    align-items: center;
+    
+    h1 {
+      font-size: 36px;
+    }
+
+    .pagamentoinfo {
+      padding: 30px;
+
+      .secaoqrcode {
+        .qrcode {
+          width: 300px;
+          height: 300px;
+        }
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      .intrucaopix {
+        margin-right: 60px;
+        img {
+          width: 400px;
+          height: 350px;
+        }
+      }
+    }
+  }
+}
+
+// Estilo para tablets (telas médias)
+@media (max-width: 1024px) and (min-width: 768px) {
+  .pagamentocontainer {
+    padding: 30px;
+    align-items: center;
+    margin: 150px auto;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .pagamentoinfo {
+      flex-direction: column;
+      padding: 20px;
+
+      .secaoqrcode {
+        .qrcode {
+          width: 250px;
+          height: 250px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      .intrucaopix {
+        margin-right: 0;
+        img {
+          width: 350px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+// Estilo para celulares (telas pequenas)
+@media (max-width: 768px) {
+  .pagamentocontainer {
+    padding: 20px;
+    align-items: center;
+    margin: 100px auto;
+
+    h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .pagamentoinfo {
+      flex-direction: column;
+      padding: 15px;
+
+      .secaoqrcode {
+        width: 100%;
+        margin-bottom: 20px;
+
+        p {
+          font-size: 18px;
+        }
+
+        .qrcode {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .intrucaopix {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// Estilo para celulares menores (telas muito pequenas)
+@media (max-width: 480px) {
+  .pagamentocontainer {
+    padding: 15px;
+    align-items: center;
+    margin: 80px auto;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .pagamentoinfo {
+      padding: 10px;
+
+      .secaoqrcode {
+        .qrcode {
+          width: 150px;
+          height: 150px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .intrucaopix {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

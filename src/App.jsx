@@ -4,12 +4,13 @@
 // import Suporte from "./Components/suporte/Suporte";
 // import './stylesheets/index.scss';
 // import Login from "./Components/login/Login";
-import Cadastro from "./Components/cadastro/Cadastro";
+//import Cadastro from "./Components/cadastro/Cadastro";
+import Pagamento from "./Components/QrCode/qrcode"
 
 export default function App() {
   return (
     <>
-      <Cadastro />
+      <Pagamento />
     </>
   );
 }
