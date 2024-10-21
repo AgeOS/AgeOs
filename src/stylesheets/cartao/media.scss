@@ -1,0 +1,99 @@
+@import "../variables.scss";
+
+.creditocontainer {
+  margin-top: 150px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  background-color: #D9D9D980;
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  margin: 150px auto;
+  color: $color-white;
+  font-family: $font-family-poppins;
+
+  .creditoform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+
+    input, select {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+      font-family: $font-family-roboto;
+    }
+
+    .confirme-button {
+      padding: 10px;
+      font-size: 1rem;
+      background-color: $color-yellow;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: $color-black;
+      font-family: $font-family-poppins;
+    }
+  }
+
+  .creditoprev {
+    width: 45%; /* Ajusta o tamanho da prévia do cartão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-image {
+      width: 100%; /* Usará a largura máxima disponível */
+      max-width: 504px;
+      height: auto;
+      max-height: 335px;
+      background-color: #E9E8EA;
+      border-radius: 10px;
+    }
+  }
+}
+
+// Estilos Responsivos
+@media screen and (max-width: 1200px) {
+  .creditocontainer {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+    .creditoform {
+      width: 100%;
+    }
+
+    .creditoprev{
+      width: 100%;
+      margin-top: 20px;
+
+      .card-image {
+        max-width: 100%; /* Faz a imagem caber no espaço disponível */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .creditocontainer {
+    padding: 10px; // Reduz o preenchimento
+    margin-top: 50px; // Margem superior reduzida
+  }
+
+  .creditoform {
+    gap: 10px; // Reduz o espaço entre os campos do formulário
+  }
+
+  .creditoprev {
+    margin-top: 10px; // Reduz o espaço acima da pré-visualização
+
+    .card-image {
+      display: none; // Esconde a imagem do cartão em telas muito pequenas
+    }
+  }
+}

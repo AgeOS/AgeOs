@@ -1,0 +1,115 @@
+@import "../variables.scss";
+
+.title1{
+  text-align: center;
+    margin-bottom: 1.5rem;
+  margin-top: 10rem;
+  font-family: $font-family-poppins; }
+
+.form-container{
+  background-color: $color-purple;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0rem auto;
+
+  color: $color-white;
+  position: relative;
+  font-family: $font-family-poppins; 
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;}
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.5rem;
+        color: $color-white;}
+
+      input {
+        width: 100%;
+        max-width: 900px;
+        padding: 0.75rem;
+        align-items: center;
+        border-radius: 5px;
+        border: none;
+        background-color: $color-gray;
+        color: $color-black;}
+    }
+
+    .cep-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      justify-items: center;
+    
+      .input-group{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        label {
+          margin-bottom: 0.5rem;}
+    
+        input {
+          width: 100%;
+          max-width: 200px;
+        }
+      }
+    }
+
+
+    .pacote-info {
+      background-color: $color-yellow;
+      padding: 1rem;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-family: $font-family-roboto;    
+      color: $color-black;}
+
+    .pagamento {
+      text-align: center;
+      span {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $color-white;
+      }
+
+      .pagamento-opcoes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        img {
+          width: 50px;
+        }
+      }
+    }
+
+    .botao-pagamento {
+      padding: 1rem;
+      background-color: $color-yellow; 
+      color: $color-black; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        background-color: darken($color-yellow, 10%);
+      }
+    }
+  }
+
+ 
+  }
+
