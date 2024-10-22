@@ -45,7 +45,7 @@ function Adquira() {
         </section>
         <section className='plano'>
             <div className='compras'>
-                <h2>Pacote Básico</h2>
+                <h2 className='h2_1'>Pacote Básico</h2>
                 <img className='logo' src={Logo} alt="Logo" />
                 <ul className='textoss'>
                     <li className='textinho'>Sistema apenas para um aparelho</li>
@@ -59,7 +59,7 @@ function Adquira() {
             </div>
             <div className='divisao'>recomendado</div>
             <div className='compras2'>
-                <h2>Pacote Premium</h2>
+                <h2 className='h2_2'>Pacote Premium</h2>
                 <img className='logo2' src={Logo} alt="Logo" />
                 <ul className='textoss'>
                     <li className='textinho'>Sistema para cinco aparelhos</li>

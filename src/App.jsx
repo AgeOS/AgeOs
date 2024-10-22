@@ -7,13 +7,14 @@
 // import Login from "./Components/login/Login";
 //import Cadastro from "./Components/cadastro/Cadastro";
 // import Pagamento from "./Components/QrCode/qrcode"
-//import Usuario from "./Components/usuario/Usuario";
+import Usuario from "./Components/usuario/Usuario";
 import Adquira from "./Components/Adquira/Adquira";
 
 export default function App() {
   return (
     <>
       <Adquira />
+      <Usuario />
     </>
   );
 }
