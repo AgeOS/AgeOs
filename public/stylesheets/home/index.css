@@ -136,8 +136,10 @@
   color: #FAF8FB;
 }
 .beneficios-etc .seguranca .seguranca-text p {
+  position: relative;
   width: 50%;
   text-align: start;
+  bottom: 90px;
   color: #FAF8FB;
   font-size: 38px;
   font-family: "Poppins", sans-serif;
@@ -146,6 +148,195 @@
   position: absolute;
   width: 90%;
   z-index: 0;
+}
+
+.apps {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.apps img {
+  object-fit: cover;
+  width: 100%;
+}
+.apps h1 {
+  width: 100%;
+  position: absolute;
+  bottom: 1900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apps p {
+  position: absolute;
+  bottom: 1800px;
+  text-align: center;
+}
+.apps .icons {
+  position: absolute;
+  margin: 0 auto;
+  width: 48%;
+  bottom: 1650px;
+}
+
+.atendimento {
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.atendimento img {
+  width: 100%;
+}
+.atendimento h1 {
+  position: absolute;
+  color: #FAF8FB;
+  bottom: 330px;
+  left: 1100px;
+}
+.atendimento p {
+  position: absolute;
+  font-size: 38px;
+  color: #FAF8FB;
+  width: 50%;
+  display: flex;
+  left: 730px;
+  text-align: end;
+}
+
+.pacotes {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.pacotes h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 84px;
+}
+.pacotes p {
+  font-family: "Poppins", sans-serif;
+  font-size: 58px;
+  position: relative;
+  bottom: 60px;
+}
+.pacotes .cards {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+}
+.pacotes .cards .pacote-basico {
+  width: 40%;
+  height: 800px;
+  background-color: #fff;
+  box-shadow: 6px 6px 12.1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.pacotes .cards .pacote-basico h2 {
+  width: 100%;
+  font-size: 56px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.pacotes .cards .pacote-basico img {
+  position: relative;
+  width: 100px;
+  left: 190px;
+}
+.pacotes .cards .pacote-basico p {
+  font-size: 60px;
+  position: relative;
+  left: 290px;
+  bottom: 150px;
+}
+.pacotes .cards .pacote-basico ul {
+  font-size: 30px;
+  position: relative;
+  bottom: 150px;
+}
+.pacotes .cards .pacote-basico button {
+  position: relative;
+  margin: 0 auto;
+  bottom: 38px;
+}
+.pacotes .cards .pacote-premium {
+  width: 40%;
+  height: 800px;
+  background-color: #fff;
+  box-shadow: 6px 6px 12.1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.pacotes .cards .pacote-premium h2 {
+  width: 100%;
+  font-size: 56px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.pacotes .cards .pacote-premium img {
+  position: relative;
+  width: 100px;
+  left: 190px;
+}
+.pacotes .cards .pacote-premium p {
+  font-size: 60px;
+  position: relative;
+  left: 290px;
+  bottom: 150px;
+}
+.pacotes .cards .pacote-premium ul {
+  font-size: 30px;
+  position: relative;
+  bottom: 150px;
+}
+.pacotes .cards .pacote-premium .button-buy-primium {
+  position: relative;
+  bottom: 110px;
+  margin: 0 auto;
+  height: 96px !important;
+}
+.pacotes button {
+  width: 30%;
+  height: 66px;
+  font-size: 33px;
+  border-radius: 15px;
+  background-color: #3D1887;
+  color: #FAF8FB;
+}
+.pacotes .recomendado {
+  width: 30%;
+  border-radius: 20px 20px 0 0;
+  height: 70px;
+  position: absolute;
+  background-color: #3D1887;
+  top: 600.1%;
+  left: 57%;
+  margin: 0 auto;
+}
+.pacotes .recomendado p {
+  font-size: 40px !important;
+  color: #FAF8FB;
+  top: -35px;
+  left: 150px !important;
+}
+.pacotes .duvidas {
+  width: 20%;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

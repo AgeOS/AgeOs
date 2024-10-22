@@ -211,7 +211,7 @@ $breakpoint-xl: 1200px;
     z-index: 2;
 
     &:hover {
-      background: darken($primary-color, 10%);
+      // background: darken($primary-color, 10%);
     }
 
     &--prev {

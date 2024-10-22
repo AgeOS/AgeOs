@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .container_canal {
@@ -33,7 +34,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
-  gap: 20px;
 }
 
 .container img {
@@ -51,15 +51,16 @@
   color: white;
 }
 
-button {
+.botao_contato {
   width: 200px;
-  height: 60px;
+  height: 75x;
   border: 0px;
   border-radius: 10px;
   background-color: #5E329D;
+  cursor: pointer;
 }
 
-button p {
+.botao_contato p {
   font-size: 18px;
 }
 
@@ -158,7 +159,7 @@ button p {
   width: 80%;
   height: 400px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .container_duvidas h1 {
@@ -181,6 +182,10 @@ button p {
   font-size: 64px;
 }
 
+.container .accordion {
+  font-size: 54px !important;
+}
+
 .accordion {
   font-family: "Roboto", sans-serif;
   background-color: #D9D9D9;
@@ -192,7 +197,10 @@ button p {
   border-bottom: 1px solid #5E329D;
   text-align: left;
   height: 100px;
-  font-size: 24px;
+  font-size: 29px !important;
+  background-image: url("../../assets/suporte/seta.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .accordion:hover {
@@ -206,6 +214,124 @@ button p {
   font-family: "Roboto", sans-serif;
   display: none;
   margin-top: 15px;
+}
+
+/* Estilo para dispositivos tablets (largura entre 768px e 1024px) */
+@media (max-width: 1024px) {
+  .container_canal {
+    width: 95%;
+    height: auto;
+    margin-top: 50px;
+  }
+  .container_canal h1 {
+    font-size: 3.5rem;
+  }
+  .atencao {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container {
+    width: 80%;
+    height: auto;
+  }
+  .container p {
+    font-size: 2.5vh;
+  }
+  .botao_contato {
+    width: 180px;
+    height: 60px;
+  }
+  .container_imagens {
+    height: auto;
+  }
+  .container_solucoes {
+    height: auto;
+  }
+  .titulo2 {
+    font-size: 1.5rem;
+  }
+  .chatbot {
+    width: 90%;
+    height: auto;
+  }
+  .dentro_chatbot {
+    font-size: 40px;
+  }
+  .dentro_chatbot2 button a {
+    font-size: 18px;
+  }
+  .container_duvidas h1 {
+    font-size: 3rem;
+  }
+  .containerr h1 {
+    font-size: 48px;
+  }
+  .accordion {
+    font-size: 24px !important;
+  }
+  .panel {
+    font-size: 20px;
+  }
+}
+/* Estilo para dispositivos móveis (largura até 767px) */
+@media (max-width: 767px) {
+  .container_canal {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  .container_canal h1 {
+    font-size: 2.5rem;
+  }
+  .atencao {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .container p {
+    font-size: 2vh;
+  }
+  .botao_contato {
+    width: 160px;
+    height: 50px;
+  }
+  .container_imagens img {
+    padding-top: 60px;
+  }
+  .container_solucoes {
+    height: auto;
+  }
+  .titulo2 {
+    font-size: 1.25rem;
+  }
+  .chatbot {
+    width: 100%;
+    height: auto;
+  }
+  .dentro_chatbot {
+    font-size: 30px;
+  }
+  .dentro_chatbot2 button a {
+    font-size: 16px;
+  }
+  .container_duvidas {
+    margin-top: 100px;
+  }
+  .container_duvidas h1 {
+    font-size: 2.5rem;
+  }
+  .containerr h1 {
+    font-size: 32px;
+  }
+  .accordion {
+    font-size: 20px !important;
+  }
+  .panel {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=suporte.css.map */

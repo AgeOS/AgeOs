@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.container_login {
+  width: 100%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.lado_foto {
+  width: 60%;
+  background-image: url("../../assets/login/login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.lado_login {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+
+.dentro_login {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_ageOS img {
+  width: 200px;
+  height: 150px;
+}
+
+.dentro_login h1 {
+  font-size: 5vh;
+  border-bottom: 4px solid #FFEA73;
+}
+
+.dentro_login h2 {
+  font-size: 4vh;
+}
+
+.checkbox-container {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+}
+
+.checkbox-container p {
+  font-size: 2vh;
+}
+
+.checkbox-container input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Espaço entre o checkbox e o texto */
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.dentro_login input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  height: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.dentro_login button {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #FFEA73;
+  font-size: 20px;
+}
+
+.dentro_login a {
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+}
+
+.container_contas {
+  display: flex;
+}
+
+.container_contas img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.container_contas p {
+  font-size: 2vh;
+  margin-right: 20px;
+}
+
+/* Estilo para dispositivos tablets (largura entre 768px e 1024px) */
+@media (max-width: 1024px) {
+  .container_login {
+    flex-direction: column;
+  }
+  .lado_foto {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+  }
+  .lado_login {
+    width: 100%;
+  }
+  .dentro_login {
+    width: 90%;
+  }
+  .logo_ageOS img {
+    width: 150px;
+    height: 120px;
+  }
+  .dentro_login h1 {
+    font-size: 4vh;
+  }
+  .dentro_login h2 {
+    font-size: 3vh;
+  }
+  .checkbox-container {
+    width: 90%;
+  }
+  .dentro_login input {
+    width: 90%;
+    height: 40px;
+  }
+  .dentro_login button {
+    width: 90%;
+    height: 45px;
+  }
+  .dentro_login a {
+    font-size: 1.8vh;
+  }
+  .container_contas img {
+    width: 50px;
+    height: 50px;
+  }
+  .container_contas p {
+    font-size: 1.8vh;
+  }
+}
+/* Estilo para dispositivos móveis (largura até 767px) */
+@media (max-width: 767px) {
+  .container_login {
+    flex-direction: column;
+  }
+  .lado_foto {
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+  }
+  .lado_login {
+    width: 100%;
+  }
+  .dentro_login {
+    width: 100%;
+  }
+  .logo_ageOS img {
+    width: 120px;
+    height: 100px;
+  }
+  .dentro_login h1 {
+    font-size: 3.5vh;
+  }
+  .dentro_login h2 {
+    font-size: 2.5vh;
+  }
+  .checkbox-container {
+    width: 100%;
+  }
+  .checkbox-container p {
+    font-size: 1.5vh;
+  }
+  .checkbox-container input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+  }
+  .dentro_login input {
+    width: 95%;
+    height: 35px;
+  }
+  .dentro_login button {
+    width: 95%;
+    height: 40px;
+  }
+  .dentro_login a {
+    font-size: 1.5vh;
+  }
+  .container_contas img {
+    width: 40px;
+    height: 40px;
+  }
+  .container_contas p {
+    font-size: 1.5vh;
+  }
+}
+
+/*# sourceMappingURL=Login.css.map */

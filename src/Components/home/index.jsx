@@ -4,6 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
 // import people from '../../assets/home/avaliacao.svg'
 import Avaliacoes from './Avaliacoes/Avaliacoes'
+import Footer from "../Footer/Footer";
 
 export default function Home() {
   return (
@@ -131,7 +132,7 @@ export default function Home() {
       </div>
 
       <Avaliacoes/>
-
+    <Footer></Footer>
     {/* <div className="avaliacoes">
      <div className="avaliacao"> */}
         {/* <h1>O que as pessoas dizem sobre a AgeOS</h1>

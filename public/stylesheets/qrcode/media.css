@@ -1,0 +1,116 @@
+@media (min-width: 1024px) {
+  .pagamentocontainer {
+    max-width: 80%;
+    margin: 200px auto;
+    align-items: center;
+  }
+  .pagamentocontainer h1 {
+    font-size: 36px;
+  }
+  .pagamentocontainer .pagamentoinfo {
+    padding: 30px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode .qrcode {
+    width: 300px;
+    height: 300px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode p {
+    font-size: 22px;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix {
+    margin-right: 60px;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix img {
+    width: 400px;
+    height: 350px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .pagamentocontainer {
+    padding: 30px;
+    align-items: center;
+    margin: 150px auto;
+  }
+  .pagamentocontainer h1 {
+    font-size: 32px;
+  }
+  .pagamentocontainer .pagamentoinfo {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode .qrcode {
+    width: 250px;
+    height: 250px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode p {
+    font-size: 20px;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix {
+    margin-right: 0;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix img {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .pagamentocontainer {
+    padding: 20px;
+    align-items: center;
+    margin: 100px auto;
+  }
+  .pagamentocontainer h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .pagamentocontainer .pagamentoinfo {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode p {
+    font-size: 18px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode .qrcode {
+    width: 200px;
+    height: 200px;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .pagamentocontainer {
+    padding: 15px;
+    align-items: center;
+    margin: 80px auto;
+  }
+  .pagamentocontainer h1 {
+    font-size: 24px;
+  }
+  .pagamentocontainer .pagamentoinfo {
+    padding: 10px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode .qrcode {
+    width: 150px;
+    height: 150px;
+  }
+  .pagamentocontainer .pagamentoinfo .secaoqrcode p {
+    font-size: 16px;
+  }
+  .pagamentocontainer .pagamentoinfo .intrucaopix img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
