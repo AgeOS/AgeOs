@@ -61,9 +61,101 @@ export default function sobrenos() {
       <img src="src/assets/imagens/identi.png" alt="Olho" />
       </div>
       </div>
-      <div>
+      <div className="container_tequipe">
          <h1>Equipe</h1>
       </div>
+       {/* Contêiner Flex para as duas metades */}
+       <div className="container-isa-flex">
+        {/* Primeira metade */}
+        <div className="isa">
+          <img src="src/assets/imagens/isainfo.png" alt="Coração" className="isap" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke" />
+          </div>
+        </div>
+
+        {/* Segunda metade (cópia) */}
+        <div className="isa">
+          <img src="src/assets/imagens/kaiqueinfo.png" alt="Coração" className="isap" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke" />
+          </div>
+        </div>
+
+        </div>
+       {/* Contêiner Flex para as duas metades */}
+       <div className="container-jesse-flex">
+        {/* Primeira metade */}
+        <div className="jesse">
+          <img src="src/assets/imagens/marceloinfo.png" alt="Coração" className="jessep" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git1" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke1" />
+          </div>
+        </div>
+
+        {/* Segunda metade (cópia) */}
+        <div className="jesse">
+        <img src="src/assets/imagens/guiinfo.png" alt="Coração" className="jessep" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git3" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke3" />
+          </div>
+         </div>
+         </div>
+
+
+
+
+
+
+
+         <div className="container-jeff-flex">
+        {/* Primeira metade */}
+        <div className="jeff">
+          <img src="src/assets/imagens/jeffinfo.png" alt="Coração" className="jeffp" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git4" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke4" />
+          </div>
+        </div>
+
+        {/* Segunda metade (cópia) */}
+        <div className="jesse">
+        <img src="src/assets/imagens/yuriinfo.png" alt="Coração" className="jeffp" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git4" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke4" />
+          </div>
+         </div>
+         </div>
+      
+
+
+
+
+
+
+
+
+
+         <div className="container-vitor-flex">
+        {/* Primeira metade */}
+        <div className="vitor">
+          <img src="src/assets/imagens/vitorinfo.png" alt="Coração" className="vitorp" />
+          <div>
+            <img src="src/assets/imagens/redes.png" alt="Coração" className="git5" />
+            <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke5" />
+          </div>
+        </div>
+
+       
+          </div>
+        
+      
+      
     </>
   );
 }
