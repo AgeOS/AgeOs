@@ -4,14 +4,15 @@
 // import Suporte from "./Components/suporte/Suporte";
 // import './stylesheets/index.scss';
 // import Login from "./Components/login/Login";
-import Cartao from './Components/Cartao/Cart'
+//import Cartao from './Components/Cartao/Cart'
 //import Cadastro from "./Components/cadastro/Cadastro";
 //import Pagamento from "./Components/QrCode/qrcode"
+import Formulario from './Components/Fomulario/Form'
 
 export default function App() {
   return (
     <>
-      <Cartao />
+      <Formulario />
     </>
   );
 }
