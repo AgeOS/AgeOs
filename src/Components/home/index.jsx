@@ -101,10 +101,10 @@ export default function Home() {
             <button>R$69,99</button>
           </div>
 
-          <div className="pacote-premium">
-           <div className="recomendado">
+           {/* <div className="recomendado">
               <p>Recomendado</p>
-            </div> 
+            </div>  */}
+          <div className="pacote-premium">
 
             <h2>Pacote Premium</h2>
 
@@ -131,6 +131,7 @@ export default function Home() {
       </div>
 
       <Avaliacoes/>
+
     <Footer
       foto='src\assets\footer\navbar-roxa.png'
       color='white'
