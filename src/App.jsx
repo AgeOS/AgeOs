@@ -1,5 +1,7 @@
-
+import { Routes , Route } from 'react-router-dom';
+// import NavBar from "./Components/NavBar/NavBar";
 import './stylesheets/index.scss'
+
 
 // import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/home/home';
