@@ -5,7 +5,7 @@ import './stylesheets/index.scss'
 
 // import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/home/home';
-import Adquira from './Components/Adquira/Adquira';12
+import Adquira from './Components/Adquira/Adquira';
 import SobreNos from './Components/sobrenos';
 import Suporte from './Components/suporte/Suporte';
 import Login from './Components/login/Login';
