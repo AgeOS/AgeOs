@@ -35,13 +35,13 @@ export default function NavBar() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/">Sobre nós</Link>
+                <Link to="/Sobrenos">Sobre nós</Link>
               </li>
               <li>
-                <Link to="/contact">Adquira</Link>
+                <Link to="/Aquira">Adquira</Link>
               </li>
               <li>
-                <Link to="/contact">Suporte</Link>
+                <Link to="/Suporte">Suporte</Link>
               </li>
             </ul>
 
