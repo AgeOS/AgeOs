@@ -1,0 +1,277 @@
+@import "../../variables.scss";
+
+$primary-color: #5D3B94;    // Roxo principal
+$secondary-color: #FFE175;   // Amarelo do fundo
+$text-color: #333333;
+$white: #FFFFFF;
+$transition-time: 0.5s;
+
+// Breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: #{$breakpoint-sm - 1}) { @content; }
+  }
+  @if $breakpoint == sm {
+    @media (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 1}) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lg - 1}) { @content; }
+  }
+  @if $breakpoint == lg {
+    @media (min-width: #{$breakpoint-lg}) and (max-width: #{$breakpoint-xl - 1}) { @content; }
+  }
+  @if $breakpoint == xl {
+    @media (min-width: #{$breakpoint-xl}) { @content; }
+  }
+}
+
+.testimonial-carousel {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  overflow-x: hidden;
+  font-family: $font-family-poppins;
+
+  &__title {
+    font-size: 2.5rem;
+    color: $primary-color;
+    font-family: $font-family-poppins !important;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+    @include responsive(xs) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding: 1rem;
+  }
+
+  &__slides {
+    background-color: $secondary-color;
+    height: 497px;
+    border-radius: 1rem;
+    padding: 2rem;
+    min-height: 250px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    @include responsive(xs) {
+      padding: 1rem;
+      min-height: 300px;
+    }
+  }
+
+  &__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all $transition-time ease-in-out;
+    padding: 1rem;
+
+    &.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    @include responsive(xs) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    flex-shrink: 0;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border: 3px solid $white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @include responsive(xs) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    color: $text-color;
+    margin-top: 0.5rem;
+  }
+
+  &__text-container {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &__quote_1{
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    font-size: 4rem;
+    color: $primary-color;
+    opacity: 0.5;
+    font-family: serif;
+
+    @include responsive(xs) {
+      top: -1.5rem;
+      left: 0;
+      font-size: 3rem;
+    }
+  }
+
+  &__quote_2{
+    position: absolute;
+    top: -2rem;
+    left: 78rem;
+    font-size: 4rem;
+    color: $primary-color;
+    opacity: 0.5;
+    font-family: serif;
+
+    @include responsive(xs) {
+      top: -1.5rem;
+      left: 0;
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: $text-color;
+    font-family: $font-family-poppins;
+    position: relative;
+    z-index: 1;
+
+
+    @include responsive(xs) {
+      font-size: 1rem;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $primary-color;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    @include flex-center;
+    transition: all 0.3s ease;
+    z-index: 2;
+
+    &:hover {
+      // background: darken($primary-color, 10%);
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    @include responsive(xs) {
+      width: 35px;
+      height: 35px;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__indicators {
+    @include flex-center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  &__indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba($primary-color, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba($primary-color, 0.5);
+    }
+
+    &.active {
+      background: $primary-color;
+      transform: scale(1.2);
+    }
+  }
+}
+
+// Animação de fade para transições suaves
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Suporte para preferências de redução de movimento
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-carousel {
+    &__slide {
+      transition: none;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .containersobre {
@@ -136,6 +137,245 @@
   width: 60%;
   height: auto px;
   margin-left: 400px;
+}
+
+.container_tequipe h1 {
+  color: #3D1887;
+  font-size: 90px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Contêiner para ambas as imagens */
+.isa {
+  position: relative; /* Referência para posicionamento absoluto */
+  width: 50%; /* Ajuste conforme necessário */
+  height: auto;
+}
+
+/* Contêiner Flex para dividir 50% para cada */
+.container-isa-flex {
+  display: flex; /* Ativa Flexbox para organizar lado a lado */
+  width: 100%; /* Ocupar toda a largura */
+}
+
+/* Cada metade ocupa 50% */
+.isa {
+  position: relative;
+  width: 50%; /* 50% da largura para cada grupo */
+  height: auto;
+}
+
+/* Imagem principal */
+.isap {
+  width: 80%;
+  height: 100%;
+  margin-left: 100px;
+  display: block;
+}
+
+/* Ícones sobrepostos */
+.git {
+  position: absolute;
+  bottom: 90px;
+  left: 470px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.linke {
+  position: absolute;
+  bottom: 90px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.jesse {
+  position: relative; /* Referência para posicionamento absoluto */
+  width: 50%; /* Ajuste conforme necessário */
+  height: auto;
+  margin-top: 100px;
+}
+
+/* Contêiner Flex para dividir 50% para cada */
+.container-jesse-flex {
+  display: flex; /* Ativa Flexbox para organizar lado a lado */
+  width: 100%; /* Ocupar toda a largura */
+}
+
+/* Cada metade ocupa 50% */
+.jesse {
+  position: relative;
+  width: 50%; /* 50% da largura para cada grupo */
+  height: auto;
+}
+
+/* Imagem principal */
+.jessep {
+  width: 80%;
+  height: 100%;
+  margin-left: 100px;
+  display: block;
+}
+
+/* Ícones sobrepostos */
+.git1 {
+  position: absolute;
+  bottom: 70px;
+  left: 470px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.linke1 {
+  position: absolute;
+  bottom: 70px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.git2 {
+  position: absolute;
+  bottom: 94px;
+  left: 470px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.linke2 {
+  position: absolute;
+  bottom: 95px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.git3 {
+  position: absolute;
+  bottom: 69px;
+  left: 470px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.linke3 {
+  position: absolute;
+  bottom: 70px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.jeff {
+  position: relative; /* Referência para posicionamento absoluto */
+  width: 50%; /* Ajuste conforme necessário */
+  height: auto;
+  margin-top: 100px;
+}
+
+/* Contêiner Flex para dividir 50% para cada */
+.container-jeff-flex {
+  display: flex; /* Ativa Flexbox para organizar lado a lado */
+  width: 100%; /* Ocupar toda a largura */
+}
+
+/* Cada metade ocupa 50% */
+.jeff {
+  position: relative;
+  width: 50%; /* 50% da largura para cada grupo */
+  height: auto;
+}
+
+/* Imagem principal */
+.jeffp {
+  width: 80%;
+  height: 100%;
+  margin-left: 100px;
+  display: block;
+}
+
+/* Ícones sobrepostos */
+.git4 {
+  position: absolute;
+  bottom: 70px;
+  left: 470px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.linke4 {
+  position: absolute;
+  bottom: 70px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+/* Contêiner Flex para dividir 50% para cada */
+.container-vitor-flex {
+  display: flex; /* Ativa Flexbox para organizar lado a lado */
+  width: 100%; /* Ocupar toda a largura */
+}
+
+/* Cada metade ocupa 50% */
+.vitor {
+  position: relative;
+  width: 50%; /* 50% da largura para cada grupo */
+  height: auto;
+  position: relative;
+  top: 100px;
+  margin-left: -10px;
+}
+
+/* Imagem principal */
+.vitorp {
+  width: 80%;
+  height: 100%;
+  margin-left: 100px;
+  display: block;
+}
+
+/* Ícones sobrepostos */
+.git5 {
+  position: absolute;
+  bottom: 70px;
+  left: 470px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.linke5 {
+  position: absolute;
+  bottom: 70px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=sobrenos.css.map */

@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.testimonial-carousel {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.testimonial-carousel__title {
+  font-size: 2.5rem;
+  color: #5D3B94;
+  font-family: "Poppins", sans-serif !important;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__title {
+    font-size: 1.8rem;
+  }
+}
+.testimonial-carousel__container {
+  position: relative;
+  padding: 1rem;
+}
+.testimonial-carousel__slides {
+  background-color: #FFE175;
+  height: 497px;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-height: 250px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__slides {
+    padding: 1rem;
+    min-height: 300px;
+  }
+}
+.testimonial-carousel__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  padding: 1rem;
+}
+.testimonial-carousel__slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.testimonial-carousel__content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+.testimonial-carousel__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  flex-shrink: 0;
+}
+.testimonial-carousel__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__image {
+    width: 80px;
+    height: 80px;
+  }
+}
+.testimonial-carousel__name {
+  font-weight: 600;
+  color: #333333;
+  margin-top: 0.5rem;
+}
+.testimonial-carousel__text-container {
+  position: relative;
+  flex-grow: 1;
+}
+.testimonial-carousel__quote_1 {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  font-size: 4rem;
+  color: #5D3B94;
+  opacity: 0.5;
+  font-family: serif;
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__quote_1 {
+    top: -1.5rem;
+    left: 0;
+    font-size: 3rem;
+  }
+}
+.testimonial-carousel__quote_2 {
+  position: absolute;
+  top: -2rem;
+  left: 78rem;
+  font-size: 4rem;
+  color: #5D3B94;
+  opacity: 0.5;
+  font-family: serif;
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__quote_2 {
+    top: -1.5rem;
+    left: 0;
+    font-size: 3rem;
+  }
+}
+.testimonial-carousel__text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__text {
+    font-size: 1rem;
+  }
+}
+.testimonial-carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #5D3B94;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.testimonial-carousel__button--prev {
+  left: 0;
+}
+.testimonial-carousel__button--next {
+  right: 0;
+}
+@media (max-width: 575px) {
+  .testimonial-carousel__button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+.testimonial-carousel__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.testimonial-carousel__indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(93, 59, 148, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.testimonial-carousel__indicator:hover {
+  background: rgba(93, 59, 148, 0.5);
+}
+.testimonial-carousel__indicator.active {
+  background: #5D3B94;
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-carousel__slide {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=avaliacoes.css.map */

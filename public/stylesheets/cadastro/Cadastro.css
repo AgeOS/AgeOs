@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.container_cadastro {
+  width: 100%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.foto_cadastro {
+  width: 60%;
+  background-color: aqua;
+  background-image: url("../../assets/cadastre-se/cadastro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.lado_cadastro {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  background-color: #5E329D;
+}
+
+.dentro_cadastro {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_ageOSCadastro img {
+  width: 200px;
+  height: 150px;
+}
+
+.dentro_cadastro h1 {
+  color: white;
+  font-size: 5vh;
+  border-bottom: 4px solid white;
+}
+
+.dentro_login h2 {
+  font-size: 4vh;
+}
+
+.dentro_cadastro input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  height: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.dentro_cadastro button {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #FFEA73;
+  font-size: 20px;
+}
+
+.dentro_cadastro a {
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+}
+
+.container_contas {
+  display: flex;
+  margin-top: 20px;
+}
+
+.container_contas img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.container_contas p {
+  font-size: 2vh;
+  margin-right: 20px;
+}
+
+.politica {
+  font-size: 2vh;
+  text-align: center;
+}
+
+.politica span {
+  color: #FFDB10;
+}
+
+/* Estilo para dispositivos tablets (largura entre 768px e 1024px) */
+@media (max-width: 1024px) {
+  .container_cadastro {
+    flex-direction: column;
+  }
+  .foto_cadastro {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+  }
+  .lado_cadastro {
+    width: 100%;
+  }
+  .dentro_cadastro {
+    width: 90%;
+  }
+  .logo_ageOSCadastro img {
+    width: 150px;
+    height: 120px;
+  }
+  .dentro_cadastro h1 {
+    font-size: 4vh;
+  }
+  .dentro_login h2 {
+    font-size: 3vh;
+  }
+  .dentro_cadastro input {
+    width: 90%;
+    height: 40px;
+  }
+  .dentro_cadastro button {
+    width: 90%;
+    height: 45px;
+  }
+  .dentro_cadastro a {
+    font-size: 1.8vh;
+  }
+  .container_contas img {
+    width: 50px;
+    height: 50px;
+  }
+  .container_contas p {
+    font-size: 1.8vh;
+  }
+  .politica {
+    font-size: 1.8vh;
+  }
+}
+/* Estilo para dispositivos móveis (largura até 767px) */
+@media (max-width: 767px) {
+  .container_cadastro {
+    flex-direction: column;
+  }
+  .foto_cadastro {
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+  }
+  .lado_cadastro {
+    width: 100%;
+  }
+  .dentro_cadastro {
+    width: 100%;
+  }
+  .logo_ageOSCadastro img {
+    width: 120px;
+    height: 100px;
+  }
+  .dentro_cadastro h1 {
+    font-size: 3.5vh;
+  }
+  .dentro_login h2 {
+    font-size: 2.5vh;
+  }
+  .dentro_cadastro input {
+    width: 95%;
+    height: 35px;
+  }
+  .dentro_cadastro button {
+    width: 95%;
+    height: 40px;
+  }
+  .dentro_cadastro a {
+    font-size: 1.5vh;
+  }
+  .container_contas img {
+    width: 40px;
+    height: 40px;
+  }
+  .container_contas p {
+    font-size: 1.5vh;
+  }
+  .politica {
+    font-size: 1.5vh;
+  }
+}
+
+/*# sourceMappingURL=Cadastro.css.map */

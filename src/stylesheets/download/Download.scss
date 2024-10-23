@@ -1,0 +1,123 @@
+@import '../../stylesheets/variables.scss';
+
+html{
+    background-color: #5E329D;
+}
+
+.container_download{
+    display: flex;
+    width: 100%;
+  
+    max-height: 12000px;
+    justify-content: center;
+    background-color: #5E329D;
+    
+}
+
+.quadrado_download{
+    width: 70%;
+    max-width: 5500px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 130px;
+    border-radius: 20px;
+}
+
+.dentro_download{
+    display: flex;
+}
+
+.download h1{
+    font-size: 4vh;
+}
+
+.celular{
+    display: flex;
+    width: 30%;
+    height: 524px;
+    margin-left: 80px;
+    background-image: url('../../assets/download/celular2-Photoroom\ 1.png');
+    background-repeat: no-repeat;
+
+    // background-size: cover;
+}
+
+.lado_instrucoes {
+    width: 100%;
+    flex-direction: column;
+    text-align: start;
+}
+
+.lado_instrucoes h2{
+    font-size: 4vh;
+    color: #3D1887;
+}
+
+.lado_instrucoes  p{
+    font-size: 4vh;
+}
+
+.ageOS_informacoes img {
+    width: 200px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.ageOS_informacoes{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    height: 150px;
+    margin: auto;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.informacoes{
+    text-align: start;
+    margin-left: 100px;
+}
+
+.informacoes p{
+    font-size: 3vh;
+}
+
+.informacoes span{
+    color: #3D1887;
+}
+
+.ageOS_informacoes2{
+    
+    width: 90%;
+    height: 270px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ageOS_informacoes2 h2{
+    text-align: center;
+    color: #3D1887;
+}
+
+.documentacao{
+    width: 50%;
+    margin-left: 100px;
+    font-size: 3vh;
+    text-align: start;
+    float: left;
+}
+
+.aviso{
+    font-size: 3vh;
+    width: 30%;
+    float: left;
+    text-align: start;
+    color: #3D1887;
+    font-weight: 500;
+}

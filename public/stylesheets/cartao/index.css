@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.creditocontainer {
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(217, 217, 217, 0.5019607843);
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  margin: 150px auto;
+  color: #FAF8FB;
+  font-family: "Poppins", sans-serif;
+}
+.creditocontainer .creditoform {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+}
+.creditocontainer .creditoform input, .creditocontainer .creditoform select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.creditocontainer .creditoform .confirme-button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #FFEA73;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #393939;
+  font-family: "Poppins", sans-serif;
+}
+.creditocontainer .creditoprev {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: #E9E8EA;
+  justify-content: center;
+  position: relative;
+}
+.creditocontainer .creditoprev .card {
+  width: 320px;
+  height: 200px;
+  background-color: #E9E8EA;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #FAF8FB;
+  position: relative;
+}
+.creditocontainer .creditoprev .card .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.creditocontainer .creditoprev .card .card-number {
+  font-size: 1.2rem;
+}
+.creditocontainer .creditoprev .card .card-name {
+  text-transform: uppercase;
+}
+.creditocontainer .creditoprev .card .card-expiry {
+  font-size: 1rem;
+}
+.creditocontainer .creditoprev .card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=index.css.map */
