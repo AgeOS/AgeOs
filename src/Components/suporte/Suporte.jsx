@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import '../../stylesheets/suporte/suporte.scss';
+import  { useState } from 'react';
+// import '../../stylesheets/suporte/suporte.scss';
 import whats from '../../assets/suporte/whats.png';
 import email from '../../assets/suporte/email.png';
 import svgPessoas from '../../assets/suporte/imgs.png';
 import chatbot from '../../assets/suporte/Chatbot.png';
+import NavBar from '../NavBar/NavBar';
 
 function Suporte() {
   
@@ -19,6 +20,9 @@ function Suporte() {
   };
 
   return (
+<>
+    <NavBar/>
+
     <section className="container_suporte">
       <div className="container_imagens">
         <img src={svgPessoas} alt="" />
@@ -99,6 +103,7 @@ function Suporte() {
         </section>
       </section>
     </section>
+</>
   );
 }
 

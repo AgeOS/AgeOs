@@ -78,12 +78,16 @@ $breakpoint-desktop: 1200px;
 .hero-section {
   position: relative;
   width: 90%;
-  margin: 0 auto;
+  margin: 100px auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+
+  @include laptop{
+    margin-bottom: 20px;
+  }
 
   @include tablet {
     flex-direction: column;
@@ -93,6 +97,7 @@ $breakpoint-desktop: 1200px;
   @include mobile{
     flex-direction: column;
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .apresentation {
@@ -138,9 +143,11 @@ $breakpoint-desktop: 1200px;
       font-weight: 600;
       margin-top: 45px;
 
+
+
       @include tablet {
-        width: 50%;
-        font-size: 20px;
+        width: 1%;
+        font-size: 10px;
       }
 
       @include mobile {
@@ -346,13 +353,26 @@ $breakpoint-desktop: 1200px;
 
       h1 {
         color: $color-white;
-        font-size: 68px;
+        font-size: 50px;
         position: relative;
         bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include laptop{
+          font-size: 40px;
+          bottom: 150px;
+        }
+
+        @include tablet{
+          font-size:30px ;
+          bottom: 10px;
+          right: 130px;
+        }
        
 
         @include mobile{
-            font-size: 24px;
+            font-size: 26px;
             position: relative;
             right: 120px;
         }
@@ -364,22 +384,29 @@ $breakpoint-desktop: 1200px;
         text-align: start;
         bottom: 90px;
         color: $color-white;
-        font-size: 28px;
+        font-size: 24px;
         font-family: $font-family-poppins;
 
-        @include tablet {
-          width: 90%;
+        @include laptop{
+          width: 60%;
+          bottom: 140px;
           text-align: center;
+        }
+
+        @include tablet {
+          width: 60%;
+          text-align: center;
+          right: 150px;
           bottom: 0;
-          font-size: 28px;
+          font-size: 20px;
         }
 
         @include mobile {
         width: 50%;
-          font-size: 12px;
+          font-size: 16px;
           position: relative;
           right: 130px;
-          bottom: 20px;
+          // bottom: 10px;
         }
       }
     }
@@ -406,12 +433,16 @@ $breakpoint-desktop: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: -50px;
   position: relative;
+
+  @include laptop{
+  bottom: 200px;
+  }
 
   @include tablet {
     width: 99%;
-    margin-top: 60px;
+    margin-top: 290px;
   }
 
   img {
@@ -424,6 +455,10 @@ $breakpoint-desktop: 1200px;
     position: absolute;
     text-align: center;
     top: 2%;
+
+    @include laptop{
+      font-size: 40px;
+    }
 
     @include tablet {
     //   position: relative;
@@ -439,10 +474,16 @@ $breakpoint-desktop: 1200px;
     top: 15%;
     width: 80%;
 
+    @include laptop{
+      width: 95%;
+      font-size: 24px;
+      top:65px;
+    }
+
     @include tablet {
     //   position: relative;
       top:20px;
-      width: 90%;
+      width: 95%;
       margin: 20px 0;
       font-size: 19px;
     }
@@ -481,6 +522,10 @@ $breakpoint-desktop: 1200px;
   overflow-x: hidden;
   position: relative;
 
+  @include laptop{
+    margin-top: -70px;
+  }
+
   @include tablet {
     width: 100%;
   }
@@ -504,40 +549,54 @@ $breakpoint-desktop: 1200px;
     position: absolute;
     color: $color-white;
     right: 10%;
+    font-size: 70px;
     top: 20%;
 
+    @include laptop{
+      font-size: 50px;
+    }
+
     @include tablet {
-        width: 100%;
+      width: 100%;
+      font-size: 40px;
       position: absolute;
-      top: 30%;
-      right: 200px;
+      top: 30px;
+      // right: 200px;
+      left: 150px;
       text-align: center;
       margin: 20px 0;
       z-index: 5;
         // color: white;
     }
+
+    @include mobile{
+      left: 120px;
+      font-size:28px ;
+    }
   }
 
   p {
     position: absolute;
-    font-size: 38px;
+    font-size: 30px;
     color: $color-white;
     width: 50%;
     right: 10%;
     text-align: right;
     top: 45%;
 
+    @include laptop{
+      font-size: 24px;
+    }
+
     @include tablet {
-    //   position: relative;
-      width: 90%;
-      right: 0;
-      top: 0;
-      text-align: center;
-      font-size: 28px;
+      // position: relative;
+      width: 50%;
+      text-align: end;
+      font-size: 22px;
     }
 
     @include mobile {
-      font-size: 22px;
+      font-size: 16px;
     }
   }
 }
@@ -557,21 +616,22 @@ $breakpoint-desktop: 1200px;
 
   h1 {
     font-family: $font-family-poppins;
-    font-size: 64px;
+    font-size: 60px;
 
     @include laptop {
-      font-size: 64px;
+      font-size: 58px;
       text-align: center;
     }
 
     @include tablet {
-      font-size: 48px;
+      font-size: 46px;
+      margin-bottom: 20px;
       text-align: center;
 
     }
 
     @include mobile {
-      font-size: 36px;
+      font-size: 30px;
       text-align: center;
 
     }
@@ -579,12 +639,15 @@ $breakpoint-desktop: 1200px;
 
   p {
     font-family: $font-family-poppins;
-    font-size: 48px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
     position: relative;
     bottom: 10px;
 
     @include laptop {
-      font-size: 46px;
+      font-size: 34px;
+      margin-bottom: 20px;
     }
 
     @include tablet {
@@ -605,6 +668,7 @@ $breakpoint-desktop: 1200px;
     width: 90%;
     align-items: center;
     justify-content: space-around;
+    margin-top: 60px;
 
     @include tablet {
       flex-direction: column;
@@ -614,17 +678,25 @@ $breakpoint-desktop: 1200px;
     .pacote-basico,
     .pacote-premium {
       width: 40%;
-      height: 800px;
+      height: 600px;
       background-color: #fff;
       box-shadow: 6px 6px 12.1px rgba(0, 0, 0, 0.3);
       display: flex;
       flex-direction: column;
       border-radius: 20px;
 
+      @include laptop{
+        width: 50%;
+        height: 600px;
+        margin: 10px;
+        // gap: 20px;
+      }
+
       @include tablet {
+        margin-top: -50px;
         width: 90%;
         height: auto;
-        padding: 40px 20px;
+        padding: 20px 50px;
       }
 
       h2 {
@@ -636,7 +708,8 @@ $breakpoint-desktop: 1200px;
         justify-content: center;
 
         @include laptop {
-          font-size: 42px;
+          font-size: 38px;
+          text-align: center;
         }
 
         @include mobile {
@@ -669,12 +742,24 @@ $breakpoint-desktop: 1200px;
       }
 
       ul {
-        width: 100%;
+        min-width: 80%;
         font-size:24px;
         position: relative;
-        margin: 0 auto;
+        // margin: 0 auto;
+        left: 50px;
+        gap: 10px;
         flex-direction: column;
         padding-top: 20px;
+        flex-wrap: wrap;
+
+
+      @include laptop{
+        max-width: 93%;
+        left: 25px;
+        
+        font-size: 20px;
+        flex-wrap: wrap;
+      }
 
         @include tablet {
           position: static;
@@ -688,8 +773,9 @@ $breakpoint-desktop: 1200px;
       }
 
       button {
-        margin: 20px auto;
-        position: static;
+        // margin: 20px auto;
+        // // position: static;
+
 
         @include tablet{
             top: 20px;
@@ -701,11 +787,19 @@ $breakpoint-desktop: 1200px;
 
   button {
     width: 30%;
-    height: 66px;
+    height: 55px;
+    top: 20px;
+    margin: 20px auto;
     font-size: 33px;
     border-radius: 15px;;
     background-color: $color-purple;
     color: $color-white;
+
+    @include laptop{
+      width: 50%;
+      font-size: 24px;
+      height: 50px;
+    }
 
     @include tablet {
       width: 40%;
@@ -718,57 +812,21 @@ $breakpoint-desktop: 1200px;
     }
   }
 
-  .recomendado {
-    width: 30%;
-    border-radius: 20px 20px 0 0;
-    height: 70px;
-    position: absolute;
-    background-color: $color-purple;
-    margin: 0 auto;
-
-    @include tablet {
-      width: 60%;
-      left: 140px;
-      top: 4633px;
-    //   position: relative;
-    //   margin-bottom: 200px;
-    }
-
-        @include mobile{
-      left: 83px;
-
-      top: 3945px;
-            
-        }
-
-    p {
-      font-size: 40px !important;
-      color: $color-white;
-      text-align: center;
-      margin: 0;
-      line-height: 70px;
-
-      @include tablet {
-        font-size: 32px !important;
-      }
-
-      @include mobile {
-        font-size: 28px !important;
-      }
-    }
-  }
-
   .duvidas {
     width: 20%;
     margin-top: 70px;
     font-family: $font-family-poppins;
 
+    @include laptop{
+      width: 30%;
+    }
+
     @include tablet {
-      width: 80%;
+      width: 50%;
     }
 
     @include mobile {
-      width: 90%;
+      width: 60%;
       margin-top: 40px;
     }
   }

@@ -1,16 +1,21 @@
 import Veia from '../../assets/Adquira/Veia.png'
-import celular from '../../assets/Adquira/celular.png'
+// import celular from '../../assets/Adquira/celular.png'
+import celular_vi from '../../assets/Adquira/celular_video.mp4'
 import Approval from '../../assets/Adquira/Approval.png'
 import Paint from '../../assets/Adquira/Paint.png'
 import Security from '../../assets/Adquira/Security.png'
 import Logo from '../../assets/Adquira/Logo.png'
+import NavBar from '../NavBar/NavBar'
 
-import '../../stylesheets/Adquira/Adquira.scss'
+// import '../../stylesheets/Adquira/Adquira.scss'
 
 
 function Adquira() {
     return (
-        <><div className='adquira_topo'>
+        <>
+        <NavBar/>
+        <div className='adquira-container'>
+        <div className='adquira_topo'>
             <p>O mais vantajoso para sua família! </p>
             <h1>Contrate o pacote  <span> Premium!</span></h1>
             <div>
@@ -23,9 +28,9 @@ function Adquira() {
             </div>
         </div><button className='Comprar'>Adquira o pacote</button>
         <svg className='svg2' width="1004" height="62" viewBox="0 0 1004 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-47 60C-47 60 79.2315 6.37667 397.056 2.50327C714.881 -1.37013 905.511 18.1169 1003 26.6637" stroke="#FFDB10" stroke-width="3"/>
+            <path d="M-47 60C-47 60 79.2315 6.37667 397.056 2.50327C714.881 -1.37013 905.511 18.1169 1003 26.6637" stroke="#FFDB10" />
         </svg>
-        <div className='cel'><img className='celular' src={celular} alt="celular" /></div>
+        <div className='cel'><video width={'90%'} height={'100%'} autoPlay={true} loop={true}><source src={celular_vi} /></video></div>
         <section className='grupo'>
             <div className='figgs'>
                 <img className='apro' src={Approval} />
@@ -74,6 +79,8 @@ function Adquira() {
                 <button className='Preco2'>R$229,99</button>
             </div>
         </section>
+        </div>
+
         </>
     )
 }

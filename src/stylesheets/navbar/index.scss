@@ -247,6 +247,8 @@ $breakpoint-desktop: 1200px;
   }
 }
 
+.navbar-container{
+
 // Hamburger button
 .button-navbar {
   display: none;
@@ -537,7 +539,7 @@ $breakpoint-desktop: 1200px;
       background-color: $color-yellow;
 
       &:hover {
-        background-color: darken($color-yellow, 5%);
+        background-color:$color-yellow;
       }
     }
 
@@ -564,4 +566,4 @@ $breakpoint-desktop: 1200px;
 .nav-shadow {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+}

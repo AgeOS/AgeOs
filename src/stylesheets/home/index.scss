@@ -1,6 +1,8 @@
 @import "../variables.scss";
 
 
+.home-page-container{
+
 .hero-section {
   position: relative;
   width: 90%;
@@ -408,6 +410,7 @@
     margin-top: 70px;
     font-family: $font-family-poppins;
   }
+}
 }
 
 // .avaliacoes{
