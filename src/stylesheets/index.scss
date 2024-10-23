@@ -1,11 +1,9 @@
 @import './variables.scss';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-    background-color:$color-white;
-}
+@import './home/medias.scss';
+@import './sobrenos/sobrenos.scss';
+@import './Adquira/Adquira.scss';
+@import './suporte/suporte.scss';
+@import './login/Login.scss';
+@import './cadastro/Cadastro.scss';
