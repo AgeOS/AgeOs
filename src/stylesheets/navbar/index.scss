@@ -537,7 +537,7 @@ $breakpoint-desktop: 1200px;
       background-color: $color-yellow;
 
       &:hover {
-        background-color: darken($color-yellow, 5%);
+        background-color:$color-yellow;
       }
     }
 
