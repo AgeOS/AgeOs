@@ -1,44 +1,39 @@
-.footer {
-  position: relative;
-  width: 100%;
-  background: #6d28d9;
-  color: white;
-  padding-top: 100px;
-  margin-top: 100px;
-}
-
-.waves {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+footer {
   position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
+  max-height: 650px;
+  right: 1px;
+  min-width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding-top: 50px;
+  margin-top: 50px;
   overflow: hidden;
 }
 
-.wave {
+.fundo {
+  display: flex;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.wave3 {
-  background-image: url("../../assets/footer/fundo3.png");
-  z-index: 1;
+  overflow-x: hidden !important;
+  width: 105%;
+  max-height: 640px;
+  z-index: -1;
 }
 
 .content {
-  max-width: 1200px;
+  max-width: 90%;
+  height: 450px;
   margin: 0 auto;
   padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.table {
+  text-decoration: 1px underline;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -52,9 +47,10 @@
   }
 }
 .section h3 {
-  font-size: 1.25rem;
+  color: black;
+  font-size: 1.7rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .section ul {
@@ -64,10 +60,10 @@
 
 .section li {
   margin-bottom: 0.75rem;
+  font-size: 1.3rem;
 }
 
 .section a {
-  color: white;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -78,12 +74,12 @@
 
 .social {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .social a {
-  color: white;
   font-size: 1.5rem;
   transition: opacity 0.2s;
 }
@@ -116,10 +112,10 @@
 
 .form button {
   padding: 0.5rem 1rem;
-  background: #5b21b6;
+  background: #FAF8FB;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: #393939;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -132,7 +128,7 @@
   text-align: center;
   padding: 2rem 0;
   margin-top: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid;
 }
 
 /*# sourceMappingURL=footer.css.map */

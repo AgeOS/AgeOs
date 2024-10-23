@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../../stylesheets/footer/footer.scss'
 import '../../stylesheets/footer/media.scss'
 
