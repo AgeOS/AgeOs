@@ -19,7 +19,7 @@ export default function Footer({foto , color , you , insta , face , linke}){
           <ul >
             <li><a style={{color:color }} href="#">Interface</a></li>
             <li><a style={{color:color }} href="#">Benefícios</a></li>
-            <li>   .</li>
+            <li className='none'>.</li>
           </ul>
         </div>
 

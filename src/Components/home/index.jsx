@@ -1,4 +1,4 @@
-import "../../stylesheets/home/index.scss";
+// import "../../stylesheets/home/index.scss";
 import "../../stylesheets/home/medias.scss";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";

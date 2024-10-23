@@ -6,7 +6,6 @@ footer{
     right: 1px;
     min-width: 100%;
     font-family: $font-family-poppins;
-    // color:black;
     padding-top: 50px;
     margin-top: 50px;
     overflow: hidden;
@@ -19,13 +18,11 @@ footer{
   width: 105%;
   max-height: 640px;
   z-index: -1;
-  // color: #1f2937;
 }
 
   .content {
     max-width: 90%;
     height: 450px;
-    // color: #1f2937;
     margin: 0 auto;
     padding: 0 20px;
     padding-top: 20px;
@@ -37,6 +34,10 @@ footer{
   .table{
     text-decoration:1px underline;
     color: white;
+  }
+
+  .none{
+    visibility: hidden;
   }
 
   @media (max-width: 768px) {

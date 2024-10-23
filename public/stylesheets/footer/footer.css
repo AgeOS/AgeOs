@@ -36,6 +36,10 @@ footer {
   color: white;
 }
 
+.none {
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   .content {
     grid-template-columns: repeat(2, 1fr);

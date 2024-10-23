@@ -1,49 +1,775 @@
+// @import "../variables.scss";
+
+
+// @media screen and (min-width: 1530px) and (max-width: 1900px) { 
+   
+//   .phone-img {
+//     width: 28% !important;
+//     object-fit:cover !important;
+//   }
+// }
+
+// @media screen and (min-width: 1000px) and (max-width: 1400px) { 
+
+
+//     .hero-section{
+//         width: 100% !important;
+//         margin: 0 0px 0 20px !important;
+        
+//         .apresentation {
+//             width: 50%;
+            
+//             h1{
+//                 font-size: 55px !important;
+//             }
+
+           
+//         }
+
+//         .phone-img{
+//             width: 30% !important;
+        
+//             img{
+//                 width: 100% !important;
+//                 object-fit: cover !important;
+//             }
+//         }
+
+//     }
+// }
+
+
+// @media screen and (min-width: 1000px) and (max-width: 1370px) { 
+
+//     .btn-conhecer{
+//         width: 20% !important;
+//         font-size: 15px !important;
+//     }
+// }
+
+
 @import "../variables.scss";
 
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-desktop: 1200px;
 
-@media screen and (min-width: 1530px) and (max-width: 1900px) { 
-   
-  .phone-img {
-    width: 28% !important;
-    object-fit:cover !important;
+// Mixins for responsive design
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1400px) { 
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
 
+@mixin laptop {
+  @media (max-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
 
-    .hero-section{
-        width: 100% !important;
-        margin: 0 0px 0 20px !important;
-        
-        .apresentation {
-            width: 50%;
+.hero-section {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+  @include tablet {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @include mobile{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .apresentation {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
+    @include tablet {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 72px;
+      font-family: $font-family-poppins;
+      color: $color-purple;
+
+      @include laptop {
+        font-size: 56px;
+      }
+
+      @include tablet {
+        font-size: 42px;
+      }
+
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+
+    .btn-conhecer {
+      font-size: 24px;
+      width: 18%;
+      height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: none;
+      color: $color-black;
+      background-color: $color-yellow;
+      font-weight: 600;
+      margin-top: 45px;
+
+      @include tablet {
+        width: 50%;
+        font-size: 20px;
+      }
+
+      @include mobile {
+        width: 80%;
+        font-size: 18px;
+        height: 50px;
+      }
+    }
+  }
+
+  .phone-img {
+    width: 38%;
+    display: flex;
+    height: 80vh;
+    position: relative;
+    top: 50px;
+    object-fit: cover;
+
+    @include tablet {
+      width: 100%;
+      height: 100%;
+    //   margin-top: 30px;
+    }
+
+    @include mobile {
+      width:100%;
+      height: 100%;
+    }
+  }
+
+  img {
+    position: relative;
+    width: 99%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include mobile{
+    width: 100%;
+  }
+
+  .linha-amarela {
+    width: 100%;
+    position: absolute;
+    right: 200px;
+    min-width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    @include tablet {
+      right: 0;
+    }
+
+    svg {
+      width: 500%;
+      object-fit: cover;
+
+      @include tablet {
+        width: 300%;
+      }
+    }
+  }
+}
+
+.telas {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 84px;
+    color: $color-purple;
+    font-family: $font-family-poppins;
+
+    @include laptop {
+      font-size: 64px;
+    }
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    width: 73%;
+    text-align: center;
+    font-size: 34px;
+    font-family: $font-family-poppins;
+
+    @include laptop {
+      width: 85%;
+      font-size: 28px;
+    }
+
+    @include tablet {
+      width: 90%;
+      font-size: 24px;
+    }
+
+    @include mobile {
+      width: 95%;
+      font-size: 20px;
+    }
+  }
+
+  .slide {
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    object-fit: cover;
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.beneficios-etc {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+
+  h1 {
+    font-size: 84px;
+    font-family: $font-family-poppins;
+    color: $color-purple;
+
+    @include laptop {
+      font-size: 64px;
+    }
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    width: 69%;
+    text-align: center;
+    font-size: 34px;
+    color: $color-black;
+    font-family: $font-family-poppins;
+
+    @include tablet {
+      width: 85%;
+      font-size: 28px;
+    }
+
+    @include mobile {
+      width: 90%;
+      font-size: 22px;
+    }
+  }
+
+  .seguranca {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .seguranca-text {
+      width: 88%;
+      height: 600px;
+      // position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      // z-index: 2;
+
+      @include tablet {
+        height: auto;
+        padding: 40px 20px;
+        align-items: center;
+      }
+
+      h1 {
+        color: $color-white;
+        font-size: 68px;
+        position: relative;
+        bottom: 100px;
+       
+
+        @include mobile{
+            font-size: 24px;
+            position: relative;
+            right: 120px;
+        }
+      }
+
+      p {
+        position: relative;
+        width: 50%;
+        text-align: start;
+        bottom: 90px;
+        color: $color-white;
+        font-size: 28px;
+        font-family: $font-family-poppins;
+
+        @include tablet {
+          width: 90%;
+          text-align: center;
+          bottom: 0;
+          font-size: 28px;
+        }
+
+        @include mobile {
+        width: 50%;
+          font-size: 12px;
+          position: relative;
+          right: 130px;
+          bottom: 20px;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      width: 90%;
+      z-index: 0;
+
+      @include tablet {
+        // position: relative;
+        width: 100%;
+      }
+
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.apps {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+
+  @include tablet {
+    width: 99%;
+    margin-top: 60px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 2%;
+
+    @include tablet {
+    //   position: relative;
+      top: 0;
+      margin-bottom: 20px;
+      font-size: 34px;
+    }
+  }
+
+  p {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 80%;
+
+    @include tablet {
+    //   position: relative;
+      top:20px;
+      width: 90%;
+      margin: 20px 0;
+      font-size: 19px;
+    }
+
+    @include mobile{
+        top: 20px;
+        font-size: 14px;
+    }
+  }
+
+  .icons {
+    position: absolute;
+    margin: 0 auto;
+    width: 48%;
+    top: 30%;
+
+    @include tablet {
+      top: 130px;
+      width: 50%;
+    }
+
+    @include mobile {
+        position: absolute;
+        width: 50%;
+        top: 100px;
+    }
+  }
+}
+
+.atendimento {
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include mobile{
+    width: 100%;
+  }
+
+  img {
+   width: 100%;
+  
+    @include tablet{
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+        // z-index: 3; 
+    }
+}
+
+  h1 {
+    position: absolute;
+    color: $color-white;
+    right: 10%;
+    top: 20%;
+
+    @include tablet {
+        width: 100%;
+      position: absolute;
+      top: 30%;
+      right: 200px;
+      text-align: center;
+      margin: 20px 0;
+      z-index: 5;
+        // color: white;
+    }
+  }
+
+  p {
+    position: absolute;
+    font-size: 38px;
+    color: $color-white;
+    width: 50%;
+    right: 10%;
+    text-align: right;
+    top: 45%;
+
+    @include tablet {
+    //   position: relative;
+      width: 90%;
+      right: 0;
+      top: 0;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+}
+
+.pacotes {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-family: $font-family-poppins;
+    font-size: 64px;
+
+    @include laptop {
+      font-size: 64px;
+      text-align: center;
+    }
+
+    @include tablet {
+      font-size: 48px;
+      text-align: center;
+
+    }
+
+    @include mobile {
+      font-size: 36px;
+      text-align: center;
+
+    }
+  }
+
+  p {
+    font-family: $font-family-poppins;
+    font-size: 48px;
+    position: relative;
+    bottom: 10px;
+
+    @include laptop {
+      font-size: 46px;
+    }
+
+    @include tablet {
+      font-size: 30px;
+      text-align: center;
+      bottom: 30px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      bottom: 20px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 90px;
+    }
+
+    .pacote-basico,
+    .pacote-premium {
+      width: 40%;
+      height: 800px;
+      background-color: #fff;
+      box-shadow: 6px 6px 12.1px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+
+      @include tablet {
+        width: 90%;
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      h2 {
+        width: 100%;
+        font-size: 36px;
+        padding-top: 20px;
+        font-family: $font-family-poppins;
+        display: flex;
+        justify-content: center;
+
+        @include laptop {
+          font-size: 42px;
+        }
+
+        @include mobile {
+          font-size: 28px;
+        }
+      }
+
+      img {
+        position: relative;
+        width: 70px;
+        margin: 0 auto;
+
+        @include tablet {
+          left: 0;
+        }
+      }
+
+      p {
+        font-size: 40px;
+        text-align: center;
+
+        @include tablet {
+          position: static;
+          font-size: 40px;
+        }
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+
+      ul {
+        width: 100%;
+        font-size:24px;
+        position: relative;
+        margin: 0 auto;
+        flex-direction: column;
+        padding-top: 20px;
+
+        @include tablet {
+          position: static;
+          font-size: 24px;
+          margin: 20px 0;
+        }
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      button {
+        margin: 20px auto;
+        position: static;
+
+        @include tablet{
+            top: 20px;
+
+        }
+      }
+    }
+  }
+
+  button {
+    width: 30%;
+    height: 66px;
+    font-size: 33px;
+    border-radius: 15px;;
+    background-color: $color-purple;
+    color: $color-white;
+
+    @include tablet {
+      width: 40%;
+      font-size: 28px;
+    }
+
+    @include mobile {
+      width: 50%;
+      font-size: 24px;
+    }
+  }
+
+  .recomendado {
+    width: 30%;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+    position: absolute;
+    background-color: $color-purple;
+    margin: 0 auto;
+
+    @include tablet {
+      width: 60%;
+      left: 140px;
+      top: 4633px;
+    //   position: relative;
+    //   margin-bottom: 200px;
+    }
+
+        @include mobile{
+      left: 83px;
+
+      top: 3945px;
             
-            h1{
-                font-size: 55px !important;
-            }
-
-           
         }
 
-        .phone-img{
-            width: 30% !important;
-        
-            img{
-                width: 100% !important;
-                object-fit: cover !important;
-            }
-        }
+    p {
+      font-size: 40px !important;
+      color: $color-white;
+      text-align: center;
+      margin: 0;
+      line-height: 70px;
 
+      @include tablet {
+        font-size: 32px !important;
+      }
+
+      @include mobile {
+        font-size: 28px !important;
+      }
     }
-}
+  }
 
+  .duvidas {
+    width: 20%;
+    margin-top: 70px;
+    font-family: $font-family-poppins;
 
-@media screen and (min-width: 1000px) and (max-width: 1370px) { 
-
-    .btn-conhecer{
-        width: 20% !important;
-        font-size: 15px !important;
+    @include tablet {
+      width: 80%;
     }
-}
 
+    @include mobile {
+      width: 90%;
+      margin-top: 40px;
+    }
+  }
+}
