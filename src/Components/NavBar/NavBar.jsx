@@ -1,12 +1,10 @@
-// import React from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../../stylesheets/navbar/index.scss";
 import "../../stylesheets/navbar/media.scss";
 
 export default function NavBar() {
   return (
     <>
-      <Router>
         <button
           className="button-navbar"
           onClick={() => {
@@ -32,16 +30,16 @@ export default function NavBar() {
 
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link >Home</Link>
               </li>
               <li>
-                <Link to="/Sobrenos">Sobre nós</Link>
+                <Link to="Sobrenos">Sobre nós</Link>
               </li>
               <li>
-                <Link to="/Aquira">Adquira</Link>
+                <Link to="Adquira">Adquira</Link>
               </li>
               <li>
-                <Link to="/Suporte">Suporte</Link>
+                <Link to="Suporte">Suporte</Link>
               </li>
             </ul>
 
@@ -51,11 +49,11 @@ export default function NavBar() {
               </button>
 
               <button className="login">
-                <Link>Login</Link>
+                <Link to="Login">Login</Link>
               </button>
 
               <button className="cadastro">
-                <Link>Cadastre-se</Link>
+                <Link to="Cadastro">Cadastre-se</Link>
               </button>
             </div>
           </div>
@@ -95,7 +93,6 @@ export default function NavBar() {
             </button>
           </div>
         </nav>
-      </Router>
     </>
   );
 }
