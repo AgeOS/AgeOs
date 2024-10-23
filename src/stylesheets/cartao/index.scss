@@ -1,11 +1,15 @@
 @import "../variables.scss";
 
+
+label{
+  margin-bottom: -1rem;
+}
 .creditocontainer {
   margin-top: 150px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: #D9D9D980;
+  background-color: $color-white;
   padding: 20px;
   border-radius: 10px;
   width: 75%;
@@ -18,11 +22,14 @@
     flex-direction: column;
     width: 50%;
     gap: 15px;
+    color: black;
 
     input, select{
       padding: 10px;
+      background-color: #D9D9D980;
       border-radius: 5px;
       border: none;
+      color: $color-black;
       font-size: 1rem;
       font-family: $font-family-roboto;}
 
@@ -41,7 +48,7 @@
     width: 40%;
     display: flex;
     align-items: center;
-    background-color:#E9E8EA ;
+    background-color:$color-white ;
     justify-content: center;
     position: relative;
 

@@ -9,6 +9,7 @@ import NavBar from "../NavBar/NavBar"
 const Pagamento = () => {
   return (
     <>
+
     <NavBar/>
     <div className="pagamentocontainer">
       <h1>Pagamento com pix</h1>
