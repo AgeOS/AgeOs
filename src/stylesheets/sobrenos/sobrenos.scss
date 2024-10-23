@@ -419,3 +419,168 @@
   border-radius: 10px;
   z-index: 10;
 }
+
+@media screen and (max-width: 1600px) {
+  .imagem {
+    height: 600px;
+  }
+
+  .texto h1 {
+    font-size: 80px;
+    margin-left: 60px;
+  }
+
+  .texto p {
+    font-size: 32px;
+    margin-left: 60px;
+    width: 90%;
+  }
+
+  .container_missao {
+    height: 250px;
+    align-items: center;
+    margin-bottom: 50px; /* Adicionado espaçamento */
+  }
+
+  .imagem3 img {
+    margin-right: 100px;
+    width: 200px;
+    height: 200px;
+    margin-top: 0;
+  }
+
+  .texto_visao h1 {
+    font-size: 80px;
+    margin-left: 800px; /* Reduzido para caber na tela */
+  }
+
+  .texto_visao p {
+    font-size: 32px;
+    width: 70%;
+    margin-left: 400px;
+  }
+
+  .imagem4 img {
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .valores-e-coracao {
+    margin-top: 150px;
+    padding: 0 20px; /* Adicionado padding lateral */
+  }
+
+  .valores h1 {
+    font-size: 80px;
+    margin-left: 200px; /* Ajustado */
+  }
+
+  .valores p {
+    font-size: 24px;
+    margin-left: 100px;
+    max-width: 600px; /* Limitando largura do texto */
+  }
+
+  .coracao img {
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+  }
+
+  .identidade img {
+    width: 70%;
+    margin-left: 250px;
+  }
+
+  .container_tequipe h1 {
+    font-size: 80px;
+    margin: 40px 0; /* Adicionado espaçamento */
+  }
+
+  /* Ajustes para a seção de equipe */
+  .isap, .jessep, .jeffp, .vitorp {
+    width: 70%;
+    margin-left: 50px;
+  }
+
+  /* Ajustes dos ícones de redes sociais - descendo 40px */
+  .git {
+    bottom: 50px;
+    left: 370px;
+  }
+
+  .linke {
+    bottom: 50px;
+    left: 310px;
+  }
+
+  .git1, .git2, .git3 {
+    bottom: 30px;
+    left: 370px;
+  }
+
+  .linke1, .linke2, .linke3 {
+    bottom: 30px;
+    left: 310px;
+  }
+
+  .git4, .git5 {
+    bottom: 30px;
+    left: 370px;
+  }
+
+  .linke4, .linke5 {
+    bottom: 30px;
+    left: 310px;
+  }
+
+  /* Ajuste do espaçamento vertical entre as seções */
+  .jesse, .jeff, .vitor {
+    margin-top: 60px;
+    margin-bottom: 60px; /* Adicionado espaçamento inferior */
+  }
+
+  /* Ajustes para garantir que o conteúdo não saia da página */
+  .container-isa-flex,
+  .container-jesse-flex,
+  .container-jeff-flex,
+  .container-vitor-flex {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  /* Ajuste para o último elemento */
+  .vitor {
+    margin-bottom: 100px; /* Espaço extra no final da página */
+  }
+}
+
+/* Ajustes adicionais para garantir que o layout não quebre */
+.container2 {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+.container2 img{
+  margin-top: 500px;
+  margin-right: -20px;
+}
+
+.imagem2 {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+/* Ajuste geral para prevenir overflow */
+body {
+  overflow-x: hidden;
+}
+
+.containersobre {
+  max-width: 100%;
+  overflow: hidden;
+}
