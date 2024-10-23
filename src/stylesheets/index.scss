@@ -1,12 +1,11 @@
 @import './variables.scss';
-@import './reset.scss';
 
-//paginas
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
-@import './home/medias.scss';
-@import './Adquira/Adquira.scss';
-@import './sobrenos/sobrenos.scss';
-@import './suporte/suporte.scss';
-@import './login/Login.scss';
-@import './cadastro/Cadastro.scss';
+body{
+    background-color:$color-white;
+}

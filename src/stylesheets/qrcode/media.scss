@@ -4,6 +4,7 @@
     max-width: 70%; 
     margin: 200px auto;
     align-items: center;
+    margin-top: 12rem;
     
     h1 {
       font-size: 36px;
@@ -34,7 +35,7 @@
   }
 }
 
-// Estilo para tablets (telas médias)
+// tablets (telas médias)
 @media (max-width: 1024px) and (min-width: 768px) {
   .pagamentocontainer {
     padding: 30px;
@@ -71,7 +72,7 @@
   }
 }
 
-// Estilo para celulares (telas pequenas)
+//celulares
 @media (max-width: 768px) {
   .pagamentocontainer {
     padding: 20px;
@@ -114,7 +115,7 @@
   }
 }
 
-// Estilo para celulares menores (telas muito pequenas)
+//elulares menores
 @media (max-width: 480px) {
   .pagamentocontainer {
     padding: 15px;
