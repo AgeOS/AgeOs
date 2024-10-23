@@ -1,9 +1,11 @@
 // import { BrowserRouter as Router, Link } from "react-router-dom";
-import "../stylesheets/sobrenos/sobrenos.scss";
+// import "../stylesheets/sobrenos/sobrenos.scss";
+import NavBar from "./NavBar/NavBar";
 
 export default function sobrenos() {
   return (
     <>
+      <NavBar/>
       <div className="containersobre">
         <img src="src/assets/imagens/inici.png" alt="Início" className="imagem" />
       </div>

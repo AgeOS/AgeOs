@@ -247,10 +247,12 @@ $breakpoint-desktop: 1200px;
   }
 }
 
+.navbar-container{
+
 // Hamburger button
 .button-navbar {
   display: none;
-  margin-top: 4px;
+  // margin-top: 4px;
   width: 99%;
   align-items: center;
   justify-content: flex-end;
@@ -258,7 +260,7 @@ $breakpoint-desktop: 1200px;
   background-color: transparent;
   position: fixed;
   z-index: 5;
-  padding: 15px;
+  // padding: 15px;
 
   @include laptop {
     display: flex;
@@ -537,7 +539,7 @@ $breakpoint-desktop: 1200px;
       background-color: $color-yellow;
 
       &:hover {
-        background-color: darken($color-yellow, 5%);
+        background-color:$color-yellow;
       }
     }
 
@@ -564,4 +566,4 @@ $breakpoint-desktop: 1200px;
 .nav-shadow {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+}

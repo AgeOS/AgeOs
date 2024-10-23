@@ -1,18 +1,25 @@
-// import NavBar from "./Components/NavBar/NavBar";
-//import Home from './Components/home/index'
-// import SobreNos from "./Components/sobrenos"; // Corrigido o nome do componente
-// import Suporte from "./Components/suporte/Suporte";
-// import './stylesheets/index.scss';
-// import Login from "./Components/login/Login";
-//import Cartao from './Components/Cartao/Cart'
-//import Cadastro from "./Components/cadastro/Cadastro";
-//import Pagamento from "./Components/QrCode/qrcode"
-import Formulario from './Components/Fomulario/Form'
+
+import './stylesheets/index.scss'
+
+// import NavBar from './Components/NavBar/NavBar';
+import Home from './Components/home/home';
+import Adquira from './Components/Adquira/Adquira';
+import SobreNos from './Components/sobrenos';
+import Suporte from './Components/suporte/Suporte';
+import Login from './Components/login/Login';
+import Cadastro from './Components/cadastro/Cadastro';
 
 export default function App() {
   return (
-    <>
-      <Formulario />
-    </>
-  );
+<>
+      <Routes>
+      <Route path='/' element={<Home/>} />
+        <Route path='/Adquira' element={<Adquira/>} />
+        <Route path='/Sobrenos' element={<SobreNos/>} />
+        <Route path='/Suporte' element={<Suporte/>} />
+        <Route path='/Login' element={<Login/>} />
+        <Route path='/Cadastro' element={<Cadastro/>} />
+      </Routes>
+        </>
+);
 }
