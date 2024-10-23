@@ -2,7 +2,6 @@ import "../../stylesheets/home/index.scss";
 import "../../stylesheets/home/medias.scss";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
-// import people from '../../assets/home/avaliacao.svg'
 import Avaliacoes from './Avaliacoes/Avaliacoes'
 import Footer from "../Footer/Footer";
 
@@ -25,7 +24,7 @@ export default function Home() {
       <div className="telas">
         <h1>Interface Simples</h1>
         <p>
-          Um Sistema e intuito, que oferece praticidade e a segurança necessária
+          Um Sistema intuitivo, que oferece praticidade e a segurança necessária
           para seu familiar navegar na internet com tranquilidade
         </p>
 
@@ -132,26 +131,15 @@ export default function Home() {
       </div>
 
       <Avaliacoes/>
-    <Footer></Footer>
-    {/* <div className="avaliacoes">
-     <div className="avaliacao"> */}
-        {/* <h1>O que as pessoas dizem sobre a AgeOS</h1>
+    <Footer
+      foto='src\assets\footer\navbar-roxa.png'
+      color='white'
+      you='src\assets\footer\youbute-branco.png'
+      insta='src\assets\footer\insta-branco.png'
+      face='src\assets\footer\face-branco.png'
+      linke='src\assets\footer\linke-branco.png'
+      />
 
-        <div className="pessoas">
-          <div className="cada-pessoa">
-
-            <img src={people} alt="" />
-            <p>Felipe</p>
-          
-          </div>
-            <img className="aspas" src="src\assets\home\image-36.png" alt="" />
-            <p>Estou muito satisfeito com o AgeOS. Instalei no celular da minha avó e a segurança do sistema a faz se sentir protegida contra golpes, o que me tranquiliza. O suporte ao cliente também é excelente, sempre pronto para ajudar. </p>
-            <img className="aspas" src="src\assets\home\image-35.png" alt="" />
-        </div> */}
-     {/* </div>
-    </div> */}
-
-      
 
     </>
   );
