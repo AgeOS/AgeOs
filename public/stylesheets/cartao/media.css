@@ -1,14 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+label {
+  margin-bottom: -1rem;
+}
+
 .creditocontainer {
   margin-top: 150px;
   position: relative;
-  z-index: 5;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(217, 217, 217, 0.5019607843);
+  background-color: #FAF8FB;
   padding: 20px;
+  padding-top: 1em;
   border-radius: 10px;
   width: 75%;
   margin: 150px auto;
@@ -20,11 +24,14 @@
   flex-direction: column;
   width: 50%;
   gap: 15px;
+  color: black;
 }
 .creditocontainer .creditoform input, .creditocontainer .creditoform select {
   padding: 10px;
+  background-color: rgba(217, 217, 217, 0.5019607843);
   border-radius: 5px;
   border: none;
+  color: #393939;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
@@ -39,50 +46,141 @@
   font-family: "Poppins", sans-serif;
 }
 .creditocontainer .creditoprev {
-  width: 45%; /* Ajusta o tamanho da prévia do cartão */
+  width: 40%;
   display: flex;
   align-items: center;
+  background-color: #FAF8FB;
   justify-content: center;
+  position: relative;
+}
+.creditocontainer .creditoprev .card {
+  width: 320px; /* Largura padrão para o cartão */
+  height: 200px; /* Altura padrão */
+  background-color: #E9E8EA;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #FAF8FB;
+  position: relative;
+}
+.creditocontainer .creditoprev .card .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.creditocontainer .creditoprev .card .card-number {
+  font-size: 1.2rem;
+}
+.creditocontainer .creditoprev .card .card-name {
+  text-transform: uppercase;
+}
+.creditocontainer .creditoprev .card .card-expiry {
+  font-size: 1rem;
 }
 .creditocontainer .creditoprev .card-image {
-  width: 100%; /* Usará a largura máxima disponível */
-  max-width: 504px;
-  height: auto;
-  max-height: 335px;
-  background-color: #E9E8EA;
-  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  max-width: 100%; /* Limitar a largura máxima */
+  max-height: 100%; /* Limitar a altura máxima */
 }
 
-@media screen and (max-width: 1200px) {
+/* Media Queries para Responsividade */
+/* Telas pequenas (smartphones) */
+@media (max-width: 768px) {
   .creditocontainer {
     flex-direction: column;
-    align-items: center;
     width: 90%;
+    padding: 10px;
+    margin-top: 50px;
   }
   .creditocontainer .creditoform {
     width: 100%;
+    gap: 10px;
+  }
+  .creditocontainer .creditoform input, .creditocontainer .creditoform select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .creditocontainer .creditoform .confirme-button {
+    font-size: 0.9rem;
+    padding: 8px;
   }
   .creditocontainer .creditoprev {
     width: 100%;
     margin-top: 20px;
   }
+  .creditocontainer .creditoprev .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
   .creditocontainer .creditoprev .card-image {
-    max-width: 100%; /* Faz a imagem caber no espaço disponível */
+    width: 100%;
+    height: auto;
   }
 }
-@media screen and (max-width: 480px) {
+/* Telas médias (tablets, desktops pequenos) */
+@media (min-width: 769px) and (max-width: 1024px) {
   .creditocontainer {
+    width: 80%;
+    padding: 15px;
+  }
+  .creditocontainer .creditoform {
+    width: 60%;
+  }
+  .creditocontainer .creditoform input, .creditocontainer .creditoform select {
+    font-size: 1rem;
     padding: 10px;
-    margin-top: 50px;
   }
-  .creditoform {
-    gap: 10px;
+  .creditocontainer .creditoform .confirme-button {
+    font-size: 1rem;
+    padding: 10px;
   }
-  .creditoprev {
-    margin-top: 10px;
+  .creditocontainer .creditoprev {
+    width: 35%;
   }
-  .creditoprev .card-image {
-    display: none;
+  .creditocontainer .creditoprev .card {
+    width: 300px;
+    height: 180px;
+  }
+  .creditocontainer .creditoprev .card-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Telas grandes (desktops) */
+@media (min-width: 1025px) {
+  .creditocontainer {
+    width: 75%;
+  }
+  .creditocontainer .creditoform {
+    width: 50%;
+  }
+  .creditocontainer .creditoform input, .creditocontainer .creditoform select {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .creditocontainer .creditoform .confirme-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .creditocontainer .creditoprev {
+    width: 40%;
+  }
+  .creditocontainer .creditoprev .card {
+    width: 420px; /* Largura fixa para telas grandes */
+    height: 300px; /* Altura fixa */
+  }
+  .creditocontainer .creditoprev .card-image {
+    max-width: 420px; /* Definir um limite de largura máxima */
+    max-height: 300px; /* Definir um limite de altura máxima */
   }
 }
 

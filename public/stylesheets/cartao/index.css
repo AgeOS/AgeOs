@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+label {
+  margin-bottom: -1rem;
+}
+
 .creditocontainer {
   margin-top: 150px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(217, 217, 217, 0.5019607843);
+  background-color: #FAF8FB;
   padding: 20px;
+  margin-top: 10rem;
   border-radius: 10px;
   width: 75%;
   margin: 150px auto;
@@ -18,11 +23,14 @@
   flex-direction: column;
   width: 50%;
   gap: 15px;
+  color: black;
 }
 .creditocontainer .creditoform input, .creditocontainer .creditoform select {
   padding: 10px;
+  background-color: rgba(217, 217, 217, 0.5019607843);
   border-radius: 5px;
   border: none;
+  color: #393939;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
 }
@@ -40,7 +48,7 @@
   width: 40%;
   display: flex;
   align-items: center;
-  background-color: #E9E8EA;
+  background-color: #FAF8FB;
   justify-content: center;
   position: relative;
 }

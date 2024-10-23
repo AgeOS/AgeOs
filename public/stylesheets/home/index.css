@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-.hero-section {
+.home-page-container .hero-section {
   position: relative;
   width: 90%;
   margin: 0 auto;
@@ -10,17 +10,17 @@
   justify-content: center;
   overflow-x: hidden;
 }
-.hero-section .apresentation {
+.home-page-container .hero-section .apresentation {
   display: flex;
   flex-direction: column;
   width: 75%;
 }
-.hero-section .apresentation h1 {
+.home-page-container .hero-section .apresentation h1 {
   font-size: 72px;
   font-family: "Poppins", sans-serif;
   color: #3D1887;
 }
-.hero-section .apresentation .btn-conhecer {
+.home-page-container .hero-section .apresentation .btn-conhecer {
   font-size: 24px;
   width: 18%;
   height: 59px;
@@ -34,7 +34,7 @@
   font-weight: 600;
   margin-top: 45px;
 }
-.hero-section .phone-img {
+.home-page-container .hero-section .phone-img {
   width: 38%;
   display: flex;
   height: 80vh;
@@ -42,13 +42,13 @@
   top: 50px;
   object-fit: cover;
 }
-.hero-section img {
+.home-page-container .hero-section img {
   position: relative;
   width: 99%;
   height: 100%;
   object-fit: cover;
 }
-.hero-section .linha-amarela {
+.home-page-container .hero-section .linha-amarela {
   width: 100%;
   position: absolute;
   right: 200px;
@@ -58,12 +58,11 @@
   align-items: start;
   justify-content: start;
 }
-.hero-section .linha-amarela svg {
+.home-page-container .hero-section .linha-amarela svg {
   width: 500%;
   object-fit: cover;
 }
-
-.telas {
+.home-page-container .telas {
   width: 100%;
   min-height: 60vh;
   display: flex;
@@ -71,31 +70,30 @@
   justify-content: center;
   align-items: center;
 }
-.telas h1 {
+.home-page-container .telas h1 {
   font-size: 84px;
   color: #3D1887;
   font-family: "Poppins", sans-serif;
 }
-.telas p {
+.home-page-container .telas p {
   width: 73%;
   text-align: center;
   font-size: 34px;
   font-family: "Poppins", sans-serif;
 }
-.telas .slide {
+.home-page-container .telas .slide {
   width: 100%;
   margin: 10px auto;
   overflow: hidden;
   object-fit: cover;
 }
-.telas .slide img {
+.home-page-container .telas .slide img {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
-
-.beneficios-etc {
+.home-page-container .beneficios-etc {
   position: relative;
   width: 100%;
   display: flex;
@@ -104,25 +102,25 @@
   align-items: center;
   z-index: 0;
 }
-.beneficios-etc h1 {
+.home-page-container .beneficios-etc h1 {
   font-size: 84px;
   font-family: "Poppins", sans-serif;
   color: #3D1887;
 }
-.beneficios-etc p {
+.home-page-container .beneficios-etc p {
   width: 69%;
   text-align: center;
   font-size: 34px;
   color: #393939;
   font-family: "Poppins", sans-serif;
 }
-.beneficios-etc .seguranca {
+.home-page-container .beneficios-etc .seguranca {
   width: 100%;
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
-.beneficios-etc .seguranca .seguranca-text {
+.home-page-container .beneficios-etc .seguranca .seguranca-text {
   width: 88%;
   height: 600px;
   position: relative;
@@ -132,10 +130,10 @@
   justify-content: center;
   z-index: 2;
 }
-.beneficios-etc .seguranca .seguranca-text h1 {
+.home-page-container .beneficios-etc .seguranca .seguranca-text h1 {
   color: #FAF8FB;
 }
-.beneficios-etc .seguranca .seguranca-text p {
+.home-page-container .beneficios-etc .seguranca .seguranca-text p {
   position: relative;
   width: 50%;
   text-align: start;
@@ -144,24 +142,23 @@
   font-size: 38px;
   font-family: "Poppins", sans-serif;
 }
-.beneficios-etc .seguranca img {
+.home-page-container .beneficios-etc .seguranca img {
   position: absolute;
   width: 90%;
   z-index: 0;
 }
-
-.apps {
+.home-page-container .apps {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 120px;
 }
-.apps img {
+.home-page-container .apps img {
   object-fit: cover;
   width: 100%;
 }
-.apps h1 {
+.home-page-container .apps h1 {
   width: 100%;
   position: absolute;
   bottom: 1900px;
@@ -169,19 +166,18 @@
   align-items: center;
   justify-content: center;
 }
-.apps p {
+.home-page-container .apps p {
   position: absolute;
   bottom: 1800px;
   text-align: center;
 }
-.apps .icons {
+.home-page-container .apps .icons {
   position: absolute;
   margin: 0 auto;
   width: 48%;
   bottom: 1650px;
 }
-
-.atendimento {
+.home-page-container .atendimento {
   width: 90%;
   margin-top: 30px;
   display: flex;
@@ -189,16 +185,16 @@
   justify-content: center;
   overflow-x: hidden;
 }
-.atendimento img {
+.home-page-container .atendimento img {
   width: 100%;
 }
-.atendimento h1 {
+.home-page-container .atendimento h1 {
   position: absolute;
   color: #FAF8FB;
   bottom: 330px;
   left: 1100px;
 }
-.atendimento p {
+.home-page-container .atendimento p {
   position: absolute;
   font-size: 38px;
   color: #FAF8FB;
@@ -207,8 +203,7 @@
   left: 730px;
   text-align: end;
 }
-
-.pacotes {
+.home-page-container .pacotes {
   margin-top: 70px;
   width: 100%;
   display: flex;
@@ -217,24 +212,24 @@
   flex-direction: column;
   overflow-x: hidden;
 }
-.pacotes h1 {
+.home-page-container .pacotes h1 {
   font-family: "Poppins", sans-serif;
   font-size: 84px;
 }
-.pacotes p {
+.home-page-container .pacotes p {
   font-family: "Poppins", sans-serif;
   font-size: 58px;
   position: relative;
   bottom: 60px;
 }
-.pacotes .cards {
+.home-page-container .pacotes .cards {
   display: flex;
   flex-direction: row;
   width: 90%;
   align-items: center;
   justify-content: space-around;
 }
-.pacotes .cards .pacote-basico {
+.home-page-container .pacotes .cards .pacote-basico {
   width: 40%;
   height: 800px;
   background-color: #fff;
@@ -243,35 +238,35 @@
   flex-direction: column;
   border-radius: 20px;
 }
-.pacotes .cards .pacote-basico h2 {
+.home-page-container .pacotes .cards .pacote-basico h2 {
   width: 100%;
   font-size: 56px;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
 }
-.pacotes .cards .pacote-basico img {
+.home-page-container .pacotes .cards .pacote-basico img {
   position: relative;
   width: 100px;
   left: 190px;
 }
-.pacotes .cards .pacote-basico p {
+.home-page-container .pacotes .cards .pacote-basico p {
   font-size: 60px;
   position: relative;
   left: 290px;
   bottom: 150px;
 }
-.pacotes .cards .pacote-basico ul {
+.home-page-container .pacotes .cards .pacote-basico ul {
   font-size: 30px;
   position: relative;
   bottom: 150px;
 }
-.pacotes .cards .pacote-basico button {
+.home-page-container .pacotes .cards .pacote-basico button {
   position: relative;
   margin: 0 auto;
   bottom: 38px;
 }
-.pacotes .cards .pacote-premium {
+.home-page-container .pacotes .cards .pacote-premium {
   width: 40%;
   height: 800px;
   background-color: #fff;
@@ -280,36 +275,36 @@
   flex-direction: column;
   border-radius: 20px;
 }
-.pacotes .cards .pacote-premium h2 {
+.home-page-container .pacotes .cards .pacote-premium h2 {
   width: 100%;
   font-size: 56px;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
 }
-.pacotes .cards .pacote-premium img {
+.home-page-container .pacotes .cards .pacote-premium img {
   position: relative;
   width: 100px;
   left: 190px;
 }
-.pacotes .cards .pacote-premium p {
+.home-page-container .pacotes .cards .pacote-premium p {
   font-size: 60px;
   position: relative;
   left: 290px;
   bottom: 150px;
 }
-.pacotes .cards .pacote-premium ul {
+.home-page-container .pacotes .cards .pacote-premium ul {
   font-size: 30px;
   position: relative;
   bottom: 150px;
 }
-.pacotes .cards .pacote-premium .button-buy-primium {
+.home-page-container .pacotes .cards .pacote-premium .button-buy-primium {
   position: relative;
   bottom: 110px;
   margin: 0 auto;
   height: 96px !important;
 }
-.pacotes button {
+.home-page-container .pacotes button {
   width: 30%;
   height: 66px;
   font-size: 33px;
@@ -317,7 +312,7 @@
   background-color: #3D1887;
   color: #FAF8FB;
 }
-.pacotes .recomendado {
+.home-page-container .pacotes .recomendado {
   width: 30%;
   border-radius: 20px 20px 0 0;
   height: 70px;
@@ -327,13 +322,13 @@
   left: 57%;
   margin: 0 auto;
 }
-.pacotes .recomendado p {
+.home-page-container .pacotes .recomendado p {
   font-size: 40px !important;
   color: #FAF8FB;
   top: -35px;
   left: 150px !important;
 }
-.pacotes .duvidas {
+.home-page-container .pacotes .duvidas {
   width: 20%;
   margin-top: 70px;
   font-family: "Poppins", sans-serif;
