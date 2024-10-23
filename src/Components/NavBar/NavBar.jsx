@@ -1,13 +1,15 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
-import "../../stylesheets/navbar/index.scss";
-import "../../stylesheets/navbar/media.scss";
-// import '../../../public/stylesheets/navbar/index.css'
-// import '../../../public/stylesheets/navbar/media.css'
+// import "../../stylesheets/navbar/index.scss";
+// import "../../stylesheets/navbar/media.scss";
+import '../../../public/stylesheets/navbar/index.css'
+import '../../../public/stylesheets/navbar/media.css'
 
 export default function NavBar() {
   return (
     <>
+      <div className="navbar-container">
+
         <button
           className="button-navbar"
           onClick={() => {
@@ -51,13 +53,18 @@ export default function NavBar() {
                 <img src="src\assets\navbar\image-34.png" alt="" />
               </button>
 
-              <button className="login">
-                <Link>Login</Link>
-              </button>
+                <Link>
+               <button className="login">
+                 Login
+                </button>
+                </Link>
 
+              <Link>
               <button className="cadastro">
-                <Link>Cadastre-se</Link>
+              Cadastre-se
               </button>
+              </Link>
+
             </div>
           </div>
         </div>
@@ -131,6 +138,8 @@ export default function NavBar() {
           </button>
         </div>
       </nav>
+      </div>
+
         </>
     
   );

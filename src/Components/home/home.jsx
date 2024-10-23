@@ -1,5 +1,5 @@
 // import "../../stylesheets/home/index.scss";
-import "../../stylesheets/home/medias.scss";
+// import "../../stylesheets/home/medias.scss";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
 import Avaliacoes from './Avaliacoes/Avaliacoes'
@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 export default function Home() {
   return (
     <>
+    <NavBar/>
     <div className="home-page-container">
       <div className="hero-section">
         <div className="apresentation">

@@ -1,9 +1,9 @@
 import { Routes , Route } from 'react-router-dom';
 // import NavBar from "./Components/NavBar/NavBar";
-// import './stylesheets/index.scss'
+import './stylesheets/index.scss'
 
 
-import NavBar from './Components/NavBar/NavBar';
+// import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/home/home';
 import Adquira from './Components/Adquira/Adquira';
 import SobreNos from './Components/sobrenos';
@@ -14,7 +14,6 @@ import Cadastro from './Components/cadastro/Cadastro';
 export default function App() {
   return (
 <>
-      <NavBar/>
       <Routes>
       <Route path='/' element={<Home/>} />
         <Route path='/adquira' element={<Adquira/>} />
@@ -24,13 +23,5 @@ export default function App() {
         <Route path='/cadastro' element={<Cadastro/>} />
       </Routes>
         </>
-
-
 );
 }
-
-
-{/* <Route path="./Aquira" element={<Adquira />} />
-        <Route path="./Suporte" element={<Suporte />} />
-        <Route path="./Login" element={<Login />} />
-        <Route path="./Cadastro" element={<Cadastro />} /> */}

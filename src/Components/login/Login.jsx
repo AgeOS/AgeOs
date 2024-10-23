@@ -3,9 +3,12 @@ import logo from '../../assets/login/logo.png'
 import google from '../../assets/login/google.png'
 import face from '../../assets/login/face.png'
 import hotmail from '../../assets/login/hotmail.png'
+import NavBar from '../NavBar/NavBar'
 
 function Login() {
     return (
+        <>
+        <NavBar/>
         <section className='container_login'>
             <div className='lado_foto'>
             </div>
@@ -31,12 +34,10 @@ function Login() {
                         <img src={face} alt="" />
                         <img src={hotmail} alt="" />
                     </div>
-
                 </div>
-
             </div>
-
         </section>
+        </>
     )
 }
 export default Login
