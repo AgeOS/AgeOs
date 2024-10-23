@@ -4,7 +4,7 @@ import celular_vi from '../../assets/Adquira/celular_video.mp4'
 import Approval from '../../assets/Adquira/Approval.png'
 import Paint from '../../assets/Adquira/Paint.png'
 import Security from '../../assets/Adquira/Security.png'
-import Logo from '../../assets/Adquira/Logo.png'
+// import Logo from '../../assets/Adquira/Logo.png'
 import NavBar from '../NavBar/NavBar'
 
 // import '../../stylesheets/Adquira/Adquira.scss'
@@ -51,7 +51,7 @@ function Adquira() {
         <section className='plano'>
             <div className='compras'>
                 <h2 className='h2_1'>Pacote Básico</h2>
-                <img className='logo' src={Logo} alt="Logo" />
+                {/* <img className='logo' src={Logo} alt="Logo" /> */}
                 <ul className='textoss'>
                     <li className='textinho'>Sistema apenas para um aparelho</li>
                     <li className='textinho'>Valor fixo por sistema</li>
@@ -65,7 +65,7 @@ function Adquira() {
             <div className='divisao'>recomendado</div>
             <div className='compras2'>
                 <h2 className='h2_2'>Pacote Premium</h2>
-                <img className='logo2' src={Logo} alt="Logo" />
+                {/* <img className='logo2' src={Logo} alt="Logo" /> */}
                 <ul className='textoss'>
                     <li className='textinho'>Sistema para cinco aparelhos</li>
                     <li className='textinho'>Valor promocional</li>

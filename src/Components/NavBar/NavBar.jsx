@@ -35,16 +35,16 @@ export default function NavBar() {
 
             <ul>
               <li>
-                {/* <Link to='/'>Home</Link> */}
+                <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link >Sobre nós</Link>
+                <Link to='/sobreNos' >Sobre nós</Link>
               </li>
               <li>
-                {/* <Link to='./'>Adquira</Link> */}
+                <Link to='/Adquira'>Adquira</Link>
               </li>
               <li>
-                {/* <Link >Suporte</Link> */}
+                <Link to='/suporte'>Suporte</Link>
               </li>
             </ul>
 
