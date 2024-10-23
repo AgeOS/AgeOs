@@ -1,31 +1,36 @@
-import { BrowserRouter , Router , Routes , Route  } from 'react-router-dom';
+import { Routes , Route } from 'react-router-dom';
 // import NavBar from "./Components/NavBar/NavBar";
-import './stylesheets/index.scss'
+// import './stylesheets/index.scss'
 
-import Home from './Components/home/index'
-import SobreNos from "./Components/sobrenos"; // Corrigido o nome do componente
-import Suporte from "./Components/suporte/Suporte";
-import Login from "./Components/login/Login";
-import Cadastro from "./Components/cadastro/Cadastro";
-import Adquira from './Components/Adquira/Adquira'
+
+import NavBar from './Components/NavBar/NavBar';
+import Home from './Components/home/home';
+import Adquira from './Components/Adquira/Adquira';
+import SobreNos from './Components/sobrenos';
+import Suporte from './Components/suporte/Suporte';
+import Login from './Components/login/Login';
+import Cadastro from './Components/cadastro/Cadastro';
 
 export default function App() {
   return (
-    <>
-      <Router>
+<>
+      <NavBar/>
       <Routes>
-        <Route path="./" element={<Home />} />
-        <Route path="./Sobrenos" element={<SobreNos />} />
-        <Route path="./Aquira" element={<Adquira />} />
+      <Route path='/' element={<Home/>} />
+        <Route path='/adquira' element={<Adquira/>} />
+        <Route path='/sobrenos' element={<SobreNos/>} />
+        <Route path='/suporte' element={<Suporte/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/cadastro' element={<Cadastro/>} />
+      </Routes>
+        </>
+
+
+);
+}
+
+
+{/* <Route path="./Aquira" element={<Adquira />} />
         <Route path="./Suporte" element={<Suporte />} />
         <Route path="./Login" element={<Login />} />
-        <Route path="./Cadastro" element={<Cadastro />} />
-      </Routes>
-    </Router>
-
-    <Home/>
-
-
-    </>
-  );
-}
+        <Route path="./Cadastro" element={<Cadastro />} /> */}

@@ -8,8 +8,7 @@ import Footer from "../Footer/Footer";
 export default function Home() {
   return (
     <>
-      <NavBar />
-
+    <div className="home-page-container">
       <div className="hero-section">
         <div className="apresentation">
           <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
@@ -103,7 +102,7 @@ export default function Home() {
 
            {/* <div className="recomendado">
               <p>Recomendado</p>
-            </div>  */}
+              </div>  */}
           <div className="pacote-premium">
 
             <h2>Pacote Premium</h2>
@@ -140,6 +139,7 @@ export default function Home() {
       face='src\assets\footer\face-branco.png'
       linke='src\assets\footer\linke-branco.png'
       />
+    </div>
 
 
     </>
