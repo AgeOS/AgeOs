@@ -1,8 +1,9 @@
 @media (min-width: 1024px) {
   .pagamentocontainer {
-    max-width: 80%;
+    max-width: 70%;
     margin: 200px auto;
     align-items: center;
+    margin-top: 12rem;
   }
   .pagamentocontainer h1 {
     font-size: 36px;

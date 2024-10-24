@@ -5,11 +5,29 @@ import Carousel from "./Cards/Cards";
 import Avaliacoes from './Avaliacoes/Avaliacoes'
 import Footer from "../Footer/Footer";
 
+
+//imgs
+import celularDeLado from '../../assets/home/celular-de-lado.png'
+import seguranca from '../../assets/home/seguranca-garantida.png'
+import icones from '../../assets/home/icones.png'
+import appsIntuitivos from '../../assets/home/apps-intuitivos.png'
+import atendimento from '../../assets/home/atendimento.png'
+import logo from '../../assets/Adquira/logo.png'
+import navbar from '../../assets/footer/navbar-roxa.png'
+import youtubeIcon from '../../assets/footer/youbute-branco.png'
+import instaIcon from '../../assets/footer/insta-branco.png'
+import faceIcon from '../../assets/footer/face-branco.png'
+import linkeIcon from '../../assets/footer/linke-branco.png'
+// import Chatbot from "../chatbot";
+
+
+
 export default function Home() {
   return (
     <>
     <NavBar/>
     <div className="home-page-container">
+      {/* <Chatbot/> */}
       <div className="hero-section">
         <div className="apresentation">
           <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
@@ -17,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="phone-img">
-          <img src="src\assets\home\celular-de-lado.png" alt="" />
+          <img src={celularDeLado} alt="" />
         </div>
       </div>
 
@@ -41,7 +59,7 @@ export default function Home() {
         </p>
 
         <div className="seguranca">
-          <img src="src\assets\home\seguranca-garantida.png" alt="" />
+          <img src={seguranca} alt="" />
 
           <div className="seguranca-text">
             <h1>Segurança Garantida</h1>
@@ -61,14 +79,14 @@ export default function Home() {
           </p>
 
           <div className="icons">
-            <img src="src\assets\home\icones.png" alt="" />
+            <img src={icones} alt="" />
           </div>
 
-          <img src="src\assets\home\apps-intuitivos.png" alt="" />
+          <img src={appsIntuitivos} alt="" />
         </div>
 
         <div className="atendimento">
-          <img src="src\assets\home\atendimento.png" alt="" />
+          <img src={atendimento} alt="" />
 
           <h1>Atendimento</h1>
           <p>
@@ -86,8 +104,8 @@ export default function Home() {
           <div className="pacote-basico">
             <h2>Pacote básico</h2>
 
-            <img src="src\assets\home\image-32.png" alt="" />
-            <p>AgeOS</p>
+            <img src={logo} alt="" />
+
 
             <ul>
               <li>Sistema apenas para um aparelho</li>
@@ -108,8 +126,7 @@ export default function Home() {
 
             <h2>Pacote Premium</h2>
 
-            <img src="src\assets\home\image-32.png" alt="" />
-            <p>AgeOS</p>
+            <img src={logo} alt="" />
 
             <ul>
               <li>Sistema para cinco aparelhos</li>
@@ -133,12 +150,12 @@ export default function Home() {
       <Avaliacoes/>
 
     <Footer
-      foto='src\assets\footer\navbar-roxa.png'
+      foto={navbar}
       color='white'
-      you='src\assets\footer\youbute-branco.png'
-      insta='src\assets\footer\insta-branco.png'
-      face='src\assets\footer\face-branco.png'
-      linke='src\assets\footer\linke-branco.png'
+      you={youtubeIcon}
+      insta={instaIcon}
+      face={faceIcon}      
+      linke={linkeIcon}
       />
     </div>
 

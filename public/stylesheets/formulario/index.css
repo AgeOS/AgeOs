@@ -3,7 +3,7 @@
 .title1 {
   text-align: center;
   margin-bottom: 1.5rem;
-  margin-top: 10rem;
+  margin-top: 15rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -36,7 +36,7 @@
 }
 .form-container form .input-group input {
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
   padding: 0.75rem;
   align-items: center;
   border-radius: 5px;

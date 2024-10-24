@@ -5,28 +5,25 @@
   padding: 0;
 }
 
-.adquira_topo {
+.adquira-container .adquira_topo {
   background-color: #3D1887;
   max-width: 100%;
   height: 740px;
   display: flex;
   justify-content: flex-end;
 }
-
-svg {
+.adquira-container svg {
   position: relative;
   top: 161.9px;
 }
-
-img {
+.adquira-container img {
   position: absolute;
   top: 42px;
   left: 898px;
   z-index: 1;
   rotate: -3.5deg;
 }
-
-h1 {
+.adquira-container h1 {
   position: relative;
   top: 260px;
   left: -100px;
@@ -42,12 +39,10 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
-h1 span {
+.adquira-container h1 span {
   color: #FFEA73;
 }
-
-p {
+.adquira-container p {
   position: relative;
   top: 340px;
   left: 240px;
@@ -62,8 +57,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-
-.Comprar {
+.adquira-container .Comprar {
   position: relative;
   top: -340px;
   left: 238px;
@@ -77,14 +71,12 @@ p {
   border-radius: 10px;
   background: #FFEA73;
 }
-
-.svg2 {
+.adquira-container .svg2 {
   top: -70px;
   left: -265px;
   width: 1012.9px;
 }
-
-.cel {
+.adquira-container .cel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,23 +84,20 @@ p {
   height: 800px;
   color: #FFF;
 }
-
-.celular {
+.adquira-container .celular {
   position: relative;
   top: -10px;
   left: 0%;
   rotate: 0.1deg;
 }
-
-.grupo {
+.adquira-container .grupo {
   height: 913.5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-
-.figgs {
+.adquira-container .figgs {
   width: 400px;
   height: 300px;
   flex-shrink: 0;
@@ -116,8 +105,7 @@ p {
   background: #D49EED;
   box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-h4 {
+.adquira-container h4 {
   position: relative;
   top: 345px;
   display: flex;
@@ -132,8 +120,7 @@ h4 {
   font-weight: 700;
   line-height: normal;
 }
-
-.textin {
+.adquira-container .textin {
   position: relative;
   top: 400px;
   left: 17px;
@@ -150,31 +137,26 @@ h4 {
   font-weight: 400;
   line-height: normal;
 }
-
-.apro {
+.adquira-container .apro {
   top: 2000px;
   left: 160px;
 }
-
-.sec {
+.adquira-container .sec {
   top: 2000px;
   left: 680px;
 }
-
-.pinc {
+.adquira-container .pinc {
   top: 2000px;
   left: 1200px;
 }
-
-.plano {
+.adquira-container .plano {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 1280px;
 }
-
-.compras {
+.adquira-container .compras {
   position: relative;
   left: 120px;
   width: 562.189px;
@@ -187,8 +169,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 35px;
 }
-
-.compras2 {
+.adquira-container .compras2 {
   position: relative;
   left: -120px;
   width: 562.189px;
@@ -201,32 +182,27 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 35px;
 }
-
-.compras .h2_1 {
+.adquira-container .compras .h2_1 {
   font-size: 36px;
   left: -17px;
   top: 11px;
 }
-
-.compras2 .h2_2 {
+.adquira-container .compras2 .h2_2 {
   font-size: 36px;
   left: 12px;
   top: 3px;
 }
-
-.logo {
+.adquira-container .logo {
   top: 121px;
   left: 145px;
   rotate: 0deg;
 }
-
-.logo2 {
+.adquira-container .logo2 {
   top: 121px;
   left: 136px;
   rotate: 0deg;
 }
-
-.textoss {
+.adquira-container .textoss {
   display: flex;
   width: 539.623px;
   flex-direction: column;
@@ -235,8 +211,7 @@ h4 {
   text-align: center;
   gap: 20px;
 }
-
-.textinho {
+.adquira-container .textinho {
   position: relative;
   color: #000;
   text-align: center;
@@ -246,8 +221,7 @@ h4 {
   font-size: 25px;
   text-align: center;
 }
-
-.Preco {
+.adquira-container .Preco {
   position: relative;
   top: 380px;
   width: 233.509px;
@@ -258,8 +232,7 @@ h4 {
   color: white;
   font-size: 26px;
 }
-
-.Preco2 {
+.adquira-container .Preco2 {
   position: relative;
   top: 280px;
   width: 233.509px;
@@ -270,8 +243,7 @@ h4 {
   color: white;
   font-size: 26px;
 }
-
-.divisao {
+.adquira-container .divisao {
   position: relative;
   top: -465px;
   left: 369px;

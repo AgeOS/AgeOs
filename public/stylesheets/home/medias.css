@@ -3,12 +3,18 @@
 .hero-section {
   position: relative;
   width: 90%;
-  margin: 0 auto;
+  margin: 100px auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+}
+@media (max-width: 992px) {
+  .hero-section {
+    top: -70px;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 768px) {
   .hero-section {
@@ -20,6 +26,7 @@
   .hero-section {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 .hero-section .apresentation {
@@ -68,9 +75,15 @@
   font-weight: 600;
   margin-top: 45px;
 }
+@media (max-width: 992px) {
+  .hero-section .apresentation .btn-conhecer {
+    width: 30%;
+    font-size: 24px;
+  }
+}
 @media (max-width: 768px) {
   .hero-section .apresentation .btn-conhecer {
-    width: 50%;
+    width: 30%;
     font-size: 20px;
   }
 }
@@ -84,7 +97,8 @@
 .hero-section .phone-img {
   width: 38%;
   display: flex;
-  height: 80vh;
+  height: 87vh;
+  overflow: hidden;
   position: relative;
   top: 50px;
   object-fit: cover;
@@ -281,13 +295,28 @@
 }
 .beneficios-etc .seguranca .seguranca-text h1 {
   color: #FAF8FB;
-  font-size: 68px;
+  font-size: 50px;
   position: relative;
   bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .beneficios-etc .seguranca .seguranca-text h1 {
+    font-size: 40px;
+    bottom: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .beneficios-etc .seguranca .seguranca-text h1 {
+    font-size: 30px;
+    bottom: 10px;
+    right: 130px;
+  }
 }
 @media (max-width: 576px) {
   .beneficios-etc .seguranca .seguranca-text h1 {
-    font-size: 24px;
+    font-size: 26px;
     position: relative;
     right: 120px;
   }
@@ -298,24 +327,31 @@
   text-align: start;
   bottom: 90px;
   color: #FAF8FB;
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 992px) {
+  .beneficios-etc .seguranca .seguranca-text p {
+    width: 60%;
+    bottom: 140px;
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   .beneficios-etc .seguranca .seguranca-text p {
-    width: 90%;
+    width: 60%;
     text-align: center;
+    right: 150px;
     bottom: 0;
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
   .beneficios-etc .seguranca .seguranca-text p {
     width: 50%;
-    font-size: 12px;
+    font-size: 16px;
     position: relative;
     right: 130px;
-    bottom: 20px;
   }
 }
 .beneficios-etc .seguranca img {
@@ -339,13 +375,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 90px;
   position: relative;
+}
+@media (max-width: 992px) {
+  .apps {
+    bottom: 200px;
+  }
 }
 @media (max-width: 768px) {
   .apps {
     width: 99%;
-    margin-top: 60px;
+    margin-top: 290px;
   }
 }
 .apps img {
@@ -357,6 +398,11 @@
   position: absolute;
   text-align: center;
   top: 2%;
+}
+@media (max-width: 992px) {
+  .apps h1 {
+    font-size: 40px;
+  }
 }
 @media (max-width: 768px) {
   .apps h1 {
@@ -371,10 +417,17 @@
   top: 15%;
   width: 80%;
 }
+@media (max-width: 992px) {
+  .apps p {
+    width: 95%;
+    font-size: 24px;
+    top: 65px;
+  }
+}
 @media (max-width: 768px) {
   .apps p {
     top: 20px;
-    width: 90%;
+    width: 95%;
     margin: 20px 0;
     font-size: 19px;
   }
@@ -414,6 +467,11 @@
   overflow-x: hidden;
   position: relative;
 }
+@media (max-width: 992px) {
+  .atendimento {
+    margin-top: -70px;
+  }
+}
 @media (max-width: 768px) {
   .atendimento {
     width: 100%;
@@ -437,40 +495,56 @@
   position: absolute;
   color: #FAF8FB;
   right: 10%;
+  font-size: 70px;
   top: 20%;
+}
+@media (max-width: 992px) {
+  .atendimento h1 {
+    font-size: 50px;
+  }
 }
 @media (max-width: 768px) {
   .atendimento h1 {
     width: 100%;
+    font-size: 40px;
     position: absolute;
-    top: 30%;
-    right: 200px;
+    top: 30px;
+    left: 150px;
     text-align: center;
     margin: 20px 0;
     z-index: 5;
   }
 }
+@media (max-width: 576px) {
+  .atendimento h1 {
+    left: 120px;
+    font-size: 28px;
+  }
+}
 .atendimento p {
   position: absolute;
-  font-size: 38px;
+  font-size: 30px;
   color: #FAF8FB;
   width: 50%;
   right: 10%;
   text-align: right;
   top: 45%;
 }
+@media (max-width: 992px) {
+  .atendimento p {
+    font-size: 24px;
+  }
+}
 @media (max-width: 768px) {
   .atendimento p {
-    width: 90%;
-    right: 0;
-    top: 0;
-    text-align: center;
-    font-size: 28px;
+    width: 50%;
+    text-align: end;
+    font-size: 22px;
   }
 }
 @media (max-width: 576px) {
   .atendimento p {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
@@ -490,35 +564,39 @@
 }
 .pacotes h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 64px;
+  font-size: 60px;
 }
 @media (max-width: 992px) {
   .pacotes h1 {
-    font-size: 64px;
+    font-size: 58px;
     text-align: center;
   }
 }
 @media (max-width: 768px) {
   .pacotes h1 {
-    font-size: 48px;
+    font-size: 46px;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
 @media (max-width: 576px) {
   .pacotes h1 {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
   }
 }
 .pacotes p {
   font-family: "Poppins", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
+  margin-bottom: 15px;
+  text-align: center;
   position: relative;
   bottom: 10px;
 }
 @media (max-width: 992px) {
   .pacotes p {
-    font-size: 46px;
+    font-size: 34px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -540,6 +618,7 @@
   width: 90%;
   align-items: center;
   justify-content: space-around;
+  margin-top: 60px;
 }
 @media (max-width: 768px) {
   .pacotes .cards {
@@ -550,19 +629,28 @@
 .pacotes .cards .pacote-basico,
 .pacotes .cards .pacote-premium {
   width: 40%;
-  height: 800px;
+  height: 600px;
   background-color: #fff;
   box-shadow: 6px 6px 12.1px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
 }
+@media (max-width: 992px) {
+  .pacotes .cards .pacote-basico,
+  .pacotes .cards .pacote-premium {
+    width: 50%;
+    height: 600px;
+    margin: 10px;
+  }
+}
 @media (max-width: 768px) {
   .pacotes .cards .pacote-basico,
   .pacotes .cards .pacote-premium {
+    margin-top: -50px;
     width: 90%;
     height: auto;
-    padding: 40px 20px;
+    padding: 20px 50px;
   }
 }
 .pacotes .cards .pacote-basico h2,
@@ -577,7 +665,8 @@
 @media (max-width: 992px) {
   .pacotes .cards .pacote-basico h2,
   .pacotes .cards .pacote-premium h2 {
-    font-size: 42px;
+    font-size: 38px;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
@@ -589,7 +678,7 @@
 .pacotes .cards .pacote-basico img,
 .pacotes .cards .pacote-premium img {
   position: relative;
-  width: 70px;
+  width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -618,12 +707,23 @@
 }
 .pacotes .cards .pacote-basico ul,
 .pacotes .cards .pacote-premium ul {
-  width: 100%;
+  min-width: 80%;
   font-size: 24px;
   position: relative;
-  margin: 0 auto;
+  left: 50px;
+  gap: 10px;
   flex-direction: column;
   padding-top: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .pacotes .cards .pacote-basico ul,
+  .pacotes .cards .pacote-premium ul {
+    max-width: 93%;
+    left: 25px;
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px) {
   .pacotes .cards .pacote-basico ul,
@@ -639,11 +739,6 @@
     font-size: 20px;
   }
 }
-.pacotes .cards .pacote-basico button,
-.pacotes .cards .pacote-premium button {
-  margin: 20px auto;
-  position: static;
-}
 @media (max-width: 768px) {
   .pacotes .cards .pacote-basico button,
   .pacotes .cards .pacote-premium button {
@@ -652,11 +747,20 @@
 }
 .pacotes button {
   width: 30%;
-  height: 66px;
+  height: 55px;
+  top: 20px;
+  margin: 20px auto;
   font-size: 33px;
   border-radius: 15px;
   background-color: #3D1887;
   color: #FAF8FB;
+}
+@media (max-width: 992px) {
+  .pacotes button {
+    width: 50%;
+    font-size: 24px;
+    height: 50px;
+  }
 }
 @media (max-width: 768px) {
   .pacotes button {
@@ -670,57 +774,24 @@
     font-size: 24px;
   }
 }
-.pacotes .recomendado {
-  width: 30%;
-  border-radius: 20px 20px 0 0;
-  height: 70px;
-  position: absolute;
-  background-color: #3D1887;
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .pacotes .recomendado {
-    width: 60%;
-    left: 140px;
-    top: 4633px;
-  }
-}
-@media (max-width: 576px) {
-  .pacotes .recomendado {
-    left: 83px;
-    top: 3945px;
-  }
-}
-.pacotes .recomendado p {
-  font-size: 40px !important;
-  color: #FAF8FB;
-  text-align: center;
-  margin: 0;
-  line-height: 70px;
-}
-@media (max-width: 768px) {
-  .pacotes .recomendado p {
-    font-size: 32px !important;
-  }
-}
-@media (max-width: 576px) {
-  .pacotes .recomendado p {
-    font-size: 28px !important;
-  }
-}
 .pacotes .duvidas {
   width: 20%;
   margin-top: 70px;
   font-family: "Poppins", sans-serif;
 }
+@media (max-width: 992px) {
+  .pacotes .duvidas {
+    width: 30%;
+  }
+}
 @media (max-width: 768px) {
   .pacotes .duvidas {
-    width: 80%;
+    width: 50%;
   }
 }
 @media (max-width: 576px) {
   .pacotes .duvidas {
-    width: 90%;
+    width: 60%;
     margin-top: 40px;
   }
 }

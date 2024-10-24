@@ -1,14 +1,18 @@
 import  { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import '../../../stylesheets/home/Cards/cards.scss';
+import celularNotar from '../../../assets/home/celular-notas.png'
+import celularFrente from '../../../assets/home/celular-de-frente.png'
+import celularPhishing from '../../../assets/home/celular-phishing.png'
+
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
 
   const photos = [
-    "src/assets/home/celular-notas.png",
-    "src/assets/home/celular-de-frente.png",
-    "src/assets/home/celular-phishing.png",
+    celularNotar,
+    celularFrente,
+    celularPhishing,
   ];
 
   const nextSlide = () => {
