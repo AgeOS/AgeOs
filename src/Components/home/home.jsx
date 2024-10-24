@@ -12,12 +12,13 @@ import seguranca from '../../assets/home/seguranca-garantida.png'
 import icones from '../../assets/home/icones.png'
 import appsIntuitivos from '../../assets/home/apps-intuitivos.png'
 import atendimento from '../../assets/home/atendimento.png'
-import logo from '../../assets/home/image-32.png'
+import logo from '../../assets/Adquira/logo.png'
 import navbar from '../../assets/footer/navbar-roxa.png'
 import youtubeIcon from '../../assets/footer/youbute-branco.png'
 import instaIcon from '../../assets/footer/insta-branco.png'
 import faceIcon from '../../assets/footer/face-branco.png'
 import linkeIcon from '../../assets/footer/linke-branco.png'
+// import Chatbot from "../chatbot";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
     <>
     <NavBar/>
     <div className="home-page-container">
+      {/* <Chatbot/> */}
       <div className="hero-section">
         <div className="apresentation">
           <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
@@ -103,7 +105,7 @@ export default function Home() {
             <h2>Pacote básico</h2>
 
             <img src={logo} alt="" />
-            <p>AgeOS</p>
+
 
             <ul>
               <li>Sistema apenas para um aparelho</li>
@@ -125,7 +127,6 @@ export default function Home() {
             <h2>Pacote Premium</h2>
 
             <img src={logo} alt="" />
-            <p>AgeOS</p>
 
             <ul>
               <li>Sistema para cinco aparelhos</li>

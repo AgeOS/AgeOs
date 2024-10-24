@@ -678,7 +678,7 @@
 .pacotes .cards .pacote-basico img,
 .pacotes .cards .pacote-premium img {
   position: relative;
-  width: 70px;
+  width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
