@@ -24,11 +24,9 @@
   rotate: -3.5deg;
 }
 .adquira-container h1 {
-  width: 100%;
-  flex-wrap: nowrap;
   position: relative;
   top: 260px;
-  left: -300px;
+  left: -100px;
   height: 100px;
   max-width: 25ch;
   color: #FFF;
