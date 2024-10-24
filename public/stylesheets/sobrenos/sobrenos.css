@@ -137,6 +137,7 @@
   width: 60%;
   height: auto px;
   margin-left: 400px;
+  margin: 20px 0 50px 0;
 }
 
 .container_tequipe h1 {
@@ -181,7 +182,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -192,7 +193,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .jesse {
@@ -230,7 +231,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -241,7 +242,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .git2 {
@@ -250,7 +251,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -261,7 +262,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .git3 {
@@ -270,7 +271,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -281,7 +282,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .jeff {

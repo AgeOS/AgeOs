@@ -18,7 +18,7 @@ import youtubeIcon from '../../assets/footer/youbute-branco.png'
 import instaIcon from '../../assets/footer/insta-branco.png'
 import faceIcon from '../../assets/footer/face-branco.png'
 import linkeIcon from '../../assets/footer/linke-branco.png'
-// import Chatbot from "../chatbot";
+// import Chatbot from "../chatbot 
 
 
 

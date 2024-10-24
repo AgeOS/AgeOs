@@ -4,7 +4,7 @@ import NavBar from "./NavBar/NavBar";
 
 //imgs
 import Ini from '../assets/imagens/inici.png'
-import chatBot from '../assets/imagens/chatbot.png'
+// import chatBot from '../assets/imagens/chatbot.png'
 import alvo from '../assets/imagens/alvo.png'
 import visao from '../assets/imagens/olho.png'
 import coracao from '../assets/imagens/coração.png'
@@ -20,7 +20,12 @@ import marcelo from '../assets/imagens/marceloinfo.png'
 import yuri from '../assets/imagens/yuriinfo.png'
 import Vitor from '../assets/imagens/vitorinfo.png'
 import gui from '../assets/imagens/guiinfo.png'
-
+import Footer from "./Footer/Footer";
+import navbar from '../assets/footer/navbar-roxa.png'
+import youtubeIcon from '../assets/footer/youbute-branco.png'
+import instaIcon from '../assets/footer/insta-branco.png'
+import faceIcon from '../assets/footer/face-branco.png'
+import linkeIcon from '../assets/footer/linke-branco.png'
 
 
 
@@ -38,9 +43,9 @@ export default function sobrenos() {
         <img src={Ini} alt="Início" className="imagem" />
       </div>
 
-      <div className="container2">
+      {/* <div className="container2">
         <img src={chatBot}alt="Chatbot" className="imagem2" />
-      </div>
+      </div> */}
 
       <div className="container_missao">
         <div className="texto">
@@ -196,6 +201,14 @@ https://www.linkedin.com/in/vitor-gabriel-cordeiro-9b9605201?utm_source=share&ut
           </div>
         </div>
       </div>
+      <Footer
+        foto={navbar}
+        color='white'
+        you={youtubeIcon}
+        insta={instaIcon}
+        face={faceIcon}      
+        linke={linkeIcon}
+      />
     </>
   );
 }

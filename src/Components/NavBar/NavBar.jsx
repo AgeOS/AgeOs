@@ -7,7 +7,7 @@ import "../../stylesheets/navbar/media.scss";
 
 //imgs
 
-// import menuFechado from '../../assets/navbar/menu-fechado.png'
+import menuFechado from '../../assets/navbar/menu-fechado.png'
 import menuRoxo from '../../assets/navbar/menu-roxo.png'
 import logo from '../../assets/navbar/logo-1.png'
 import theme from '../../assets/navbar/image-34.png'
@@ -27,10 +27,10 @@ export default function NavBar() {
             
             if (modal.style.display === "none" || modal.style.display === "") {
               modal.style.display = "flex";
-              img.src = 'src/assets/navbar/icons8-x-48.png'; // Novo src da imagem
+              img.src = menuFechado; // Novo src da imagem
             } else {
               modal.style.display = "none";
-              img.src = 'src/assets/navbar/menu-roxo.png'; // src original da imagem
+              img.src = menuRoxo; // src original da imagem
             }
           }}
           >
