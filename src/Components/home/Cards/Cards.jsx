@@ -10,9 +10,9 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
 
   const photos = [
-    {celularNotar},
-    {celularFrente},
-    {celularPhishing},
+    celularNotar,
+    celularFrente,
+    celularPhishing,
   ];
 
   const nextSlide = () => {
