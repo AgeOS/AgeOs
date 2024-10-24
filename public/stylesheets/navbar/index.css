@@ -29,6 +29,7 @@
 }
 @media (max-width: 992px) {
   .hero-section {
+    top: -70px;
     margin-bottom: 20px;
   }
 }
@@ -91,10 +92,16 @@
   font-weight: 600;
   margin-top: 45px;
 }
+@media (max-width: 992px) {
+  .hero-section .apresentation .btn-conhecer {
+    width: 30%;
+    font-size: 24px;
+  }
+}
 @media (max-width: 768px) {
   .hero-section .apresentation .btn-conhecer {
-    width: 1%;
-    font-size: 10px;
+    width: 30%;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -107,7 +114,8 @@
 .hero-section .phone-img {
   width: 38%;
   display: flex;
-  height: 80vh;
+  height: 87vh;
+  overflow: hidden;
   position: relative;
   top: 50px;
   object-fit: cover;
@@ -384,7 +392,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: 90px;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -2313,6 +2321,8 @@ body {
 .navbar-container .button-navbar {
   display: none;
   width: 99%;
+  position: fixed;
+  top: 10px;
   align-items: center;
   justify-content: flex-end;
   border: none;
@@ -2339,6 +2349,7 @@ body {
 .navbar-container .modal-lateral {
   min-height: 90vh;
   width: 99.2%;
+  top: 0px;
   justify-content: flex-end;
   position: fixed;
   z-index: 2;

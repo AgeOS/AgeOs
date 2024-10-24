@@ -254,6 +254,8 @@ $breakpoint-desktop: 1200px;
   display: none;
   // margin-top: 4px;
   width: 99%;
+  position: fixed;
+  top: 10px;
   align-items: center;
   justify-content: flex-end;
   border: none;
@@ -282,6 +284,8 @@ $breakpoint-desktop: 1200px;
 .modal-lateral {
   min-height: 90vh;
   width: 99.2%;
+  top: 0px;
+  // overflow-y: auto;
   // display: none;
   justify-content: flex-end;
   position: fixed;
