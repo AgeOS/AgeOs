@@ -1579,6 +1579,10 @@ body {
   padding-top: 5px;
 }
 
+.container_suporte {
+  margin-bottom: 210px;
+}
+
 .container_canal {
   width: 90%;
   height: 700px;
@@ -1937,6 +1941,7 @@ body {
   width: 70%;
   flex-direction: column;
   align-items: center;
+  margin-top: 110px;
 }
 
 .logo_ageOS img {
