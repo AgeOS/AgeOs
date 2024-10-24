@@ -41,6 +41,9 @@
     align-items: center;
   }
 }
+.hero-section .apresentation a {
+  text-decoration: none;
+}
 .hero-section .apresentation h1 {
   font-size: 72px;
   font-family: "Poppins", sans-serif;
@@ -738,6 +741,13 @@
   .pacotes .cards .pacote-premium ul {
     font-size: 20px;
   }
+}
+.pacotes .cards .pacote-basico .buy-button,
+.pacotes .cards .pacote-premium .buy-button {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  left: 170px;
 }
 @media (max-width: 768px) {
   .pacotes .cards .pacote-basico button,

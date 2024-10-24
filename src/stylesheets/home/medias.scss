@@ -112,6 +112,11 @@ $breakpoint-desktop: 1200px;
       align-items: center;
     }
 
+
+    a{
+      text-decoration: none;
+    }
+
     h1 {
       font-size: 72px;
       font-family: $font-family-poppins;
@@ -776,7 +781,16 @@ $breakpoint-desktop: 1200px;
         @include mobile {
           font-size: 20px;
         }
+
+      
       }
+
+      .buy-button{
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        left: 170px;
+       }
 
       button {
         // margin: 20px auto;

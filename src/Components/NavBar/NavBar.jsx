@@ -27,10 +27,10 @@ export default function NavBar() {
             
             if (modal.style.display === "none" || modal.style.display === "") {
               modal.style.display = "flex";
-              img.src = menuFechado; // Novo src da imagem
+              img.src = {menuFechado}; // Novo src da imagem
             } else {
               modal.style.display = "none";
-              img.src = menuRoxo; // src original da imagem
+              img.src = {menuRoxo}; // src original da imagem
             }
           }}
           >

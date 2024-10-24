@@ -1,5 +1,6 @@
 // import "../../stylesheets/home/index.scss";
 // import "../../stylesheets/home/medias.scss";
+import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
 import Avaliacoes from './Avaliacoes/Avaliacoes'
@@ -31,7 +32,7 @@ export default function Home() {
       <div className="hero-section">
         <div className="apresentation">
           <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
-          <button className="btn-conhecer">Conheça-nos</button>
+          <Link to='/sobrenos'><button className="btn-conhecer">Conheça-nós</button></Link>
         </div>
 
         <div className="phone-img">
@@ -115,8 +116,9 @@ export default function Home() {
               <li>Identificador de chamadas suspeitas</li>
               <li>Segurança reforçada em apps financeiros</li>
             </ul>
-
+      <Link className='buy-button' to='/adquira'>
             <button>R$69,99</button>
+      </Link>
           </div>
 
            {/* <div className="recomendado">
@@ -139,7 +141,9 @@ export default function Home() {
               <li>Suporte para backup</li>
             </ul>
 
-            <button className="button-buy-primium">R$299,99</button>
+           <Link className='buy-button' to='/adquira'>
+           <button className="button-buy-primium">R$299,99</button>
+           </Link> 
 
           </div>
         </div>
