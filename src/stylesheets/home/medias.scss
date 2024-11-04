@@ -75,15 +75,21 @@ $breakpoint-desktop: 1200px;
   }
 }
 
+@mixin desktop{
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
 .hero-section {
   position: relative;
   width: 90%;
-  margin: 100px auto;
+  margin:0 auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden !important;
 
   @include laptop{
     top: -70px;
@@ -91,11 +97,13 @@ $breakpoint-desktop: 1200px;
   }
 
   @include tablet {
+    margin-top: 120px;
     flex-direction: column;
     width: 100%;
   }
 
   @include mobile{
+    margin-top: 120px;
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
@@ -149,19 +157,23 @@ $breakpoint-desktop: 1200px;
       font-weight: 600;
       margin-top: 45px;
 
-      @include laptop{
+      @include desktop{
         width: 30%;
+      }
+
+      @include laptop{
+        width: 50%;
         font-size:24px ;
       }
 
 
       @include tablet {
-        width: 30%;
+        width: 120%;
         font-size: 20px;
       }
 
       @include mobile {
-        width: 80%;
+        width: 130%;
         font-size: 18px;
         height: 50px;
       }
@@ -176,6 +188,12 @@ $breakpoint-desktop: 1200px;
     position: relative;
     top: 50px;
     object-fit: cover;
+    overflow:  hidden !important;
+
+    @include desktop{
+      width: 100%;
+      height: 100%;
+    }
 
     @include tablet {
       width: 100%;
@@ -347,7 +365,7 @@ $breakpoint-desktop: 1200px;
     }
 
     .seguranca-text {
-      width: 88%;
+      width: 87%;
       height: 600px;
       // position: relative;
       display: flex;
@@ -364,11 +382,15 @@ $breakpoint-desktop: 1200px;
 
       h1 {
         color: $color-white;
-        font-size: 50px;
+        font-size: 80px;
         position: relative;
         bottom: 100px;
         display: flex;
         flex-wrap: wrap;
+
+        @include desktop{
+          font-size: 50px;
+        }
 
         @include laptop{
           font-size: 40px;
@@ -395,8 +417,12 @@ $breakpoint-desktop: 1200px;
         text-align: start;
         bottom: 90px;
         color: $color-white;
-        font-size: 24px;
+        font-size: 28px;
         font-family: $font-family-poppins;
+
+        @include desktop{
+          font-size: 24px;
+        }
 
         @include laptop{
           width: 60%;
@@ -530,7 +556,7 @@ $breakpoint-desktop: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 
   @include laptop{
@@ -560,8 +586,12 @@ $breakpoint-desktop: 1200px;
     position: absolute;
     color: $color-white;
     right: 10%;
-    font-size: 70px;
+    font-size: 85px;
     top: 20%;
+
+    @include desktop{
+      font-size: 70px;
+    }
 
     @include laptop{
       font-size: 50px;

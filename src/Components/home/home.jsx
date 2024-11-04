@@ -32,7 +32,7 @@ export default function Home() {
       <div className="hero-section">
         <div className="apresentation">
           <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
-          <Link to='/sobrenos'><button className="btn-conhecer">Conheça-nós</button></Link>
+          <Link to='/sobrenos'><button className="btn-conhecer">Conheça-nos</button></Link>
         </div>
 
         <div className="phone-img">
@@ -91,7 +91,7 @@ export default function Home() {
 
           <h1>Atendimento</h1>
           <p>
-            Suporte rápido e humanizado,adaptando às necessidades dos nossos
+            Suporte rápido e humanizado, adaptado às necessidades dos nossos
             clientes
           </p>
         </div>
