@@ -1,34 +1,93 @@
-@import '../variables.scss';
+@import "../variables.scss";
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-desktop: 1200px;
+
+// Mixins for responsive design
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+
 
 footer{
-    position: absolute;
-    max-height: 500px;
-    right: 1px;
-    min-width: 100%;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin-top: 120px;
+    // margin: 0 auto;
+    height: 440px;
+    // z-index: -1;
     font-family: $font-family-poppins;
-    padding-top: 50px;
-    margin-top: 50px;
-    overflow: hidden;
+  
+
+    a{
+      text-decoration: none !important;
+      color:$color-white !important;
+    }
   }
 
 .fundo{
   display:flex;
   position: absolute;
-  overflow-x: hidden !important;
-  width: 105%;
-  max-height: 640px;
+  overflow: hidden !important;
+  // margin: 0 auto;
+  width: 100%;
+  height: 440px;
   z-index: -1;
+
+  @include tablet{
+    height: 550px;
+  }
 }
+
 
   .content {
     max-width: 90%;
-    height: 280px;
-    margin: 26px auto;
+    height: 400px;
+    // margin: 26px auto;
     padding: 0 20px;
     padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+
+
+    @include tablet{
+      flex-direction: column !important;
+      height: 450px;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    @include mobile{
+      flex-direction: column !important;
+    }
   }
 
   .table{
@@ -38,18 +97,6 @@ footer{
 
   .none{
     visibility: hidden;
-  }
-
-  @media (max-width: 768px) {
-    .content {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 480px) {
-    .content {
-      grid-template-columns: 1fr;
-    }
   }
 
   .section h3 {
@@ -127,7 +174,8 @@ footer{
   }
 
   .form button:hover {
-    background: #4c1d95;
+    background:$color-yellow;
+    color: $color-purple;
   }
 
   .bottom {
@@ -136,3 +184,4 @@ footer{
     margin-top: 3rem;
     border-top: 1px solid;
   }
+
