@@ -3,167 +3,187 @@
 import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
-import Avaliacoes from './Avaliacoes/Avaliacoes'
+import Avaliacoes from "./Avaliacoes/Avaliacoes";
 import Footer from "../Footer/Footer";
 
-
 //imgs
-import celularDeLado from '../../assets/home/celular-de-lado.png'
-import seguranca from '../../assets/home/seguranca-garantida.png'
-import icones from '../../assets/home/icones.png'
-import appsIntuitivos from '../../assets/home/apps-intuitivos.png'
-import atendimento from '../../assets/home/atendimento.png'
-import logo from '../../assets/Adquira/logo.png'
-import navbar from '../../assets/footer/navbar-roxa.png'
-import youtubeIcon from '../../assets/footer/youbute-branco.png'
-import instaIcon from '../../assets/footer/insta-branco.png'
-import faceIcon from '../../assets/footer/face-branco.png'
-import linkeIcon from '../../assets/footer/linke-branco.png'
-// import Chatbot from "../chatbot 
+import celularApps from "../../assets/home/celular-apps.png";
+import apps1 from "../../assets/home/apps1.png";
+import apps2 from "../../assets/home/apps2.png";
+import apps3 from "../../assets/home/apps3.png";
+import apps4 from "../../assets/home/apps4.png";
+import geminiPhone from "../../assets/home/celular-gemini.png";
+import idosos from "../../assets/home/veios.png";
+import logoProa from "../../assets/home/logo-proa.png";
+import logoSenac from "../../assets/home/logo-senac.png";
 
-
+import celularDeLado from "../../assets/home/celular-de-lado.png";
+import seguranca from "../../assets/home/seguranca-garantida.png";
+// import icones from "../../assets/home/icones.png";
+// import appsIntuitivos from "../../assets/home/apps-intuitivos.png";
+import atendimento from "../../assets/home/atendimento.png";
+// import logo from "../../assets/Adquira/logo.png";
+import navbar from "../../assets/footer/navbar-roxa.png";
+import youtubeIcon from "../../assets/footer/youbute-branco.png";
+import instaIcon from "../../assets/footer/insta-branco.png";
+import faceIcon from "../../assets/footer/face-branco.png";
+import linkeIcon from "../../assets/footer/linke-branco.png";
+// import Chatbot from "../chatbot
 
 export default function Home() {
   return (
     <>
-    <NavBar/>
-    <div className="home-page-container">
-      {/* <Chatbot/> */}
-      <div className="hero-section">
-        <div className="apresentation">
-          <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
-          <Link to='/sobrenos'><button className="btn-conhecer">Conheça-nos</button></Link>
+      <NavBar />
+      <div className="home-page-container">
+        {/* <Chatbot/> */}
+        <div className="hero-section">
+          <div className="apresentation">
+            <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
+            <Link to="/sobrenos">
+              <button className="btn-conhecer">Conheça-nos</button>
+            </Link>
+          </div>
+
+          <div className="phone-img">
+            <img src={celularDeLado} alt="" />
+          </div>
         </div>
 
-        <div className="phone-img">
-          <img src={celularDeLado} alt="" />
+        <div className="telas">
+          <h1>Interface Simples</h1>
+          <p>
+            Um Sistema intuitivo, que oferece praticidade e a segurança
+            necessária para seu familiar navegar na internet com tranquilidade
+          </p>
+
+          <div className="slide">
+            <Carousel />
+          </div>
         </div>
-      </div>
 
-      <div className="telas">
-        <h1>Interface Simples</h1>
-        <p>
-          Um Sistema intuitivo, que oferece praticidade e a segurança necessária
-          para seu familiar navegar na internet com tranquilidade
-        </p>
+        <div className="beneficios-etc">
+          <h1>Benefícios</h1>
+          <p>
+            Descubra as funcionalidades que tornam o AgeOS a escolha perfeita
+            para os seus entes queridos
+          </p>
 
-        <div className="slide">
-          <Carousel />
-        </div>
-      </div>
+          <div className="seguranca">
+            <img src={seguranca} alt="" />
 
-      <div className="beneficios-etc">
-        <h1>Benefícios</h1>
-        <p>
-          Descubra as funcionalidades que tornam o AgeOS a escolha perfeita para
-          os seus entes queridos
-        </p>
+            <div className="seguranca-text">
+              <h1>Segurança Garantida</h1>
+              <p>
+                Mecanismo de segurança, ajudando a evitar fraudes telefônicas e
+                digitais
+              </p>
+            </div>
+          </div>
 
-        <div className="seguranca">
-          <img src={seguranca} alt="" />
+          <div className="apps">
+            <h2>Apps por Categoria</h2>
+            <div className="celular-apps">
+              <img src={celularApps} alt="" />
+            </div>
 
-          <div className="seguranca-text">
-            <h1>Segurança Garantida</h1>
+            <div className="lista-apps">
+              <h2>Apps por Categoria</h2>
+              <p>
+                Aplicativos organizados por tipos, pensado para facilitar a
+                busca de forma rápida e simples.
+              </p>
+
+              <div className="apps-lado1">
+                <div className="bloco1">
+                  <img src={apps1} alt="" />
+                  <p>Social</p>
+                </div>
+                <div className="linha-lateral"></div>
+                <div className="bloco2">
+                  <img src={apps2} alt="" />
+                  <p>Web</p>
+                </div>
+                {/* <div className="linha-baixo"></div> */}
+              </div>
+
+              <div className="apps-lado2">
+                <div className="bloco3">
+                  <img src={apps3} alt="" />
+                  <p>Entretenimento</p>
+                </div>
+                <div className="linha-lateral2"></div>
+
+                <div className="bloco4">
+                  <img src={apps4} alt="" />
+                  <p>Música</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="gemini">
+            <div className="text-gemini">
+              <h2>Inteligência Artificial</h2>
+              <p>
+                Conheça a IA Gemini, uma assistente para ajudar seus entes
+                queridos. Desde buscar músicas e receitas até encontrar as
+                últimas notícias. Gemini facilita o acesso à informação e torna
+                o cotidiano mais prático e conectado.
+              </p>
+            </div>
+
+            <div className="gemini-phone">
+              <img src={geminiPhone} alt="" />
+            </div>
+          </div>
+
+          <div className="atendimento">
+            <img src={atendimento} alt="" />
+
+            <h1>Atendimento</h1>
             <p>
-              Mecanismo de segurança, ajudando a evitar fraudes telefônicas e
-              digitais
+              Suporte rápido e humanizado, adaptado às necessidades dos nossos
+              clientes
             </p>
           </div>
         </div>
 
-        <div className="apps">
-          <h1>Apps intuitivos</h1>
-
-          <p>
-            Experiências descomplicada, especialmente para quem não tem
-            familiaridade com a tecnologia
-          </p>
-
-          <div className="icons">
-            <img src={icones} alt="" />
+        <div className="conheca-mais">
+          <div className="left-side-conheca">
+            <h2>Conheça mais sobre o sistema</h2>
+            <p>
+              Explore as funções do sistema que transformarão o dia a dia da sua
+              família.
+            </p>
+            <button>
+              <Link>Conheça mais</Link>
+            </button>
           </div>
 
-          <img src={appsIntuitivos} alt="" />
+          <div className="right-side-conheca">
+            <img src={idosos} alt="" />
+          </div>
         </div>
 
-        <div className="atendimento">
-          <img src={atendimento} alt="" />
-
-          <h1>Atendimento</h1>
-          <p>
-            Suporte rápido e humanizado, adaptado às necessidades dos nossos
-            clientes
-          </p>
+        <div className="agradecimentos">
+          <h2>Parceiros</h2>
+          <div className="agradecimentos-imgs">
+            <img src={logoSenac} alt="" className="senac" />
+            <img src={logoProa} alt="" className="proa" />
+          </div>
         </div>
+
+        <Avaliacoes />
+
+        <Footer
+          foto={navbar}
+          color="white"
+          you={youtubeIcon}
+          insta={instaIcon}
+          face={faceIcon}
+          linke={linkeIcon}
+        />
       </div>
-
-      <div className="pacotes">
-        <h1>Adquira seu AgeOS</h1>
-        <p>Os planos ideais que cabem no seu bolso</p>
-
-        <div className="cards">
-          <div className="pacote-basico">
-            <h2>Pacote básico</h2>
-
-            <img src={logo} alt="" />
-
-
-            <ul>
-              <li>Sistema apenas para um aparelho</li>
-              <li>Valor fixo por sistema</li>
-              <li>Somente atualições estáveis</li>
-              <li>Segurança para phishing e golpes</li>
-              <li>Identificador de chamadas suspeitas</li>
-              <li>Segurança reforçada em apps financeiros</li>
-            </ul>
-      <Link className='buy-button' to='/adquira'>
-            <button>R$69,99</button>
-      </Link>
-          </div>
-
-           {/* <div className="recomendado">
-              <p>Recomendado</p>
-              </div>  */}
-          <div className="pacote-premium">
-
-            <h2>Pacote Premium</h2>
-
-            <img src={logo} alt="" />
-
-            <ul>
-              <li>Sistema para cinco aparelhos</li>
-              <li>Valor promocional</li>
-              <li>Acesso antecipado a atualizações</li>
-              <li>Segurança para phishing e golpes</li>
-              <li>Identificador de chamadas suspeitas</li>
-              <li>Segurança reforçada em apps financeiros</li>
-              <li>Pacote personalizado</li>
-              <li>Suporte para backup</li>
-            </ul>
-
-           <Link className='buy-button' to='/adquira'>
-           <button className="button-buy-primium">R$299,99</button>
-           </Link> 
-
-          </div>
-        </div>
-
-        <button className="duvidas">Tire suas dúvidas</button>
-      </div>
-
-      <Avaliacoes/>
-
-    <Footer
-      foto={navbar}
-      color='white'
-      you={youtubeIcon}
-      insta={instaIcon}
-      face={faceIcon}      
-      linke={linkeIcon}
-      />
-    </div>
-
-
     </>
   );
 }

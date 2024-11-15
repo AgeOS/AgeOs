@@ -1,34 +1,31 @@
 // @import "../variables.scss";
 
+// @media screen and (min-width: 1530px) and (max-width: 1900px) {
 
-// @media screen and (min-width: 1530px) and (max-width: 1900px) { 
-   
 //   .phone-img {
 //     width: 28% !important;
 //     object-fit:cover !important;
 //   }
 // }
 
-// @media screen and (min-width: 1000px) and (max-width: 1400px) { 
-
+// @media screen and (min-width: 1000px) and (max-width: 1400px) {
 
 //     .hero-section{
 //         width: 100% !important;
 //         margin: 0 0px 0 20px !important;
-        
+
 //         .apresentation {
 //             width: 50%;
-            
+
 //             h1{
 //                 font-size: 55px !important;
 //             }
 
-           
 //         }
 
 //         .phone-img{
 //             width: 30% !important;
-        
+
 //             img{
 //                 width: 100% !important;
 //                 object-fit: cover !important;
@@ -38,15 +35,13 @@
 //     }
 // }
 
-
-// @media screen and (min-width: 1000px) and (max-width: 1370px) { 
+// @media screen and (min-width: 1000px) and (max-width: 1370px) {
 
 //     .btn-conhecer{
 //         width: 20% !important;
 //         font-size: 15px !important;
 //     }
 // }
-
 
 @import "../variables.scss";
 
@@ -75,7 +70,7 @@ $breakpoint-desktop: 1200px;
   }
 }
 
-@mixin desktop{
+@mixin desktop {
   @media (max-width: #{$breakpoint-desktop}) {
     @content;
   }
@@ -84,14 +79,14 @@ $breakpoint-desktop: 1200px;
 .hero-section {
   position: relative;
   width: 90%;
-  margin:0 auto;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden !important;
 
-  @include laptop{
+  @include laptop {
     top: -70px;
     margin-bottom: 20px;
   }
@@ -102,7 +97,7 @@ $breakpoint-desktop: 1200px;
     width: 100%;
   }
 
-  @include mobile{
+  @include mobile {
     margin-top: 120px;
     flex-direction: column;
     width: 100%;
@@ -120,8 +115,7 @@ $breakpoint-desktop: 1200px;
       align-items: center;
     }
 
-
-    a{
+    a {
       text-decoration: none;
     }
 
@@ -157,15 +151,14 @@ $breakpoint-desktop: 1200px;
       font-weight: 600;
       margin-top: 45px;
 
-      @include desktop{
+      @include desktop {
         width: 30%;
       }
 
-      @include laptop{
+      @include laptop {
         width: 50%;
-        font-size:24px ;
+        font-size: 24px;
       }
-
 
       @include tablet {
         width: 120%;
@@ -188,9 +181,9 @@ $breakpoint-desktop: 1200px;
     position: relative;
     top: 50px;
     object-fit: cover;
-    overflow:  hidden !important;
+    overflow: hidden !important;
 
-    @include desktop{
+    @include desktop {
       width: 100%;
       height: 100%;
     }
@@ -198,11 +191,11 @@ $breakpoint-desktop: 1200px;
     @include tablet {
       width: 100%;
       height: 100%;
-    //   margin-top: 30px;
+      //   margin-top: 30px;
     }
 
     @include mobile {
-      width:100%;
+      width: 100%;
       height: 100%;
     }
   }
@@ -214,7 +207,7 @@ $breakpoint-desktop: 1200px;
     object-fit: cover;
   }
 
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
 
@@ -273,7 +266,7 @@ $breakpoint-desktop: 1200px;
     width: 73%;
     text-align: center;
     font-size: 34px;
-    font-family: $font-family-poppins;
+    font-family: $font-family-roboto;
 
     @include laptop {
       width: 85%;
@@ -340,7 +333,7 @@ $breakpoint-desktop: 1200px;
     text-align: center;
     font-size: 34px;
     color: $color-black;
-    font-family: $font-family-poppins;
+    font-family: $font-family-roboto;
 
     @include tablet {
       width: 85%;
@@ -358,6 +351,11 @@ $breakpoint-desktop: 1200px;
     margin-top: 70px;
     display: flex;
     justify-content: center;
+
+    @include mobile {
+      width: 100%;
+      height: 200px !important;
+    }
 
     @include tablet {
       flex-direction: column;
@@ -388,26 +386,26 @@ $breakpoint-desktop: 1200px;
         display: flex;
         flex-wrap: wrap;
 
-        @include desktop{
+        @include desktop {
           font-size: 50px;
         }
 
-        @include laptop{
+        @include laptop {
           font-size: 40px;
           bottom: 150px;
         }
 
-        @include tablet{
-          font-size:30px ;
+        @include tablet {
+          font-size: 30px;
           bottom: 10px;
           right: 130px;
         }
-       
 
-        @include mobile{
-            font-size: 26px;
-            position: relative;
-            right: 120px;
+        @include mobile {
+          font-size: 18px;
+          position: relative;
+          // top: 0.1rem;
+          right: 4rem;
         }
       }
 
@@ -418,13 +416,13 @@ $breakpoint-desktop: 1200px;
         bottom: 90px;
         color: $color-white;
         font-size: 28px;
-        font-family: $font-family-poppins;
+        font-family: $font-family-roboto;
 
-        @include desktop{
+        @include desktop {
           font-size: 24px;
         }
 
-        @include laptop{
+        @include laptop {
           width: 60%;
           bottom: 140px;
           text-align: center;
@@ -437,12 +435,12 @@ $breakpoint-desktop: 1200px;
           bottom: 0;
           font-size: 20px;
         }
-
         @include mobile {
-        width: 50%;
-          font-size: 16px;
+          max-width: 70%;
+          width: 70%;
+          font-size: 0.8rem;
           position: relative;
-          right: 130px;
+          right: 4rem;
           // bottom: 10px;
         }
       }
@@ -458,100 +456,198 @@ $breakpoint-desktop: 1200px;
         width: 100%;
       }
 
-      @include mobile{
-        width: 100%;
+      @include mobile {
+        width: 99%;
+        border-radius: 20px;
+        height: 180px;
+        // object-fit: cover;
       }
     }
   }
 }
 
 .apps {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 90px;
-  position: relative;
+  @include mobile {
+    max-width: 95%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
 
-  @include laptop{
-  bottom: 200px;
+    .celular-apps {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      font-family: $font-family-poppins;
+    }
+
+    .lista-apps {
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 1.7rem;
+        font-family: $font-family-poppins;
+        display: none;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-family: $font-family-roboto;
+      }
+    }
+
+    .apps-lado1 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      border-bottom: 1px solid black;
+
+      .linha-lateral {
+        position: relative;
+        // top: 1px;
+        width: 1%;
+        height: 150px;
+        border-right: 1px solid black;
+        // z-index: 2;
+      }
+
+      .linha-baixo {
+        width: 10%;
+        height: 10px;
+        border-bottom: 1px solid black;
+      }
+
+      img {
+        width: 80%;
+      }
+
+      p {
+        font-family: $font-family-roboto;
+        font-size: 1.2rem;
+      }
+
+      .bloco1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bloco2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .apps-lado2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // border-bottom: 1px solid black;
+      margin-bottom: 40px;
+
+      .linha-lateral2 {
+        position: relative;
+        // top: 1px;
+        width: 1%;
+        height: 150px;
+        border-right: 1px solid black;
+        // z-index: 2;
+      }
+
+      .linha-baixo {
+        width: 10%;
+        height: 10px;
+        border-bottom: 1px solid black;
+      }
+
+      img {
+        width: 80%;
+      }
+
+      p {
+        font-family: $font-family-roboto;
+        font-size: 1.2rem;
+      }
+
+      .bloco3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bloco4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
+}
 
-  @include tablet {
-    width: 99%;
-    margin-top: 290px;
-  }
+.gemini {
+  @include mobile {
+    width: 95%;
+    max-width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
+    .text-gemini {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  h1 {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 2%;
+      h2 {
+        font-family: $font-family-poppins;
+        font-size: 1.8rem;
+      }
 
-    @include laptop{
-      font-size: 40px;
+      p {
+        font-family: $font-family-roboto;
+        font-size: 1.3rem;
+      }
     }
 
-    @include tablet {
-    //   position: relative;
-      top: 0;
-      margin-bottom: 20px;
-      font-size: 34px;
-    }
-  }
+    .gemini-phone {
+      width: 98%;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 100px;
 
-  p {
-    position: absolute;
-    text-align: center;
-    top: 15%;
-    width: 80%;
-
-    @include laptop{
-      width: 95%;
-      font-size: 24px;
-      top:65px;
-    }
-
-    @include tablet {
-    //   position: relative;
-      top:20px;
-      width: 95%;
-      margin: 20px 0;
-      font-size: 19px;
-    }
-
-    @include mobile{
-        top: 20px;
-        font-size: 14px;
-    }
-  }
-
-  .icons {
-    position: absolute;
-    margin: 0 auto;
-    width: 48%;
-    top: 30%;
-
-    @include tablet {
-      top: 130px;
-      width: 50%;
-    }
-
-    @include mobile {
-        position: absolute;
-        width: 50%;
-        top: 100px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
 
 .atendimento {
-  width: 90%;
+  width: 100%;
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -559,7 +655,7 @@ $breakpoint-desktop: 1200px;
   overflow: hidden;
   position: relative;
 
-  @include laptop{
+  @include laptop {
     margin-top: -70px;
   }
 
@@ -567,20 +663,25 @@ $breakpoint-desktop: 1200px;
     width: 100%;
   }
 
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
 
   img {
-   width: 100%;
-  
-    @include tablet{
-        width: 100%;
-        height: 100%;
-        // position: absolute;
-        // z-index: 3; 
+    width: 100%;
+    border-radius: 20px;
+
+    @include mobile {
+      width: 99% !important;
+      height: 200px !important;
+      object-fit: cover;
     }
-}
+
+    @include tablet {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   h1 {
     position: absolute;
@@ -589,11 +690,11 @@ $breakpoint-desktop: 1200px;
     font-size: 85px;
     top: 20%;
 
-    @include desktop{
+    @include desktop {
       font-size: 70px;
     }
 
-    @include laptop{
+    @include laptop {
       font-size: 50px;
     }
 
@@ -607,12 +708,13 @@ $breakpoint-desktop: 1200px;
       text-align: center;
       margin: 20px 0;
       z-index: 5;
-        // color: white;
+      // color: white;
     }
 
-    @include mobile{
-      left: 120px;
-      font-size:28px ;
+    @include mobile {
+      left: 60px;
+      top: 20px;
+      font-size: 28px;
     }
   }
 
@@ -624,8 +726,9 @@ $breakpoint-desktop: 1200px;
     right: 10%;
     text-align: right;
     top: 45%;
+    font-family: $font-family-roboto;
 
-    @include laptop{
+    @include laptop {
       font-size: 24px;
     }
 
@@ -637,247 +740,104 @@ $breakpoint-desktop: 1200px;
     }
 
     @include mobile {
-      font-size: 16px;
+      font-size: 14px;
+      left: 150px;
     }
   }
 }
 
-.pacotes {
-  margin-top: 70px;
+.conheca-mais {
   width: 100%;
+  border-radius: 20px;
+  // height: 306px;
+  background-color: $color-purple;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  .left-side-conheca {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-white;
+
+    h2 {
+      width: 60%;
+      font-family: $font-family-poppins;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    p {
+      width: 90%;
+      padding-top: 10px;
+      font-family: $font-family-roboto;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    button {
+      width: 30%;
+      height: 32px;
+      background-color: $color-white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 8px;
+
+      a {
+        text-decoration: none;
+        color: $color-purple;
+        font-family: $font-family-poppins;
+        font-size: 0.8rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .right-side-conheca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    // padding-top: px;
+
+    img {
+      width: 90%;
+      height: 280px;
+      align-items: center;
+    }
+  }
+}
+
+.agradecimentos {
+  width: 100%;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
 
-  @include tablet {
-    margin-top: 40px;
-  }
-
-  h1 {
+  h2 {
     font-family: $font-family-poppins;
-    font-size: 60px;
-
-    @include laptop {
-      font-size: 58px;
-      text-align: center;
-    }
-
-    @include tablet {
-      font-size: 46px;
-      margin-bottom: 20px;
-      text-align: center;
-
-    }
-
-    @include mobile {
-      font-size: 30px;
-      text-align: center;
-
-    }
+    color: $color-purple;
+    font-size: 2rem;
   }
 
-  p {
-    font-family: $font-family-poppins;
-    font-size: 40px;
-    margin-bottom: 15px;
-    text-align: center;
-    position: relative;
-    bottom: 10px;
-
-    @include laptop {
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-
-    @include tablet {
-      font-size: 30px;
-      text-align: center;
-      bottom: 30px;
-    }
-
-    @include mobile {
-      font-size: 20px;
-      bottom: 20px;
-    }
+  img {
+    width: 55%;
+    padding-top: 10px;
+    padding-left: 20px;
   }
 
-  .cards {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 60px;
-
-    @include tablet {
-      flex-direction: column;
-      gap: 90px;
-    }
-
-    .pacote-basico,
-    .pacote-premium {
-      width: 40%;
-      height: 600px;
-      background-color: #fff;
-      box-shadow: 6px 6px 12.1px rgba(0, 0, 0, 0.3);
-      display: flex;
-      flex-direction: column;
-      border-radius: 20px;
-
-      @include laptop{
-        width: 50%;
-        height: 600px;
-        margin: 10px;
-        // gap: 20px;
-      }
-
-      @include tablet {
-        margin-top: -50px;
-        width: 90%;
-        height: auto;
-        padding: 20px 50px;
-      }
-
-      h2 {
-        width: 100%;
-        font-size: 36px;
-        padding-top: 20px;
-        font-family: $font-family-poppins;
-        display: flex;
-        justify-content: center;
-
-        @include laptop {
-          font-size: 38px;
-          text-align: center;
-        }
-
-        @include mobile {
-          font-size: 28px;
-        }
-      }
-
-      img {
-        position: relative;
-        width: 50%;
-        margin: 0 auto;
-
-        @include tablet {
-          left: 0;
-        }
-      }
-
-      p {
-        font-size: 40px;
-        text-align: center;
-
-        @include tablet {
-          position: static;
-          font-size: 40px;
-        }
-
-        @include mobile {
-          font-size: 30px;
-        }
-      }
-
-      ul {
-        min-width: 80%;
-        font-size:24px;
-        position: relative;
-        // margin: 0 auto;
-        left: 50px;
-        gap: 10px;
-        flex-direction: column;
-        padding-top: 20px;
-        flex-wrap: wrap;
-
-
-      @include laptop{
-        max-width: 93%;
-        left: 25px;
-        
-        font-size: 20px;
-        flex-wrap: wrap;
-      }
-
-        @include tablet {
-          position: static;
-          font-size: 24px;
-          margin: 20px 0;
-        }
-
-        @include mobile {
-          font-size: 20px;
-        }
-
-      
-      }
-
-      .buy-button{
-        width: 100%;
-        position: relative;
-        margin: 0 auto;
-        left: 170px;
-       }
-
-      button {
-        // margin: 20px auto;
-        // // position: static;
-
-
-        @include tablet{
-            top: 20px;
-
-        }
-      }
-    }
+  .senac {
+    width: 50%;
   }
 
-  button {
+  .proa {
     width: 30%;
-    height: 55px;
-    top: 20px;
-    margin: 20px auto;
-    font-size: 33px;
-    border-radius: 15px;;
-    background-color: $color-purple;
-    color: $color-white;
-
-    @include laptop{
-      width: 50%;
-      font-size: 24px;
-      height: 50px;
-    }
-
-    @include tablet {
-      width: 40%;
-      font-size: 28px;
-    }
-
-    @include mobile {
-      width: 50%;
-      font-size: 24px;
-    }
-  }
-
-  .duvidas {
-    width: 20%;
-    margin-top: 70px;
-    font-family: $font-family-poppins;
-
-    @include laptop{
-      width: 30%;
-    }
-
-    @include tablet {
-      width: 50%;
-    }
-
-    @include mobile {
-      width: 60%;
-      margin-top: 40px;
-    }
   }
 }
