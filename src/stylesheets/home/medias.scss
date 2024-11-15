@@ -87,8 +87,8 @@ $breakpoint-desktop: 1200px;
   overflow: hidden !important;
 
   @include laptop {
-    top: -70px;
-    margin-bottom: 20px;
+    top: -50px;
+    // margin-bottom: 20px;
   }
 
   @include tablet {
