@@ -69,7 +69,7 @@ function Suporte() {
 
           <div className='dentro_chatbot2'>
             <img src={chatbot} alt="AgeBot" />
-            <button><a href="#">Iniciar chat</a></button>
+            {/* <button><a href="#">Iniciar chat</a></button> */}
           </div>
         </div>
       </section>

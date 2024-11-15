@@ -1,61 +1,176 @@
-// FocusedCarousel.scss
+// // FocusedCarousel.scss
+// .carousel {
+//     position: relative;
+//     width: 100%;
+//     height: 800px;
+//     overflow: hidden;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     ;
+
+//     &__container {
+//       display: flex;
+//       gap: 1rem;
+//     }
+
+//     &__item {
+//       width: 290px;
+//       height: 600px;
+//       transition: all 0.3s ease-in-out;
+//       transform: scale(0.9);
+//       opacity: 0.7;
+
+//       &--active {
+//         transform: scale(1.1);
+//         opacity: 1;
+//         z-index: 1;
+//       }
+//     }
+
+//     &__image {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       border-radius: 8px;
+//     //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     }
+
+//     &__button {
+//       position: absolute;
+//       z-index: 3;
+//       background-color: rgba(0, 0, 0, 0.5);
+//       border: none;
+//       border-radius: 50%;
+//       padding: 0.5rem;
+//       cursor: pointer;
+//       transition: background-color 0.3s ease;
+
+//       &:hover {
+//         background-color: rgba(255, 255, 255, 0.8);
+//       }
+
+//       &--prev {
+//         left: 1rem;
+//       }
+
+//       &--next {
+//         right: 1rem;
+//       }
+//     }
+//   }
+
+// carousel.scss
 .carousel {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
+  position: relative;
+  width: 90%;
+  max-height: 500px;
+  object-fit: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 60px;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 -15px;
+  }
+
+  &__slide {
+    flex: 0 0 calc(33.333% - 30px);
+    margin: 0 15px;
+    // opacity: 0.4;
+    // transform: scale(0.9);
+    transition: all 0.5s ease-in-out;
+
+    &.active {
+      // opacity: 1;
+      transform: scale(1);
+    }
+
+    img {
+      width: 46%;
+      height: 100px;
+      // object-fit: cover;
+      border-radius: 8px;
+      // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    // background-color: rgba(255, 255, 255, 0.9);
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    ;
+    transition: all 0.3s ease;
+    z-index: 10;
 
-    &__container {
+    &--prev {
+      left: 1%;
+    }
+
+    &--next {
+      left: 70%;
+
+      @media (max-width: 480px) {
+        &--next {
+          left: 75% !important;
+        }
+      }
+    }
+
+    &__dots {
       display: flex;
-      gap: 1rem;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 8px;
     }
-  
-    &__item {
-      width: 290px;
-      height: 600px;
-      transition: all 0.3s ease-in-out;
-      transform: scale(0.9);
-      opacity: 0.7;
-  
-      &--active {
-        transform: scale(1.1);
-        opacity: 1;
-        z-index: 1;
-      }
-    }
-  
-    &__image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-    //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-    &__button {
-      position: absolute;
-      z-index: 3;
-      background-color: rgba(0, 0, 0, 0.5);
-      border: none;
+
+    &__dot {
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      padding: 0.5rem;
+      // background-color: rgba(0, 0, 0, 0.2);
+      border: none;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.8);
-      }
-  
-      &--prev {
-        left: 1rem;
-      }
-  
-      &--next {
-        right: 1rem;
+      transition: all 0.3s ease;
+
+      &.active {
+        // background-color: rgba(0, 0, 0, 0.6);
+        transform: scale(1.2);
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .carousel {
+      width: 100%;
+      padding: 30px 40px;
+
+      &__slide {
+        flex: 0 0 calc(50% - 30px);
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel {
+      width: 90%;
+      padding: 20px 30px;
+
+      &__slide {
+        flex: 0 0 calc(100% - 30px);
+      }
+    }
+  }
+}

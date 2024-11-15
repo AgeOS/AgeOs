@@ -137,6 +137,7 @@
   width: 60%;
   height: auto px;
   margin-left: 400px;
+  margin: 20px 0 50px 0;
 }
 
 .container_tequipe h1 {
@@ -181,7 +182,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -192,7 +193,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .jesse {
@@ -230,7 +231,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -241,7 +242,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .git2 {
@@ -250,7 +251,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -261,7 +262,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .git3 {
@@ -270,7 +271,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -281,7 +282,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .jeff {
@@ -511,6 +512,130 @@
 }
 
 /* Ajuste geral para prevenir overflow */
+body {
+  overflow-x: hidden;
+}
+
+.containersobre {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1366px) {
+  .imagem {
+    height: 500px;
+  }
+  .texto h1 {
+    font-size: 60px;
+    margin-left: 40px;
+  }
+  .texto p {
+    font-size: 24px;
+    margin-left: 40px;
+    width: 85%;
+  }
+  .container_missao {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  .imagem3 img {
+    margin-right: 60px;
+    width: 150px;
+    height: 150px;
+  }
+  .texto_visao h1 {
+    font-size: 60px;
+    margin-left: 600px;
+  }
+  .texto_visao p {
+    font-size: 24px;
+    width: 75%;
+    margin-left: 300px;
+  }
+  .imagem4 img {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  .valores-e-coracao {
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+  .valores h1 {
+    font-size: 60px;
+    margin-left: 150px;
+  }
+  .valores p {
+    font-size: 20px;
+    margin-left: 80px;
+    margin: 20px 0;
+    margin-left: 80px;
+    max-width: 500px;
+  }
+  .coracao img {
+    width: 200px;
+    height: 200px;
+    margin-right: 60px;
+  }
+  .identidade img {
+    width: 80%;
+    margin-left: 150px;
+  }
+  .container_tequipe h1 {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+  .isap, .jessep, .jeffp, .vitorp {
+    width: 65%;
+    margin-left: 30px;
+  }
+  .git, .git1, .git2, .git3, .git4, .git5 {
+    bottom: 25px;
+    left: 300px;
+    width: 35px;
+    height: 35px;
+  }
+  .linke, .linke1, .linke2, .linke3, .linke4, .linke5 {
+    bottom: 25px;
+    left: 250px;
+    width: 35px;
+    height: 35px;
+  }
+  .jesse, .jeff, .vitor {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .container-isa-flex,
+  .container-jesse-flex,
+  .container-jeff-flex,
+  .container-vitor-flex {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  .container2 img {
+    margin-top: 400px;
+    margin-right: -15px;
+    height: 100px;
+    width: 100px;
+  }
+  .vitor {
+    margin-bottom: 80px;
+  }
+}
+.container2 {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+.imagem2 {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
 body {
   overflow-x: hidden;
 }
