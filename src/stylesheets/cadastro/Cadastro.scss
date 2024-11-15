@@ -19,7 +19,8 @@
     display: flex;
     width: 40%;
     justify-content: center;
-    background-color: #5E329D;
+    background-color:#5E329D;
+    border-start-start-radius: 10px;        
 }
 
 .dentro_cadastro{
@@ -57,9 +58,9 @@
 }
 
 .dentro_cadastro button{
-    width: 80%;
+    width: 75%;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #FFEA73;
     font-size: 20px;
 }
@@ -85,11 +86,13 @@
 .container_contas p{
     font-size: 2vh;
     margin-right: 20px;
+    color: white;
 }
 
 .politica{
     font-size: 2vh;
     text-align: center;
+    color: white;
 }
 
 .politica span{
