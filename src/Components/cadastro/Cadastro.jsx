@@ -16,14 +16,14 @@ function Cadastro() {
                 <div className='dentro_cadastro'>
                     <div className='logo_ageOSCadastro'>
                         <img src={logoCadastro} alt="logo AgeOS" />
-                    </div>
-                    <h1>Cadastre-se</h1>
+                    </div> 
+                    <h1 className='H1c'>Cadastre-se</h1>
                     <input type="text" placeholder='Nome' />
                     <input type="text" placeholder='Sobrenome' />
                     <input type="text" placeholder='Endereço de e-mail' />
                     <input type="text" placeholder='Senha' />
                     <input type="text" placeholder='Repita a senha' />
-                    <button>Cadastre-se</button>
+                    <button className='btncadastro'>Cadastre-se</button>
                     <div className='politica'>
                         <p>Ao se cadastrar, você concorda com os <span>termos de uso</span>e com nossa <span>política de privacidade</span></p>
                     </div>

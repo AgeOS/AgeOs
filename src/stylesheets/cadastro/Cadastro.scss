@@ -32,8 +32,9 @@
 }
 
 .logo_ageOSCadastro img{
-   width: 200px;
-   height: 150px;
+   width: auto;
+   height: 100px;
+   margin-bottom: 20px;
 }
 
 .dentro_cadastro h1{
@@ -78,6 +79,7 @@
     width: 60px;
     height: 60px;
     margin-right: 10px;
+    margin-top: -10px;
 }
 
 .container_contas p{
@@ -135,6 +137,7 @@
     .dentro_cadastro button {
         width: 90%;
         height: 45px;
+      
     }
 
     .dentro_cadastro a {
@@ -205,7 +208,8 @@
     .container_contas img {
         width: 40px;
         height: 40px;
-    }
+        
+    }   
 
     .container_contas p {
         font-size: 1.5vh;
@@ -214,8 +218,17 @@
     .politica {
         font-size: 1.5vh;
     }
+    .politica p{
+        font-family: $font-family-roboto;
+
+    }
 }
+.H1c{
+   font-family:  $font-family-poppins;
+}
+ .btncadastro{
+   font-family: $font-family-roboto ;
 
-
+}
 
 
