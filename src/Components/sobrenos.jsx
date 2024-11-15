@@ -4,7 +4,6 @@ import NavBar from "./NavBar/NavBar";
 
 //imgs
 import Ini from '../assets/imagens/inici.png'
-import chatBot from '../assets/imagens/chatbot.png'
 import alvo from '../assets/imagens/alvo.png'
 import visao from '../assets/imagens/olho.png'
 import coracao from '../assets/imagens/coração.png'
@@ -18,7 +17,6 @@ import kaique from '../assets/imagens/kaiqueinfo.png'
 import jeff from '../assets/imagens/jeffinfo.png'
 import marcelo from '../assets/imagens/marceloinfo.png'
 import yuri from '../assets/imagens/yuriinfo.png'
-import Vitor from '../assets/imagens/vitorinfo.png'
 import gui from '../assets/imagens/guiinfo.png'
 
 
@@ -38,9 +36,7 @@ export default function sobrenos() {
         <img src={Ini} alt="Início" className="imagem" />
       </div>
 
-      <div className="container2">
-        <img src={chatBot}alt="Chatbot" className="imagem2" />
-      </div>
+    
 
       <div className="container_missao">
         <div className="texto">
@@ -181,21 +177,9 @@ export default function sobrenos() {
         </div>
       </div>
 
-      <div className="container-vitor-flex">
-        {/* Primeira metade */}
-        <div className="vitor">
-          <img src={Vitor} alt="Coração" className="vitorp" />
-          <div>
-            <a href="https://github.com/cordatto" target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="Coração" className="git5" />
-            </a>
-            <a href="
-https://www.linkedin.com/in/vitor-gabriel-cordeiro-9b9605201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-              <img src={linkedin} alt="Coração" className="linke5" />
-            </a>
-          </div>
-        </div>
-      </div>
+      
+        
+      
     </>
   );
 }
