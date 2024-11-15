@@ -250,6 +250,7 @@ $breakpoint-desktop: 1200px;
     font-family: $font-family-poppins;
 
     @include laptop {
+      margin-top: -400px;
       font-size: 64px;
     }
 
