@@ -101,7 +101,7 @@ $breakpoint-desktop: 1200px;
     margin-top: 120px;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 250px;
   }
 
   .apresentation {
@@ -191,7 +191,7 @@ $breakpoint-desktop: 1200px;
     @include tablet {
       width: 100%;
       height: 100%;
-      //   margin-top: 30px;
+      margin-bottom: 150px;
     }
 
     @include mobile {
@@ -250,6 +250,7 @@ $breakpoint-desktop: 1200px;
     font-family: $font-family-poppins;
 
     @include laptop {
+      margin-top: -400px;
       font-size: 64px;
     }
 
@@ -310,6 +311,10 @@ $breakpoint-desktop: 1200px;
   align-items: center;
   z-index: 0;
 
+  @include laptop {
+    margin-top: -200px;
+  }
+
   h1 {
     font-size: 84px;
     font-family: $font-family-poppins;
@@ -335,6 +340,10 @@ $breakpoint-desktop: 1200px;
     color: $color-black;
     font-family: $font-family-roboto;
 
+    @include laptop {
+      width: 90%;
+    }
+
     @include tablet {
       width: 85%;
       font-size: 28px;
@@ -352,14 +361,20 @@ $breakpoint-desktop: 1200px;
     display: flex;
     justify-content: center;
 
-    @include mobile {
-      width: 100%;
-      height: 200px !important;
+    @include laptop {
+      margin-top: 20px;
     }
 
     @include tablet {
       flex-direction: column;
       align-items: center;
+      margin: 120px 0 120px 0;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      width: 100%;
+      // height: 200px !important;
     }
 
     .seguranca-text {
@@ -372,9 +387,13 @@ $breakpoint-desktop: 1200px;
       justify-content: center;
       // z-index: 2;
 
+      @include laptop {
+        width: 100%;
+      }
+
       @include tablet {
         height: auto;
-        padding: 40px 20px;
+        padding: 40px;
         align-items: center;
       }
 
@@ -391,14 +410,15 @@ $breakpoint-desktop: 1200px;
         }
 
         @include laptop {
-          font-size: 40px;
-          bottom: 150px;
+          font-size: 2.4rem;
+          bottom: 180px;
+          // left: 20px;
         }
 
         @include tablet {
-          font-size: 30px;
-          bottom: 10px;
-          right: 130px;
+          font-size: 2.6rem;
+          bottom: 50px;
+          right: 140px;
         }
 
         @include mobile {
@@ -423,8 +443,8 @@ $breakpoint-desktop: 1200px;
         }
 
         @include laptop {
-          width: 60%;
-          bottom: 140px;
+          width: 56%;
+          bottom: 170px;
           text-align: center;
         }
 
@@ -432,8 +452,8 @@ $breakpoint-desktop: 1200px;
           width: 60%;
           text-align: center;
           right: 150px;
-          bottom: 0;
-          font-size: 20px;
+          bottom: 30px;
+          font-size: 1.5rem;
         }
         @include mobile {
           max-width: 70%;
@@ -451,6 +471,11 @@ $breakpoint-desktop: 1200px;
       width: 90%;
       z-index: 0;
 
+      @include laptop {
+        width: 100%;
+        height: 350px;
+      }
+
       @include tablet {
         // position: relative;
         width: 100%;
@@ -467,6 +492,102 @@ $breakpoint-desktop: 1200px;
 }
 
 .apps {
+  @include tablet {
+    height: auto;
+    max-width: 95%;
+    width: 99%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    // align-items: center;
+
+    h2 {
+      display: none;
+    }
+
+    .celular-apps {
+      display: flex;
+      width: 40%;
+
+      img {
+        width: 100%;
+        display: flex;
+        object-fit: contain;
+        align-items: center;
+      }
+    }
+
+    .lista-apps {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        display: flex;
+        font-size: 1.7rem;
+        font-family: $font-family-poppins;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-family: $font-family-roboto;
+      }
+
+      .apps-lado1 {
+        width: 80%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid black;
+
+        .linha-lateral {
+          position: relative;
+          // top: 1px;
+          width: 1%;
+          height: 190px;
+          border-right: 1px solid black;
+          // z-index: 2;
+        }
+
+        // .linha-baixo {
+        //   width: 90%;
+        //   height: 10px;
+        //   border-bottom: 1px solid black;
+        // }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .apps-lado2 {
+        width: 90%;
+        padding-left: 37.8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+        }
+
+        .linha-lateral2 {
+          position: relative;
+          // top: 1px;
+          width: 1%;
+          height: 190px;
+          border-right: 1px solid black;
+          // z-index: 2;
+        }
+      }
+    }
+  }
+
   @include mobile {
     max-width: 95%;
     width: 90%;
@@ -480,7 +601,7 @@ $breakpoint-desktop: 1200px;
       width: 100%;
 
       img {
-        width: 100%;
+        width: 90%;
       }
     }
 
@@ -498,7 +619,7 @@ $breakpoint-desktop: 1200px;
       h2 {
         font-size: 1.7rem;
         font-family: $font-family-poppins;
-        display: none;
+        // display: none;
       }
 
       p {
@@ -608,6 +729,48 @@ $breakpoint-desktop: 1200px;
 }
 
 .gemini {
+  @include tablet {
+    width: 95%;
+    max-width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 100px 0;
+
+    .text-gemini {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 1.8rem;
+        font-family: $font-family-poppins;
+        color: $color-purple;
+        text-align: start;
+      }
+
+      p {
+        width: 90%;
+        font-family: $font-family-roboto;
+        font-size: 1.5rem;
+      }
+    }
+
+    .gemini-phone {
+      width: 50%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+
   @include mobile {
     width: 95%;
     max-width: 98%;
@@ -747,97 +910,155 @@ $breakpoint-desktop: 1200px;
 }
 
 .conheca-mais {
-  width: 100%;
-  border-radius: 20px;
-  // height: 306px;
-  background-color: $color-purple;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-
-  .left-side-conheca {
+  @include tablet {
     width: 100%;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    color: $color-white;
+    height: 590px;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: $color-purple;
 
-    h2 {
-      width: 60%;
-      font-family: $font-family-poppins;
-      font-size: 1.2rem;
-      text-align: center;
-    }
+    .left-side-conheca {
+      width: 50%;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
 
-    p {
-      width: 90%;
-      padding-top: 10px;
-      font-family: $font-family-roboto;
-      font-size: 1rem;
-      text-align: center;
-    }
-
-    button {
-      width: 30%;
-      height: 32px;
-      background-color: $color-white;
-      border: none;
-      border-radius: 5px;
-      margin-top: 8px;
-
-      a {
-        text-decoration: none;
-        color: $color-purple;
+      h2 {
         font-family: $font-family-poppins;
-        font-size: 0.8rem;
-        text-align: center;
-        font-weight: bold;
+        color: $color-white;
+        font-size: 2.3rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $color-white;
+        font-family: $font-family-roboto;
+      }
+
+      button {
+        margin-top: 20px;
+        height: 40px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        border-radius: 0.6rem;
+
+        a {
+          text-decoration: none;
+          color: $color-purple;
+        }
+      }
+    }
+
+    .right-side-conheca {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 90%;
       }
     }
   }
 
-  .right-side-conheca {
+  @include mobile {
+    width: 100%;
+    border-radius: 20px;
+    // height: 306px;
+    background-color: $color-purple;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .left-side-conheca {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-white;
+
+      h2 {
+        width: 60%;
+        font-family: $font-family-poppins;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      p {
+        width: 90%;
+        padding-top: 10px;
+        font-family: $font-family-roboto;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      button {
+        width: 30%;
+        height: 32px;
+        background-color: $color-white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 8px;
+
+        a {
+          text-decoration: none;
+          color: $color-purple;
+          font-family: $font-family-poppins;
+          font-size: 0.8rem;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .right-side-conheca {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 300px;
+      // padding-top: px;
+
+      img {
+        width: 90%;
+        height: 280px;
+        align-items: center;
+      }
+    }
+  }
+
+  .agradecimentos {
+    width: 100%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 300px;
-    // padding-top: px;
+    flex-direction: column;
+
+    h2 {
+      font-family: $font-family-poppins;
+      color: $color-purple;
+      font-size: 2rem;
+    }
 
     img {
-      width: 90%;
-      height: 280px;
-      align-items: center;
+      width: 55%;
+      padding-top: 10px;
+      padding-left: 20px;
     }
-  }
-}
 
-.agradecimentos {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    .senac {
+      width: 50%;
+    }
 
-  h2 {
-    font-family: $font-family-poppins;
-    color: $color-purple;
-    font-size: 2rem;
-  }
-
-  img {
-    width: 55%;
-    padding-top: 10px;
-    padding-left: 20px;
-  }
-
-  .senac {
-    width: 50%;
-  }
-
-  .proa {
-    width: 30%;
+    .proa {
+      width: 30%;
+    }
   }
 }
