@@ -19,7 +19,8 @@
     display: flex;
     width: 40%;
     justify-content: center;
-    background-color: #5E329D;
+    background-color:#5E329D;
+    border-start-start-radius: 10px;        
 }
 
 .dentro_cadastro{
@@ -32,8 +33,9 @@
 }
 
 .logo_ageOSCadastro img{
-   width: 200px;
-   height: 150px;
+   width: auto;
+   height: 100px;
+   margin-bottom: 20px;
 }
 
 .dentro_cadastro h1{
@@ -56,9 +58,9 @@
 }
 
 .dentro_cadastro button{
-    width: 80%;
+    width: 75%;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #FFEA73;
     font-size: 20px;
 }
@@ -78,16 +80,19 @@
     width: 60px;
     height: 60px;
     margin-right: 10px;
+    margin-top: -10px;
 }
 
 .container_contas p{
     font-size: 2vh;
     margin-right: 20px;
+    color: white;
 }
 
 .politica{
     font-size: 2vh;
     text-align: center;
+    color: white;
 }
 
 .politica span{
@@ -135,6 +140,7 @@
     .dentro_cadastro button {
         width: 90%;
         height: 45px;
+      
     }
 
     .dentro_cadastro a {
@@ -205,7 +211,8 @@
     .container_contas img {
         width: 40px;
         height: 40px;
-    }
+        
+    }   
 
     .container_contas p {
         font-size: 1.5vh;
@@ -214,8 +221,17 @@
     .politica {
         font-size: 1.5vh;
     }
+    .politica p{
+        font-family: $font-family-roboto;
+
+    }
 }
+.H1c{
+   font-family:  $font-family-poppins;
+}
+ .btncadastro{
+   font-family: $font-family-roboto ;
 
-
+}
 
 

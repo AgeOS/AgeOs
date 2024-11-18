@@ -1,9 +1,17 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
-// import "../../stylesheets/navbar/index.scss";
-// import "../../stylesheets/navbar/media.scss";
-import '../../../public/stylesheets/navbar/index.css'
-import '../../../public/stylesheets/navbar/media.css'
+import "../../stylesheets/navbar/index.scss";
+import "../../stylesheets/navbar/media.scss";
+// import '../../../public/stylesheets/navbar/index.css'
+// import '../../../public/stylesheets/navbar/media.css'
+
+//imgs
+
+import menuFechado from '../../assets/navbar/menu-fechado.png'
+import menuRoxo from '../../assets/navbar/menu-roxo.png'
+import logo from '../../assets/navbar/logo-1.png'
+import theme from '../../assets/navbar/image-34.png'
+
 
 export default function NavBar() {
   return (
@@ -19,19 +27,21 @@ export default function NavBar() {
             
             if (modal.style.display === "none" || modal.style.display === "") {
               modal.style.display = "flex";
-              img.src = "src/assets/navbar/menu-fechado.png"; // Novo src da imagem
+              img.src = {menuFechado}; // Novo src da imagem
             } else {
               modal.style.display = "none";
-              img.src = "src/assets/navbar/menu-roxo.png"; // src original da imagem
+              img.src = {menuRoxo}; // src original da imagem
             }
           }}
           >
-          <img src="src\assets\navbar\menu-roxo.png" alt="" />
+          <img src={menuRoxo} alt="" />
         </button>
 
         <div className="modal-lateral">
           <div className="conteudo">
-            <img src="src\assets\navbar\logo-1.png" alt="" />
+            <Link to='/'>
+            <img src={logo} alt="" />
+            </Link>
 
             <ul>
               <li>
@@ -50,16 +60,16 @@ export default function NavBar() {
 
             <div className="buttons">
               <button className="theme">
-                <img src="src\assets\navbar\image-34.png" alt="" />
+                <img src={theme} alt="" />
               </button>
 
-                <Link>
+                <Link to='/login'>
                <button className="login">
                  Login
                 </button>
                 </Link>
 
-              <Link>
+              <Link to='/cadastro'>
               <button className="cadastro">
               Cadastre-se
               </button>
@@ -106,7 +116,9 @@ export default function NavBar() {
         
         <nav className="nav-bar">
         <div className="logo">
-          <img src="src/assets/navbar/logo-1.png" alt="" />
+          <Link to='/'>
+            <img src={logo} alt="" />
+          </Link>
         </div>
   
         <ul>
@@ -117,7 +129,7 @@ export default function NavBar() {
             <Link to='/sobrenos'>Sobre nós</Link>
           </li>
           <li>
-            <Link to='/adquira'>Adquira</Link> {/* Corrigido de '../' para '/adquira' */}
+            <Link to='/adquira'>Adquira</Link>
           </li>
           <li>
             <Link to='/suporte'>Suporte</Link>
@@ -126,7 +138,7 @@ export default function NavBar() {
   
         <div className="buttons">
           <button className="theme">
-            <img src="src/assets/navbar/image-34.png" alt="" />
+            <img src={theme} alt="" />
           </button>
   
           <button className="login">

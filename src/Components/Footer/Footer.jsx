@@ -2,7 +2,7 @@
 import '../../stylesheets/footer/footer.scss'
 import '../../stylesheets/footer/media.scss'
 
-
+import { Link } from 'react-router-dom'
 
 export default function Footer({foto , color , you , insta , face , linke}){
 
@@ -15,7 +15,7 @@ export default function Footer({foto , color , you , insta , face , linke}){
       
       <div className="content" style={{color:color }}>
         <div className="section " >
-          <h3 style={{color:color }} className='table'>Descubra</h3>
+          <h3 style={{color:color }} className='table'><Link to='/'>Descubra</Link></h3>
           <ul >
             <li><a style={{color:color }} href="#">Interface</a></li>
             <li><a style={{color:color }} href="#">Benefícios</a></li>
@@ -24,7 +24,7 @@ export default function Footer({foto , color , you , insta , face , linke}){
         </div>
 
         <div className="section">
-          <h3 style={{color:color }} className='table'>Suporte</h3>
+          <h3 style={{color:color }} className='table'><Link to='/suporte'>Suporte</Link></h3>
           <ul>
             <li><a style={{color:color }} href="#">Fale conosco</a></li>
             <li><a style={{color:color }} href="#">Dúvidas</a></li>
@@ -33,10 +33,10 @@ export default function Footer({foto , color , you , insta , face , linke}){
         </div>
 
         <div className="section">
-          <h3 style={{color:color }} className='table'>Sobre</h3>
+          <h3 style={{color:color }} className='table'><Link to='/sobrenos'>Sobre</Link></h3>
           <ul>
             <li><a style={{color:color }} href="#">Sobre nós</a></li>
-            <li><a style={{color:color }} href="#">Contato</a></li>
+            <li><a style={{color:color }} href="">Contato</a></li>
             <li><a style={{color:color }} href="#">Política de privacidade</a></li>
           </ul>
         </div>

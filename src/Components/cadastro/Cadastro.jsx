@@ -16,23 +16,31 @@ function Cadastro() {
                 <div className='dentro_cadastro'>
                     <div className='logo_ageOSCadastro'>
                         <img src={logoCadastro} alt="logo AgeOS" />
-                    </div>
-                    <h1>Cadastre-se</h1>
+                    </div> 
+                    <h1 className='H1c'>Cadastre-se</h1>
                     <input type="text" placeholder='Nome' />
                     <input type="text" placeholder='Sobrenome' />
                     <input type="text" placeholder='Endereço de e-mail' />
                     <input type="text" placeholder='Senha' />
                     <input type="text" placeholder='Repita a senha' />
-                    <button>Cadastre-se</button>
+                    <button className='btncadastro'>Cadastre-se</button>
                     <div className='politica'>
-                        <p>Ao se cadastrar, você concorda com os <span>termos de uso</span>e com nossa <span>política de privacidade</span></p>
-                    </div>
-                    <div className='container_contas'>
-                        <p>Ou entrar usando: </p>
-                        <img src={google} alt="" />
-                        <img src={face} alt="" />
-                        <img src={hotmail} alt="" />
-                    </div>
+    <p>Ao se cadastrar, você concorda com os <a href="/termos-de-uso"><span className="link-terms">termos de uso</span></a> e com nossa <a href="/politica-de-privacidade"><span className="link-privacy">política de privacidade</span></a></p>
+</div>
+
+<div className='container_contas'>
+    <p>Ou entre utilizando: </p>
+    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+        <img src={google} alt="Google" />
+    </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src={face} alt="Facebook" />
+    </a>
+    <a href="https://www.outlook.com" target="_blank" rel="noopener noreferrer">
+        <img src={hotmail} alt="Hotmail" />
+    </a>
+</div>
+
                 </div>
             </div>
         </section>

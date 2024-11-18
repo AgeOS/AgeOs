@@ -5,6 +5,12 @@ import email from '../../assets/suporte/email.png';
 import svgPessoas from '../../assets/suporte/imgs.png';
 import chatbot from '../../assets/suporte/Chatbot.png';
 import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer'
+import navbar from '../../assets/footer/navbar-roxa.png'
+import youtubeIcon from '../../assets/footer/youbute-branco.png'
+import instaIcon from '../../assets/footer/insta-branco.png'
+import faceIcon from '../../assets/footer/face-branco.png'
+import linkeIcon from '../../assets/footer/linke-branco.png'
 
 function Suporte() {
   
@@ -63,7 +69,7 @@ function Suporte() {
 
           <div className='dentro_chatbot2'>
             <img src={chatbot} alt="AgeBot" />
-            <button><a href="#">Iniciar chat</a></button>
+            {/* <button><a href="#">Iniciar chat</a></button> */}
           </div>
         </div>
       </section>
@@ -103,6 +109,14 @@ function Suporte() {
         </section>
       </section>
     </section>
+    <Footer
+        foto={navbar}
+        color='white'
+        you={youtubeIcon}
+        insta={instaIcon}
+        face={faceIcon}      
+        linke={linkeIcon}
+    />
 </>
   );
 }

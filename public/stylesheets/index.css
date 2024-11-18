@@ -16,26 +16,29 @@
 .hero-section {
   position: relative;
   width: 90%;
-  margin: 100px auto;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 @media (max-width: 992px) {
   .hero-section {
+    top: -70px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
   .hero-section {
+    margin-top: 120px;
     flex-direction: column;
     width: 100%;
   }
 }
 @media (max-width: 576px) {
   .hero-section {
+    margin-top: 120px;
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
@@ -52,6 +55,9 @@
     text-align: center;
     align-items: center;
   }
+}
+.hero-section .apresentation a {
+  text-decoration: none;
 }
 .hero-section .apresentation h1 {
   font-size: 72px;
@@ -87,15 +93,26 @@
   font-weight: 600;
   margin-top: 45px;
 }
+@media (max-width: 1200px) {
+  .hero-section .apresentation .btn-conhecer {
+    width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section .apresentation .btn-conhecer {
+    width: 50%;
+    font-size: 24px;
+  }
+}
 @media (max-width: 768px) {
   .hero-section .apresentation .btn-conhecer {
-    width: 1%;
-    font-size: 10px;
+    width: 120%;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
   .hero-section .apresentation .btn-conhecer {
-    width: 80%;
+    width: 130%;
     font-size: 18px;
     height: 50px;
   }
@@ -103,10 +120,18 @@
 .hero-section .phone-img {
   width: 38%;
   display: flex;
-  height: 80vh;
+  height: 87vh;
+  overflow: hidden;
   position: relative;
   top: 50px;
   object-fit: cover;
+  overflow: hidden !important;
+}
+@media (max-width: 1200px) {
+  .hero-section .phone-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 768px) {
   .hero-section .phone-img {
@@ -284,7 +309,7 @@
   }
 }
 .beneficios-etc .seguranca .seguranca-text {
-  width: 88%;
+  width: 87%;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -300,11 +325,16 @@
 }
 .beneficios-etc .seguranca .seguranca-text h1 {
   color: #FAF8FB;
-  font-size: 50px;
+  font-size: 80px;
   position: relative;
   bottom: 100px;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .beneficios-etc .seguranca .seguranca-text h1 {
+    font-size: 50px;
+  }
 }
 @media (max-width: 992px) {
   .beneficios-etc .seguranca .seguranca-text h1 {
@@ -332,8 +362,13 @@
   text-align: start;
   bottom: 90px;
   color: #FAF8FB;
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 1200px) {
+  .beneficios-etc .seguranca .seguranca-text p {
+    font-size: 24px;
+  }
 }
 @media (max-width: 992px) {
   .beneficios-etc .seguranca .seguranca-text p {
@@ -380,7 +415,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: 90px;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -469,7 +504,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -500,8 +535,13 @@
   position: absolute;
   color: #FAF8FB;
   right: 10%;
-  font-size: 70px;
+  font-size: 85px;
   top: 20%;
+}
+@media (max-width: 1200px) {
+  .atendimento h1 {
+    font-size: 70px;
+  }
 }
 @media (max-width: 992px) {
   .atendimento h1 {
@@ -683,7 +723,7 @@
 .pacotes .cards .pacote-basico img,
 .pacotes .cards .pacote-premium img {
   position: relative;
-  width: 70px;
+  width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -743,6 +783,13 @@
   .pacotes .cards .pacote-premium ul {
     font-size: 20px;
   }
+}
+.pacotes .cards .pacote-basico .buy-button,
+.pacotes .cards .pacote-premium .buy-button {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  left: 170px;
 }
 @media (max-width: 768px) {
   .pacotes .cards .pacote-basico button,
@@ -937,6 +984,7 @@
   width: 60%;
   height: auto px;
   margin-left: 400px;
+  margin: 20px 0 50px 0;
 }
 
 .container_tequipe h1 {
@@ -981,7 +1029,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -992,7 +1040,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .jesse {
@@ -1030,7 +1078,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -1041,7 +1089,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .git2 {
@@ -1050,7 +1098,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -1061,7 +1109,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .git3 {
@@ -1070,7 +1118,7 @@
   left: 470px;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 10px;
 }
 
@@ -1081,7 +1129,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .jeff {
@@ -1320,6 +1368,130 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1366px) {
+  .imagem {
+    height: 500px;
+  }
+  .texto h1 {
+    font-size: 60px;
+    margin-left: 40px;
+  }
+  .texto p {
+    font-size: 24px;
+    margin-left: 40px;
+    width: 85%;
+  }
+  .container_missao {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  .imagem3 img {
+    margin-right: 60px;
+    width: 150px;
+    height: 150px;
+  }
+  .texto_visao h1 {
+    font-size: 60px;
+    margin-left: 600px;
+  }
+  .texto_visao p {
+    font-size: 24px;
+    width: 75%;
+    margin-left: 300px;
+  }
+  .imagem4 img {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  .valores-e-coracao {
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+  .valores h1 {
+    font-size: 60px;
+    margin-left: 150px;
+  }
+  .valores p {
+    font-size: 20px;
+    margin-left: 80px;
+    margin: 20px 0;
+    margin-left: 80px;
+    max-width: 500px;
+  }
+  .coracao img {
+    width: 200px;
+    height: 200px;
+    margin-right: 60px;
+  }
+  .identidade img {
+    width: 80%;
+    margin-left: 150px;
+  }
+  .container_tequipe h1 {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+  .isap, .jessep, .jeffp, .vitorp {
+    width: 65%;
+    margin-left: 30px;
+  }
+  .git, .git1, .git2, .git3, .git4, .git5 {
+    bottom: 25px;
+    left: 300px;
+    width: 35px;
+    height: 35px;
+  }
+  .linke, .linke1, .linke2, .linke3, .linke4, .linke5 {
+    bottom: 25px;
+    left: 250px;
+    width: 35px;
+    height: 35px;
+  }
+  .jesse, .jeff, .vitor {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .container-isa-flex,
+  .container-jesse-flex,
+  .container-jeff-flex,
+  .container-vitor-flex {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  .container2 img {
+    margin-top: 400px;
+    margin-right: -15px;
+    height: 100px;
+    width: 100px;
+  }
+  .vitor {
+    margin-bottom: 80px;
+  }
+}
+.container2 {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+.imagem2 {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.containersobre {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1344,9 +1516,11 @@ body {
   rotate: -3.5deg;
 }
 .adquira-container h1 {
+  width: 100%;
+  flex-wrap: nowrap;
   position: relative;
   top: 260px;
-  left: -100px;
+  left: -300px;
   height: 100px;
   max-width: 25ch;
   color: #FFF;
@@ -1579,6 +1753,10 @@ body {
   padding-top: 5px;
 }
 
+.container_suporte {
+  margin-bottom: 210px;
+}
+
 .container_canal {
   width: 90%;
   height: 700px;
@@ -1612,6 +1790,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .container img {
@@ -1937,6 +2116,7 @@ body {
   width: 70%;
   flex-direction: column;
   align-items: center;
+  margin-top: 110px;
 }
 
 .logo_ageOS img {
@@ -2139,6 +2319,7 @@ body {
   width: 70%;
   flex-direction: column;
   align-items: center;
+  margin-top: 110px;
 }
 
 .logo_ageOSCadastro img {

@@ -3,26 +3,29 @@
 .hero-section {
   position: relative;
   width: 90%;
-  margin: 100px auto;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 @media (max-width: 992px) {
   .hero-section {
+    top: -70px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
   .hero-section {
+    margin-top: 120px;
     flex-direction: column;
     width: 100%;
   }
 }
 @media (max-width: 576px) {
   .hero-section {
+    margin-top: 120px;
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
@@ -39,6 +42,9 @@
     text-align: center;
     align-items: center;
   }
+}
+.hero-section .apresentation a {
+  text-decoration: none;
 }
 .hero-section .apresentation h1 {
   font-size: 72px;
@@ -74,15 +80,26 @@
   font-weight: 600;
   margin-top: 45px;
 }
+@media (max-width: 1200px) {
+  .hero-section .apresentation .btn-conhecer {
+    width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section .apresentation .btn-conhecer {
+    width: 50%;
+    font-size: 24px;
+  }
+}
 @media (max-width: 768px) {
   .hero-section .apresentation .btn-conhecer {
-    width: 1%;
-    font-size: 10px;
+    width: 120%;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
   .hero-section .apresentation .btn-conhecer {
-    width: 80%;
+    width: 130%;
     font-size: 18px;
     height: 50px;
   }
@@ -90,10 +107,18 @@
 .hero-section .phone-img {
   width: 38%;
   display: flex;
-  height: 80vh;
+  height: 87vh;
+  overflow: hidden;
   position: relative;
   top: 50px;
   object-fit: cover;
+  overflow: hidden !important;
+}
+@media (max-width: 1200px) {
+  .hero-section .phone-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 768px) {
   .hero-section .phone-img {
@@ -271,7 +296,7 @@
   }
 }
 .beneficios-etc .seguranca .seguranca-text {
-  width: 88%;
+  width: 87%;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -287,11 +312,16 @@
 }
 .beneficios-etc .seguranca .seguranca-text h1 {
   color: #FAF8FB;
-  font-size: 50px;
+  font-size: 80px;
   position: relative;
   bottom: 100px;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .beneficios-etc .seguranca .seguranca-text h1 {
+    font-size: 50px;
+  }
 }
 @media (max-width: 992px) {
   .beneficios-etc .seguranca .seguranca-text h1 {
@@ -319,8 +349,13 @@
   text-align: start;
   bottom: 90px;
   color: #FAF8FB;
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 1200px) {
+  .beneficios-etc .seguranca .seguranca-text p {
+    font-size: 24px;
+  }
 }
 @media (max-width: 992px) {
   .beneficios-etc .seguranca .seguranca-text p {
@@ -367,7 +402,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: 90px;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -456,7 +491,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -487,8 +522,13 @@
   position: absolute;
   color: #FAF8FB;
   right: 10%;
-  font-size: 70px;
+  font-size: 85px;
   top: 20%;
+}
+@media (max-width: 1200px) {
+  .atendimento h1 {
+    font-size: 70px;
+  }
 }
 @media (max-width: 992px) {
   .atendimento h1 {
@@ -670,7 +710,7 @@
 .pacotes .cards .pacote-basico img,
 .pacotes .cards .pacote-premium img {
   position: relative;
-  width: 70px;
+  width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -730,6 +770,13 @@
   .pacotes .cards .pacote-premium ul {
     font-size: 20px;
   }
+}
+.pacotes .cards .pacote-basico .buy-button,
+.pacotes .cards .pacote-premium .buy-button {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  left: 170px;
 }
 @media (max-width: 768px) {
   .pacotes .cards .pacote-basico button,

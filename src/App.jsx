@@ -11,7 +11,7 @@ import Suporte from './Components/suporte/Suporte';
 import Login from './Components/login/Login';
 import Cadastro from './Components/cadastro/Cadastro';
 
-export default function App() {
+export default function App(){
   return (
 <>
       <Routes>

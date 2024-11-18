@@ -2,17 +2,41 @@
 // import "../stylesheets/sobrenos/sobrenos.scss";
 import NavBar from "./NavBar/NavBar";
 
+//imgs
+import Ini from '../assets/imagens/inici.png'
+import alvo from '../assets/imagens/alvo.png'
+import visao from '../assets/imagens/olho.png'
+import coracao from '../assets/imagens/coração.png'
+import identidade from '../assets/imagens/identi.png'
+import github from '../assets/imagens/redes.png'
+import linkedin from '../assets/imagens/redes1.png'
+
+//Membros
+import isabela from '../assets/imagens/isainfo.png'
+import kaique from '../assets/imagens/kaiqueinfo.png'
+import jeff from '../assets/imagens/jeffinfo.png'
+import marcelo from '../assets/imagens/marceloinfo.png'
+import yuri from '../assets/imagens/yuriinfo.png'
+import gui from '../assets/imagens/guiinfo.png'
+
+
+
+
+
+
+
+
+
+
 export default function sobrenos() {
   return (
     <>
       <NavBar/>
       <div className="containersobre">
-        <img src="src/assets/imagens/inici.png" alt="Início" className="imagem" />
+        <img src={Ini} alt="Início" className="imagem" />
       </div>
 
-      <div className="container2">
-        <img src="src/assets/imagens/chatbot.png" alt="Chatbot" className="imagem2" />
-      </div>
+    
 
       <div className="container_missao">
         <div className="texto">
@@ -24,13 +48,13 @@ export default function sobrenos() {
           </p>
         </div>
         <div className="imagem3">
-          <img src="src/assets/imagens/alvo.png" alt="Alvo" />
+          <img src={alvo} alt="Alvo" />
         </div>
       </div>
 
       <div className="container_visao">
         <div className="imagem4">
-          <img src="src/assets/imagens/olho.png" alt="Olho" />
+          <img src={visao} alt="Olho" />
         </div>
       </div>
 
@@ -54,12 +78,12 @@ export default function sobrenos() {
         </div>
 
         <div className="coracao">
-          <img src="src/assets/imagens/coração.png" alt="Coração" />
+          <img src={coracao} alt="Coração" />
         </div>
       </div>
 
       <div className="identidade">
-        <img src="src/assets/imagens/identi.png" alt="Olho" />
+        <img src={identidade} alt="Olho" />
       </div>
 
       <div className="container_tequipe">
@@ -70,27 +94,27 @@ export default function sobrenos() {
       <div className="container-isa-flex">
         {/* Primeira metade */}
         <div className="isa">
-          <img src="src/assets/imagens/isainfo.png" alt="Coração" className="isap" />
+          <img src={isabela} alt="Coração" className="isap" />
           <div>
             <a href="https://github.com/Minsonawoon" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git" />
+              <img src={github} alt="Coração" className="git" />
             </a>
             <a href="https://www.linkedin.com/in/isabela-clemente-da-silva/" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke" />
+              <img src={linkedin} alt="Coração" className="linke" />
             </a>
           </div>
         </div>
 
         {/* Segunda metade (cópia) */}
         <div className="isa">
-          <img src="src/assets/imagens/kaiqueinfo.png" alt="Coração" className="isap" />
+          <img src={kaique} alt="kaique" className="isap" />
           <div>
             <a href="https://github.com/jessemp3
 " target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git" />
+              <img src={github} alt="Coração" className="git" />
             </a>
             <a href="https://www.linkedin.com/in/kaique-alves-52a564287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke" />
+              <img src={linkedin} alt="Coração" className="linke" />
             </a>
           </div>
         </div>
@@ -100,26 +124,26 @@ export default function sobrenos() {
       <div className="container-jesse-flex">
         {/* Primeira metade */}
         <div className="jesse">
-          <img src="src/assets/imagens/marceloinfo.png" alt="Coração" className="jessep" />
+          <img src={marcelo} alt="Coração" className="jessep" />
           <div>
             <a href="https://github.com/Marcelo-DEV427" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git1" />
+              <img src={github} alt="Coração" className="git1" />
             </a>
             <a href="https://www.linkedin.com/in/marcelo-alves-tavares-174492242/" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke1" />
+              <img src={linkedin} alt="Coração" className="linke1" />
             </a>
           </div>
         </div>
 
         {/* Segunda metade (cópia) */}
         <div className="jesse">
-          <img src="src/assets/imagens/guiinfo.png" alt="Coração" className="jessep" />
+          <img src={gui} alt="Coração" className="jessep" />
           <div>
             <a href="https://github.com/GuillyPixel" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git3" />
+              <img src={github} alt="Coração" className="git3" />
             </a>
             <a href="https://www.linkedin.com/in/guillherme-martins-fernandes-23a22432b" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke3" />
+              <img src={linkedin} alt="Coração" className="linke3" />
             </a>
           </div>
         </div>
@@ -128,46 +152,34 @@ export default function sobrenos() {
       <div className="container-jeff-flex">
         {/* Primeira metade */}
         <div className="jeff">
-          <img src="src/assets/imagens/jeffinfo.png" alt="Coração" className="jeffp" />
+          <img src={jeff} alt="Coração" className="jeffp" />
           <div>
             <a href="https://github.com/JeffersonJesusDev" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git4" />
+              <img src={github} alt="Coração" className="git4" />
             </a>
             <a href="https://www.linkedin.com/in/jefferson-de-jesus-da-silva/" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke4" />
+              <img src={linkedin} alt="Coração" className="linke4" />
             </a>
           </div>
         </div>
 
         {/* Segunda metade (cópia) */}
         <div className="jesse">
-          <img src="src/assets/imagens/yuriinfo.png" alt="Coração" className="jeffp" />
+          <img src={yuri} alt="Coração" className="jeffp" />
           <div>
             <a href="https://github.com/unasc1ment0" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git4" />
+              <img src={github} alt="Coração" className="git4" />
             </a>
             <a href="https://www.linkedin.com/in/yuri-nascimento-da-silva-442a63324/" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke4" />
+              <img src={linkedin} alt="Coração" className="linke4" />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="container-vitor-flex">
-        {/* Primeira metade */}
-        <div className="vitor">
-          <img src="src/assets/imagens/vitorinfo.png" alt="Coração" className="vitorp" />
-          <div>
-            <a href="https://github.com/cordatto" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes.png" alt="Coração" className="git5" />
-            </a>
-            <a href="
-https://www.linkedin.com/in/vitor-gabriel-cordeiro-9b9605201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/imagens/redes1.png" alt="Coração" className="linke5" />
-            </a>
-          </div>
-        </div>
-      </div>
+      
+        
+      
     </>
   );
 }

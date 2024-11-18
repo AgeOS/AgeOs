@@ -29,9 +29,11 @@ svg {
 }
 
 h1{
+    width: 100%;
+    flex-wrap: nowrap;
     position: relative;
     top: 260px;
-    left: -100px;
+    left: -300px;
     height: 100px;
     max-width: 25ch;
     color: #FFF;
