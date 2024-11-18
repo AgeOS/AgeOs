@@ -122,6 +122,10 @@
     &--next {
       left: 70%;
 
+      @media (max-width: 992px) {
+        left: 85%;
+      }
+
       @media (max-width: 480px) {
         &--next {
           left: 75% !important;
