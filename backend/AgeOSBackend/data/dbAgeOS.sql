@@ -10,15 +10,15 @@ describe tb_buy;
 describe tb_ageos;
 
 create table tb_users(
-	pk_id_user int auto_increment primary key,
+	pk_id_user bigint auto_increment primary key,
     user_name varchar(200),
     user_email varchar(100),
     user_password varchar(200),
-    fk_id_buy int
+    fk_id_buy bigint
 );
 
 create table tb_buy(
-	pk_id_buy int auto_increment primary key,
+	pk_id_buy bigint auto_increment primary key,
     method_payment varchar(50),
     date_buy date,
     package_type enum('comum', 'familia'),
@@ -28,11 +28,13 @@ create table tb_buy(
 );
 
 create table tb_ageos(
-	pk_id_ageos int auto_increment primary key,
+	pk_id_ageos bigint auto_increment primary key,
     package_type enum('comum', 'familia')
 );
 
-
+drop table tb_users;
+drop table tb_buy;
+drop table tb_ageos;
 
 alter table tb_ageos
 add column fk_id_user int;
