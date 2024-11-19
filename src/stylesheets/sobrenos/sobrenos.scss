@@ -54,7 +54,7 @@
 }
 
 .imagem3 img {
-  margin-right: 200px;
+  margin-left: 100px;
   width: 300px;
   height: 300px;
   margin-top: 70px;
@@ -70,7 +70,7 @@
   font-size: 90px;
   color: #3d1887;
   font-family: $font-family-poppins;
-  margin-left: 1520px;
+  margin-left: 1400px;
 }
 
 .texto_visao {
@@ -97,7 +97,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 200px;  
 }
 
 .valores {
@@ -134,7 +134,7 @@
   background-color: #5e329d;
 }
 .identidade img {
-  width: 60%;
+  width: 99%;
   height: auto px;
   margin-left: 400px;
   margin: 20px 0 50px 0;
@@ -392,35 +392,35 @@
   .texto p {
     font-size: 32px;
     margin-left: 60px;
-    width: 90%;
+    width: 70%;
   }
 
   .container_missao {
     height: 250px;
     align-items: center;
-    margin-bottom: 50px; /* Adicionado espaçamento */
+    margin-bottom: 50px; 
   }
 
   .imagem3 img {
     margin-right: 100px;
-    width: 200px;
-    height: 200px;
-    margin-top: 0;
+    width: 300px;
+    height: 300px;
+    margin-top: 80px;
   }
 
   .texto_visao h1 {
     font-size: 80px;
-    margin-left: 800px; /* Reduzido para caber na tela */
+    margin-left: 1200px; 
   }
 
   .texto_visao p {
     font-size: 32px;
     width: 70%;
-    margin-left: 400px;
+    margin-left: 380px;
   }
 
   .imagem4 img {
-    margin-top: 200px;
+    margin-top: 320px;
     margin-left: 150px;
     width: 200px;
     height: 200px;
@@ -428,18 +428,18 @@
 
   .valores-e-coracao {
     margin-top: 150px;
-    padding: 0 20px; /* Adicionado padding lateral */
+    padding: 0 20px; 
   }
 
   .valores h1 {
     font-size: 80px;
-    margin-left: 200px; /* Ajustado */
+    margin-left: 200px; 
   }
 
   .valores p {
-    font-size: 24px;
+    font-size: 32px;
     margin-left: 100px;
-    max-width: 600px; /* Limitando largura do texto */
+    max-width: 700px; 
   }
 
   .coracao img {
@@ -455,10 +455,10 @@
 
   .container_tequipe h1 {
     font-size: 80px;
-    margin: 40px 0; /* Adicionado espaçamento */
+    margin: 40px 0;
   }
 
-  /* Ajustes para a seção de equipe */
+ 
   .isap,
   .jessep,
   .jeffp,
@@ -467,7 +467,7 @@
     margin-left: 50px;
   }
 
-  /* Ajustes dos ícones de redes sociais - descendo 40px */
+  
   .git {
     bottom: 50px;
     left: 370px;
@@ -504,15 +504,14 @@
     left: 310px;
   }
 
-  /* Ajuste do espaçamento vertical entre as seções */
   .jesse,
   .jeff,
   .vitor {
     margin-top: 60px;
-    margin-bottom: 60px; /* Adicionado espaçamento inferior */
+    margin-bottom: 60px; 
   }
 
-  /* Ajustes para garantir que o conteúdo não saia da página */
+
   .container-isa-flex,
   .container-jesse-flex,
   .container-jeff-flex,
@@ -521,13 +520,13 @@
     margin-bottom: 40px;
   }
 
-  /* Ajuste para o último elemento */
+
   .vitor {
-    margin-bottom: 100px; /* Espaço extra no final da página */
+    margin-bottom: 100px;
   }
 }
 
-/* Ajustes adicionais para garantir que o layout não quebre */
+
 .container2 {
   position: fixed;
   right: 20px;
@@ -545,7 +544,7 @@
   top: 20px;
 }
 
-/* Ajuste geral para prevenir overflow */
+
 body {
   overflow-x: hidden;
 }
@@ -573,10 +572,10 @@ body {
 
   .container_missao {
     height: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 
-  .imagem3 img {
+  .container_visao .imagem3 img {
     margin-right: 60px;
     width: 150px;
     height: 150px;
@@ -584,25 +583,26 @@ body {
 
   .texto_visao h1 {
     font-size: 60px;
-    margin-left: 600px;
+    margin-left: 1000px;
   }
 
   .texto_visao p {
     font-size: 24px;
     width: 75%;
-    margin-left: 300px;
+    margin-left: 250px;
   }
 
   .imagem4 img {
-    margin-top: 150px;
-    margin-left: 100px;
-    width: 150px;
-    height: 150px;
+    margin-top: 320px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
   }
 
   .valores-e-coracao {
-    margin-top: 100px;
-    padding: 0 15px;
+    margin-top: 250px;
+   
   }
 
   .valores h1 {
@@ -619,8 +619,8 @@ body {
   }
 
   .coracao img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin-right: 60px;
   }
 
@@ -634,7 +634,7 @@ body {
     margin: 30px 0;
   }
 
-  // Team section adjustments
+
   .isap,
   .jessep,
   .jeffp,
@@ -643,7 +643,7 @@ body {
     margin-left: 30px;
   }
 
-  // Social media icons adjustments
+  
   .git,
   .git1,
   .git2,
@@ -668,7 +668,7 @@ body {
     height: 35px;
   }
 
-  // Section spacing
+
   .jesse,
   .jeff,
   .vitor {
@@ -676,7 +676,6 @@ body {
     margin-bottom: 40px;
   }
 
-  // Container adjustments
   .container-isa-flex,
   .container-jesse-flex,
   .container-jeff-flex,
@@ -685,7 +684,6 @@ body {
     margin-bottom: 30px;
   }
 
-  // Chatbot adjustments
   .container2 img {
     margin-top: 400px;
     margin-right: -15px;
@@ -693,13 +691,13 @@ body {
     width: 100px;
   }
 
-  // Last section spacing
+
   .vitor {
     margin-bottom: 80px;
   }
 }
 
-// Keep existing utility classes at the bottom
+
 .container2 {
   position: fixed;
   right: 20px;
@@ -720,4 +718,170 @@ body {
 .containersobre {
   max-width: 100%;
   overflow: hidden;
+}
+  
+@media screen and (max-width: 768px) {
+  .imagem {
+    height: 300px;
+  }
+
+  .container_missao {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .texto {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .texto h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+
+  .texto p {
+    font-size: 15px;
+    margin-left: 0;
+    width: 90%;
+    text-align: center; 
+    
+  }
+
+  // Hide specific images on mobile
+  .imagem3,
+  .imagem4,
+  .coracao {
+    display: none;
+  }
+
+  .container_visao {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .texto_visao h1 {
+    font-size: 48px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .texto_visao p {
+    font-size: 15px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .texto_visao {
+    width: 100%;
+  }
+
+  .valores-e-coracao {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .valores {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .valores h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+
+  .valores p {
+    font-size: 15px;
+    margin-left: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .identidade img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container_tequipe h1 {
+    font-size: 48px;
+    margin: 30px 0;
+  }
+
+  // Team member sections
+  .container-isa-flex,
+  .container-jesse-flex,
+  .container-jeff-flex,
+  .container-vitor-flex {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .isa,
+  .jesse,
+  .jeff,
+  .vitor {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .isap,
+  .jessep,
+  .jeffp,
+  .vitorp {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  // Adjust social icons positioning
+  .git,
+  .git1,
+  .git2,
+  .git3,
+  .git4,
+  .git5 {
+    bottom: 20px;
+    left: auto;
+    right: 70px;
+  }
+
+  .linke,
+  .linke1,
+  .linke2,
+  .linke3,
+  .linke4,
+  .linke5 {
+    bottom: 20px;
+    left: auto;
+    right: 120px;
+  }
+
+  // Fixed container adjustments
+  .container2 {
+    right: 10px;
+    top: auto;
+    bottom: 20px;
+  }
+
+  .container2 img {
+    margin-top: 0;
+    margin-right: 0;
+    height: 60px;
+    width: 60px;
+  }
+
+  .imagem2 {
+    height: 60px;
+    width: 60px;
+    right: 10px;
+    top: auto;
+    bottom: 20px;
+  }
 }
