@@ -15,6 +15,14 @@ public class AgeOS {
     @Column(name = "package_type")
     private PackageType packageType;
 
+    @OneToOne
+    @JoinColumn(name = "fk_id_user", referencedColumnName = "pk_id_user")
+    private User user;
+
+    @OneToOne
+    @JoinColumn(name = "fk_id_buy", referencedColumnName = "pk_id_buy")
+    private Buy buy;
+
     public Long getPk_id_ageos() {
         return pk_id_ageos;
     }
@@ -29,5 +37,21 @@ public class AgeOS {
 
     public void setPackageType(PackageType packageType) {
         this.packageType = packageType;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Buy getBuy() {
+        return buy;
+    }
+
+    public void setBuy(Buy buy) {
+        this.buy = buy;
     }
 }
