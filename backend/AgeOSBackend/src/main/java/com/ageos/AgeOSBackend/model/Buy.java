@@ -18,9 +18,6 @@ public class Buy {
     @Column(name = "date_buy")
     private Date date_buy;
 
-    @Column(name = "package_type")
-    private Enum package_type;
-
     @Column(name = "number_user")
     private int number_user;
 
@@ -51,13 +48,6 @@ public class Buy {
         this.date_buy = date_buy;
     }
 
-    public Enum getPackage_type() {
-        return package_type;
-    }
-
-    public void setPackage_type(Enum package_type) {
-        this.package_type = package_type;
-    }
 
     public int getNumber_user() {
         return number_user;
