@@ -1,6 +1,8 @@
 CREATE DATABASE ageOS;
 use ageOS;
 
+drop database ageOS;
+
 select * from tb_users;
 select * from tb_buy;
 select * from tb_ageos;
@@ -24,7 +26,7 @@ create table tb_buy(
     package_type enum('comum', 'familia'),
     number_user int,
     address_user varchar(100),
-    fk_id_user int
+    fk_id_user bigint
 );
 
 create table tb_ageos(
@@ -37,10 +39,10 @@ drop table tb_buy;
 drop table tb_ageos;
 
 alter table tb_ageos
-add column fk_id_user int;
+add column fk_id_user bigint;
 
 alter table tb_ageos
-add column fk_id_buy int;
+add column fk_id_buy bigint;
 
 alter table tb_users
 add constraint fk_buy
