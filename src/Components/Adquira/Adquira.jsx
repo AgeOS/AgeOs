@@ -1,6 +1,6 @@
 import Veia from '../../assets/Adquira/Veia.png'
 // import celular from '../../assets/Adquira/celular.png'
-import celular_vi from '../../assets/Adquira/celular_video.mp4'
+import celular from '../../assets/Adquira/ageos1.png'
 import Approval from '../../assets/Adquira/Approval.png'
 import Paint from '../../assets/Adquira/Paint.png'
 import Security from '../../assets/Adquira/Security.png'
@@ -12,6 +12,7 @@ import instaIcon from '../../assets/footer/insta-branco.png'
 import faceIcon from '../../assets/footer/face-branco.png'
 import linkeIcon from '../../assets/footer/linke-branco.png'
 import logo from '../../assets/Adquira/logo.png'
+
 
 
 // import '../../stylesheets/Adquira/Adquira.scss'
@@ -37,23 +38,25 @@ function Adquira() {
         <svg className='svg2' width="1004" height="62" viewBox="0 0 1004 62" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M-47 60C-47 60 79.2315 6.37667 397.056 2.50327C714.881 -1.37013 905.511 18.1169 1003 26.6637" stroke="#FFDB10" />
         </svg>
-        <div className='cel'><video width={'90%'} height={'100%'} autoPlay={true} loop={true}><source src={celular_vi} /></video></div>
+        <section className='cel'>
+    <p className='visual'>Visual <span className='amarelo'>________</span></p>
+    <p className='textao3'>
+        Experimente uma interface simplificada, que destaca as informações mais importantes logo à primeira vista. A interface foi projetada para oferecer clareza, combinando uma estética moderna com usabilidade. Os botões são grandes e intuitivos, perfeitos para usuários que buscam praticidade. Navegue facilmente por recursos e funções, sem comprometer a beleza e o design.
+    </p>
+    <h5 className='frase2'>Simples e intuitivo</h5>
+    <img className='ageos1' src={celular} alt="" />
+    <svg className='linha2' width="2075" height="70.6" viewBox="0 0 1945 69.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M-47 2.00001C-47 2.00001 133.331 63.0196 587.366 67.4273C1041.4 71.835 1316.23 11.7257 1455.5 2" stroke="#7C76DA" stroke-width="3"/>
+</svg>
+    <svg className='linha1' width="2047" height="108" viewBox="0 0 1980 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M-32 106C-32 106 151.336 9.84783 612.939 2.90242C1074.54 -4.04299 1351.41 30.8992 1493 46.2245" stroke="#FFDB10" stroke-width="3"/>
+</svg>
+</section>
+
+
+
         <section className='grupo'>
-            <div className='figgs'>
-                <img className='apro' src={Approval} />
-                <h4>garantia</h4>
-                <p className='textin'>A custom rom fica salva em seu email. podendo utilizá-la em outros dispositivos.</p>
-            </div>
-            <div className='figgs'>
-                <img className='sec' src={Security} />
-                <h4>segurança</h4>
-                <p className='textin'>Um sistema operacional feito para prevenir nossos clientes de golpes em gerais.</p>
-            </div>
-            <div className='figgs'>
-                <img className='pinc' src={Paint} />
-                <h4>estilização</h4>
-                <p className='textin'>Podendo escolher o estilo do seu launcher, cores, fontes, imagens. De acordo com o seu gosto.</p>
-            </div>
+           
         </section>
         <section className='plano'>
             <div className='compras'>
