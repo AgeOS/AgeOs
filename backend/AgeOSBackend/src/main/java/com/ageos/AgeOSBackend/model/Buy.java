@@ -1,5 +1,6 @@
 package com.ageos.AgeOSBackend.model;
 
+import com.ageos.AgeOSBackend.enums.PackageType;
 import jakarta.persistence.*;
 
 import java.util.Date;
@@ -23,6 +24,10 @@ public class Buy {
 
     @Column(name = "address_user")
     private String address_user;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "package_type")
+    private PackageType package_type;
 
     public Long getPk_id_buy() {
         return pk_id_buy;
@@ -63,5 +68,13 @@ public class Buy {
 
     public void setAddress_user(String address_user) {
         this.address_user = address_user;
+    }
+
+    public PackageType getPackage_type() {
+        return package_type;
+    }
+
+    public void setPackage_type(PackageType package_type) {
+        this.package_type = package_type;
     }
 }
