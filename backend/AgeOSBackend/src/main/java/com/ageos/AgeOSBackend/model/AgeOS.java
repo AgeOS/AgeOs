@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 public class AgeOS {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pk_id_ageos;
 
     @Enumerated(EnumType.STRING)
