@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
@@ -30,8 +31,8 @@
   height: 100px;
   max-width: 25ch;
   color: #FFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -49,7 +50,7 @@
   height: 100px;
   max-width: 28ch;
   color: #FFF;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 21.8px;
   font-style: normal;
   font-weight: 500;
@@ -61,7 +62,7 @@
   position: relative;
   top: -340px;
   left: 238px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 265px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -75,20 +76,6 @@
   top: -70px;
   left: -265px;
   width: 1012.9px;
-}
-.adquira-container .cel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: 800px;
-  color: #FFF;
-}
-.adquira-container .celular {
-  position: relative;
-  top: -10px;
-  left: 0%;
-  rotate: 0.1deg;
 }
 .adquira-container .grupo {
   height: 913.5px;
@@ -114,7 +101,7 @@
   justify-content: center;
   color: #000;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -122,17 +109,17 @@
 }
 .adquira-container .textin {
   position: relative;
-  top: 400px;
-  left: 17px;
+  top: 414px;
+  left: 0px;
   display: flex;
-  max-width: 20ch;
-  height: 74px;
+  max-width: 40ch;
+  height: 47px;
   flex-direction: column;
   justify-content: center;
   color: #000;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 33px;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -160,26 +147,27 @@
   position: relative;
   left: 120px;
   width: 562.189px;
-  height: 839px;
+  height: 980px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: #FFF;
   box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-top: 35px;
+  text-align: center;
 }
 .adquira-container .compras2 {
   position: relative;
   left: -120px;
   width: 562.189px;
-  height: 839px;
+  height: 980px;
   flex-shrink: 0;
   border-radius: 20px;
   background-color: #FFF;
   box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-top: 35px;
 }
 .adquira-container .compras .h2_1 {
@@ -214,12 +202,10 @@
 .adquira-container .textinho {
   position: relative;
   color: #000;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 30px;
+  font-family: "Roboto", sans-serif;
+  left: 170px;
   top: 201px;
   font-size: 25px;
-  text-align: center;
 }
 .adquira-container .Preco {
   position: relative;
@@ -234,7 +220,7 @@
 }
 .adquira-container .Preco2 {
   position: relative;
-  top: 280px;
+  top: 268px;
   width: 233.509px;
   height: 66px;
   flex-shrink: 0;
@@ -245,7 +231,7 @@
 }
 .adquira-container .divisao {
   position: relative;
-  top: -465px;
+  top: -531px;
   left: 369px;
   width: 374.132px;
   height: 51px;
@@ -254,9 +240,60 @@
   background: #5E329D;
   text-align: center;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
   padding-top: 5px;
+}
+.adquira-container .cel {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7rem; /* Espaçamento entre os elementos */
+  justify-items: start; /* Alinha os itens à esquerda */
+  padding: 1rem;
+  max-width: 600px; /* Limita a largura para melhor legibilidade */
+  /* Centraliza o componente na tela */
+}
+.adquira-container .visual {
+  font-size: 2.6rem;
+  font-weight: 30;
+  color: #333;
+}
+.adquira-container .frase2 {
+  position: relative;
+  left: 233px;
+  font-size: 3.5rem;
+  color: #3D1887;
+  font-family: "Poppins", sans-serif;
+}
+.adquira-container .textao3 {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 50rem;
+  color: #444;
+}
+.adquira-container .amarelo {
+  position: absolute;
+  top: 10px;
+  color: #FFEA73;
+  left: 0;
+}
+.adquira-container .ageos1 {
+  position: absolute;
+  top: 220px;
+  right: 0;
+  rotate: 0deg;
+}
+.adquira-container .linha1 {
+  position: absolute;
+  left: 0;
+  top: 875px;
+}
+.adquira-container .linha2 {
+  position: absolute;
+  left: 0;
+  top: 875px;
 }
 
 /*# sourceMappingURL=Adquira.css.map */

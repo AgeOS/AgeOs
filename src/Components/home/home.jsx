@@ -155,7 +155,7 @@ export default function Home() {
               Explore as funções do sistema que transformarão o dia a dia da sua
               família.
             </p>
-            <button>
+            <button className="btn-conheca-mais">
               <Link>Conheça mais</Link>
             </button>
           </div>
