@@ -1,56 +1,33 @@
-CREATE DATABASE ageOS;
-use ageOS;
-
-drop database ageOS;
-
-select * from tb_users;
-select * from tb_buy;
-select * from tb_ageos;
-
-describe tb_users;
-describe tb_buy;
-describe tb_ageos;
+create database dbageos;
+use dbageos;
 
 create table tb_users(
-	pk_id_user bigint auto_increment primary key,
+    pk_id_user bigint auto_increment primary key,
     user_name varchar(200),
-    user_email varchar(100),
+    user_email varchar(100) unique,
     user_password varchar(200),
-    fk_id_buy bigint
+    fk_id_ageos bigint
 );
 
 create table tb_buy(
-	pk_id_buy bigint auto_increment primary key,
+    pk_id_buy bigint auto_increment primary key,
     method_payment varchar(50),
     date_buy date,
     package_type enum('comum', 'familia'),
     number_user int,
-    address_user varchar(100),
-    fk_id_user bigint
+    address_user varchar(100)
 );
 
 create table tb_ageos(
-	pk_id_ageos bigint auto_increment primary key,
-    package_type enum('comum', 'familia')
+    pk_id_ageos bigint auto_increment primary key,
+    package_type enum('comum', 'familia'),
+    fk_id_user bigint,
+    fk_id_buy bigint
 );
 
-drop table tb_users;
-drop table tb_buy;
-drop table tb_ageos;
-
-alter table tb_ageos
-add column fk_id_user bigint;
-
-alter table tb_ageos
-add column fk_id_buy bigint;
-
 alter table tb_users
-add constraint fk_buy
-foreign key (fk_id_buy) references tb_buy(pk_id_buy);
-
-alter table tb_buy
-add constraint fk_user
-foreign key (fk_id_user) references tb_users(pk_id_user);
+add constraint fk_ageos_user
+foreign key (fk_id_ageos) references tb_ageos(pk_id_ageos);
 
 alter table tb_ageos
 add constraint fk_user_ageos
@@ -59,3 +36,4 @@ foreign key (fk_id_user) references tb_users(pk_id_user);
 alter table tb_ageos
 add constraint fk_buy_ageos
 foreign key (fk_id_buy) references tb_buy(pk_id_buy);
+
