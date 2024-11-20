@@ -15,12 +15,12 @@ public class AgeOS {
     @Column(name = "package_type")
     private PackageType packageType;
 
-    @OneToOne
-    @JoinColumn(name = "fk_id_user", referencedColumnName = "pk_id_user")
-    private User user;
+    @ManyToOne
+    @JoinColumn(name = "fk_id_user")
+    private User buyer;
 
-    @OneToOne
-    @JoinColumn(name = "fk_id_buy", referencedColumnName = "pk_id_buy")
+    @ManyToOne
+    @JoinColumn(name = "fk_id_buy")
     private Buy buy;
 
     public Long getPk_id_ageos() {
@@ -39,12 +39,12 @@ public class AgeOS {
         this.packageType = packageType;
     }
 
-    public User getUser() {
-        return user;
+    public User getbuyer() {
+        return buyer;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setbuyer(User user) {
+        this.buyer = user;
     }
 
     public Buy getBuy() {

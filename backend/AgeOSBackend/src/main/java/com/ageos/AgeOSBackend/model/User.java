@@ -19,10 +19,8 @@ public class User {
     @Column(name = "user_password")
     private String password;
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private Buy buy;
-
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(name = "fk_id_ageos")
     private AgeOS ageOS;
 
     public Long getPk_id_user() {
@@ -57,13 +55,6 @@ public class User {
         this.password = password;
     }
 
-    public Buy getBuy() {
-        return buy;
-    }
-
-    public void setBuy(Buy buy) {
-        this.buy = buy;
-    }
 
     public AgeOS getAgeOS() {
         return ageOS;

@@ -29,13 +29,6 @@ public class Buy {
     @Column(name = "package_type")
     private PackageType package_type;
 
-    @OneToOne
-    @JoinColumn(name = "fk_id_user", referencedColumnName = "pk_id_user")
-    private User user;
-
-    @OneToOne(mappedBy = "buy", cascade = CascadeType.ALL)
-    private AgeOS ageOS;
-
     public Long getPk_id_buy() {
         return pk_id_buy;
     }
@@ -85,19 +78,4 @@ public class Buy {
         this.package_type = package_type;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public AgeOS getAgeOS() {
-        return ageOS;
-    }
-
-    public void setAgeOS(AgeOS ageOS) {
-        this.ageOS = ageOS;
-    }
 }
