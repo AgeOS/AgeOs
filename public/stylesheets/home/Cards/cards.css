@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
-  width: 90%;
-  max-height: 500px;
+  width: 99%;
+  max-height: 600px;
   object-fit: cover;
   max-width: 100%;
   margin: 0 auto;
@@ -45,16 +45,16 @@
   left: 1%;
 }
 .carousel__button--next {
-  left: 70%;
+  left: 92%;
 }
 @media (max-width: 992px) {
   .carousel__button--next {
-    left: 85%;
+    left: 88%;
   }
 }
 @media (max-width: 480px) {
-  .carousel__button--next--next {
-    left: 75% !important;
+  .carousel__button--next {
+    left: 71% !important;
   }
 }
 .carousel__button__dots {

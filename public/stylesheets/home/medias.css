@@ -507,28 +507,29 @@
 }
 @media (max-width: 576px) {
   .apps {
-    max-width: 98%;
-    width: 90% !important;
+    max-width: 98% !important;
+    width: 95% !important;
     margin: 0 auto !important;
-    display: flex;
+    display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
     margin-top: -90px !important;
   }
   .apps .celular-apps {
-    width: 100%;
+    width: 100% !important;
   }
   .apps .celular-apps img {
-    width: 60%;
+    width: 80% !important;
     margin: 0 auto;
   }
   .apps h2 {
-    font-size: 1.7rem;
+    font-size: 2rem !important;
     font-family: "Poppins", sans-serif;
+    display: flex !important;
   }
   .apps .lista-apps {
-    width: 98%;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,8 +538,10 @@
   .apps .lista-apps h2 {
     font-size: 1.7rem;
     font-family: "Poppins", sans-serif;
+    display: none !important;
   }
   .apps .lista-apps p {
+    width: 100% !important;
     font-size: 1.1rem;
     font-family: "Roboto", sans-serif;
   }
@@ -549,6 +552,7 @@
     justify-content: center;
     margin-top: 20px;
     border-bottom: 1px solid black;
+    padding-right: 12.8px !important;
   }
   .apps .apps-lado1 .linha-lateral {
     position: relative;
@@ -564,15 +568,15 @@
     font-size: 1.2rem;
   }
   .apps .apps-lado1 .bloco1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .apps .apps-lado1 .bloco2 {
-    width: 100%;
-    display: flex;
+    width: 100% !important;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -622,7 +626,7 @@
     max-width: 95%;
     width: 99%;
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     justify-content: center;
   }
   .apps h2 {
@@ -780,19 +784,21 @@
     align-items: center;
   }
   .gemini .text-gemini h2 {
+    width: 100%;
     font-family: "Poppins", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
   }
   .gemini .text-gemini p {
+    width: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
   }
   .gemini .gemini-phone {
-    width: 98%;
+    width: 90%;
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 100px;
   }
   .gemini .gemini-phone img {
     width: 100%;
@@ -800,7 +806,7 @@
 }
 
 .atendimento {
-  width: 100%;
+  width: 90%;
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -943,14 +949,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.6rem;
+  border-color: transparent;
 }
 .conheca-mais .left-side-conheca button a {
   text-decoration: none;
   color: #3D1887;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 .conheca-mais .right-side-conheca {
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -969,7 +978,7 @@
     background-color: #3D1887;
   }
   .conheca-mais .left-side-conheca {
-    width: 50%;
+    width: 90%;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -992,10 +1001,11 @@
     display: flex;
     align-items: center;
     border-radius: 0.6rem;
-    font-size: 1px !important;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .conheca-mais .right-side-conheca {
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1055,37 +1065,84 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 500px;
   }
   .conheca-mais .right-side-conheca img {
     width: 90%;
-    height: 280px;
-    align-items: center;
+    height: 290px;
   }
 }
-.conheca-mais .agradecimentos {
-  width: 100%;
-  height: 300px;
+
+.agradecimentos {
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.conheca-mais .agradecimentos h2 {
+.agradecimentos .agradecimentos-imgs {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.agradecimentos .agradecimentos-imgs img {
+  width: 15%;
+  height: 250px;
+}
+.agradecimentos h2 {
+  position: relative;
+  bottom: 120px;
   font-family: "Poppins", sans-serif;
   color: #3D1887;
-  font-size: 2rem;
+  font-size: 3rem;
 }
-.conheca-mais .agradecimentos img {
+.agradecimentos img {
   width: 55%;
   padding-top: 10px;
   padding-left: 20px;
 }
-.conheca-mais .agradecimentos .senac {
+.agradecimentos .senac {
   width: 50%;
 }
-.conheca-mais .agradecimentos .proa {
+.agradecimentos .proa {
   width: 30%;
+}
+@media (max-width: 576px) {
+  .agradecimentos .agradecimentos-imgs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    padding-top: 48px;
+    align-items: center;
+    justify-content: center;
+  }
+  .agradecimentos .agradecimentos-imgs img {
+    width: 45%;
+  }
+  .agradecimentos .proa {
+    position: relative;
+    bottom: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .agradecimentos .agradecimentos-imgs {
+    display: flex;
+    width: 70%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+  }
+  .agradecimentos .agradecimentos-imgs img {
+    width: 45%;
+    height: 230px;
+  }
+  .agradecimentos .proa {
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=medias.css.map */
