@@ -84,7 +84,7 @@ $breakpoint-desktop: 1200px;
     justify-content: end;
     position: fixed;
     z-index: 2;
-    transition: all 0.3s ease;
+    transition: 5 ease-out;
     // background-color: rgba(0, 0, 0, 0.5);
 
     @include laptop {
@@ -97,8 +97,8 @@ $breakpoint-desktop: 1200px;
     }
 
     @include mobile {
-      max-width: 80%;
-      width: 50%;
+      max-width: 110%;
+      width: 100%;
       display: flex;
       justify-content: end;
     }
@@ -119,11 +119,11 @@ $breakpoint-desktop: 1200px;
       align-items: start;
       justify-content: end;
       transform: translateX(10%);
-      transition: transform 0.3s ease;
+      transition: 5s ease-out;
       border-radius: 0px 0px 0px 20px;
 
       &.active {
-        transform: translateX(20%);
+        // transform: translateX(20%);
         // width: 200px !important;
       }
 
@@ -132,7 +132,7 @@ $breakpoint-desktop: 1200px;
         width: 60%;
         display: flex;
         justify-content: end;
-        // transform: translateX(111%);
+        transform: translateX(10%);
       }
 
       img {

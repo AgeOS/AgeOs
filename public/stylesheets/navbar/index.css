@@ -17,7 +17,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 body {
   max-width: 100%;
-  width: 98%;
+  width: 99%;
   overflow-x: hidden;
 }
 
@@ -3054,7 +3054,7 @@ body {
   justify-content: end;
   position: fixed;
   z-index: 2;
-  transition: all 0.3s ease;
+  transition: 5 ease-out;
 }
 @media (max-width: 992px) {
   .navbar-container .modal-lateral {
@@ -3068,8 +3068,8 @@ body {
 }
 @media (max-width: 576px) {
   .navbar-container .modal-lateral {
-    max-width: 80%;
-    width: 50%;
+    max-width: 110%;
+    width: 100%;
     display: flex;
     justify-content: end;
   }
@@ -3084,11 +3084,8 @@ body {
   align-items: start;
   justify-content: end;
   transform: translateX(10%);
-  transition: transform 0.3s ease;
+  transition: 5s ease-out;
   border-radius: 0px 0px 0px 20px;
-}
-.navbar-container .modal-lateral .conteudo.active {
-  transform: translateX(20%);
 }
 @media (max-width: 576px) {
   .navbar-container .modal-lateral .conteudo {
@@ -3096,6 +3093,7 @@ body {
     width: 60%;
     display: flex;
     justify-content: end;
+    transform: translateX(10%);
   }
 }
 .navbar-container .modal-lateral .conteudo img {
