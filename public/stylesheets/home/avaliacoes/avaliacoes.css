@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 2rem;
   position: relative;
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 .testimonial-carousel__title {
