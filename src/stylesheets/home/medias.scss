@@ -79,6 +79,7 @@ $breakpoint-desktop: 1200px;
 body {
   max-width: 100%;
   width: 98%;
+  overflow-y: hidden;
 }
 
 .hero-section {

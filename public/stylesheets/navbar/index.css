@@ -18,6 +18,7 @@
 body {
   max-width: 100%;
   width: 98%;
+  overflow-y: hidden;
 }
 
 .hero-section {
@@ -3094,7 +3095,6 @@ body {
     width: 60%;
     display: flex;
     justify-content: end;
-    transform: translateX(0%);
   }
 }
 .navbar-container .modal-lateral .conteudo img {
