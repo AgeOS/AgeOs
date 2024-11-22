@@ -76,6 +76,11 @@ $breakpoint-desktop: 1200px;
   }
 }
 
+body {
+  max-width: 100%;
+  width: 100%;
+}
+
 .hero-section {
   position: relative;
   width: 90%;
