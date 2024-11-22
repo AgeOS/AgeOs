@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
 import Avaliacoes from "./Avaliacoes/Avaliacoes";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 //imgs
 import celularApps from "../../assets/home/celular-apps.png";
@@ -23,11 +23,11 @@ import seguranca from "../../assets/home/seguranca-garantida.png";
 // import appsIntuitivos from "../../assets/home/apps-intuitivos.png";
 import atendimento from "../../assets/home/atendimento.png";
 // import logo from "../../assets/Adquira/logo.png";
-import navbar from "../../assets/footer/navbar-roxa.png";
-import youtubeIcon from "../../assets/footer/youbute-branco.png";
-import instaIcon from "../../assets/footer/insta-branco.png";
-import faceIcon from "../../assets/footer/face-branco.png";
-import linkeIcon from "../../assets/footer/linke-branco.png";
+// import navbar from "../../assets/footer/navbar-roxa.png";
+// import youtubeIcon from "../../assets/footer/youbute-branco.png";
+// import instaIcon from "../../assets/footer/insta-branco.png";
+// import faceIcon from "../../assets/footer/face-branco.png";
+// import linkeIcon from "../../assets/footer/linke-branco.png";
 // import Chatbot from "../chatbot
 
 export default function Home() {
@@ -175,14 +175,14 @@ export default function Home() {
 
         <Avaliacoes />
 
-        <Footer
+        {/* <Footer
           foto={navbar}
           color="white"
           you={youtubeIcon}
           insta={instaIcon}
           face={faceIcon}
           linke={linkeIcon}
-        />
+        /> */}
       </div>
     </>
   );
