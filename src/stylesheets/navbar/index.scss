@@ -247,6 +247,8 @@ $breakpoint-desktop: 1200px;
   overflow-y: hidden;
   max-width: 100%;
   width: 100%;
+  margin: 0 auto;
+
   // Hamburger button
   .button-navbar {
     // display: none;
@@ -287,6 +289,8 @@ $breakpoint-desktop: 1200px;
 
   // Sidebar modal
   .modal-lateral {
+    max-width: 100%;
+    overflow-x: hidden;
     min-height: 60vh;
     width: 100%;
     top: 0px;

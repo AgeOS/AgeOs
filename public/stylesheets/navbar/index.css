@@ -3008,6 +3008,7 @@ body {
   overflow-y: hidden;
   max-width: 100%;
   width: 100%;
+  margin: 0 auto;
 }
 .navbar-container .button-navbar {
   width: 99%;
@@ -3042,6 +3043,8 @@ body {
   }
 }
 .navbar-container .modal-lateral {
+  max-width: 100%;
+  overflow-x: hidden;
   min-height: 60vh;
   width: 100%;
   top: 0px;
