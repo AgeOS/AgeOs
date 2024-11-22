@@ -13,33 +13,27 @@ import logo from "../../assets/navbar/logo-1.png";
 import theme from "../../assets/navbar/image-34.png";
 
 export default function NavBar() {
-  // const logoRoxoFechado = document.getElementsByClassName("button-navbar");
-
   return (
     <>
       <div className="navbar-container">
-        {window.innerWidth > 999 ? null : (
-          <button
-            className="button-navbar"
-            onClick={() => {
-              const modal = document.querySelector(".modal-lateral");
-              const img = document.querySelector(".button-navbar img");
+        <button
+          className="button-navbar"
+          onClick={() => {
+            //função que que abre o menu lateral e muda o icone da navbar
+            const modal = document.querySelector(".modal-lateral");
+            const img = document.querySelector(".button-navbar img");
 
-              if (
-                modal.style.display === "none" ||
-                modal.style.display === ""
-              ) {
-                modal.style.display = "flex";
-                img.src = menuFechado;
-              } else {
-                modal.style.display = "none";
-                img.src = menuRoxo;
-              }
-            }}
-          >
-            <img src={menuRoxo} alt="" />
-          </button>
-        )}
+            if (modal.style.display === "none" || modal.style.display === "") {
+              modal.style.display = "flex";
+              img.src = menuFechado; // Novo src da imagem
+            } else {
+              modal.style.display = "none";
+              img.src = menuRoxo; // src original da imagem
+            }
+          }}
+        >
+          <img src={menuRoxo} alt="" />
+        </button>
 
         <div className="modal-lateral">
           <div className="conteudo">
@@ -63,10 +57,6 @@ export default function NavBar() {
             </ul>
 
             <div className="buttons">
-              {/* <button className="theme">
-                <img src={theme} alt="" />
-              </button> */}
-
               <Link to="/login">
                 <button className="login">Login</button>
               </Link>
