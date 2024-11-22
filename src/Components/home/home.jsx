@@ -38,7 +38,7 @@ export default function Home() {
         {/* <Chatbot/> */}
         <div className="hero-section">
           <div className="apresentation">
-            <h1>AgeOS, O Sistema Operacional 2erfeito para quem você ama</h1>
+            <h1>AgeOS, O Sistema Operacional Perfeito para quem você ama</h1>
             <Link to="/sobrenos">
               <button className="btn-conhecer">Conheça-nos</button>
             </Link>

@@ -244,6 +244,7 @@ $breakpoint-desktop: 1200px;
 }
 
 .navbar-container {
+  overflow-y: hidden;
   max-width: 100%;
   width: 100%;
   // Hamburger button
