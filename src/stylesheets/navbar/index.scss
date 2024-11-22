@@ -78,7 +78,7 @@ $breakpoint-desktop: 1200px;
     min-height: 60vh;
     width: 50%;
     top: 0px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     display: flex;
     // overflow-x: hidden;
     justify-content: end;
