@@ -110,6 +110,7 @@ $breakpoint-desktop: 1200px;
     // }
 
     .conteudo {
+      overflow-x: hidden;
       width: 50%;
       background-color: $color-yellow;
       padding: 20px;

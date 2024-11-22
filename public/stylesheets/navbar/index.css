@@ -18,7 +18,7 @@
 body {
   max-width: 100%;
   width: 98%;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .hero-section {
@@ -3075,6 +3075,7 @@ body {
   }
 }
 .navbar-container .modal-lateral .conteudo {
+  overflow-x: hidden;
   width: 50%;
   background-color: #FFEA73;
   padding: 20px;
