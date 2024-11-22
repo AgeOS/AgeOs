@@ -97,8 +97,8 @@ $breakpoint-desktop: 1200px;
     }
 
     @include mobile {
-      max-width: 100%;
-      width: 100%;
+      max-width: 80%;
+      width: 50%;
       display: flex;
       justify-content: end;
     }
@@ -127,10 +127,11 @@ $breakpoint-desktop: 1200px;
       }
 
       @include mobile {
-        max-width: 99% !important;
+        max-width: 50% !important;
         width: 60%;
         display: flex;
         justify-content: end;
+        transform: translateX(0%);
       }
 
       img {
