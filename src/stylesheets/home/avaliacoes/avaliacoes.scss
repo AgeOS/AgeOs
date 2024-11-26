@@ -1,9 +1,9 @@
 @import "../../variables.scss";
 
-$primary-color: #5D3B94;    // Roxo principal
-$secondary-color: #FFE175;   // Amarelo do fundo
+$primary-color: #5d3b94; // Roxo principal
+$secondary-color: #ffe175; // Amarelo do fundo
 $text-color: #333333;
-$white: #FFFFFF;
+$white: #ffffff;
 $transition-time: 0.5s;
 
 // Breakpoints
@@ -22,19 +22,29 @@ $breakpoint-xl: 1200px;
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == xs {
-    @media (max-width: #{$breakpoint-sm - 1}) { @content; }
+    @media (max-width: #{$breakpoint-sm - 1}) {
+      @content;
+    }
   }
   @if $breakpoint == sm {
-    @media (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 1}) { @content; }
+    @media (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 1}) {
+      @content;
+    }
   }
   @if $breakpoint == md {
-    @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lg - 1}) { @content; }
+    @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lg - 1}) {
+      @content;
+    }
   }
   @if $breakpoint == lg {
-    @media (min-width: #{$breakpoint-lg}) and (max-width: #{$breakpoint-xl - 1}) { @content; }
+    @media (min-width: #{$breakpoint-lg}) and (max-width: #{$breakpoint-xl - 1}) {
+      @content;
+    }
   }
   @if $breakpoint == xl {
-    @media (min-width: #{$breakpoint-xl}) { @content; }
+    @media (min-width: #{$breakpoint-xl}) {
+      @content;
+    }
   }
 }
 
@@ -47,7 +57,7 @@ $breakpoint-xl: 1200px;
   font-family: $font-family-poppins;
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: $primary-color;
     font-family: $font-family-poppins !important;
     text-align: center;
@@ -60,8 +70,21 @@ $breakpoint-xl: 1200px;
   }
 
   &__container {
+    // width: 100%;
+    margin: 0 auto;
     position: relative;
     padding: 1rem;
+
+    @include responsive(sm) {
+      width: 95%;
+    }
+
+    @include responsive(xs) {
+      width: 100% !important;
+      margin: 0 auto;
+      display: flex;
+      // flex-direction: column;
+    }
   }
 
   &__slides {
@@ -74,8 +97,13 @@ $breakpoint-xl: 1200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     @include responsive(xs) {
+      width: 95%;
       padding: 1rem;
       min-height: 300px;
+    }
+
+    @include responsive(sm) {
+      width: 95%;
     }
   }
 
@@ -88,7 +116,7 @@ $breakpoint-xl: 1200px;
     opacity: 0;
     transform: translateX(100%);
     transition: all $transition-time ease-in-out;
-    padding: 1rem;
+    // padding: 1rem;
 
     &.active {
       opacity: 1;
@@ -103,14 +131,18 @@ $breakpoint-xl: 1200px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     gap: 2rem;
 
-    @include responsive(xs) {
+    @include responsive(sm) {
+      // width: 100%;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 1rem;
+    }
+
+    @include responsive(xs) {
+      flex-direction: column;
     }
   }
 
@@ -121,6 +153,12 @@ $breakpoint-xl: 1200px;
     justify-content: center;
     margin-top: 10%;
     flex-shrink: 0;
+
+    @include responsive(xs) {
+      display: flex;
+      width: 10%;
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -149,7 +187,7 @@ $breakpoint-xl: 1200px;
     flex-grow: 1;
   }
 
-  &__quote_1{
+  &__quote_1 {
     position: absolute;
     top: -2rem;
     left: -1rem;
@@ -165,10 +203,10 @@ $breakpoint-xl: 1200px;
     }
   }
 
-  &__quote_2{
+  &__quote_2 {
     position: absolute;
     top: -2rem;
-    left: 78rem;
+    left: 100rem;
     font-size: 4rem;
     color: $primary-color;
     opacity: 0.5;
@@ -176,7 +214,7 @@ $breakpoint-xl: 1200px;
 
     @include responsive(xs) {
       top: -1.5rem;
-      left: 0;
+      left: 280px;
       font-size: 3rem;
     }
   }
@@ -188,7 +226,6 @@ $breakpoint-xl: 1200px;
     font-family: $font-family-poppins;
     position: relative;
     z-index: 1;
-
 
     @include responsive(xs) {
       font-size: 1rem;

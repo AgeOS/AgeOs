@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Carousel from "./Cards/Cards";
 import Avaliacoes from "./Avaliacoes/Avaliacoes";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 //imgs
 import celularApps from "../../assets/home/celular-apps.png";
@@ -23,11 +23,11 @@ import seguranca from "../../assets/home/seguranca-garantida.png";
 // import appsIntuitivos from "../../assets/home/apps-intuitivos.png";
 import atendimento from "../../assets/home/atendimento.png";
 // import logo from "../../assets/Adquira/logo.png";
-import navbar from "../../assets/footer/navbar-roxa.png";
-import youtubeIcon from "../../assets/footer/youbute-branco.png";
-import instaIcon from "../../assets/footer/insta-branco.png";
-import faceIcon from "../../assets/footer/face-branco.png";
-import linkeIcon from "../../assets/footer/linke-branco.png";
+// import navbar from "../../assets/footer/navbar-roxa.png";
+// import youtubeIcon from "../../assets/footer/youbute-branco.png";
+// import instaIcon from "../../assets/footer/insta-branco.png";
+// import faceIcon from "../../assets/footer/face-branco.png";
+// import linkeIcon from "../../assets/footer/linke-branco.png";
 // import Chatbot from "../chatbot
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
         {/* <Chatbot/> */}
         <div className="hero-section">
           <div className="apresentation">
-            <h1>AgeOS, O Sistema Operacional perfeito para quem você ama</h1>
+            <h1>AgeOS, O Sistema Operacional Perfeito para quem você ama</h1>
             <Link to="/sobrenos">
               <button className="btn-conhecer">Conheça-nos</button>
             </Link>
@@ -155,7 +155,7 @@ export default function Home() {
               Explore as funções do sistema que transformarão o dia a dia da sua
               família.
             </p>
-            <button>
+            <button className="btn-conheca-mais">
               <Link>Conheça mais</Link>
             </button>
           </div>
@@ -175,14 +175,14 @@ export default function Home() {
 
         <Avaliacoes />
 
-        <Footer
+        {/* <Footer
           foto={navbar}
           color="white"
           you={youtubeIcon}
           insta={instaIcon}
           face={faceIcon}
           linke={linkeIcon}
-        />
+        /> */}
       </div>
     </>
   );
