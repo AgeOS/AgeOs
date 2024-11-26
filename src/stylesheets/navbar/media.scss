@@ -20,6 +20,10 @@
   .login {
     width: 28% !important;
   }
+
+  .button-navbar {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -53,6 +57,10 @@
 
   .login {
     width: 25% !important;
+  }
+
+  .button-navbar {
+    display: none;
   }
 }
 
