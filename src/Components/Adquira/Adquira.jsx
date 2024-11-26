@@ -1,4 +1,4 @@
-import Veia2 from "../../assets/Adquira/Veia.png";
+import veia2 from "../../assets/Adquira/Veia.png";
 import celular from "../../assets/Adquira/celular.png";
 // import celular from '../../assets/Adquira/ageos1.png'
 // import Approval from "../../assets/Adquira/Approval.png";
@@ -26,7 +26,7 @@ function Adquira() {
             Contrate o pacote <span> Premium!</span>
           </h1>
           <div>
-            <img className="Veia" src={Veia2} alt="idosa" />
+            <img className="Veia" src={veia2} alt="idosa" />
           </div>
           <div className="circulo">
             <svg
