@@ -1,5 +1,5 @@
-import veia2 from "../../assets/Adquira/Veia.png";
-import celular from "../../assets/Adquira/celular.png";
+import veia2 from "../../assets/Adquira/veia2.jpg";
+import celular from "../../assets/Adquira/AgeOS1.jpg";
 // import celular from '../../assets/Adquira/ageos1.png'
 // import Approval from "../../assets/Adquira/Approval.png";
 // import Paint from "../../assets/Adquira/Paint.png";
