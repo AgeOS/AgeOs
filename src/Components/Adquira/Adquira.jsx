@@ -108,6 +108,7 @@ function Adquira() {
           <img className="Veio3" src={veio3} alt="" />
           <img className="Celular3" src={AgeOS2} alt="" />
           <h5 className="textao5">Tecnologia de Geolocalização</h5>
+          <p className="textao6">Saiba de forma simples quando seu familiar precisar de você. Com o botão SOS, a localização e um alerta são compartilhados instantaneamente, facilitando o cuidado com quem você ama.</p>
         </section>
 
          
