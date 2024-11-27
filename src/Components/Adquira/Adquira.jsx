@@ -13,6 +13,7 @@ import faceIcon from "../../assets/footer/face-branco.png";
 import linkeIcon from "../../assets/footer/linke-branco.png";
 import logo from "../../assets/Adquira/logo.png";
 import veio2 from "../../assets/Adquira/veio2.png";
+import veio3 from "../../assets/Adquira/veio3.png";
 
 // import '../../stylesheets/Adquira/Adquira.scss'
 
@@ -103,6 +104,7 @@ function Adquira() {
           <h5 className="h3_1">Navegação na Internet</h5>
           <p className="textao4">Com nosso antivírus e proteção contra links e sites suspeitos, seu familiar estará protegido contra ameaças virtuais, oferecendo segurança para garantir que a navegação online seja segura e tranquila.</p>
           <img className="Veio2" src={veio2} alt="" />
+          <img className="Veio3" src={veio3} alt="" />
         </section>
 
          
