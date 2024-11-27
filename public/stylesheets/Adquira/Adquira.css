@@ -32,7 +32,7 @@
   max-width: 25ch;
   color: #FFF;
   font-family: "Poppins", sans-serif;
-  font-size: 45px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -75,10 +75,10 @@
 .adquira-container .svg2 {
   top: -70px;
   left: -265px;
-  width: 1012.9px;
+  width: 993.9px;
 }
 .adquira-container .grupo {
-  height: 913.5px;
+  height: 330px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -270,7 +270,7 @@
 .adquira-container .textao3 {
   font-size: 1.3rem;
   line-height: 1.6;
-  max-width: 50rem;
+  max-width: 40rem;
   color: #444;
 }
 .adquira-container .amarelo {
@@ -282,7 +282,7 @@
 .adquira-container .ageos1 {
   position: absolute;
   top: 220px;
-  right: 0;
+  left: 925px;
   rotate: 0deg;
 }
 .adquira-container .linha1 {
@@ -294,6 +294,106 @@
   position: absolute;
   left: 0;
   top: 875px;
+}
+.adquira-container .h3_1 {
+  position: relative;
+  left: 233px;
+  top: 490px;
+  font-size: 3.1rem;
+  color: #3D1887;
+  font-family: "Poppins", sans-serif;
+}
+.adquira-container .textao4 {
+  position: relative;
+  top: 405px;
+  left: 225px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 37rem;
+  color: #444;
+  text-align: center;
+}
+.adquira-container .Veio2 {
+  position: relative;
+  left: 10rem;
+  top: 339px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(<path-to-image>) lightgray 0px -48.215px/100% 121.006% no-repeat;
+}
+.adquira-container .Veio3 {
+  position: relative;
+  left: 10rem;
+  top: 285px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+}
+.adquira-container .Celular3 {
+  position: absolute;
+  top: 1818px;
+  left: 1105px;
+  rotate: 0deg;
+}
+.adquira-container .textao5 {
+  position: relative;
+  left: 233px;
+  top: 400px;
+  font-size: 3.1rem;
+  color: #3d1887;
+  font-family: Poppins, sans-serif;
+}
+.adquira-container .textao6 {
+  position: relative;
+  top: 315px;
+  left: 234px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 48rem;
+  color: #444;
+  text-align: center;
+}
+.adquira-container .Veio4 {
+  position: relative;
+  left: 10rem;
+  top: 265px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+}
+.adquira-container .moca {
+  position: absolute;
+  left: 50rem;
+  top: 3242px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+}
+.adquira-container .Celular4 {
+  position: absolute;
+  top: 3178px;
+  left: 627px;
+  rotate: 0deg;
+}
+.adquira-container .textao7 {
+  position: relative;
+  left: 524px;
+  top: 400px;
+  font-size: 3.1rem;
+  color: #3d1887;
+  font-family: Poppins, sans-serif;
+}
+.adquira-container .textao8 {
+  position: relative;
+  top: 315px;
+  left: 557px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 48rem;
+  color: #444;
+  text-align: center;
 }
 
 /*# sourceMappingURL=Adquira.css.map */
