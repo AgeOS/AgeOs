@@ -354,5 +354,7 @@ padding-top: 5px;
   rotate: 0deg;
   justify-content: center;
   align-content: center;
+  border-radius: 20px 20px 0px 0px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>) lightgray 0px -48.215px / 100% 121.006% no-repeat;
 }
 }
