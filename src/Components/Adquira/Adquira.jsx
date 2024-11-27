@@ -15,6 +15,9 @@ import logo from "../../assets/Adquira/logo.png";
 import veio2 from "../../assets/Adquira/veio2.png";
 import veio3 from "../../assets/Adquira/veio3.png";
 import AgeOS2 from "../../assets/Adquira/AgeOS2.png";
+import AgeOS3 from "../../assets/Adquira/AgeOS3.png";
+import moca from "../../assets/Adquira/moca.png";
+import veio4 from "../../assets/Adquira/veio4.png";
 
 // import '../../stylesheets/Adquira/Adquira.scss'
 
@@ -109,6 +112,9 @@ function Adquira() {
           <img className="Celular3" src={AgeOS2} alt="" />
           <h5 className="textao5">Tecnologia de Geolocalização</h5>
           <p className="textao6">Saiba de forma simples quando seu familiar precisar de você. Com o botão SOS, a localização e um alerta são compartilhados instantaneamente, facilitando o cuidado com quem você ama.</p>
+          <img className="Veio4" src={veio4} alt="" />
+          <img className="moca" src={moca} alt="" />
+          <img className="Celular4" src={AgeOS3} alt="" />
         </section>
 
          
