@@ -102,7 +102,7 @@ function Adquira() {
           </svg>
           <h5 className="h3_1">Navegação na Internet</h5>
           <p className="textao4">Com nosso antivírus e proteção contra links e sites suspeitos, seu familiar estará protegido contra ameaças virtuais, oferecendo segurança para garantir que a navegação online seja segura e tranquila.</p>
-          <img className="Veia" src={veia2} alt="idoso" />
+          <img className="Veia" src={veio2} alt="idoso" />
         </section>
 
          
