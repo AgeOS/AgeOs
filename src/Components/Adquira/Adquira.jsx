@@ -107,6 +107,7 @@ function Adquira() {
           <img className="Veio2" src={veio2} alt="" />
           <img className="Veio3" src={veio3} alt="" />
           <img className="Celular3" src={AgeOS2} alt="" />
+          <h5 className="textao5">Tecnologia de Geolocalização</h5>
         </section>
 
          
