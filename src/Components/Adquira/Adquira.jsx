@@ -115,6 +115,8 @@ function Adquira() {
           <img className="Veio4" src={veio4} alt="" />
           <img className="moca" src={moca} alt="" />
           <img className="Celular4" src={AgeOS3} alt="" />
+          <h5 className="textao7">Adquira seu AgeOS</h5>
+          <p className="textao8">Os planos ideias que cabem no seu bolso.</p>
         </section>
 
          
