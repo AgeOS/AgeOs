@@ -99,7 +99,7 @@ function Adquira() {
               strokeWidth="3"
             />
           </svg>
-          <h3 className="h3_1">Navegação na Internet</h3>
+          <h5 className="h3_1">Navegação na Internet</h5>
         </section>
 
          
