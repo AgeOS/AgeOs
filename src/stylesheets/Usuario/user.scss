@@ -30,8 +30,9 @@ $breakpoint-desktop: 1200px;
   }
 }
 
-body {
+.body-user-page {
   background-color: $color-purple;
+  min-height: 100vh;
 }
 //valores padroes de desktop
 .user-info {
