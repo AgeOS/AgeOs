@@ -1974,7 +1974,7 @@ body {
 }
 
 .adquira-container .adquira_topo {
-  background-color: #3D1887;
+  background-color: #3d1887;
   max-width: 100%;
   height: 740px;
   display: flex;
@@ -1997,7 +1997,7 @@ body {
   left: -100px;
   height: 100px;
   max-width: 25ch;
-  color: #FFF;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 44px;
   font-style: normal;
@@ -2008,7 +2008,7 @@ body {
   align-items: center;
 }
 .adquira-container h1 span {
-  color: #FFEA73;
+  color: #ffea73;
 }
 .adquira-container p {
   position: relative;
@@ -2016,7 +2016,7 @@ body {
   left: 240px;
   height: 100px;
   max-width: 28ch;
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 21.8px;
   font-style: normal;
@@ -2037,7 +2037,7 @@ body {
   font-size: 21.8px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #FFEA73;
+  background: #ffea73;
 }
 .adquira-container .svg2 {
   top: -70px;
@@ -2056,7 +2056,7 @@ body {
   height: 300px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: #D49EED;
+  background: #d49eed;
   box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .adquira-container h4 {
@@ -2110,6 +2110,10 @@ body {
   align-items: center;
   height: 1280px;
 }
+.adquira-container .plano a {
+  text-decoration: none;
+  color: white;
+}
 .adquira-container .compras {
   position: relative;
   left: 120px;
@@ -2117,7 +2121,7 @@ body {
   height: 980px;
   flex-shrink: 0;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -2131,7 +2135,7 @@ body {
   height: 980px;
   flex-shrink: 0;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -2181,9 +2185,10 @@ body {
   height: 66px;
   flex-shrink: 0;
   border-radius: 15px;
-  background: #5E329D;
+  background: #5e329d;
   color: white;
   font-size: 26px;
+  cursor: pointer;
 }
 .adquira-container .Preco2 {
   position: relative;
@@ -2192,9 +2197,10 @@ body {
   height: 66px;
   flex-shrink: 0;
   border-radius: 15px;
-  background: #5E329D;
+  background: #5e329d;
   color: white;
   font-size: 26px;
+  cursor: pointer;
 }
 .adquira-container .divisao {
   position: relative;
@@ -2204,7 +2210,7 @@ body {
   height: 51px;
   flex-shrink: 0;
   border-radius: 20px 20px 0px 0px;
-  background: #5E329D;
+  background: #5e329d;
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -2231,7 +2237,7 @@ body {
   position: relative;
   left: 233px;
   font-size: 3.5rem;
-  color: #3D1887;
+  color: #3d1887;
   font-family: "Poppins", sans-serif;
 }
 .adquira-container .textao3 {
@@ -2243,7 +2249,7 @@ body {
 .adquira-container .amarelo {
   position: absolute;
   top: 10px;
-  color: #FFEA73;
+  color: #ffea73;
   left: 0;
 }
 .adquira-container .ageos1 {
@@ -2267,7 +2273,7 @@ body {
   left: 233px;
   top: 490px;
   font-size: 3.1rem;
-  color: #3D1887;
+  color: #3d1887;
   font-family: "Poppins", sans-serif;
 }
 .adquira-container .textao4 {

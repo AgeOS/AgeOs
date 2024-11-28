@@ -106,20 +106,27 @@ function Adquira() {
             />
           </svg>
           <h5 className="h3_1">Navegação na Internet</h5>
-          <p className="textao4">Com nosso antivírus e proteção contra links e sites suspeitos, seu familiar estará protegido contra ameaças virtuais, oferecendo segurança para garantir que a navegação online seja segura e tranquila.</p>
+          <p className="textao4">
+            Com nosso antivírus e proteção contra links e sites suspeitos, seu
+            familiar estará protegido contra ameaças virtuais, oferecendo
+            segurança para garantir que a navegação online seja segura e
+            tranquila.
+          </p>
           <img className="Veio2" src={veio2} alt="" />
           <img className="Veio3" src={veio3} alt="" />
           <img className="Celular3" src={AgeOS2} alt="" />
           <h5 className="textao5">Tecnologia de Geolocalização</h5>
-          <p className="textao6">Saiba de forma simples quando seu familiar precisar de você. Com o botão SOS, a localização e um alerta são compartilhados instantaneamente, facilitando o cuidado com quem você ama.</p>
+          <p className="textao6">
+            Saiba de forma simples quando seu familiar precisar de você. Com o
+            botão SOS, a localização e um alerta são compartilhados
+            instantaneamente, facilitando o cuidado com quem você ama.
+          </p>
           <img className="Veio4" src={veio4} alt="" />
           <img className="moca" src={moca} alt="" />
           <img className="Celular4" src={AgeOS3} alt="" />
           <h5 className="textao7">Adquira seu AgeOS</h5>
           <p className="textao8">Os planos ideias que cabem no seu bolso.</p>
         </section>
-
-         
 
         <section className="grupo"></section>
         <section className="plano">
@@ -136,7 +143,9 @@ function Adquira() {
                 Segurança reforçada em apps financeiros
               </li>
             </ul>
-            <button className="Preco">R$69,99</button>
+            <button className="Preco">
+              <a href="https://buy.stripe.com/eVa4gmgmR2J83bGaEE">R$69,99</a>
+            </button>
           </div>
           <div className="divisao">recomendado</div>
           <div className="compras2">
@@ -154,7 +163,9 @@ function Adquira() {
               <li className="textinho">Pacote personalizado</li>
               <li className="textinho">Suporte para backup</li>
             </ul>
-            <button className="Preco2">R$229,99</button>
+            <button className="Preco2">
+              <a href="https://buy.stripe.com/eVa4gmgmR2J83bGaEE">R$229,99</a>
+            </button>
           </div>
         </section>
       </div>
