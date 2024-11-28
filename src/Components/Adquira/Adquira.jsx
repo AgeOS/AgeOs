@@ -164,7 +164,7 @@ function Adquira() {
               <li className="textinho">Suporte para backup</li>
             </ul>
             <button className="Preco2">
-              <a href="https://buy.stripe.com/eVa4gmgmR2J83bGaEE">R$229,99</a>
+              <a href="https://buy.stripe.com/00g5kq0nT83sdQk145">R$229,99</a>
             </button>
           </div>
         </section>
