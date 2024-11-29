@@ -13,6 +13,7 @@ import Usuario from "./Components/Usuario/Usuario";
 import Senha from "./Components/Usuario/Senha/Senha";
 import Dados from "./Components/Usuario/Dados/Dados";
 import Historico from "./Components/Usuario/Historico/Historico";
+import PagDownload from "./Components/download/PagDownload";
 
 // import Usuario from "./Components/Usuario/Usuario";
 
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/Senha" element={<Senha />} />
         <Route path="/Dados" element={<Dados />} />
         <Route path="/Historico" element={<Historico />} />
+        <Route path="/download" element={<PagDownload />} />
       </Routes>
     </>
   );

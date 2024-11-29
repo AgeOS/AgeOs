@@ -2,12 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .body-user-page {
   background-color: #3D1887;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .user-info {
   width: 80%;
-  height: 900px;
+  height: 100vh;
+  max-height: 80vh;
   background-color: #FAF8FB;
   position: relative;
   top: 150px;
