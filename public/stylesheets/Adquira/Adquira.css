@@ -7,7 +7,7 @@
 }
 
 .adquira-container .adquira_topo {
-  background-color: #3D1887;
+  background-color: #3d1887;
   max-width: 100%;
   height: 740px;
   display: flex;
@@ -30,9 +30,9 @@
   left: -100px;
   height: 100px;
   max-width: 25ch;
-  color: #FFF;
+  color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 45px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -41,7 +41,7 @@
   align-items: center;
 }
 .adquira-container h1 span {
-  color: #FFEA73;
+  color: #ffea73;
 }
 .adquira-container p {
   position: relative;
@@ -49,7 +49,7 @@
   left: 240px;
   height: 100px;
   max-width: 28ch;
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 21.8px;
   font-style: normal;
@@ -70,15 +70,15 @@
   font-size: 21.8px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #FFEA73;
+  background: #ffea73;
 }
 .adquira-container .svg2 {
   top: -70px;
   left: -265px;
-  width: 1012.9px;
+  width: 993.9px;
 }
 .adquira-container .grupo {
-  height: 913.5px;
+  height: 330px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -89,7 +89,7 @@
   height: 300px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: #D49EED;
+  background: #d49eed;
   box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .adquira-container h4 {
@@ -143,6 +143,10 @@
   align-items: center;
   height: 1280px;
 }
+.adquira-container .plano a {
+  text-decoration: none;
+  color: white;
+}
 .adquira-container .compras {
   position: relative;
   left: 120px;
@@ -150,7 +154,7 @@
   height: 980px;
   flex-shrink: 0;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -164,7 +168,7 @@
   height: 980px;
   flex-shrink: 0;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -214,9 +218,10 @@
   height: 66px;
   flex-shrink: 0;
   border-radius: 15px;
-  background: #5E329D;
+  background: #5e329d;
   color: white;
   font-size: 26px;
+  cursor: pointer;
 }
 .adquira-container .Preco2 {
   position: relative;
@@ -225,9 +230,10 @@
   height: 66px;
   flex-shrink: 0;
   border-radius: 15px;
-  background: #5E329D;
+  background: #5e329d;
   color: white;
   font-size: 26px;
+  cursor: pointer;
 }
 .adquira-container .divisao {
   position: relative;
@@ -237,7 +243,7 @@
   height: 51px;
   flex-shrink: 0;
   border-radius: 20px 20px 0px 0px;
-  background: #5E329D;
+  background: #5e329d;
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -264,25 +270,25 @@
   position: relative;
   left: 233px;
   font-size: 3.5rem;
-  color: #3D1887;
+  color: #3d1887;
   font-family: "Poppins", sans-serif;
 }
 .adquira-container .textao3 {
   font-size: 1.3rem;
   line-height: 1.6;
-  max-width: 50rem;
+  max-width: 40rem;
   color: #444;
 }
 .adquira-container .amarelo {
   position: absolute;
   top: 10px;
-  color: #FFEA73;
+  color: #ffea73;
   left: 0;
 }
 .adquira-container .ageos1 {
   position: absolute;
   top: 220px;
-  right: 0;
+  left: 925px;
   rotate: 0deg;
 }
 .adquira-container .linha1 {
@@ -294,6 +300,106 @@
   position: absolute;
   left: 0;
   top: 875px;
+}
+.adquira-container .h3_1 {
+  position: relative;
+  left: 233px;
+  top: 490px;
+  font-size: 3.1rem;
+  color: #3d1887;
+  font-family: "Poppins", sans-serif;
+}
+.adquira-container .textao4 {
+  position: relative;
+  top: 405px;
+  left: 225px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 37rem;
+  color: #444;
+  text-align: center;
+}
+.adquira-container .Veio2 {
+  position: relative;
+  left: 10rem;
+  top: 339px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(<path-to-image>) lightgray 0px -48.215px/100% 121.006% no-repeat;
+}
+.adquira-container .Veio3 {
+  position: relative;
+  left: 10rem;
+  top: 285px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+}
+.adquira-container .Celular3 {
+  position: absolute;
+  top: 1818px;
+  left: 1105px;
+  rotate: 0deg;
+}
+.adquira-container .textao5 {
+  position: relative;
+  left: 233px;
+  top: 400px;
+  font-size: 3.1rem;
+  color: #3d1887;
+  font-family: Poppins, sans-serif;
+}
+.adquira-container .textao6 {
+  position: relative;
+  top: 315px;
+  left: 234px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 48rem;
+  color: #444;
+  text-align: center;
+}
+.adquira-container .Veio4 {
+  position: relative;
+  left: 10rem;
+  top: 265px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+}
+.adquira-container .moca {
+  position: absolute;
+  left: 50rem;
+  top: 3242px;
+  rotate: 0deg;
+  justify-content: center;
+  align-content: center;
+}
+.adquira-container .Celular4 {
+  position: absolute;
+  top: 3178px;
+  left: 627px;
+  rotate: 0deg;
+}
+.adquira-container .textao7 {
+  position: relative;
+  left: 524px;
+  top: 400px;
+  font-size: 3.1rem;
+  color: #3d1887;
+  font-family: Poppins, sans-serif;
+}
+.adquira-container .textao8 {
+  position: relative;
+  top: 315px;
+  left: 557px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 48rem;
+  color: #444;
+  text-align: center;
 }
 
 /*# sourceMappingURL=Adquira.css.map */

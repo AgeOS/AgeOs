@@ -2,8 +2,7 @@
   .modal-lateral {
     display: none !important;
   }
-
-   .button-navbar {
+  .button-navbar {
     display: none;
   }
 }
@@ -21,7 +20,6 @@
   .login {
     width: 28% !important;
   }
-
   .button-navbar {
     display: none;
   }
@@ -51,7 +49,6 @@
   .login {
     width: 25% !important;
   }
-
   .button-navbar {
     display: none;
   }

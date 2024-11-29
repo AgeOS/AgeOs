@@ -10,7 +10,7 @@ import "../../stylesheets/navbar/media.scss";
 import menuFechado from "../../assets/navbar/menu-fechado.png";
 import menuRoxo from "../../assets/navbar/menu-roxo.png";
 import logo from "../../assets/navbar/logo-1.png";
-import theme from "../../assets/navbar/image-34.png";
+// import theme from "../../assets/navbar/image-34.png";
 
 export default function NavBar() {
   return (
@@ -126,12 +126,12 @@ export default function NavBar() {
           </ul>
 
           <div className="buttons">
-            <button className="theme">
+            {/* <button className="theme">
               <img src={theme} alt="" />
-            </button>
+            </button> */}
 
             <button className="login">
-              <Link to="/login">Login</Link>
+              <Link to="/usuario">Login</Link>
             </button>
 
             <button className="cadastro">

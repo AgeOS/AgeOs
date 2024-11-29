@@ -1,72 +1,70 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .adquira-container{
 
 .adquira_topo {
-    display: flex;
-    flex-wrap: wrap;
     background-color: #3D1887;
     max-width: 100%;
     height: 740px;
     display: flex;
     justify-content: flex-end;
-}
+  }
 
-svg {
+  svg {
     position: relative;
     top: 161.9px;
-}
+  }
 
- img{
+  img {
     position: absolute;
     top: 42px;
     left: 898px;
     z-index: 1;
     rotate: -3.5deg;
-}
+  }
 
-h1{
+  h1 {
     position: relative;
     top: 260px;
     left: -100px;
     height: 100px;
     max-width: 25ch;
-    color: #FFF;
-font-family: $font-family-poppins;
-font-size: 44px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
-h1 span{
-    color: #FFEA73;
-}
+    color: #fff;
+    font-family: $font-family-poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 span {
+    color: #ffea73;
+  }
 
-p{
+  p {
     position: relative;
     top: 340px;
     left: 240px;
     height: 100px;
     max-width: 28ch;
-    color: #FFF;
-font-family: $font-family-roboto;
-font-size: 21.8px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-justify-content: center;
-align-items: center;
-}
+    color: #fff;
+    font-family: $font-family-roboto;
+    font-size: 21.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+  }
 
-.Comprar{
+  .Comprar {
     position: relative;
     top: -340px;
     left: 238px;
@@ -79,204 +77,203 @@ align-items: center;
     flex-shrink: 0;
     border-radius: 10px;
 background: #FFEA73;
-transition: all 0.3s ease;
-}
-.Comprar:hover {
-    background-color: #FFD700; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
-.svg2{
+  .svg2 {
     top: -70px;
     left: -265px;
     width: 993.9px;
-}
+  }
 
-.grupo{
+  .grupo {
     height: 330px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
 
-}
-
-.figgs{
+  .figgs {
     width: 400px;
     height: 300px;
     flex-shrink: 0;
     border-radius: 40px;
-    background: #D49EED;
+    background: #d49eed;
     box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25);
-}
+  }
 
-h4{
+  h4 {
     position: relative;
     top: 345px;
     display: flex;
-height: 74px;
-flex-direction: column;
-justify-content: center;
-color: #000;
-text-align: center;
-font-family: $font-family-poppins;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
+    height: 74px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: $font-family-poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 
-.textin{
+  .textin {
     position: relative;
     top: 414px;
     left: 0px;
     display: flex;
     max-width: 40ch;
-height: 47px;
-flex-direction: column;
-justify-content: center;
-color: #000;
-text-align: center;
-font-family: $font-family-roboto;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: $font-family-roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-.apro{
+  .apro {
     top: 2000px;
     left: 160px;
-}
+  }
 
-.sec{
+  .sec {
     top: 2000px;
     left: 680px;
-}
+  }
 
-.pinc{
+  .pinc {
     top: 2000px;
     left: 1200px;
-}
+  }
 
-.plano{
+  .plano {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 1280px;
-    
-}
 
-.compras{
-position: relative;
-left: 120px;
-width: 562.189px;
-height: 980px;
-flex-shrink: 0;
-border-radius: 20px;
-background-color: #FFF;
-box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
-text-align: center;
-font-family: $font-family-roboto;
-padding-top: 35px;
-text-align: center;
-}
-.compras2{
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .compras {
+    position: relative;
+    left: 120px;
+    width: 562.189px;
+    height: 980px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: $font-family-roboto;
+    padding-top: 35px;
+    text-align: center;
+  }
+  .compras2 {
     position: relative;
     left: -120px;
     width: 562.189px;
     height: 980px;
     flex-shrink: 0;
     border-radius: 20px;
-    background-color: #FFF;
-    box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
+    background-color: #fff;
+    box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-family: $font-family-roboto;
     padding-top: 35px;
-    }
-.compras .h2_1{
+  }
+  .compras .h2_1 {
     font-size: 36px;
     left: -17px;
     top: 11px;
-}
-.compras2 .h2_2{
+  }
+  .compras2 .h2_2 {
     font-size: 36px;
     left: 12px;
     top: 3px;
-}
+  }
 
-.logo{
+  .logo {
     top: 121px;
     left: 145px;
     rotate: 0deg;
-}
-.logo2{
+  }
+  .logo2 {
     top: 121px;
     left: 136px;
     rotate: 0deg;
-}
+  }
 
-.textoss{
+  .textoss {
     display: flex;
-width: 539.623px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-text-align: center;
-gap: 20px;
-}
-.textinho{
+    width: 539.623px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    gap: 20px;
+  }
+  .textinho {
     position: relative;
     color: #000;
     font-family: $font-family-roboto;
     left: 170px;
     top: 201px;
     font-size: 25px;
-}
+  }
 
-.Preco{
+  .Preco {
     position: relative;
     top: 380px;
     width: 233.509px;
-height: 66px;
-flex-shrink: 0;
-border-radius: 15px;
-background: #5E329D;
-color: white;
-font-size: 26px;
-}
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #5e329d;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+  }
 
-.Preco2{
+  .Preco2 {
     position: relative;
     top: 268px;
     width: 233.509px;
     height: 66px;
     flex-shrink: 0;
     border-radius: 15px;
-    background: #5E329D;
+    background: #5e329d;
     color: white;
     font-size: 26px;
-}
+    cursor: pointer;
+  }
 
-.divisao{
+  .divisao {
     position: relative;
     top: -531px;
     left: 369px;
     width: 374.132px;
-height: 51px;
-flex-shrink: 0;
-border-radius: 20px 20px 0px 0px;
-background: #5E329D;
-text-align: center;
-color: white;
-font-family: $font-family-poppins;
-font-size: 35px;
-padding-top: 5px;
-}
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: #5e329d;
+    text-align: center;
+    color: white;
+    font-family: $font-family-poppins;
+    font-size: 35px;
+    padding-top: 5px;
+  }
 
-.cel {
+  .cel {
     position: relative;
     width: 100%;
     display: grid;
@@ -285,158 +282,163 @@ padding-top: 5px;
     justify-items: start; /* Alinha os itens à esquerda */
     padding: 1rem;
     max-width: 600px; /* Limita a largura para melhor legibilidade */
-     /* Centraliza o componente na tela */
-}
+    /* Centraliza o componente na tela */
+  }
 
-.visual {
+  .visual {
     font-size: 2.6rem;
     font-weight: 30;
     color: #333;
-}
+  }
 
-.frase2 {
+  .frase2 {
     position: relative;
     left: 233px;
     font-size: 3.5rem;
-    color: #3D1887;
+    color: #3d1887;
     font-family: $font-family-poppins;
-}
+  }
 
-.textao3 {
+  .textao3 {
     font-size: 1.3rem;
     line-height: 1.6;
     max-width: 40rem;
     color: #444;
-}
+  }
 
-.amarelo{
+  .amarelo {
     position: absolute;
     top: 10px;
-    color: #FFEA73;
+    color: #ffea73;
     left: 0;
-}
+  }
 
-.ageos1{
+  .ageos1 {
     position: absolute;
     top: 220px;
     left: 925px;
     rotate: -0deg;
-}
+  }
 
-.linha1{
+  .linha1 {
     position: absolute;
     left: 0;
     top: 875px;
-}
+  }
 
-.linha2{
+  .linha2 {
     position: absolute;
     left: 0;
     top: 875px;
-}
+  }
 
-.h3_1{
+  .h3_1 {
     position: relative;
     left: 233px;
     top: 490px;
     font-size: 3.1rem;
-    color: #3D1887;
+    color: #3d1887;
     font-family: $font-family-poppins;
-}
+  }
 
-.textao4{
+  .textao4 {
     position: relative;
     top: 405px;
     left: 225px;
     font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 37rem;
-  color: #444;
-  text-align: center;
-}
+    line-height: 1.6;
+    max-width: 37rem;
+    color: #444;
+    text-align: center;
+  }
 
-.Veio2{
+  .Veio2 {
     position: relative;
-  left: 10rem;
-  top: 339px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-  border-radius: 20px 20px 0px 0px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>) lightgray 0px -48.215px / 100% 121.006% no-repeat;
-}
+    left: 10rem;
+    top: 339px;
+    rotate: 0deg;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url(<path-to-image>) lightgray 0px -48.215px / 100% 121.006% no-repeat;
+  }
 
-.Veio3{
+  .Veio3 {
     position: relative;
-  left: 10rem;
-  top: 285px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-}
+    left: 10rem;
+    top: 285px;
+    rotate: 0deg;
+    justify-content: center;
+    align-content: center;
+  }
 
-.Celular3{
+  .Celular3 {
     position: absolute;
-  top: 1818px;
-  left: 1105px;
-  rotate: 0deg;
-}
+    top: 1818px;
+    left: 1105px;
+    rotate: 0deg;
+  }
 
-.textao5{
+  .textao5 {
     position: relative;
-  left: 233px;
-  top: 400px;
-  font-size: 3.1rem;
-  color: #3d1887;
-  font-family: Poppins,sans-serif;
-}
+    left: 233px;
+    top: 400px;
+    font-size: 3.1rem;
+    color: #3d1887;
+    font-family: Poppins, sans-serif;
+  }
 
-.textao6{
+  .textao6 {
     position: relative;
-  top: 315px;
-  left: 234px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 48rem;
-  color: #444;
-  text-align: center;
-}
+    top: 315px;
+    left: 234px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 48rem;
+    color: #444;
+    text-align: center;
+  }
 
-.Veio4{
+  .Veio4 {
     position: relative;
-  left: 10rem;
-  top: 265px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-}
+    left: 10rem;
+    top: 265px;
+    rotate: 0deg;
+    justify-content: center;
+    align-content: center;
+  }
 
-.moca{
+  .moca {
     position: absolute;
-  left: 50rem;
-  top: 3242px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-}
+    left: 50rem;
+    top: 3242px;
+    rotate: 0deg;
+    justify-content: center;
+    align-content: center;
+  }
 
-.Celular4{
+  .Celular4 {
     position: absolute;
-  top: 3178px;
-  left: 627px;
-  rotate: 0deg;
-}
+    top: 3178px;
+    left: 627px;
+    rotate: 0deg;
+  }
 
-.textao7{
+  .textao7 {
     position: relative;
     left: 524px;
-  top: 400px;
-  font-size: 3.1rem;
-  color: #3d1887;
-  font-family: Poppins,sans-serif;
-}
+    top: 400px;
+    font-size: 3.1rem;
+    color: #3d1887;
+    font-family: Poppins, sans-serif;
+  }
 
-.textao8{
+  .textao8 {
     position: relative;
   top: 315px;
   left: 557px;
@@ -446,149 +448,4 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
   color: #444;
   text-align: center;
 }   
-@media screen and (min-width: 1350px) and (max-width: 1538px) {
-    h1{
-  font-size: 32px;
-    }
-    
-    .Celular3{
-        position: absolute;
-    top: 1818px;
-    left: 1087px;
-    rotate: 0deg;
-    }
-    .svg2 {
-        top: -138px;
-    left: -299px;
-    width: 67.3%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;  // Centers the SVG horizontally if needed
-      }
-      
-      
-}
-
-@media screen and (min-width: 768px) and (max-width: 1366px) {
-    .adquira-container{
-        flex-direction: column;
-    }
-    h1{
-        position: relative;
-  top: 260px;
-  left: -100px;
-  height: 100px;
-  max-width: 25ch;
-  color: #FFF;
-  font-family: "Poppins", sans-serif;
-  font-size: 21.8px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-    }
-    .ageos1{
-        height: 20%;
-        left: 880px;
-    }
-    .svg2{
-        top: -138px;
-        left: -299px;
-        max-width: 100%;
-        width: 59.5%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .Veio2{
-        width: 100%;
-        height: auto;
-        max-width: 925px;
-    }
-    .Veio3{
-        width: 100%;
-        height: auto;
-        max-width: 925px;
-    }
-    .Celular3{
-        position: absolute;
-    top: 1529px;
-    left: 880px;
-    rotate: 0deg;
-    height: 20%;
-    }
-    .moca{
-        top: 2661px;
-    }
-    .Celular4{
-        top: 2621px;
-        height: 20%;
-    }
-    .Veia{
-        left: 659px;
-    }
-}
-
-@media screen and (min-width: 750px) and (max-width: 1170px) {
-    .adquira-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .Veia{
-        visibility: hidden;
-    }
-    .circulo{
-        visibility: hidden;
-    }
-    h1{
-        position: relative;
-        top: 272px;
-        left: -409.5px;
-    height: 100px;
-    max-width: 25ch;
-    color: #FFF;
-    font-family: "Poppins", sans-serif;
-    font-size: 21.8px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-    p{
-        position: relative;
-  top: 340px;
-  left: -77px;
-  height: 100px;
-  max-width: 28ch;
-  color: #FFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 21.8px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  justify-content: center;
-  align-items: center;
-    }
-    .svg2{
-        visibility: hidden;
-    }
-    .Comprar{
-        padding: 10px 20px; 
-  background-color: #9A78C9; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-    }
-    .Comprar:hover {
-        background-color: #7C76DA; 
-      }
-
-}
 }

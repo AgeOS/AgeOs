@@ -1,0 +1,276 @@
+@import "../variables.scss";
+
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-desktop: 1200px;
+
+// Mixins for responsive design
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+.body-user-page {
+  background-color: $color-purple;
+  min-height: 100vh;
+}
+//valores padroes de desktop
+.user-info {
+  width: 80%;
+  height: 900px;
+  background-color: $color-white;
+  position: relative;
+  top: 150px;
+  margin: 0 auto;
+  border-radius: 32px;
+  flex-shrink: 0;
+  display: flex;
+
+  //começo da side bar
+  .side-bar {
+    width: 30%;
+    background-color: $color-white;
+    display: flex;
+    border-radius: 32px 0 0 32px;
+    border-right: 1px solid;
+    flex-direction: column;
+    // align-items: center;
+
+    h2 {
+      font-size: 3rem;
+      font-family: $font-family-poppins;
+      color: $color-purple;
+      text-align: center;
+    }
+
+    .side-bar-options {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      position: relative;
+      top: 40px;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: $font-family-poppins;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        padding-left: 25px;
+      }
+
+      .--perfil {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        img {
+          width: 20%;
+          cursor: pointer;
+        }
+      }
+
+      .--seguranca {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        img {
+          width: 19%;
+          cursor: pointer;
+        }
+      }
+
+      .--dados {
+        position: relative;
+        left: 5px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        img {
+          width: 16%;
+          position: relative;
+          left: 5px;
+          padding-right: 5px;
+          cursor: pointer;
+        }
+      }
+
+      .--historico {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        img {
+          width: 19%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  //fim da sidebar
+  .user-perfil {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px;
+    // margin: 0 auto;
+
+    .user-perfil-perfil {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+
+      .user-image {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        img {
+          width: 55%;
+          border-radius: 50%;
+          position: relative;
+          left: 20px;
+        }
+
+        h3 {
+          color: #000;
+          font-family: $font-family-poppins;
+          font-size: 1.5rem;
+          text-align: start;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      .buttons {
+        width: 50%;
+        // height: 170px;
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        // justify-content: center;
+        gap: 30px;
+
+        .user-perfil-mudar-foto {
+          width: 8rem;
+          border: none;
+          height: 3rem;
+          flex-shrink: 0;
+          border-radius: 0.9375rem;
+          background: #f8f8f8;
+          font-size: 1rem;
+          font-weight: bold;
+          color: $color-purple;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+        }
+
+        .user-perfil-deletar-foto {
+          width: 8rem;
+          height: 3rem;
+          border: none;
+          flex-shrink: 0;
+          border-radius: 0.9375rem;
+          background: #f8f8f8;
+          font-size: 1rem;
+          font-weight: bold;
+          color: red;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .user-perfil-dados {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      //   justify-content: center;
+      position: relative;
+      top: 40px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+
+        label {
+          color: #757575;
+          font-family: $font-family-poppins;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        input,
+        select {
+          background: #d9d9d9;
+          //   width: 51rem;
+          height: 3.1875rem;
+          flex-shrink: 0;
+          border: none;
+          font-size: 1.4rem;
+        }
+
+        .user-perfil-salvar-mudancas {
+          width: 103%;
+          height: 150px;
+          display: flex;
+          align-items: end;
+          justify-content: end;
+
+          button {
+            width: 24%;
+            height: 50px;
+            border: none;
+            border-radius: 0.9375rem;
+            background: #f8f8f8;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            font-size: 1.4rem;
+            color: $color-purple;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
