@@ -131,7 +131,7 @@ export default function NavBar() {
             </button> */}
 
             <button className="login">
-              <Link to="/usuario">Login</Link>
+              <Link to="/login">Login</Link>
             </button>
 
             <button className="cadastro">
