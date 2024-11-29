@@ -8,6 +8,8 @@
 .adquira-container{
 
 .adquira_topo {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #3D1887;
     max-width: 100%;
     height: 740px;
@@ -77,6 +79,12 @@ align-items: center;
     flex-shrink: 0;
     border-radius: 10px;
 background: #FFEA73;
+transition: all 0.3s ease;
+}
+.Comprar:hover {
+    background-color: #FFD700; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .svg2{
@@ -438,4 +446,149 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
   color: #444;
   text-align: center;
 }   
+@media screen and (min-width: 1350px) and (max-width: 1538px) {
+    h1{
+  font-size: 32px;
+    }
+    
+    .Celular3{
+        position: absolute;
+    top: 1818px;
+    left: 1087px;
+    rotate: 0deg;
+    }
+    .svg2 {
+        top: -138px;
+    left: -299px;
+    width: 67.3%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;  // Centers the SVG horizontally if needed
+      }
+      
+      
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .adquira-container{
+        flex-direction: column;
+    }
+    h1{
+        position: relative;
+  top: 260px;
+  left: -100px;
+  height: 100px;
+  max-width: 25ch;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 21.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    }
+    .ageos1{
+        height: 20%;
+        left: 880px;
+    }
+    .svg2{
+        top: -138px;
+        left: -299px;
+        max-width: 100%;
+        width: 59.5%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .Veio2{
+        width: 100%;
+        height: auto;
+        max-width: 925px;
+    }
+    .Veio3{
+        width: 100%;
+        height: auto;
+        max-width: 925px;
+    }
+    .Celular3{
+        position: absolute;
+    top: 1529px;
+    left: 880px;
+    rotate: 0deg;
+    height: 20%;
+    }
+    .moca{
+        top: 2661px;
+    }
+    .Celular4{
+        top: 2621px;
+        height: 20%;
+    }
+    .Veia{
+        left: 659px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1170px) {
+    .adquira-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Veia{
+        visibility: hidden;
+    }
+    .circulo{
+        visibility: hidden;
+    }
+    h1{
+        position: relative;
+        top: 272px;
+        left: -409.5px;
+    height: 100px;
+    max-width: 25ch;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 21.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    p{
+        position: relative;
+  top: 340px;
+  left: -77px;
+  height: 100px;
+  max-width: 28ch;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 21.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+    }
+    .svg2{
+        visibility: hidden;
+    }
+    .Comprar{
+        padding: 10px 20px; 
+  background-color: #9A78C9; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+    }
+    .Comprar:hover {
+        background-color: #7C76DA; 
+      }
+
+}
 }
