@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-html {
-  background-color: #5E329D;
+.download-page {
+  background-color: #5e329d;
+  height: 130vh;
 }
 
 .container_download {
   display: flex;
   width: 100%;
-  max-height: 12000px;
+  height: 100vh;
   justify-content: center;
-  background-color: #5E329D;
+  background-color: #5e329d;
 }
 
 .quadrado_download {
   width: 70%;
-  max-width: 5500px;
+  max-width: 71%;
   text-align: center;
+  height: 1200px;
+  position: relative;
+  top: 100px;
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  margin: auto;
-  margin-top: 130px;
   border-radius: 20px;
 }
 
@@ -33,11 +35,12 @@ html {
 
 .celular {
   display: flex;
-  width: 30%;
-  height: 524px;
-  margin-left: 80px;
+  width: 29%;
+  height: 624px;
+  margin: 0 40px 40px 80px;
   background-image: url("../../assets/download/celular2-Photoroom 1.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .lado_instrucoes {
@@ -45,10 +48,28 @@ html {
   flex-direction: column;
   text-align: start;
 }
+.lado_instrucoes a {
+  text-decoration: none;
+}
+.lado_instrucoes a button {
+  position: relative;
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+  width: 14%;
+  height: 48px;
+  border-radius: 80px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  background: #FFEA73;
+  box-shadow: 1px 1px 7.6px 0px rgba(0, 0, 0, 0.25), 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 .lado_instrucoes h2 {
   font-size: 4vh;
-  color: #3D1887;
+  color: #3d1887;
 }
 
 .lado_instrucoes p {
@@ -67,7 +88,7 @@ html {
   align-items: center;
   height: 150px;
   margin: auto;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -82,7 +103,7 @@ html {
 }
 
 .informacoes span {
-  color: #3D1887;
+  color: #3d1887;
 }
 
 .ageOS_informacoes2 {
@@ -90,14 +111,14 @@ html {
   height: 270px;
   margin: auto;
   margin-top: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .ageOS_informacoes2 h2 {
   text-align: center;
-  color: #3D1887;
+  color: #3d1887;
 }
 
 .documentacao {
@@ -113,7 +134,7 @@ html {
   width: 30%;
   float: left;
   text-align: start;
-  color: #3D1887;
+  color: #3d1887;
   font-weight: 500;
 }
 

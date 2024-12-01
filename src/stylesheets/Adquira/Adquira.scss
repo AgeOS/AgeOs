@@ -1,187 +1,291 @@
-@import '../variables.scss';
+@import "../variables.scss";
+
+// Variáveis de breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+
+// Mixins para media queries
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
 
 * {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.adquira-container{
-
-.adquira_topo {
+.adquira-page {
+  .simplicidade-section {
+    width: 100%;
+    height: 775px;
+    background-color: $color-purple;
     display: flex;
-    flex-wrap: wrap;
-    background-color: #3D1887;
-    max-width: 100%;
-    height: 740px;
-    display: flex;
-    justify-content: flex-end;
-}
 
-svg {
-    position: relative;
-    top: 161.9px;
-}
+    .simplicidade-text {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 100px;
 
- img{
-    position: absolute;
-    top: 42px;
-    left: 898px;
-    z-index: 1;
-    rotate: -3.5deg;
-}
+      h1 {
+        font-family: $font-family-poppins;
+        font-size: 4rem;
+        color: $color-white;
 
-h1{
-    position: relative;
-    top: 260px;
-    left: -100px;
-    height: 100px;
-    max-width: 25ch;
-    color: #FFF;
-font-family: $font-family-poppins;
-font-size: 44px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
-h1 span{
-    color: #FFEA73;
-}
+        strong {
+          color: $color-yellow;
+        }
+      }
 
-p{
-    position: relative;
-    top: 340px;
-    left: 240px;
-    height: 100px;
-    max-width: 28ch;
-    color: #FFF;
-font-family: $font-family-roboto;
-font-size: 21.8px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-justify-content: center;
-align-items: center;
-}
+      p {
+        font-family: $font-family-roboto;
+        color: $color-white;
+        font-size: 2rem;
+      }
 
-.Comprar{
-    position: relative;
-    top: -340px;
-    left: 238px;
-    font-family: $font-family-roboto;
-    width: 265px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 59px;
-    font-size: 21.8px;
-    flex-shrink: 0;
-    border-radius: 10px;
-background: #FFEA73;
-transition: all 0.3s ease;
-}
-.Comprar:hover {
-    background-color: #FFD700; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
+      button {
+        position: relative;
+        top: 20px;
+        width: 25%;
+        height: 45px;
+        background-color: $color-yellow;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        font-family: $font-family-poppins;
+        padding: 5px;
+      }
+    }
 
-.svg2{
-    top: -70px;
-    left: -265px;
-    width: 993.9px;
-}
+    .simplicidade-imgs {
+      width: 40%;
+      position: relative;
 
-.grupo{
-    height: 330px;
+      .veia-img {
+        width: 80%;
+        height: 90%;
+        position: relative;
+        left: 180px;
+        top: 96px;
+        z-index: 2;
+        rotate: -3deg;
+      }
+
+      .bola-img {
+        width: 70%;
+        position: relative;
+        z-index: 1;
+        bottom: 510.3px;
+        left: 250px;
+        rotate: -3.8deg;
+      }
+    }
+
+    .linha-amarela {
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      left: 0;
+      right: 0;
+
+      svg {
+        position: relative;
+        top: 670px;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @include laptop {
+      .simplicidade-text {
+        padding-left: 50px;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+
+        button {
+          width: 30%;
+          height: 40px;
+          font-size: 1.2rem;
+        }
+      }
+
+      .simplicidade-imgs {
+        .veia-img {
+          left: 150px;
+          top: 80px;
+        }
+
+        .bola-img {
+          bottom: 480px;
+          left: 220px;
+        }
+      }
+    }
+
+    @include tablet {
+      flex-direction: column;
+      height: auto;
+
+      .simplicidade-text {
+        width: 100%;
+        height: 5px;
+        position: relative;
+        top: 210px;
+        padding-left: 20px;
+        padding-right: 20px;
+        z-index: 2;
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+        }
+
+        button {
+          width: 40%;
+          height: 35px;
+          font-size: 1rem;
+        }
+      }
+
+      .simplicidade-imgs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .veia-img {
+          // display: none;
+          position: relative;
+          z-index: 1;
+          width: 40%;
+          left: 470px;
+          top: 137px;
+        }
+
+        .bola-img {
+          visibility: hidden;
+          width: 60%;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      .linha-amarela {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      .simplicidade-section {
+        height: 200px;
+      }
+
+      .simplicidade-text {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+
+        button {
+          width: 50%;
+          height: 30px;
+          font-size: 0.9rem;
+        }
+      }
+
+      .simplicidade-imgs {
+        .veia-img {
+          display: none;
+          width: 60%;
+        }
+
+        .bola-img {
+          height: 390px;
+          // display: none;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .simples-e-intuitivo {
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-}
-
-.figgs{
-    width: 400px;
-    height: 300px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: #D49EED;
-    box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-h4{
-    position: relative;
-    top: 345px;
-    display: flex;
-height: 74px;
-flex-direction: column;
-justify-content: center;
-color: #000;
-text-align: center;
-font-family: $font-family-poppins;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.textin{
-    position: relative;
-    top: 414px;
-    left: 0px;
-    display: flex;
-    max-width: 40ch;
-height: 47px;
-flex-direction: column;
-justify-content: center;
-color: #000;
-text-align: center;
-font-family: $font-family-roboto;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.apro{
-    top: 2000px;
-    left: 160px;
-}
-
-.sec{
-    top: 2000px;
-    left: 680px;
-}
-
-.pinc{
-    top: 2000px;
-    left: 1200px;
-}
-
-.plano{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    height: 1280px;
     
 }
 
-.compras,
-.compras2{
-width: 100%;
-max-width: 562px;
+.compras{
+position: relative;
+left: 120px;
+width: 562.189px;
 height: 980px;
-margin: 10px;
-padding-top: 35px;
+flex-shrink: 0;
 border-radius: 20px;
 background-color: #FFF;
 box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
 text-align: center;
 font-family: $font-family-roboto;
+padding-top: 35px;
+text-align: center;
 }
+.compras2{
+    position: relative;
+    left: -120px;
+    width: 562.189px;
+    height: 980px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
+    text-align: center;
+    font-family: $font-family-roboto;
+    padding-top: 35px;
+    }
 .compras .h2_1{
     font-size: 36px;
     left: -17px;
@@ -194,13 +298,13 @@ font-family: $font-family-roboto;
 }
 
 .logo{
-    top: 5261px;
+    top: 121px;
     left: 145px;
     rotate: 0deg;
 }
 .logo2{
-    top: 5257px;
-    left: 1091px;
+    top: 121px;
+    left: 136px;
     rotate: 0deg;
 }
 
@@ -217,30 +321,21 @@ gap: 20px;
     position: relative;
     color: #000;
     font-family: $font-family-roboto;
-    left: 45%;
+    left: 170px;
     top: 201px;
     font-size: 25px;
-    text-align: initial;
-    width: 443px;
 }
 
 .Preco{
-position: relative;
-top: 380px;
-width: 233.509px;
+    position: relative;
+    top: 380px;
+    width: 233.509px;
 height: 66px;
 flex-shrink: 0;
 border-radius: 15px;
-background-color: #9A78C9;
+background: #5E329D;
 color: white;
 font-size: 26px;
-transition: all 0.3s ease;
-cursor: pointer;
-font-family: $font-family-poppins;
-}
-.Preco:hover {
-        background-color: #7C76DA; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Preco2{
@@ -250,32 +345,25 @@ font-family: $font-family-poppins;
     height: 66px;
     flex-shrink: 0;
     border-radius: 15px;
-    background-color: #9A78C9;
+    background: #5E329D;
     color: white;
     font-size: 26px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-family: $font-family-poppins;
-}
-.Preco2:hover {
-    background-color: #7C76DA; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .divisao{
     position: relative;
-    top: -535px;
-  left: 478px;
-  width: 374.132px;
-  height: 51px;
-  flex-shrink: 0;
-  border-radius: 20px 20px 0px 0px;
-  background: #5E329D;
-  text-align: center;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 35px;
-  padding-top: 5px;
+    top: -531px;
+    left: 369px;
+    width: 374.132px;
+height: 51px;
+flex-shrink: 0;
+border-radius: 20px 20px 0px 0px;
+background: #5E329D;
+text-align: center;
+color: white;
+font-family: $font-family-poppins;
+font-size: 35px;
+padding-top: 5px;
 }
 
 .cel {
@@ -313,170 +401,222 @@ font-family: $font-family-poppins;
 
 .amarelo{
     position: absolute;
-    top: 10px;
-    color: #FFEA73;
+    width: 100%;
+    bottom: 530px;
+    margin: 0;
     left: 0;
-}
+    right: 0;
 
-.ageos1{
-    position: absolute;
-    top: 220px;
-    left: 925px;
-    rotate: -0deg;
-}
-
-.linha1{
-    position: absolute;
-    left: 0;
-    top: 875px;
-}
-
-.linha2{
-    position: absolute;
-    left: 0;
-    top: 875px;
-}
-
-.h3_1{
-    position: relative;
-    left: 233px;
-    top: 490px;
-    font-size: 3.1rem;
-    color: #3D1887;
-    font-family: $font-family-poppins;
-}
-
-.textao4{
-    position: relative;
-    top: 405px;
-    left: 225px;
-    font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 37rem;
-  color: #444;
-  text-align: center;
-}
-
-.Veio2{
-    position: relative;
-  left: 10rem;
-  top: 339px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-  border-radius: 20px 20px 0px 0px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>) lightgray 0px -48.215px / 100% 121.006% no-repeat;
-}
-
-.Veio3{
-    position: relative;
-  left: 10rem;
-  top: 285px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-}
-
-.Celular3{
-    position: absolute;
-  top: 1818px;
-  left: 1105px;
-  rotate: 0deg;
-}
-
-.textao5{
-    position: relative;
-  left: 233px;
-  top: 400px;
-  font-size: 3.1rem;
-  color: #3d1887;
-  font-family: Poppins,sans-serif;
-}
-
-.textao6{
-    position: relative;
-  top: 315px;
-  left: 234px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 48rem;
-  color: #444;
-  text-align: center;
-}
-
-.Veio4{
-    position: relative;
-  left: 10rem;
-  top: 265px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-}
-
-.moca{
-    position: absolute;
-  left: 50rem;
-  top: 3242px;
-  rotate: 0deg;
-  justify-content: center;
-  align-content: center;
-}
-
-.Celular4{
-    position: absolute;
-  top: 3178px;
-  left: 627px;
-  rotate: 0deg;
-}
-
-.textao7{
-    position: relative;
-    left: 524px;
-  top: 400px;
-  font-size: 3.1rem;
-  color: #3d1887;
-  font-family: Poppins,sans-serif;
-}
-
-.textao8{
-    position: relative;
-  top: 315px;
-  left: 557px;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  max-width: 48rem;
-  color: #444;
-  text-align: center;
-}   
-@media screen and (min-width: 1350px) and (max-width: 1538px) {
-    h1{
-  font-size: 32px;
+    svg {
+      position: relative;
+      top: 1250px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
     }
-    
-    .Celular3{
-        position: absolute;
-    top: 1818px;
-    left: 1087px;
-    rotate: 0deg;
-    }
-    .svg2 {
-        top: -138px;
-    left: -299px;
-    width: 67.3%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;  // Centers the SVG horizontally if needed
+
+    @include laptop {
+      svg {
+        top: 1100px;
       }
-      
-      
-}
-
-@media screen and (min-width: 768px) and (max-width: 1366px) {
-    .adquira-container{
-        flex-direction: column;
     }
-    h1{
+
+    @include tablet {
+      svg {
+        top: 900px;
+      }
+    }
+
+    @include mobile {
+      svg {
+        visibility: hidden;
+        top: 700px;
+      }
+    }
+  }
+
+  .navegacao-net {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+
+    .navegacao-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+
+      h1 {
+        font-family: $font-family-poppins;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color-purple;
+      }
+
+      p {
+        width: 90%;
+        font-family: $font-family-roboto;
+        font-size: 2.4rem;
+        text-align: center;
+        font-weight: 100;
+      }
+    }
+
+    .navegacao-imgs {
+      height: 200vh;
+
+      .img1 {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+      }
+
+      .img2 {
+        width: 80%;
+        padding-top: 50px;
+      }
+
+      .img-phone {
+        width: 32%;
+        position: relative;
+        z-index: 2;
+        bottom: 900px;
+        left: 1180px;
+      }
+    }
+
+    @include laptop {
+      .navegacao-text {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      .navegacao-imgs {
+        .img-phone {
+          bottom: 800px;
+          left: 1000px;
+        }
+      }
+    }
+
+    @include tablet {
+      .navegacao-text {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+
+      .navegacao-imgs {
+        height: 800px;
+
+        .img-phone {
+          bottom: 400px;
+          left: 500px;
+        }
+      }
+    }
+
+    @include mobile {
+      .navegacao-text {
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+      }
+
+      .navegacao-imgs {
+        height: 400px;
+
+        .img2 {
+          position: relative;
+          bottom: 30px;
+        }
+
+        .img-phone {
+          bottom: 220px;
+          left: 230px;
+        }
+      }
+    }
+  }
+
+  .localizacao {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .localizacao-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+
+      h2 {
+        font-family: $font-family-poppins;
+        font-size: 4rem;
+        color: $color-purple;
+      }
+
+      p {
+        width: 90%;
+        font-size: 2.3rem;
+        text-align: center;
+        font-family: $font-family-roboto;
+      }
+    }
+
+    .localizacao-imgs {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .veio {
+        width: 35%;
+        position: relative;
+        left: 22px;
+        object-fit: cover;
+        height: 650px;
+      }
+
+      .filha {
+        width: 35%;
+        position: relative;
+        right: 22px;
+        object-fit: cover;
+        height: 650px;
+      }
+
+      .img-phone {
+        position: relative;
+        width: 23%;
+        z-index: 2;
+      }
+    }
+
+    @include laptop {
+      .localizacao {
         position: relative;
   top: 260px;
   left: -100px;
@@ -530,21 +670,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
         height: 20%;
     }
     .Veia{
-        left: 728px;
-    }
-    .divisao{
-        left: 435px;
-    }
-    .textinho{
-        left: 20%;
-    }
-    .logo{
-        top: 4671px;
-        left: 107px;
-    }
-    .logo2{
-        top: 4671px;
-        left: 959px;
+        left: 659px;
     }
 }
 
@@ -553,6 +679,12 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    .Veia{
+        visibility: hidden;
+    }
+    .circulo{
+        visibility: hidden;
     }
     h1{
         position: relative;
@@ -585,11 +717,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
   justify-content: center;
   align-items: center;
     }
-    .svg2,
-    .Veia,
-    .circulo,
-    .Veio4,
-    .moca{
+    .svg2{
         visibility: hidden;
     }
     .Comprar{
@@ -603,291 +731,6 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
     .Comprar:hover {
         background-color: #7C76DA; 
       }
-      .visual,
-      .frase2,
-      .textao3,
-      .h3_1,
-      .textao4,
-      .textao5,
-      .textao6,
-      .textao7,
-      .textao8{
-        left: 0px;
-      }
-      .Veio2{
-        width: 90%;
-      }
-      .Veio3{
-        width: 90%;
-      }
-      .Celular4{
-        left: 210px;
-        top: 2568px;
-      }
-      .plano{
-        flex-direction: column;
-      }
-      .figgs {
-        width: 100%;
-        max-width: 90%;
-        margin: 0 auto;
-      }
-      .Celular3{
-        left: 800px;
-      }
-      .ageos1{
-        left: 800px;
-      }
-      .logo{
-        top: 4586px;
-        left: 260px;
-    }
-    .logo2{
-        top: 5667px;
-        left: 235px;
-    }
-    .divisao{
-        left: 0px;
-        top: 10px;
-    }
 
 }
-
-@media screen and (max-width: 749px) {
-    .adquira-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    h1{
-        position: relative;
-        top: 272px;
-    height: 100px;
-    max-width: 25ch;
-    color: #FFF;
-    font-family: "Poppins", sans-serif;
-    font-size: 21.8px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-    p{
-        position: relative;
-  top: 340px;
-  height: 100px;
-  max-width: 28ch;
-  color: #FFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 21.8px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  justify-content: center;
-  align-items: center;
-    }
-    .svg2,
-    .Veia,
-    .circulo,
-    .Veio4,
-    .moca{
-        visibility: hidden;
-    }
-    .Comprar{
-        padding: 10px 20px; 
-  background-color: #9A78C9; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-    }
-    .Comprar:hover {
-        background-color: #7C76DA; 
-      }
-      .visual,
-      .frase2,
-      .textao3,
-      .h3_1,
-      .textao4,
-      .textao5,
-      .textao6,
-      .textao7,
-      .textao8{
-        left: 0px;
-      }
-      .Veio2{
-        width: 80%;
-      }
-      .Veio3{
-        width: 80%;
-      }
-      .Celular4{
-        left: 210px;
-        top: 2568px;
-      }
-      .plano{
-        flex-direction: column;
-      }
-      .figgs {
-        width: 100%;
-        max-width: 90%;
-        margin: 0 auto;
-      }
-      .Celular3{
-        left: 800px;
-      }
-      .ageos1{
-        left: 800px;
-      }
-      .logo{
-        top: 4586px;
-        left: 200px;
-    }
-    .logo2{
-        top: 5667px;
-        left: 200px;
-    }
-    .divisao{
-        left: 0px;
-        top: 10px;
-    }
-    .textinho{
-        left: 10%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .adquira-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    h1{
-        position: relative;
-        top: 160px;
-    height: 100px;
-    max-width: 25ch;
-    color: #FFF;
-    font-family: "Poppins", sans-serif;
-    font-size: 21.8px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-    p{
-        position: relative;
-  top: 325px;
-  left: -77px;
-  height: 100px;
-  max-width: 28ch;
-  color: #FFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 21.8px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  justify-content: center;
-  align-items: center;
-    }
-    .svg2,
-    .Veia,
-    .circulo,
-    .Veio4,
-    .moca{
-        visibility: hidden;
-    }
-    .Comprar{
-        left: 85px;
-        padding: 10px 20px; 
-  background-color: #9A78C9; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-    }
-    .Comprar:hover {
-        background-color: #7C76DA; 
-      }
-      .visual,
-      .frase2,
-      .textao3,
-      .h3_1,
-      .textao4,
-      .textao5,
-      .textao6,
-      .textao7,
-      .textao8{
-        left: 0px;
-      }
-      .Veio2{
-        width: 45%;
-      }
-      .Veio3{
-        width: 45%;
-      }
-      .Celular4{
-        left: 55px;
-        top: 2228px;
-      }
-      .plano{
-        flex-direction: column;
-      }
-      .figgs {
-        width: 100%;
-        max-width: 90%;
-        margin: 0 auto;
-      }
-      .Celular3{
-        left: 800px;
-      }
-      .ageos1{
-        left: 800px;
-      }
-      .logo{
-        top: 4211px;
-        left: 85px;
-    }
-    .logo2{
-        top: 5310px;
-        left: 85px;
-    }
-    .divisao{
-        left: 0px;
-        top: 10px;
-    }
-    .textinho{
-        left: 10%;
-        font-size: 1.2rem;
-    }
-    .textao7{
-        font-size: 2.5rem;
-    }
-    .textao6{
-        font-size: 1.0rem;
-        max-width: 400px;
-    }
-    .textao5{
-        font-size: 2.5rem;
-    }
-    .textao4{
-        font-size: 1.0rem;
-        max-width: 400px;
-    }
-    .h3_1{
-        font-size: 2.2rem;
-    }
-    .textao3{
-        font-size: 1.0rem;
-        max-width: 410px;
-    }
-    .frase2{
-        font-size: 2.5rem;
-    }
-}
-
 }

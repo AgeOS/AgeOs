@@ -12,6 +12,15 @@ import menuRoxo from "../../assets/navbar/menu-roxo.png";
 import logo from "../../assets/navbar/logo-1.png";
 // import theme from "../../assets/navbar/image-34.png";
 
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/clerk-react";
+// import Usuario from "../Usuario/Usuario";
+
 export default function NavBar() {
   return (
     <>
@@ -130,13 +139,24 @@ export default function NavBar() {
               <img src={theme} alt="" />
             </button> */}
 
-            <button className="login">
-              <Link to="/usuario">Login</Link>
-            </button>
+            <SignedOut>
+              <SignInButton>
+                <button className="login">
+                  {/* <Link to="/login">Login</Link> */}Login
+                </button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
 
-            <button className="cadastro">
-              <Link to="/cadastro">Cadastre-se</Link>
-            </button>
+            <SignedOut>
+              <SignUpButton>
+                <button className="cadastro">
+                  {/* <Link to="/cadastro">Cadastre-se</Link> */}Cadastre-se
+                </button>
+              </SignUpButton>
+            </SignedOut>
           </div>
         </nav>
       </div>
