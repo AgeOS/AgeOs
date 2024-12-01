@@ -149,6 +149,10 @@
   color: #3D1887;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: 1s ease;
+}
+.user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-mudar-foto:hover {
+  transform: scale(1.1);
 }
 .user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-deletar-foto {
   width: 8rem;
@@ -162,6 +166,10 @@
   color: red;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: 1s ease;
+}
+.user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-deletar-foto:hover {
+  transform: scale(1.1);
 }
 .user-info .user-perfil .user-perfil-dados {
   width: 90%;
@@ -192,6 +200,10 @@
   border: none;
   font-size: 1.4rem;
 }
+.user-info .user-perfil .user-perfil-dados form input:focus,
+.user-info .user-perfil .user-perfil-dados form select:focus {
+  transform: scale(1.03);
+}
 .user-info .user-perfil .user-perfil-dados form .user-perfil-salvar-mudancas {
   width: 103%;
   height: 150px;
@@ -210,6 +222,10 @@
   color: #3D1887;
   font-weight: bold;
   cursor: pointer;
+  transition: 1s ease;
+}
+.user-info .user-perfil .user-perfil-dados form .user-perfil-salvar-mudancas button:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=user.css.map */

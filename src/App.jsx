@@ -14,6 +14,7 @@ import Senha from "./Components/Usuario/Senha/Senha";
 import Dados from "./Components/Usuario/Dados/Dados";
 import Historico from "./Components/Usuario/Historico/Historico";
 import PagDownload from "./Components/download/PagDownload";
+// import QRCodeComponent from "./Components/pix/pix";
 
 // import Usuario from "./Components/Usuario/Usuario";
 
@@ -32,6 +33,17 @@ export default function App() {
         <Route path="/Dados" element={<Dados />} />
         <Route path="/Historico" element={<Historico />} />
         <Route path="/download" element={<PagDownload />} />
+        {/* <Route
+          path="/qrcodecomponent"
+          element={
+            <QRCodeComponent
+              chavePix="15241948406"
+              valor="1.00"
+              nomeRecebedor="kaique alves da silva"
+              cidadeRecebedor="Sao Paulo"
+            />
+          }
+        /> */}
       </Routes>
     </>
   );
