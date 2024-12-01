@@ -29,6 +29,28 @@ public class Buy {
     @Column(name = "package_type")
     private PackageType package_type;
 
+    @Column(name = "efi_charge_id")
+    private String efiChargeId;
+
+    @Column(name = "payment_status")
+    private String paymentStatus;
+
+    public String getPaymentStatus() {
+        return paymentStatus;
+    }
+
+    public void setPaymentStatus(String paymentStatus) {
+        this.paymentStatus = paymentStatus;
+    }
+
+    public String getEfiChargeId() {
+        return efiChargeId;
+    }
+
+    public void setEfiChargeId(String efiChargeId) {
+        this.efiChargeId = efiChargeId;
+    }
+
     public Long getPk_id_buy() {
         return pk_id_buy;
     }
