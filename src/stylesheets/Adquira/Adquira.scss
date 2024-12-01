@@ -162,40 +162,26 @@ line-height: normal;
 
 .plano{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 1280px;
+    width: 100%;
+    height: auto;
     
 }
 
-.compras{
-position: relative;
-left: 120px;
-width: 562.189px;
+.compras,
+.compras2{
+width: 100%;
+max-width: 562px;
 height: 980px;
-flex-shrink: 0;
+margin: 10px;
+padding-top: 35px;
 border-radius: 20px;
 background-color: #FFF;
 box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
 text-align: center;
 font-family: $font-family-roboto;
-padding-top: 35px;
-text-align: center;
 }
-.compras2{
-    position: relative;
-    left: -120px;
-    width: 562.189px;
-    height: 980px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background-color: #FFF;
-    box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
-    text-align: center;
-    font-family: $font-family-roboto;
-    padding-top: 35px;
-    }
 .compras .h2_1{
     font-size: 36px;
     left: -17px;
@@ -208,13 +194,13 @@ text-align: center;
 }
 
 .logo{
-    top: 121px;
+    top: 5261px;
     left: 145px;
     rotate: 0deg;
 }
 .logo2{
-    top: 121px;
-    left: 136px;
+    top: 5257px;
+    left: 1091px;
     rotate: 0deg;
 }
 
@@ -231,21 +217,30 @@ gap: 20px;
     position: relative;
     color: #000;
     font-family: $font-family-roboto;
-    left: 170px;
+    left: 45%;
     top: 201px;
     font-size: 25px;
+    text-align: initial;
+    width: 443px;
 }
 
 .Preco{
-    position: relative;
-    top: 380px;
-    width: 233.509px;
+position: relative;
+top: 380px;
+width: 233.509px;
 height: 66px;
 flex-shrink: 0;
 border-radius: 15px;
-background: #5E329D;
+background-color: #9A78C9;
 color: white;
 font-size: 26px;
+transition: all 0.3s ease;
+cursor: pointer;
+font-family: $font-family-poppins;
+}
+.Preco:hover {
+        background-color: #7C76DA; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Preco2{
@@ -255,25 +250,32 @@ font-size: 26px;
     height: 66px;
     flex-shrink: 0;
     border-radius: 15px;
-    background: #5E329D;
+    background-color: #9A78C9;
     color: white;
     font-size: 26px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: $font-family-poppins;
+}
+.Preco2:hover {
+    background-color: #7C76DA; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .divisao{
     position: relative;
-    top: -531px;
-    left: 369px;
-    width: 374.132px;
-height: 51px;
-flex-shrink: 0;
-border-radius: 20px 20px 0px 0px;
-background: #5E329D;
-text-align: center;
-color: white;
-font-family: $font-family-poppins;
-font-size: 35px;
-padding-top: 5px;
+    top: -535px;
+  left: 478px;
+  width: 374.132px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 20px 20px 0px 0px;
+  background: #5E329D;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  padding-top: 5px;
 }
 
 .cel {
@@ -528,7 +530,21 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
         height: 20%;
     }
     .Veia{
-        left: 659px;
+        left: 728px;
+    }
+    .divisao{
+        left: 435px;
+    }
+    .textinho{
+        left: 20%;
+    }
+    .logo{
+        top: 4671px;
+        left: 107px;
+    }
+    .logo2{
+        top: 4671px;
+        left: 959px;
     }
 }
 
@@ -537,12 +553,6 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-    .Veia{
-        visibility: hidden;
-    }
-    .circulo{
-        visibility: hidden;
     }
     h1{
         position: relative;
@@ -575,7 +585,11 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
   justify-content: center;
   align-items: center;
     }
-    .svg2{
+    .svg2,
+    .Veia,
+    .circulo,
+    .Veio4,
+    .moca{
         visibility: hidden;
     }
     .Comprar{
@@ -589,6 +603,291 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
     .Comprar:hover {
         background-color: #7C76DA; 
       }
+      .visual,
+      .frase2,
+      .textao3,
+      .h3_1,
+      .textao4,
+      .textao5,
+      .textao6,
+      .textao7,
+      .textao8{
+        left: 0px;
+      }
+      .Veio2{
+        width: 90%;
+      }
+      .Veio3{
+        width: 90%;
+      }
+      .Celular4{
+        left: 210px;
+        top: 2568px;
+      }
+      .plano{
+        flex-direction: column;
+      }
+      .figgs {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      .Celular3{
+        left: 800px;
+      }
+      .ageos1{
+        left: 800px;
+      }
+      .logo{
+        top: 4586px;
+        left: 260px;
+    }
+    .logo2{
+        top: 5667px;
+        left: 235px;
+    }
+    .divisao{
+        left: 0px;
+        top: 10px;
+    }
 
 }
+
+@media screen and (max-width: 749px) {
+    .adquira-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h1{
+        position: relative;
+        top: 272px;
+    height: 100px;
+    max-width: 25ch;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 21.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    p{
+        position: relative;
+  top: 340px;
+  height: 100px;
+  max-width: 28ch;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 21.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+    }
+    .svg2,
+    .Veia,
+    .circulo,
+    .Veio4,
+    .moca{
+        visibility: hidden;
+    }
+    .Comprar{
+        padding: 10px 20px; 
+  background-color: #9A78C9; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+    }
+    .Comprar:hover {
+        background-color: #7C76DA; 
+      }
+      .visual,
+      .frase2,
+      .textao3,
+      .h3_1,
+      .textao4,
+      .textao5,
+      .textao6,
+      .textao7,
+      .textao8{
+        left: 0px;
+      }
+      .Veio2{
+        width: 80%;
+      }
+      .Veio3{
+        width: 80%;
+      }
+      .Celular4{
+        left: 210px;
+        top: 2568px;
+      }
+      .plano{
+        flex-direction: column;
+      }
+      .figgs {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      .Celular3{
+        left: 800px;
+      }
+      .ageos1{
+        left: 800px;
+      }
+      .logo{
+        top: 4586px;
+        left: 200px;
+    }
+    .logo2{
+        top: 5667px;
+        left: 200px;
+    }
+    .divisao{
+        left: 0px;
+        top: 10px;
+    }
+    .textinho{
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .adquira-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h1{
+        position: relative;
+        top: 160px;
+    height: 100px;
+    max-width: 25ch;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 21.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    p{
+        position: relative;
+  top: 325px;
+  left: -77px;
+  height: 100px;
+  max-width: 28ch;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 21.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+    }
+    .svg2,
+    .Veia,
+    .circulo,
+    .Veio4,
+    .moca{
+        visibility: hidden;
+    }
+    .Comprar{
+        left: 85px;
+        padding: 10px 20px; 
+  background-color: #9A78C9; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+    }
+    .Comprar:hover {
+        background-color: #7C76DA; 
+      }
+      .visual,
+      .frase2,
+      .textao3,
+      .h3_1,
+      .textao4,
+      .textao5,
+      .textao6,
+      .textao7,
+      .textao8{
+        left: 0px;
+      }
+      .Veio2{
+        width: 45%;
+      }
+      .Veio3{
+        width: 45%;
+      }
+      .Celular4{
+        left: 55px;
+        top: 2228px;
+      }
+      .plano{
+        flex-direction: column;
+      }
+      .figgs {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      .Celular3{
+        left: 800px;
+      }
+      .ageos1{
+        left: 800px;
+      }
+      .logo{
+        top: 4211px;
+        left: 85px;
+    }
+    .logo2{
+        top: 5310px;
+        left: 85px;
+    }
+    .divisao{
+        left: 0px;
+        top: 10px;
+    }
+    .textinho{
+        left: 10%;
+        font-size: 1.2rem;
+    }
+    .textao7{
+        font-size: 2.5rem;
+    }
+    .textao6{
+        font-size: 1.0rem;
+        max-width: 400px;
+    }
+    .textao5{
+        font-size: 2.5rem;
+    }
+    .textao4{
+        font-size: 1.0rem;
+        max-width: 400px;
+    }
+    .h3_1{
+        font-size: 2.2rem;
+    }
+    .textao3{
+        font-size: 1.0rem;
+        max-width: 410px;
+    }
+    .frase2{
+        font-size: 2.5rem;
+    }
+}
+
 }
