@@ -2,6 +2,9 @@
   .modal-lateral {
     display: none !important;
   }
+  .button-navbar {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1590px) {
   .modal-lateral {
@@ -16,6 +19,9 @@
   }
   .login {
     width: 28% !important;
+  }
+  .button-navbar {
+    display: none;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -43,13 +49,13 @@
   .login {
     width: 25% !important;
   }
+  .button-navbar {
+    display: none;
+  }
 }
 @media screen and (min-width: 50px) and (max-width: 999px) {
   .nav-bar {
     display: none !important;
-  }
-  .button-navbar {
-    display: flex;
   }
 }
 

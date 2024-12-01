@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.main-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.main-content .compras {
+  width: 100%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-content .compras h3 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+}
+.main-content .compras p:first-of-type {
+  font-size: 0.9rem;
+  position: relative;
+  left: 160px;
+  bottom: 6px;
+}
+.main-content .compras p {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=historico.css.map */

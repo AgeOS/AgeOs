@@ -10,7 +10,9 @@
     "preview": "vite preview a"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.17.1",
     "lucide-react": "^0.453.0",
+    "qrcode": "^1.5.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",

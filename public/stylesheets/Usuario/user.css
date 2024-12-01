@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.body-user-page {
+  background-color: #3D1887;
+  height: 100vh;
+}
+
+.user-info {
+  width: 80%;
+  height: 100vh;
+  max-height: 80vh;
+  background-color: #FAF8FB;
+  position: relative;
+  top: 150px;
+  margin: 0 auto;
+  border-radius: 32px;
+  flex-shrink: 0;
+  display: flex;
+}
+.user-info .side-bar {
+  width: 30%;
+  background-color: #FAF8FB;
+  display: flex;
+  border-radius: 32px 0 0 32px;
+  border-right: 1px solid;
+  flex-direction: column;
+}
+.user-info .side-bar h2 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+  text-align: center;
+}
+.user-info .side-bar .side-bar-options {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  position: relative;
+  top: 40px;
+  gap: 20px;
+}
+.user-info .side-bar .side-bar-options a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  padding-left: 25px;
+}
+.user-info .side-bar .side-bar-options .--perfil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.user-info .side-bar .side-bar-options .--perfil img {
+  width: 20%;
+  cursor: pointer;
+}
+.user-info .side-bar .side-bar-options .--seguranca {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.user-info .side-bar .side-bar-options .--seguranca img {
+  width: 19%;
+  cursor: pointer;
+}
+.user-info .side-bar .side-bar-options .--dados {
+  position: relative;
+  left: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.user-info .side-bar .side-bar-options .--dados img {
+  width: 16%;
+  position: relative;
+  left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.user-info .side-bar .side-bar-options .--historico {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.user-info .side-bar .side-bar-options .--historico img {
+  width: 19%;
+  cursor: pointer;
+}
+.user-info .user-perfil {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 50px;
+}
+.user-info .user-perfil .user-perfil-perfil {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+.user-info .user-perfil .user-perfil-perfil .user-image {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.user-info .user-perfil .user-perfil-perfil .user-image img {
+  width: 55%;
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+}
+.user-info .user-perfil .user-perfil-perfil .user-image h3 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  text-align: start;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.user-info .user-perfil .user-perfil-perfil .buttons {
+  width: 50%;
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-mudar-foto {
+  width: 8rem;
+  border: none;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  background: #f8f8f8;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3D1887;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 1s ease;
+}
+.user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-mudar-foto:hover {
+  transform: scale(1.1);
+}
+.user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-deletar-foto {
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  background: #f8f8f8;
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 1s ease;
+}
+.user-info .user-perfil .user-perfil-perfil .buttons .user-perfil-deletar-foto:hover {
+  transform: scale(1.1);
+}
+.user-info .user-perfil .user-perfil-dados {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+}
+.user-info .user-perfil .user-perfil-dados form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+}
+.user-info .user-perfil .user-perfil-dados form label {
+  color: #757575;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.user-info .user-perfil .user-perfil-dados form input,
+.user-info .user-perfil .user-perfil-dados form select {
+  background: #d9d9d9;
+  height: 3.1875rem;
+  flex-shrink: 0;
+  border: none;
+  font-size: 1.4rem;
+}
+.user-info .user-perfil .user-perfil-dados form input:focus,
+.user-info .user-perfil .user-perfil-dados form select:focus {
+  transform: scale(1.03);
+}
+.user-info .user-perfil .user-perfil-dados form .user-perfil-salvar-mudancas {
+  width: 103%;
+  height: 150px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.user-info .user-perfil .user-perfil-dados form .user-perfil-salvar-mudancas button {
+  width: 24%;
+  height: 50px;
+  border: none;
+  border-radius: 0.9375rem;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.4rem;
+  color: #3D1887;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.user-info .user-perfil .user-perfil-dados form .user-perfil-salvar-mudancas button:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=user.css.map */
