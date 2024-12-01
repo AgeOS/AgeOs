@@ -2195,6 +2195,129 @@ body {
   width: 23%;
   z-index: 2;
 }
+.adquira-page .pacotes {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.adquira-page .pacotes .pacotes-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 70px;
+}
+.adquira-page .pacotes .pacotes-text h2 {
+  color: #3D1887;
+  font-size: 4.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.adquira-page .pacotes .pacotes-text p {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.adquira-page .pacotes .pacotes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) {
+  width: 35%;
+  height: 700px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) h2 {
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) img {
+  width: 60%;
+  object-fit: cover;
+  padding-bottom: 25px;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) ul {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) ul li {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) a {
+  width: 25%;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-decoration: none;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) a button {
+  height: 55px;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  background: #3D1887;
+  color: #FAF8FB;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) .button-premium {
+  position: relative !important;
+  bottom: 40px;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) .recomendado {
+  width: 25%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #3D1887;
+  top: 5304px;
+  height: 60px;
+  border-radius: 20px 20px 0px 0px;
+}
+.adquira-page .pacotes .pacotes :is(.pacote-basico, .pacote-premium) .recomendado h3 {
+  position: relative;
+  left: 120px;
+  top: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #FAF8FB;
+  font-size: 2rem;
+}
+.adquira-page .tire-as-duvidas {
+  width: 100%;
+  padding: 40px 40px 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.adquira-page .tire-as-duvidas a {
+  text-decoration: none;
+}
+.adquira-page .tire-as-duvidas a button {
+  width: 150%;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 1.4rem;
+  background-color: #3D1887;
+  color: #FAF8FB;
+  border: none;
+  border-radius: 15px;
+}
 
 .container_suporte {
   margin-bottom: 210px;

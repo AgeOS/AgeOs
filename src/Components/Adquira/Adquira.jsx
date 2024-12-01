@@ -107,7 +107,7 @@ function Adquira() {
 
         <div className="navegacao-net">
           <div className="navegacao-text">
-            <h1>Navegação nan Internet</h1>
+            <h1>Navegação na Internet</h1>
             <p>
               Com nosso antivírus e proteção contra links e sites suspeitos, seu
               familiar estará protegido contra ameaças virtuais, oferecendo
@@ -145,13 +145,56 @@ function Adquira() {
             <p>Os planos ideais que cabem no seu bolso</p>
           </div>
           <div className="pacotes">
-            <div className="pacote-basico"></div>
+            <div className="pacote-basico">
+              <h2>Pacote Básico</h2>
+              <img src={logo} alt="" />
 
-            <div className="pacote-premium"></div>
+              <ul>
+                <li>Sistema apenas para um aparelho</li>
+                <li>Valor fixo por sistema</li>
+                <li>Somente atualizações estáveis</li>
+                <li>Segurança para phishing e golpes</li>
+                <li>Identificador de chamadas suspeitas</li>
+                <li>Segurança reforçada em apps financeiros</li>
+              </ul>
+
+              <Link to="https://buy.stripe.com/eVa4gmgmR2J83bGaEE">
+                <button>R$ 69,99</button>
+              </Link>
+            </div>
+
+            <div className="pacote-premium">
+              <div className="recomendado">
+                <h3>Recomendado</h3>
+              </div>
+
+              <h2>Pacote Básico</h2>
+              <img src={logo} alt="" />
+
+              <ul>
+                <li>Sistema para cinco aparelhos</li>
+                <li>Valor promocional</li>
+                <li>Acesso antecipado a atualizações</li>
+                <li>Segurança para phishing e golpes</li>
+                <li>Identificador de chamadas suspeitas</li>
+                <li>Segurança reforçada em apps financeiros</li>
+                <li>Pacote personalizado</li>
+                <li>Suporte para backup</li>
+              </ul>
+
+              <Link
+                className="button-premium"
+                to="https://buy.stripe.com/00g5kq0nT83sdQk145"
+              >
+                <button>R$ 229,99</button>
+              </Link>
+            </div>
           </div>
-          <Link>
-            <button>Tire suas dúvidas</button>
-          </Link>
+          <div className="tire-as-duvidas">
+            <Link to="/suporte">
+              <button>Tire suas dúvidas</button>
+            </Link>
+          </div>
         </div>
       </div>
 
