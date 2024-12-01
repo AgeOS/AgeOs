@@ -822,7 +822,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
       .textao6,
       .textao7,
       .textao8{
-        left: 0px;
+        left: 3px;
       }
       .Veio2{
         width: 45%;
@@ -846,7 +846,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
         left: 800px;
       }
       .ageos1{
-        left: 800px;
+        visibility: hidden;
       }
       .logo{
         top: 4211px;
@@ -887,6 +887,9 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 10
     }
     .frase2{
         font-size: 2.5rem;
+    }
+    .Celular3{
+        visibility: hidden;
     }
 }
 
