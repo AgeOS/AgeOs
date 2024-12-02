@@ -4,14 +4,12 @@ import br.com.efi.efisdk.EfiPay;
 import br.com.efi.efisdk.exceptions.EfiPayException;
 import com.ageos.AgeOSBackend.enums.PackageType;
 import com.ageos.AgeOSBackend.model.Buy;
-import com.ageos.AgeOSBackend.repository.AgeOSRepository;
 import com.ageos.AgeOSBackend.repository.BuyRepository;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.ByteArrayInputStream;
@@ -38,10 +36,6 @@ public class PixService {
     @Autowired
     private BuyRepository buyRepository;
 
-    @Autowired
-    private AgeOSRepository ageOSRepository;
-
-
     public JSONObject createAgeOSPixCharge(Buy buy) {
         JSONObject options = configureJsonObject();
 
@@ -57,7 +51,7 @@ public class PixService {
         body.put("chave", "sua-chave-pix-aqui");
 
         JSONArray infoAdicionais = new JSONArray();
-        infoAdicionais.put(new JSONObject().put("nome", "Pacote").put("valor", buy.getPackage_type().toString()));
+        infoAdicionais.put(new JSONObject().put("nome", "Pacote").put("valor", buy.getPackageType().toString()));
         infoAdicionais.put(new JSONObject().put("nome", "Detalhe").put("valor", "Compra de AgeOS"));
         body.put("infoAdicionais", infoAdicionais);
 
@@ -83,9 +77,9 @@ public class PixService {
     }
 
     private Double calculateAmount(Buy buy) {
-        if (buy.getPackage_type() == PackageType.COMUM) {
+        if (buy.getPackageType() == PackageType.COMUM) {
             return 0.01;
-        } else if (buy.getPackage_type() == PackageType.FAMILIA) {
+        } else if (buy.getPackageType() == PackageType.FAMILIA) {
             return 0.02;
         }
         return 0.0;

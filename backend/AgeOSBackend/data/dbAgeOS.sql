@@ -37,3 +37,29 @@ alter table tb_ageos
 add constraint fk_buy_ageos
 foreign key (fk_id_buy) references tb_buy(pk_id_buy);
 
+ALTER TABLE tb_users
+ADD COLUMN fk_id_buy INT;
+
+
+
+INSERT INTO tb_buy (method_payment, date_buy, package_type, number_user, address_user) 
+VALUES 
+('Cartão de Crédito', '2024-12-01', 'comum', 1, 'Rua A, 123'),
+('Boleto Bancário', '2024-12-02', 'familia', 3, 'Avenida B, 456'),
+('Pix', '2024-12-03', 'comum', 2, 'Rua C, 789');
+
+INSERT INTO tb_ageos (package_type) 
+VALUES 
+('comum'),
+('familia');
+
+DESCRIBE tb_users;
+
+
+INSERT INTO tb_users (user_name, user_email, user_password, fk_id_buy)
+VALUES 
+('João Silva', 'joao.silva@example.com', 'senha123', 1),
+('Maria Souza', 'maria.souza@example.com', 'senha456', 2),
+('Carlos Oliveira', 'carlos.oliveira@example.com', 'senha789', 3);
+
+

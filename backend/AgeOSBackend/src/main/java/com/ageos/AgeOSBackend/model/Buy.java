@@ -27,7 +27,7 @@ public class Buy {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "package_type")
-    private PackageType package_type;
+    private PackageType packageType;
 
     @Column(name = "efi_charge_id")
     private String efiChargeId;
@@ -92,12 +92,12 @@ public class Buy {
         this.address_user = address_user;
     }
 
-    public PackageType getPackage_type() {
-        return package_type;
+    public PackageType getPackageType() {
+        return packageType;
     }
 
-    public void setPackage_type(PackageType package_type) {
-        this.package_type = package_type;
+    public void setPackageType(PackageType packageType) {
+        this.packageType = packageType;
     }
 
 }

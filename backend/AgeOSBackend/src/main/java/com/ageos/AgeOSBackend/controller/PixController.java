@@ -1,10 +1,9 @@
 package com.ageos.AgeOSBackend.controller;
 
+import com.ageos.AgeOSBackend.service.PixService;
+import com.ageos.AgeOSBackend.repository.BuyRepository;
 import com.ageos.AgeOSBackend.dto.BuyRequest;
 import com.ageos.AgeOSBackend.model.Buy;
-import com.ageos.AgeOSBackend.repository.AgeOSRepository;
-import com.ageos.AgeOSBackend.repository.BuyRepository;
-import com.ageos.AgeOSBackend.service.PixService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,19 +23,14 @@ public class PixController {
     @Autowired
     private BuyRepository buyRepository;
 
-    @Autowired
-    private AgeOSRepository ageOSRepository;
-
-
     @PostMapping("/create")
     public ResponseEntity createPixCharge(@RequestBody BuyRequest buyRequest) {
         try {
             Buy buy = new Buy();
-            buy.setPackage_type(buyRequest.getPackageType());
+            buy.setPackageType(buyRequest.getPackageType());
             buy.setMethod_payment("PIX");
             buy.setNumber_user(buyRequest.getNumberUser());
             buy.setAddress_user(buyRequest.getAddressUser());
-
 
             JSONObject response = pixService.createAgeOSPixCharge(buy);
 
@@ -59,7 +53,6 @@ public class PixController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro: " + e.getMessage());
         }
     }
-
 
     @GetMapping("/buy/{id}")
     public ResponseEntity getBuyById(@PathVariable Long id) {
