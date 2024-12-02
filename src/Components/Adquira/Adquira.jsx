@@ -162,12 +162,10 @@ export default function Adquira() {
                 <button>R$ 69,99</button>
               </Link>
             </div>
-
+            <div className="recomendado">
+              <h3>Recomendado</h3>
+            </div>
             <div className="pacote-premium">
-              <div className="recomendado">
-                <h3>Recomendado</h3>
-              </div>
-
               <h2>Pacote Premium</h2>
               <img src={logo} alt="" />
 

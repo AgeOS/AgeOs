@@ -807,8 +807,11 @@ $breakpoint-desktop: 1200px;
 
           button {
             height: 55px;
-            font-size: 1.4rem;
+            font-family: $font-family-poppins;
+            font-size: 1.6rem;
             border-radius: 15px;
+            border: none;
+            font-weight: bold;
             background: $color-purple;
             color: $color-white;
           }
@@ -818,24 +821,46 @@ $breakpoint-desktop: 1200px;
           position: relative !important;
           bottom: 40px;
         }
+      }
 
-        .recomendado {
-          width: 25%;
-          margin: 0 auto;
-          position: absolute;
-          background-color: $color-purple;
-          top: 5304px;
-          height: 60px;
-          border-radius: 20px 20px 0px 0px;
+      .recomendado {
+        // width: 25%;
+        // // margin: 0 auto;
+        // position: absolute;
+        // background-color: $color-purple;
+        // top: 5300px;
+        // left: 1020px;
+        // height: 60px;
+        // border-radius: 20px 20px 0px 0px;
 
-          h3 {
-            position: relative;
-            left: 120px;
-            top: 10px;
-            font-family: $font-family-poppins;
-            color: $color-white;
-            font-size: 2rem;
-          }
+        // width: 25%;
+        // position: absolute;
+        // // top: 15px;
+        // top: calc(556.4% - 30px);
+        // right: calc(23% - 30px); // Ajuste conforme necessário
+        // // text-align: center;
+        // background-color: $color-purple;
+        // padding: 0.5rem;
+        // border-radius: 20px 20px 0 0;
+        // z-index: 1;
+
+        width: 25%;
+        position: absolute;
+        top: 5295px; // Posicionar acima do card premium
+        right: 22%; // Alinhar com o card premium
+        background-color: $color-purple;
+        padding: 0.5rem;
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
+        // text-align: center;
+
+        h3 {
+          position: relative;
+          left: 120px;
+          top: 10px;
+          font-family: $font-family-poppins;
+          color: $color-white;
+          font-size: 2rem;
         }
 
         @include laptop {
@@ -990,6 +1015,125 @@ $breakpoint-desktop: 1200px;
           text-align: center;
         }
       }
+    }
+  }
+}
+
+// medias mais especificas
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .simplicidade-imgs {
+    width: 40%;
+    position: relative;
+
+    .veia-img {
+      left: 120px !important;
+      top: 95px !important;
+      rotate: -4.2deg !important;
+      // object-fit: c !important;
+    }
+
+    .bola-img {
+      width: 99% !important;
+      position: relative;
+      z-index: 1;
+      bottom: -200 !important;
+      left: 27px !important;
+      rotate: -3.8deg;
+    }
+  }
+
+  .svg-lines {
+    position: absolute;
+    width: 100%;
+    bottom: 200px !important;
+    margin: 0;
+    left: 0;
+    right: 0;
+
+    svg {
+      position: relative;
+      top: 1250px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+  }
+
+  .img-phone {
+    width: 32%;
+    position: relative;
+    z-index: 2;
+    bottom: 700px !important;
+    left: 890px !important;
+  }
+
+  .localizacao-imgs {
+    width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .veio {
+      width: 35% !important;
+      position: relative;
+      left: 22px;
+      object-fit: cover !important;
+      height: 650px;
+    }
+
+    .filha {
+      width: 35% !important;
+      position: relative;
+      right: 22px;
+      object-fit: cover !important;
+      height: 650px;
+    }
+
+    .img-phone {
+      position: relative !important;
+      left: 0px !important;
+      bottom: 20px !important;
+      width: 30% !important;
+      // z-index: 2;
+    }
+  }
+
+  :is(.pacote-basico, .pacote-premium) {
+    width: 50% !important;
+
+    img {
+      width: 60%;
+      object-fit: cover;
+      padding-bottom: 25px;
+    }
+
+    ul {
+      width: 85% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 15px;
+
+      li {
+        font-size: 1.4rem !important;
+        font-family: $font-family-roboto;
+      }
+    }
+  }
+
+  .recomendado {
+    width: 30% !important;
+    right: auto;
+    top: calc(740% - 14px) !important;
+    left: calc(58% - 25px);
+
+    h3 {
+      // position: relative;
+      left: 75px !important;
     }
   }
 }
