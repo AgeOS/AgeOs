@@ -24,7 +24,7 @@ import veio4 from "../../assets/Adquira/veio4.png";
 function Adquira() {
   return (
     <>
-      <NavBar />
+      
       <div className="adquira-container">
         <header className="adquira_topo">
           <p>O mais vantajoso para sua família! </p>
@@ -157,14 +157,6 @@ function Adquira() {
           </div>
         </section>
       </div>
-      <Footer
-        foto={footer}
-        color="white"
-        you={youtubeIcon}
-        insta={instaIcon}
-        face={faceIcon}
-        linke={linkeIcon}
-      />
     </>
   );
 }
