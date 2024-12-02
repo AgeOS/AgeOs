@@ -19,12 +19,16 @@ import AgeOS3 from "../../assets/Adquira/AgeOS3.png";
 import moca from "../../assets/Adquira/moca.png";
 import veio4 from "../../assets/Adquira/veio4.png";
 import bolaRoxa from "../../assets/Adquira/rectangle-98.png";
+import "../Hooks/Efeitos";
 
 import { Link } from "react-router-dom";
+import { useIntersectionObserver } from "../Hooks/Efeitos";
 
 // import '../../stylesheets/Adquira/Adquira.scss'
 
 export default function Adquira() {
+  useIntersectionObserver();
+
   return (
     <>
       <NavBar />
@@ -70,7 +74,7 @@ export default function Adquira() {
         </div>
 
         <div className="simples-e-intuitivo">
-          <div className="intuitivo-text">
+          <div className="intuitivo-text slide-in-left">
             <h3>Visual</h3>
             <h2>Simples e Intuitivo</h2>
             <p>
@@ -80,7 +84,7 @@ export default function Adquira() {
               estética.
             </p>
           </div>
-          <div className="intuitivo-phone">
+          <div className="intuitivo-phone slide-in-right">
             <img src={celular} alt="" />
           </div>
           <div className="svg-lines">
@@ -142,9 +146,9 @@ export default function Adquira() {
             </p>
           </div>
           <div className="localizacao-imgs">
-            <img className="veio" src={veio4} alt="" />
+            <img className="veio slide-in-left" src={veio4} alt="" />
             <img className="img-phone" src={AgeOS3} alt="" />
-            <img className="filha" src={moca} alt="" />
+            <img className="filha slide-in-right" src={moca} alt="" />
           </div>
         </div>
 
@@ -154,7 +158,7 @@ export default function Adquira() {
             <p>Os planos ideais que cabem no seu bolso</p>
           </div>
           <div className="pacotes">
-            <div className="pacote-basico">
+            <div className="pacote-basico slide-in-left">
               <h2>Pacote Básico</h2>
               <img src={logo} alt="" />
 
@@ -171,10 +175,10 @@ export default function Adquira() {
                 <button>R$ 69,99</button>
               </Link>
             </div>
-            <div className="recomendado">
+            <div className="recomendado slide-in-right">
               <h3>Recomendado</h3>
             </div>
-            <div className="pacote-premium">
+            <div className="pacote-premium slide-in-right">
               <h2>Pacote Premium</h2>
               <img src={logo} alt="" />
 

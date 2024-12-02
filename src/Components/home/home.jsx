@@ -30,21 +30,26 @@ import atendimento from "../../assets/home/atendimento.png";
 // import linkeIcon from "../../assets/footer/linke-branco.png";
 // import Chatbot from "../chatbot
 
+import "../../stylesheets/efeitos/efeitos.scss";
+import { useIntersectionObserver } from "../Hooks/Efeitos";
+
 export default function Home() {
+  useIntersectionObserver();
+
   return (
     <>
       <NavBar />
       <div className="home-page-container">
         {/* <Chatbot/> */}
         <div className="hero-section">
-          <div className="apresentation">
+          <div className="apresentation slide-in-left">
             <h1>AgeOS, O Sistema Operacional Perfeito para quem você ama</h1>
             <Link to="/sobrenos">
               <button className="btn-conhecer">Conheça-nos</button>
             </Link>
           </div>
 
-          <div className="phone-img">
+          <div className="phone-img slide-in-right">
             <img src={celularDeLado} alt="" />
           </div>
         </div>
@@ -82,11 +87,11 @@ export default function Home() {
 
           <div className="apps">
             <h2>Apps por Categoria</h2>
-            <div className="celular-apps">
+            <div className="celular-apps slide-in-left">
               <img src={celularApps} alt="" />
             </div>
 
-            <div className="lista-apps">
+            <div className="lista-apps slide-in-right">
               <h2>Apps por Categoria</h2>
               <p>
                 Aplicativos organizados por tipos, pensado para facilitar a
@@ -122,7 +127,7 @@ export default function Home() {
           </div>
 
           <div className="gemini">
-            <div className="text-gemini">
+            <div className="text-gemini slide-in-left">
               <h2>Inteligência Artificial</h2>
               <p>
                 Conheça a IA Gemini, uma assistente para ajudar seus entes
@@ -132,7 +137,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="gemini-phone">
+            <div className="gemini-phone slide-in-right">
               <img src={geminiPhone} alt="" />
             </div>
           </div>

@@ -16,7 +16,7 @@
   text-align: center;
   font-size: 5rem;
   font-family: "Poppins", sans-serif;
-  color: #3D1887;
+  color: #3d1887;
 }
 
 .titulo {
@@ -28,12 +28,24 @@
   gap: 30px;
   justify-content: center;
 }
+.atencao :is(.whats-img, .email-img) {
+  width: 25%;
+  object-fit: contain;
+}
+.atencao a {
+  text-decoration: none;
+  color: #FAF8FB;
+  font-family: "Roboto", sans-serif;
+}
+.atencao a p {
+  font-family: "Roboto", sans-serif;
+}
 
 .container {
   display: flex;
   width: 35%;
   height: 450px;
-  border: 1px solid #5E329D;
+  border: 1px solid #5e329d;
   border-radius: 20px;
   flex-direction: column;
   align-items: center;
@@ -61,7 +73,7 @@
   height: 75x;
   border: 0px;
   border-radius: 10px;
-  background-color: #5E329D;
+  background-color: #5e329d;
   cursor: pointer;
 }
 
@@ -90,7 +102,7 @@
   font-size: 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  color: #3D1887;
+  color: #3d1887;
 }
 
 .search {
@@ -101,10 +113,11 @@
 
 .search input {
   width: 90%;
-  height: 50px;
+  height: 70px;
+  border: none;
   padding-left: 60px;
   border-radius: 10px;
-  background-color: #FFEA73;
+  background-color: #ffea73;
   background-image: url(../../assets/suporte/lupa.png);
   background-repeat: no-repeat;
   background-position: 15px center;
@@ -115,7 +128,7 @@
   display: flex;
   width: 75%;
   height: 400px;
-  background-color: #3D1887;
+  background-color: #3d1887;
   border-radius: 10px;
   margin: auto;
   margin-top: 50px;
@@ -136,7 +149,7 @@
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  color: #FFEA73;
+  color: #ffea73;
 }
 
 .dentro_chatbot2 {
@@ -150,7 +163,7 @@
 
 .dentro_chatbot2 button {
   color: #000;
-  background-color: #FFEA73;
+  background-color: #ffea73;
 }
 
 .dentro_chatbot2 button a {
@@ -168,7 +181,7 @@
 }
 
 .container_duvidas h1 {
-  color: #5E329D;
+  color: #5e329d;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
@@ -193,13 +206,13 @@
 
 .accordion {
   font-family: "Roboto", sans-serif;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #000;
   cursor: pointer;
   padding: 18px;
   margin-top: 15px;
   width: 100%;
-  border-bottom: 1px solid #5E329D;
+  border-bottom: 1px solid #5e329d;
   text-align: left;
   height: 100px;
   font-size: 29px !important;
@@ -207,6 +220,7 @@
   background-repeat: no-repeat;
   background-position: right;
   border-radius: 15px;
+  border: none;
 }
 
 .accordion:hover {
