@@ -35,7 +35,16 @@ export default function Adquira() {
               Simplicidade no <strong>dia a dia !</strong>
             </h1>
             <p>Veja o melhor serviço para a sua família</p>
-            <Link>
+            <Link
+              to="#pacotes"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("pacotes")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+            >
               <button>Adquira o Pacote</button>
             </Link>
           </div>
@@ -139,7 +148,7 @@ export default function Adquira() {
           </div>
         </div>
 
-        <div className="pacotes">
+        <div className="pacotes" id="pacotes">
           <div className="pacotes-text">
             <h2>Adquira seu AgeOS</h2>
             <p>Os planos ideais que cabem no seu bolso</p>
@@ -189,7 +198,15 @@ export default function Adquira() {
             </div>
           </div>
           <div className="tire-as-duvidas">
-            <Link to="/suporte">
+            <Link
+              to="/suporte"
+              onClick={() => {
+                setTimeout(() => {
+                  const element = document.querySelector(".container_suporte");
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+              }}
+            >
               <button>Tire suas dúvidas</button>
             </Link>
           </div>

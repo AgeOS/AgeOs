@@ -156,7 +156,19 @@ export default function Home() {
               família.
             </p>
             <button className="btn-conheca-mais">
-              <Link>Conheça mais</Link>
+              <Link
+                to="/adquira/"
+                onClick={() => {
+                  setTimeout(() => {
+                    const element = document.querySelector(
+                      ".simplicidade-section"
+                    );
+                    element?.scrollIntoView({ behavior: "smooth" });
+                  }, 100);
+                }}
+              >
+                Conheça mais
+              </Link>
             </button>
           </div>
 
