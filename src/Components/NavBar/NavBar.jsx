@@ -66,13 +66,24 @@ export default function NavBar() {
             </ul>
 
             <div className="buttons">
-              <Link to="/login">
-                <button className="login">Login</button>
-              </Link>
+              <SignedOut>
+                <SignInButton>
+                  <button className="login">
+                    {/* <Link to="/login">Login</Link> */}Login
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
 
-              <Link to="/cadastro">
-                <button className="cadastro">Cadastre-se</button>
-              </Link>
+              <SignedOut>
+                <SignUpButton>
+                  <button className="cadastro">
+                    {/* <Link to="/cadastro">Cadastre-se</Link> */}Cadastre-se
+                  </button>
+                </SignUpButton>
+              </SignedOut>
             </div>
           </div>
         </div>
