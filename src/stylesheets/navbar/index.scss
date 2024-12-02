@@ -38,13 +38,13 @@ $breakpoint-desktop: 1200px;
     // margin-top: 4px;
     // max-width: 100%;
     width: 98%;
-    position: absolute;
+    position: fixed;
     top: 10px;
     align-items: center;
     justify-content: end;
     border: none;
     background-color: transparent;
-    z-index: 5;
+    z-index: 10;
     // padding: 15px;
 
     @include laptop {
@@ -83,7 +83,7 @@ $breakpoint-desktop: 1200px;
     // overflow-x: hidden;
     justify-content: end;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     transition: 5 ease-out;
     // background-color: rgba(0, 0, 0, 0.5);
 
