@@ -143,13 +143,18 @@ $breakpoint-desktop: 1200px;
 
       .simplicidade-imgs {
         .veia-img {
-          left: 150px;
-          top: 80px;
+          object-fit: contain;
+          width: 100%;
+
+          left: 79px;
+          top: 95px;
         }
 
         .bola-img {
-          bottom: 480px;
-          left: 220px;
+          width: 120%;
+          bottom: 464px;
+          left: 20px;
+          z-index: 1;
         }
       }
     }
@@ -694,16 +699,42 @@ $breakpoint-desktop: 1200px;
       align-items: center;
       padding-bottom: 70px;
 
+      @include tablet {
+        width: 100%;
+      }
+
+      @include mobile {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
       h2 {
         // text-align: center;
         color: $color-purple;
         font-size: 4.5rem;
         font-family: $font-family-poppins;
+
+        @include tablet {
+          font-size: 3.7rem;
+        }
+
+        @include mobile {
+          font-size: 1.9rem;
+        }
       }
 
       p {
         font-size: 3rem;
         font-family: $font-family-roboto;
+
+        @include tablet {
+          font-size: 2rem;
+        }
+
+        @include mobile {
+          font-size: 1.3rem;
+          text-align: center;
+        }
       }
     }
 
@@ -715,12 +746,24 @@ $breakpoint-desktop: 1200px;
       flex-direction: row;
       gap: 40px;
 
+      @include tablet {
+        gap: 100px;
+      }
+
       :is(.pacote-basico, .pacote-premium) {
         width: 35%;
         height: 700px;
         border-radius: 20px;
         background: #fff;
         box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
+
+        @include tablet {
+          width: 80% !important;
+        }
+
+        @include mobile {
+          width: 100% !important;
+        }
       }
 
       :is(.pacote-basico, .pacote-premium) {
@@ -829,43 +872,44 @@ $breakpoint-desktop: 1200px;
             font-size: 2rem;
           }
           img {
-            width: 80%;
+            width: 60%;
           }
           ul {
-            width: 90%;
+            width: 80%;
           }
           ul li {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
           }
           a {
             width: 45%;
           }
           .recomendado {
-            width: 35%;
-            top: 4300px;
+            width: 55%;
+            top: 5570px;
             h3 {
               font-size: 1.6rem;
-              left: 70px;
+              left: 115px;
             }
           }
         }
 
         @include mobile {
-          width: 90%;
+          width: 0%;
           height: auto;
-          margin-bottom: 30px;
+          // margin-bottom: 30px;
+          padding-bottom: 20px;
 
           h2 {
             font-size: 1.8rem;
           }
           img {
-            width: 90%;
+            width: 50%;
           }
           ul {
-            width: 95%;
+            width: 75%;
           }
           ul li {
-            font-size: 1.1rem;
+            font-size: 1rem;
           }
           a {
             width: 60%;
@@ -876,11 +920,12 @@ $breakpoint-desktop: 1200px;
             }
           }
           .recomendado {
-            width: 45%;
-            top: 3800px;
+            width: 65%;
+            height: 40px;
+            top: 4435px;
             h3 {
-              font-size: 1.4rem;
-              left: 50px;
+              font-size: 1.3rem;
+              left: 38px;
             }
           }
         }
@@ -901,7 +946,6 @@ $breakpoint-desktop: 1200px;
 
       a {
         text-decoration: none;
-        // width: 100%;
 
         button {
           width: 150%;
@@ -912,6 +956,38 @@ $breakpoint-desktop: 1200px;
           color: $color-white;
           border: none;
           border-radius: 15px;
+        }
+      }
+
+      @include laptop {
+        padding: 30px 30px 30px 0;
+
+        a button {
+          width: 130%;
+          height: 45px;
+          font-size: 1.2rem;
+        }
+      }
+
+      @include tablet {
+        padding: 25px 25px 25px 0;
+
+        a button {
+          width: 120%;
+          height: 50px;
+          font-size: 1.5rem;
+        }
+      }
+
+      @include mobile {
+        padding: 30px;
+
+        a button {
+          width: 100%;
+          height: 50px;
+          font-size: 1.4rem;
+          padding: 10px;
+          text-align: center;
         }
       }
     }
