@@ -11,6 +11,7 @@ import menuFechado from "../../assets/navbar/menu-fechado.png";
 import menuRoxo from "../../assets/navbar/menu-roxo.png";
 import logo from "../../assets/navbar/logo-1.png";
 // import theme from "../../assets/navbar/image-34.png";
+// import translate from "google-translate-api";
 
 import {
   SignedIn,

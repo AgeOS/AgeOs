@@ -1,6 +1,7 @@
 // import { BrowserRouter as Router, Link } from "react-router-dom";
 // import "../stylesheets/sobrenos/sobrenos.scss";
 import NavBar from "./NavBar/NavBar";
+import Footer from "./Footer/Footer";
 
 //imgs
 import Ini from "../assets/imagens/inici.png";
@@ -10,6 +11,11 @@ import coracao from "../assets/imagens/coração.png";
 import identidade from "../assets/imagens/identi.png";
 import github from "../assets/imagens/redes.png";
 import linkedin from "../assets/imagens/redes1.png";
+import navbar from "../assets/footer/navbar-roxa.png";
+import youtubeIcon from "../assets/footer/youbute-branco.png";
+import instaIcon from "../assets/footer/insta-branco.png";
+import faceIcon from "../assets/footer/face-branco.png";
+import linkeIcon from "../assets/footer/linke-branco.png";
 
 //Membros
 import isabela from "../assets/imagens/isainfo.png";
@@ -243,6 +249,15 @@ export default function Sobrenos() {
           </div>
         </div>
       </div>
+
+      <Footer
+        foto={navbar}
+        color="white"
+        you={youtubeIcon}
+        insta={instaIcon}
+        face={faceIcon}
+        linke={linkeIcon}
+      />
     </>
   );
 }

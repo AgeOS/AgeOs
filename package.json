@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.17.1",
+    "@google-cloud/translate": "^8.5.0",
+    "google-translate-api": "^0.1.1",
     "lucide-react": "^0.453.0",
     "qrcode": "^1.5.4",
     "react": "^18.3.1",

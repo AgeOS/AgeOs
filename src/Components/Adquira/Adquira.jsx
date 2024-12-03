@@ -5,12 +5,12 @@ import celular from "../../assets/Adquira/AgeOS1.jpg";
 // import Paint from "../../assets/Adquira/Paint.png";
 // import Security from "../../assets/Adquira/Security.png";
 import NavBar from "../NavBar/NavBar";
-// import Footer from "../Footer/Footer";
-// import footer from "../../assets/footer/navbar-roxa.png";
-// import youtubeIcon from "../../assets/footer/youbute-branco.png";
-// import instaIcon from "../../assets/footer/insta-branco.png";
-// import faceIcon from "../../assets/footer/face-branco.png";
-// import linkeIcon from "../../assets/footer/linke-branco.png";
+import Footer from "../Footer/Footer";
+import footer from "../../assets/footer/navbar-roxa.png";
+import youtubeIcon from "../../assets/footer/youbute-branco.png";
+import instaIcon from "../../assets/footer/insta-branco.png";
+import faceIcon from "../../assets/footer/face-branco.png";
+import linkeIcon from "../../assets/footer/linke-branco.png";
 import logo from "../../assets/Adquira/logo.png";
 import veio2 from "../../assets/Adquira/veio2.png";
 import veio3 from "../../assets/Adquira/veio3.png";
@@ -216,6 +216,15 @@ export default function Adquira() {
           </div>
         </div>
       </div>
+
+      <Footer
+        foto={footer}
+        color="white"
+        you={youtubeIcon}
+        insta={instaIcon}
+        face={faceIcon}
+        linke={linkeIcon}
+      />
     </>
   );
 }

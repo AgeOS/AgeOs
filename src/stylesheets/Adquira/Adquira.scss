@@ -762,7 +762,7 @@ $breakpoint-desktop: 1200px;
         }
 
         @include mobile {
-          width: 100% !important;
+          width: 105% !important;
         }
       }
 
@@ -776,6 +776,10 @@ $breakpoint-desktop: 1200px;
           color: $color-purple;
           font-size: 3rem;
           padding-bottom: 10px;
+
+          @include mobile {
+            font-size: 2rem;
+          }
         }
 
         img {
@@ -794,6 +798,10 @@ $breakpoint-desktop: 1200px;
           li {
             font-size: 1.6rem;
             font-family: $font-family-roboto;
+
+            @include mobile {
+              font-size: 1.4rem !important;
+            }
           }
         }
 
@@ -814,6 +822,14 @@ $breakpoint-desktop: 1200px;
             font-weight: bold;
             background: $color-purple;
             color: $color-white;
+          }
+
+          @include mobile {
+            width: 45%;
+
+            button {
+              font-size: 1.3rem !important;
+            }
           }
         }
 
@@ -890,8 +906,12 @@ $breakpoint-desktop: 1200px;
         }
 
         @include tablet {
-          width: 45%;
-          height: 600px;
+          width: 50% !important;
+          height: 60px;
+          width: 30%;
+          right: auto !important;
+          top: calc(608% - 14px) !important;
+          left: calc(28% - 25px);
 
           h2 {
             font-size: 2rem;
@@ -908,21 +928,29 @@ $breakpoint-desktop: 1200px;
           a {
             width: 45%;
           }
-          .recomendado {
-            width: 55%;
-            top: 5570px;
-            h3 {
-              font-size: 1.6rem;
-              left: 115px;
-            }
+
+          h3 {
+            // position: relative;
+            left: 65px !important;
           }
         }
 
         @include mobile {
-          width: 0%;
-          height: auto;
-          // margin-bottom: 30px;
-          padding-bottom: 20px;
+          width: 75% !important;
+          height: 40px;
+          // width: 30%;
+          // right: auto !important;
+          top: calc(614% - 14px) !important;
+          left: calc(20% - 25px);
+
+          h3 {
+            position: relative;
+            font-size: 1.3rem;
+            // font-size: 1.3rem;
+            left: 50px !important;
+            top: -3px !important;
+            // text-align: center;
+          }
 
           h2 {
             font-size: 1.8rem;
