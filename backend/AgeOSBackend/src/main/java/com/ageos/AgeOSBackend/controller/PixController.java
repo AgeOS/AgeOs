@@ -24,7 +24,7 @@ public class PixController {
     private BuyRepository buyRepository;
 
     @PostMapping("/create")
-    public ResponseEntity createPixCharge(@RequestBody BuyRequest buyRequest) {
+    public ResponseEntity<?> createPixCharge(@RequestBody BuyRequest buyRequest) {
         try {
             Buy buy = new Buy();
             buy.setPackageType(buyRequest.getPackageType());

@@ -21,16 +21,19 @@ import java.util.Map;
 @Service
 public class PixService {
 
-    @Value("${CLIENT_ID}")
+
     private String clientId;
 
-    @Value("${CLIENT_SECRET}")
+
+
     private String clientSecret;
 
-    @Value("${CERTIFICATE_PATH}")
+
+
     private String certificatePath;
 
-    @Value("${SANDBOX_MODE}")
+
+
     private boolean isSandbox;
 
     @Autowired
@@ -45,10 +48,10 @@ public class PixService {
         JSONObject body = new JSONObject();
         body.put("calendario", new JSONObject().put("expiracao", 3600));
         body.put("devedor", new JSONObject()
-                .put("cpf", "12345678909") // Pode ser parametrizado com os dados do usuário
+                .put("cpf", "12345678909") //
                 .put("nome", "Nome do Comprador"));
         body.put("valor", new JSONObject().put("original", String.format("%.2f", amount)));
-        body.put("chave", "sua-chave-pix-aqui");
+        body.put("chave", "6e4a79ce-dcfc-4d47-8583-d699a04749aa");
 
         JSONArray infoAdicionais = new JSONArray();
         infoAdicionais.put(new JSONObject().put("nome", "Pacote").put("valor", buy.getPackageType().toString()));
@@ -59,7 +62,7 @@ public class PixService {
             EfiPay efi = new EfiPay(options);
             JSONObject response = efi.call("pixCreateImmediateCharge", new HashMap<>(), body);
 
-            // Salvar a compra no banco de dados
+
             buy.setDate_buy(new Date());
             buyRepository.save(buy);
 
