@@ -24,10 +24,21 @@ footer a {
   backface-visibility: hidden;
   z-index: -1;
 }
+@media (max-width: 992px) {
+  .fundo {
+    bottom: -155px !important;
+  }
+}
 @media (max-width: 768px) {
   .fundo {
-    height: 590px;
-    bottom: -80px !important;
+    height: 610px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 576px) {
+  .fundo {
+    height: 710px;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -54,11 +65,12 @@ footer a {
     height: auto;
     max-height: 550px;
     flex-wrap: wrap;
-    margin-top: -80px;
+    gap: 20px;
   }
 }
 @media (max-width: 576px) {
   .content {
+    width: 99%;
     flex-direction: column !important;
   }
 }
@@ -83,6 +95,11 @@ footer a {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 576px) {
+  .section h3 {
+    font-size: 1.3rem;
+  }
+}
 
 .section ul {
   list-style: none;
@@ -96,6 +113,11 @@ footer a {
 @media (max-width: 768px) {
   .section li {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .section li {
+    font-size: 1.1rem;
   }
 }
 
@@ -128,10 +150,24 @@ footer a {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 576px) {
+  .newsletter h4 {
+    text-align: start;
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .form {
   display: flex;
   gap: 0.5rem;
+}
+@media (max-width: 576px) {
+  .form {
+    position: relative;
+    right: 130px;
+  }
 }
 
 .form input {
@@ -140,6 +176,12 @@ footer a {
   border: none;
   border-radius: 4px;
   color: #1f2937;
+}
+@media (max-width: 576px) {
+  .form input {
+    padding: 0.5rem 0.8rem;
+    width: 10%;
+  }
 }
 
 .form input::placeholder {
@@ -164,7 +206,6 @@ footer a {
 .bottom {
   text-align: center;
   padding: 2rem 0;
-  margin-top: 3rem;
   border-top: 1px solid;
 }
 
