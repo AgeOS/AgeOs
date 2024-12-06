@@ -1,69 +1,64 @@
-import { useState } from "react";
-import { Translate } from "@google-cloud/translate";
+import React, { useState, useEffect } from 'react';
 
-const TranslateComponent = () => {
-  const [inputText, setInputText] = useState("");
-  const [targetLanguage, setTargetLanguage] = useState("en");
-  const [translatedText, setTranslatedText] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+const PageTranslateComponent = () => {
+  const API_KEY = 'AIzaSyCSYeZFMAPQmuS5dTz6PdECBulXaOsjG6U';
+  const [isEnglish, setIsEnglish] = useState(false);
 
-  // Criar cliente do Google Translate
-  const translate = new Translate();
+  const translateContent = async (targetLanguage) => {
+    const elements = document.querySelectorAll('body *');
 
-  const handleTranslate = async () => {
-    try {
-      setIsLoading(true);
+    for (let element of elements) {
+      if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
+        try {
+          const originalText = element.innerText;
 
-      // Traduzir texto
-      const [translations] = await translate.translate(
-        inputText,
-        targetLanguage
-      );
+          const response = await fetch(`https://translation.googleapis.com/language/translate/v2?key=${API_KEY}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              q: originalText,
+              target: targetLanguage,
+            }),
+          });
 
-      // Atualizar estado com tradução
-      setTranslatedText(
-        Array.isArray(translations) ? translations[0] : translations
-      );
-    } catch (error) {
-      console.error("Erro na tradução:", error);
-    } finally {
-      setIsLoading(false);
+          const data = await response.json();
+          element.innerText = data.data.translations[0].translatedText;
+        } catch (error) {
+          console.error('Translation error:', error);
+        }
+      }
     }
   };
 
+  const toggleTranslation = () => {
+    const targetLanguage = isEnglish ? 'pt' : 'en';
+    translateContent(targetLanguage);
+    setIsEnglish(!isEnglish);
+    localStorage.setItem('siteLanguage', targetLanguage);
+    if (targetLanguage === 'pt') {
+      window.location.reload();
+    }
+  };
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('siteLanguage');
+    if (savedLanguage === 'en') {
+      translateContent('en');
+      setIsEnglish(true);
+    }
+  }, []);
+
   return (
-    <div className="translate-container">
-      <div className="input-group">
-        <textarea
-          value={inputText}
-          onChange={(e) => setInputText(e.target.value)}
-          placeholder="Digite o texto para traduzir"
-        />
-
-        <select
-          value={targetLanguage}
-          onChange={(e) => setTargetLanguage(e.target.value)}
-        >
-          <option value="en">Inglês</option>
-          <option value="es">Espanhol</option>
-          <option value="fr">Francês</option>
-          <option value="de">Alemão</option>
-          {/* Adicione mais idiomas conforme necessário */}
-        </select>
-
-        <button onClick={handleTranslate} disabled={isLoading || !inputText}>
-          {isLoading ? "Traduzindo..." : "Traduzir"}
-        </button>
-      </div>
-
-      {translatedText && (
-        <div className="output-group">
-          <h3>Tradução:</h3>
-          <p>{translatedText}</p>
-        </div>
-      )}
-    </div>
+      <button style={{
+        backgroundColor: 'transparent',
+        border: 'none',
+        position: 'relative',
+        right: '50%'
+      }}>
+        <img src="https://img.icons8.com/carbon-copy/100/google-translate--v2.png" alt="Translate"  onClick={toggleTranslation}/>
+        {/*{isEnglish ? 'Voltar para Português' : 'Translate to English'}*/}
+      </button>
   );
 };
 
-export default TranslateComponent;
+export default PageTranslateComponent;

@@ -1,5 +1,6 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
+import {useState} from "react";
 import "../../stylesheets/navbar/index.scss";
 import "../../stylesheets/navbar/media.scss";
 // import '../../../public/stylesheets/navbar/index.css'
@@ -10,19 +11,47 @@ import "../../stylesheets/navbar/media.scss";
 import menuFechado from "../../assets/navbar/menu-fechado.png";
 import menuRoxo from "../../assets/navbar/menu-roxo.png";
 import logo from "../../assets/navbar/logo-1.png";
-// import theme from "../../assets/navbar/image-34.png";
-// import translate from "google-translate-api";
+import theme from "../../assets/navbar/image-34.png";
+// import {Translate}  from "@google-cloud/translate";
 
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  SignUpButton,
-  UserButton,
-} from "@clerk/clerk-react";
+// import {
+//   SignedIn,
+//   SignedOut,
+//   SignInButton,
+//   SignUpButton,
+//   UserButton,
+// } from "@clerk/clerk-react";
+import PageTranslateComponent from "../Translate/Translate.jsx";
+// import TranslateComponent from "../Translate/Translate.jsx";
 // import Usuario from "../Usuario/Usuario";
 
 export default function NavBar() {
+  // const [isLoading, setIsLoading] = useState(false);
+  //
+  // // Creates a client
+  // const translate = new Translate();
+  //
+  // const handleTranslate = async () => {
+  //   try {
+  //     setIsLoading(true);
+  //     const text = document.body.innerText;
+  //     const targetLanguage = "ru"; // Change this to the desired target language
+  //
+  //     // Translates the text into the target language
+  //     let [translations] = await translate.translate(text, targetLanguage);
+  //     translations = Array.isArray(translations) ? translations : [translations];
+  //
+  //     document.body.innerText = translations[0];
+  //   } catch (error) {
+  //     console.error("Error translating text:", error);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+
+
+
+
   return (
     <>
       <div className="navbar-container">
@@ -67,24 +96,15 @@ export default function NavBar() {
             </ul>
 
             <div className="buttons">
-              <SignedOut>
-                <SignInButton>
-                  <button className="login">
-                    {/* <Link to="/login">Login</Link> */}Login
-                  </button>
-                </SignInButton>
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
 
-              <SignedOut>
-                <SignUpButton>
-                  <button className="cadastro">
-                    {/* <Link to="/cadastro">Cadastre-se</Link> */}Cadastre-se
+                  <button className="login">
+                     <Link to="/login">Login</Link>
                   </button>
-                </SignUpButton>
-              </SignedOut>
+
+                  <button className="cadastro">
+                     <Link to="/cadastro">Cadastre-se</Link>
+                  </button>
+
             </div>
           </div>
         </div>
@@ -96,7 +116,7 @@ export default function NavBar() {
 
           <ul>
             <li>
-             <Link to='/'>Home</Link> 
+             <Link to='/'>Home</Link>
             </li>
             <li>
               <Link >Sobre nós</Link>
@@ -115,7 +135,7 @@ export default function NavBar() {
             </button>
 
             <button className="login">
-              <Link>Login</Link> 
+              <Link>Login</Link>
             </button>
 
             <button className="cadastro">
@@ -147,28 +167,20 @@ export default function NavBar() {
           </ul>
 
           <div className="buttons">
-            {/* <button className="theme">
-              <img src={theme} alt="" />
-            </button> */}
+             <button className="theme"  >
+              <PageTranslateComponent />
+            </button>
 
-            <SignedOut>
-              <SignInButton>
+
                 <button className="login">
-                  {/* <Link to="/login">Login</Link> */}Login
+                   <Link to="/login">Login</Link>
                 </button>
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
 
-            <SignedOut>
-              <SignUpButton>
+
                 <button className="cadastro">
-                  {/* <Link to="/cadastro">Cadastre-se</Link> */}Cadastre-se
+                   <Link to="/cadastro">Cadastre-se</Link>
                 </button>
-              </SignUpButton>
-            </SignedOut>
+
           </div>
         </nav>
       </div>
