@@ -9,9 +9,13 @@ import java.io.InputStream;
 public class Credentials {
 
     private String clientId;
+
     private String clientSecret;
+
     private String certificate;
+
     private boolean sandbox;
+
     private boolean debug;
 
 
@@ -20,6 +24,9 @@ public class Credentials {
         InputStream credentialsFile = classLoader.getResourceAsStream("credentials.json");
         JSONTokener tokener = new JSONTokener(credentialsFile);
         JSONObject credentials = new JSONObject(tokener);
+        this.clientId = credentials.getString("client_id");
+        this.clientSecret = credentials.getString("client_secret");
+
         try {
             credentialsFile.close();
         } catch (IOException e) {

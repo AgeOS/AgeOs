@@ -29,7 +29,7 @@ public class Buy {
     @Column(name = "package_type")
     private PackageType packageType;
 
-    @Column(name = "efi_charge_id")
+    @Column(name = "efi_charge_id", unique = true)
     private String efiChargeId;
 
     @Column(name = "payment_status")

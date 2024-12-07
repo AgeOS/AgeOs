@@ -2,131 +2,122 @@ package com.ageos.AgeOSBackend.service;
 
 import br.com.efi.efisdk.EfiPay;
 import br.com.efi.efisdk.exceptions.EfiPayException;
-import com.ageos.AgeOSBackend.enums.PackageType;
-import com.ageos.AgeOSBackend.model.Buy;
-import com.ageos.AgeOSBackend.repository.BuyRepository;
+import com.ageos.AgeOSBackend.Pix.Credentials;
+import com.ageos.AgeOSBackend.dto.PixChargeRequest;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.File;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 @Service
 public class PixService {
 
+    private String clientId = "Client_Id_cd0cc5f875ad844686c356d041e94c4795b85cc4";
 
-    private String clientId;
-
-
-
-    private String clientSecret;
+    private String clientSecret = "Client_Secret_db7821c570fa69a6919646dc61105503319fe1ac";
 
 
+    public JSONObject pixCreateEVP(){
 
-    private String certificatePath;
+        Credentials credentials = new Credentials();
 
+        JSONObject options = configuringJsonObject(credentials);
 
+        try {
+            EfiPay efi = new EfiPay(options);
+            JSONObject response = efi.call("pixCreateEvp", new HashMap<String,String>(), new JSONObject());
+            System.out.println(response.toString());
+            return response;
+        }catch (EfiPayException e){
+            System.out.println(e.getError());
+            System.out.println(e.getErrorDescription());
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
 
-    private boolean isSandbox;
+    public JSONObject pixCreateCharge(PixChargeRequest pixChargeRequest) {
+        Credentials credentials = new Credentials();
 
-    @Autowired
-    private BuyRepository buyRepository;
-
-    public JSONObject createAgeOSPixCharge(Buy buy) {
-        JSONObject options = configureJsonObject();
-
-
-        Double amount = calculateAmount(buy);
+        JSONObject options = configuringJsonObject(credentials);
 
         JSONObject body = new JSONObject();
         body.put("calendario", new JSONObject().put("expiracao", 3600));
-        body.put("devedor", new JSONObject()
-                .put("cpf", "12345678909") //
-                .put("nome", "Nome do Comprador"));
-        body.put("valor", new JSONObject().put("original", String.format("%.2f", amount)));
-        body.put("chave", "6e4a79ce-dcfc-4d47-8583-d699a04749aa");
+        body.put("devedor", new JSONObject().put("cpf", "12345678909").put("nome", "Francisco da Silva"));
+        body.put("valor", new JSONObject().put("original", pixChargeRequest.valor()));
+        body.put("chave", pixChargeRequest.chave());
+        body.put("solicitacaoPagador", "Serviço realizado.");
 
         JSONArray infoAdicionais = new JSONArray();
-        infoAdicionais.put(new JSONObject().put("nome", "Pacote").put("valor", buy.getPackageType().toString()));
-        infoAdicionais.put(new JSONObject().put("nome", "Detalhe").put("valor", "Compra de AgeOS"));
+        infoAdicionais.put(new JSONObject().put("nome", "Campo 1").put("valor", "Informação Adicional1 do PSP-Recebedor"));
+        infoAdicionais.put(new JSONObject().put("nome", "Campo 2").put("valor", "Informação Adicional2 do PSP-Recebedor"));
         body.put("infoAdicionais", infoAdicionais);
 
         try {
             EfiPay efi = new EfiPay(options);
-            JSONObject response = efi.call("pixCreateImmediateCharge", new HashMap<>(), body);
+            JSONObject response = efi.call("pixCreateImmediateCharge", new HashMap<String, String>(), body);
 
+            int idFromJson = response.getJSONObject("loc").getInt("id");
+            pixGenerateQRCode(String.valueOf(idFromJson));
 
-            buy.setDate_buy(new Date());
-            buyRepository.save(buy);
-
-
-            int id = response.getJSONObject("loc").getInt("id");
-            pixGenerateQRCode(String.valueOf(id));
 
             return response;
         } catch (EfiPayException e) {
-            logError(e);
+            System.out.println(e.getError());
+            System.out.println(e.getErrorDescription());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         return null;
     }
 
-    private Double calculateAmount(Buy buy) {
-        if (buy.getPackageType() == PackageType.COMUM) {
-            return 0.01;
-        } else if (buy.getPackageType() == PackageType.FAMILIA) {
-            return 0.02;
-        }
-        return 0.0;
-    }
+    private void pixGenerateQRCode(String id){
+        Credentials credentials = new Credentials();
 
-    private void pixGenerateQRCode(String id) {
-        JSONObject options = configureJsonObject();
+        JSONObject options = configuringJsonObject(credentials);
 
-        HashMap<String, String> params = new HashMap<>();
+        HashMap<String, String> params = new HashMap<String, String>();
         params.put("id", id);
 
         try {
-            EfiPay efi = new EfiPay(options);
-            Map<String, Object> response = efi.call("pixGenerateQRCode", params, new HashMap<>());
+            EfiPay efi= new EfiPay(options);
+            Map<String, Object> response = efi.call("pixGenerateQRCode", params, new HashMap<String, Object>());
 
+            System.out.println(response);
 
-            String base64Image = ((String) response.get("imagemQrcode")).split(",")[1];
-            byte[] imageBytes = javax.xml.bind.DatatypeConverter.parseBase64Binary(base64Image);
-
-            File outputFile = new File("qrCodeImage.png");
-            ImageIO.write(ImageIO.read(new ByteArrayInputStream(imageBytes)), "png", outputFile);
-
-
+            File outputfile = new File("qrCodeImage.png");
+            ImageIO.write(ImageIO.read(new ByteArrayInputStream(javax.xml.bind.DatatypeConverter.parseBase64Binary(((String) response.get("imagemQrcode")).split(",")[1]))), "png", outputfile);
             Desktop desktop = Desktop.getDesktop();
-            desktop.open(outputFile);
+            desktop.open(outputfile);
 
-        } catch (EfiPayException e) {
-            logError(e);
-        } catch (Exception e) {
+        }catch (EfiPayException e){
+            System.out.println(e.getError());
+            System.out.println(e.getErrorDescription());
+        }
+        catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
     }
 
-    private JSONObject configureJsonObject() {
+
+    private JSONObject configuringJsonObject(Credentials credentials) {
+
         JSONObject options = new JSONObject();
         options.put("client_id", clientId);
         options.put("client_secret", clientSecret);
-        options.put("certificate", certificatePath);
-        options.put("sandbox", isSandbox);
+        options.put("certificate", credentials.getCertificate());
+        options.put("sandbox", credentials.isSandbox());
+
         return options;
     }
 
-    private void logError(EfiPayException e) {
-        System.out.println(e.getError());
-        System.out.println(e.getErrorDescription());
-    }
 }
