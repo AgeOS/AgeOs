@@ -1,6 +1,6 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
-import {useState} from "react";
+// import { useState } from "react";
 import "../../stylesheets/navbar/index.scss";
 import "../../stylesheets/navbar/media.scss";
 // import '../../../public/stylesheets/navbar/index.css'
@@ -11,7 +11,7 @@ import "../../stylesheets/navbar/media.scss";
 import menuFechado from "../../assets/navbar/menu-fechado.png";
 import menuRoxo from "../../assets/navbar/menu-roxo.png";
 import logo from "../../assets/navbar/logo-1.png";
-import theme from "../../assets/navbar/image-34.png";
+// import theme from "../../assets/navbar/image-34.png";
 // import {Translate}  from "@google-cloud/translate";
 
 // import {
@@ -21,26 +21,28 @@ import theme from "../../assets/navbar/image-34.png";
 //   SignUpButton,
 //   UserButton,
 // } from "@clerk/clerk-react";
-import PageTranslateComponent from "../Translate/Translate.jsx";
+import PageTranslateComponent from "../Translate/Translate";
 // import TranslateComponent from "../Translate/Translate.jsx";
 // import Usuario from "../Usuario/Usuario";
 
 export default function NavBar() {
   // const [isLoading, setIsLoading] = useState(false);
-  //
+
   // // Creates a client
   // const translate = new Translate();
-  //
+
   // const handleTranslate = async () => {
   //   try {
   //     setIsLoading(true);
   //     const text = document.body.innerText;
   //     const targetLanguage = "ru"; // Change this to the desired target language
-  //
+
   //     // Translates the text into the target language
   //     let [translations] = await translate.translate(text, targetLanguage);
-  //     translations = Array.isArray(translations) ? translations : [translations];
-  //
+  //     translations = Array.isArray(translations)
+  //       ? translations
+  //       : [translations];
+
   //     document.body.innerText = translations[0];
   //   } catch (error) {
   //     console.error("Error translating text:", error);
@@ -48,9 +50,6 @@ export default function NavBar() {
   //     setIsLoading(false);
   //   }
   // };
-
-
-
 
   return (
     <>
@@ -96,15 +95,13 @@ export default function NavBar() {
             </ul>
 
             <div className="buttons">
+              <button className="login">
+                <Link to="/login">Login</Link>
+              </button>
 
-                  <button className="login">
-                     <Link to="/login">Login</Link>
-                  </button>
-
-                  <button className="cadastro">
-                     <Link to="/cadastro">Cadastre-se</Link>
-                  </button>
-
+              <button className="cadastro">
+                <Link to="/cadastro">Cadastre-se</Link>
+              </button>
             </div>
           </div>
         </div>
@@ -167,20 +164,17 @@ export default function NavBar() {
           </ul>
 
           <div className="buttons">
-             <button className="theme"  >
+            <button className="theme">
               <PageTranslateComponent />
             </button>
 
+            <button className="login">
+              <Link to="/formulario">Login</Link>
+            </button>
 
-                <button className="login">
-                   <Link to="/login">Login</Link>
-                </button>
-
-
-                <button className="cadastro">
-                   <Link to="/cadastro">Cadastre-se</Link>
-                </button>
-
+            <button className="cadastro">
+              <Link to="/cadastro">Cadastre-se</Link>
+            </button>
           </div>
         </nav>
       </div>
