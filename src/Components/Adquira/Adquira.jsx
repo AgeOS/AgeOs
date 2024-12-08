@@ -171,7 +171,7 @@ export default function Adquira() {
                 <li>Segurança reforçada em apps financeiros</li>
               </ul>
 
-              <Link to="https://buy.stripe.com/eVa4gmgmR2J83bGaEE">
+              <Link to="/formulario">
                 <button>R$ 69,99</button>
               </Link>
             </div>
@@ -193,10 +193,7 @@ export default function Adquira() {
                 <li>Suporte para backup</li>
               </ul>
 
-              <Link
-                className="button-premium"
-                to="https://buy.stripe.com/00g5kq0nT83sdQk145"
-              >
+              <Link className="button-premium" to="/formulario">
                 <button>R$ 229,99</button>
               </Link>
             </div>

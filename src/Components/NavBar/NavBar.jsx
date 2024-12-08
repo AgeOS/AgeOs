@@ -169,7 +169,7 @@ export default function NavBar() {
             </button>
 
             <button className="login">
-              <Link to="/formulario">Login</Link>
+              <Link to="/login">Login</Link>
             </button>
 
             <button className="cadastro">

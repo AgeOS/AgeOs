@@ -1,115 +1,250 @@
 @import "../variables.scss";
 
-.title1{
-  text-align: center;
-    margin-bottom: 1.5rem;
-  margin-top: 15rem;
-  font-family: $font-family-poppins; }
+// Variáveis de breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
 
-.form-container{
-  background-color: $color-purple;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 80%;
-  margin: 0rem auto;
+// Mixins para media queries
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
 
-  color: $color-white;
-  position: relative;
-  font-family: $font-family-poppins; 
-h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;}
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
 
-  form{
+@mixin laptop {
+  @media (max-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+.form-page {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  align-items: center;
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 4rem;
+    font-family: $font-family-poppins;
+    color: $color-purple;
+  }
+}
+
+.card {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #5e329d;
+  border-radius: 24px 20px 20px 20px;
+
+  .side-form {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-
-    .input-group {
+    align-items: center;
+    border-right: 1px solid white;
+    .preencha {
+      width: 100%;
       display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      height: 80px;
+      border-radius: 20px 0 0 0;
+      border: 1px solid black;
+
+      h3 {
+        font-size: 2.4rem;
+        color: $color-purple;
+        font-family: $font-family-poppins;
+      }
+    }
+
+    form {
+      display: flex;
+      width: 85%;
       flex-direction: column;
+      gap: 10px;
 
       label {
-        margin-bottom: 0.5rem;
-        color: $color-white;}
+        font-family: $font-family-roboto;
+        font-size: 1.5rem;
+        color: $color-white;
+        padding: 5px;
+      }
 
       input {
-        width: 100%;
-        max-width: 100%;
-        padding: 0.75rem;
-        align-items: center;
-        border-radius: 5px;
+        height: 50px;
+        border-radius: 20px;
         border: none;
-        background-color: $color-gray;
-        color: $color-black;}
+        background-color: rgba(217, 217, 217, 0.6);
+        font-size: 1.3rem;
+      }
+
+      .address {
+        padding-top: 20px;
+
+        input {
+          width: 24%;
+          font-size: 1.3rem;
+        }
+      }
+
+      .formas-pagamento {
+        h3 {
+          font-size: 2rem;
+          color: $color-white;
+          font-family: $font-family-poppins;
+          padding: 15px;
+        }
+
+        .buttons {
+          text-align: center;
+          background-color: transparent;
+          border: none;
+          display: flex;
+          justify-content: center;
+          gap: 80px;
+          // padding-top: 10px;
+
+          button {
+            border: none;
+            background-color: transparent;
+            // padding-left: 20px;
+            cursor: pointer;
+
+            &:focus {
+              transform: scale(1.2);
+              filter: grayscale(100%);
+            }
+
+            img {
+              object-fit: cover;
+            }
+
+            p {
+              color: $color-white;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .package-side {
+    width: 50%;
+
+    .pacote-escolhido {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      height: 80px;
+      border-radius: 0 20px 0 0;
+      border: 1px solid black;
+
+      h3 {
+        font-size: 2.4rem;
+        color: $color-purple;
+        font-family: $font-family-poppins;
+      }
     }
 
-    .cep-group {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      justify-items: center;
-    
-      .input-group{
+    .pacote-premium {
+      display: flex;
+      height: 710px;
+      margin: 10px auto;
+      border-radius: 20px;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      background-color: $color-white;
+      width: 85%;
+      // justify-content: center;
+      // gap: 20px;
+      img {
+        width: 40%;
+        padding-bottom: 10px;
+      }
+
+      h2 {
+        font-family: $font-family-poppins;
+        font-size: 2.5rem;
+        color: $color-purple;
+      }
+
+      ul {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-    
-        label {
-          margin-bottom: 0.5rem;}
-    
-        input {
-          width: 100%;
-          max-width: 200px;
-        }
-      }
-    }
-
-
-    .pacote-info {
-      background-color: $color-yellow;
-      padding: 1rem;
-      border-radius: 10px;
-      display: flex;
-      justify-content: space-between;
-      font-family: $font-family-roboto;    
-      color: $color-black;}
-
-    .pagamento {
-      text-align: center;
-      span {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: $color-white;
+        gap: 20px;
       }
 
-      .pagamento-opcoes {
+      ul li {
+        font-size: 2rem;
+        font-family: $font-family-roboto;
+        // gap: 20px;
+      }
+
+      a {
         display: flex;
-        justify-content: center;
-        gap: 1rem;
 
-        img {
-          width: 50px;
+        button {
+          height: 55px;
+          width: 30%;
+          margin: 0 auto;
+          font-family: $font-family-poppins;
+          font-size: 1.5rem;
+          padding: 0 20px 0 20px;
+          // text-align: center;
+          border-radius: 15px;
+          border: none;
+          font-weight: bold;
+          background: $color-purple;
+          color: $color-white;
+          margin-top: 20px;
         }
       }
     }
 
-    .botao-pagamento {
-      padding: 1rem;
-      background-color: $color-yellow; 
-      color: $color-black; 
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: bold;
+    .pagamento-final {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding-top: 20px;
 
-      &:hover {
-        //background-color: darken($color-yellow, 10%);
+      button {
+        width: 50% !important;
+        height: 60px !important;
+        font-family: $font-family-poppins;
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: black !important;
+        background-color: #ffea73 !important;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
       }
     }
   }
-
- 
-  }
-
+}
