@@ -12,24 +12,24 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/pix")
 public class PixController {
 
-  @Autowired
-  private PixService pixService;
+    @Autowired
+    private PixService pixService;
 
-  @GetMapping
-  public ResponseEntity createPixEvp(){
+    @GetMapping
+    public ResponseEntity createPixEvp(){
 
-      JSONObject response = this.pixService.pixCreateEVP();
+        JSONObject response = this.pixService.pixCreateEVP();
 
-      return ResponseEntity.ok()
-              .contentType(MediaType.APPLICATION_JSON)
-              .body(response.toString());
-  }
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(response.toString());
+    }
 
-  @PostMapping
-  public ResponseEntity pixCreateCharge(@RequestBody PixChargeRequest pixChargeRequest){
-      JSONObject response = this.pixService.pixCreateCharge(pixChargeRequest);
-      return ResponseEntity.ok()
-              .contentType(MediaType.APPLICATION_JSON)
-              .body(response.toString());
-  }
+    @PostMapping
+    public ResponseEntity pixCreateCharge(@RequestBody PixChargeRequest pixChargeRequest){
+        JSONObject response = this.pixService.pixCreateCharge(pixChargeRequest);
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(response.toString());
+    }
 }

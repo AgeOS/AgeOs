@@ -41,25 +41,6 @@ public class UserService {
         return null;
     }
 
-    public String cadastrarUsuario(String nome, String sobrenome, String email, String senha, String repetirSenha) {
-        if (!senha.equals(repetirSenha)) {
-            return "As senhas não coincidem.";
-        }
-
-        Optional<User> usuarioExistente = userRepository.findByEmail(email);
-        if (usuarioExistente.isPresent()) {
-            return "Este e-mail já está cadastrado.";
-        }
-
-        User novoUsuario = new User();
-        novoUsuario.setName(nome);
-        novoUsuario.setSurname(sobrenome);
-        novoUsuario.setEmail(email);
-        novoUsuario.setPassword(senha);
-
-        userRepository.save(novoUsuario);
-        return "Usuário cadastrado com sucesso!";
-    }
 
     public boolean deleteUser(Long id) {
         if (userRepository.existsById(id)) {
@@ -82,4 +63,28 @@ public class UserService {
 
         return "Login realizado com sucesso!";
     }
+
+    public String cadastrarUsuario(String nome, String sobrenome, String cpf, String email, String senha) {
+        // Verifica se o e-mail já está cadastrado
+        if (userRepository.existsByEmail(email)) {
+            return "E-mail já cadastrado!";
+        }
+
+        // Verifica se o CPF já está cadastrado
+        if (userRepository.existsByCpf(cpf)) {
+            return "CPF já cadastrado!";
+        }
+
+        // Cria o novo usuário
+        User user = new User();
+        user.setName(nome);
+        user.setSurname(sobrenome);
+        user.setCpf(cpf);
+        user.setEmail(email);
+        user.setPassword(senha);
+
+        userRepository.save(user);
+        return "Usuário cadastrado com sucesso!";
+    }
 }
+

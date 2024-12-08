@@ -1,5 +1,6 @@
 package com.ageos.AgeOSBackend.controller;
 
+import com.ageos.AgeOSBackend.dto.UserDTO;
 import com.ageos.AgeOSBackend.model.User;
 import com.ageos.AgeOSBackend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +17,24 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<String> registerUser(
-            @RequestParam String nome,
-            @RequestParam String sobrenome,
-            @RequestParam String email,
-            @RequestParam String senha,
-            @RequestParam String repetirSenha) {
-        String response = userService.cadastrarUsuario(nome, sobrenome, email, senha, repetirSenha);
+    public ResponseEntity<String> registerUser(@RequestBody UserDTO userDTO) {
+        if (!userDTO.getSenha().equals(userDTO.getRepetirSenha())) {
+            return ResponseEntity.badRequest().body("As senhas não coincidem!");
+        }
+        if (userDTO.getCpf().length() != 11) {
+            return ResponseEntity.badRequest().body("O CPF deve ter 11 dígitos!");
+        }
+        if (userDTO.getNome().isBlank() || userDTO.getSobrenome().isBlank() || userDTO.getEmail().isBlank() || userDTO.getSenha().isBlank()) {
+            return ResponseEntity.badRequest().body("Todos os campos são obrigatórios!");
+        }
+
+        String response = userService.cadastrarUsuario(
+                userDTO.getNome(),
+                userDTO.getSobrenome(),
+                userDTO.getCpf(),
+                userDTO.getEmail(),
+                userDTO.getSenha()
+        );
         return ResponseEntity.ok(response);
     }
 

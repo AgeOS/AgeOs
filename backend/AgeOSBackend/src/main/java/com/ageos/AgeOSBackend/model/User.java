@@ -16,6 +16,9 @@ public class User {
     @Column(name =  "user_surname")
     private String surname;
 
+    @Column(name = "user_cpf")
+    private String cpf;
+
     @Column(name = "user_email")
     private String email;
 
@@ -64,6 +67,14 @@ public class User {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public AgeOS getAgeOS() {
