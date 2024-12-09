@@ -4,7 +4,7 @@ import "../../stylesheets/formulario/index.scss";
 import "../../stylesheets/formulario/media.scss";
 import pix from "../../assets/formulario/pix.png";
 import visa from "../../assets/formulario/visa.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/Adquira/logo.png";
 
 import "../../stylesheets/Adquira/Adquira.scss";
@@ -16,6 +16,8 @@ const Formulario = () => {
   const handlePaymentSelection = (paymentMethod) => {
     setSelectedPayment(paymentMethod);
   };
+
+  const navigate = useNavigate();
 
   const handlePayment = (event) => {
     event.preventDefault();
@@ -45,7 +47,7 @@ const Formulario = () => {
     if (selectedPayment === "visa") {
       window.location.href = "https://buy.stripe.com/00g5kq0nT83sdQk145";
     } else if (selectedPayment === "pix") {
-      window.location.href = "";
+      navigate("/pix", { valor: "22" });
     }
   };
 
@@ -119,10 +121,28 @@ const Formulario = () => {
             </div>
 
             <div className="pacote-premium ">
-              <h2>Pacote Premium</h2>
+              <h2 className="premium" id="titulo-premium">
+                Pacote Premium
+              </h2>
+              <h2 className="basico" id="titulo-basico">
+                Pacote Basico
+              </h2>
               <img src={logo} alt="" />
 
-              <ul>
+              <ul className="basico" id="lista-basico">
+                <li>Sistema apenas para um aparelho</li>
+                <li>Valor fixo por sistema</li>
+                <li>Somente atualizações estáveis</li>
+                <li>Segurança para phishing e golpes</li>
+                <li>Identificador de chamadas suspeitas</li>
+                <li>Segurança reforçada em apps financeiros</li>
+
+                <Link className="basico" id="botão-basico">
+                  <button>R$ 69,99</button>
+                </Link>
+              </ul>
+
+              <ul className="premium" id="lista-premium">
                 <li>Sistema para cinco aparelhos</li>
                 <li>Valor promocional</li>
                 <li>Acesso antecipado a atualizações</li>
@@ -137,7 +157,11 @@ const Formulario = () => {
                 </Link>
               </ul>
 
-              <a className="pagamento-final" onClick={handlePayment}>
+              <a
+                className="pagamento-final"
+                id="pagamento-final"
+                onClick={handlePayment}
+              >
                 <button>Ir para o Pagamento</button>
               </a>
             </div>

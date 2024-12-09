@@ -21,13 +21,42 @@ import veio4 from "../../assets/Adquira/veio4.png";
 import bolaRoxa from "../../assets/Adquira/rectangle-98.png";
 import "../Hooks/Efeitos";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useIntersectionObserver } from "../Hooks/Efeitos";
 
 // import '../../stylesheets/Adquira/Adquira.scss'
+import "../../stylesheets/formulario/index.scss";
 
 export default function Adquira() {
   useIntersectionObserver();
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate("/formulario");
+
+    setTimeout(() => {
+      // Selecionando elementos com IDs únicos
+      const tituloBasico = document.getElementById("titulo-basico");
+      const tituloPremium = document.getElementById("titulo-premium");
+      const listaBasico = document.getElementById("lista-basico");
+      const listaPremium = document.getElementById("lista-premium");
+      const botaoBasico = document.getElementById("botão-basico");
+      const pagamentoFinal = document.getElementById("pagamento-final");
+
+      if (tituloBasico && tituloPremium && listaBasico && listaPremium) {
+        // Mostrando elementos básicos
+        tituloBasico.style.display = "block";
+        listaBasico.style.display = "flex";
+        botaoBasico.style.display = "flex";
+        pagamentoFinal.style.marginTop = "140px";
+
+        // Escondendo elementos premium
+        tituloPremium.style.display = "none";
+        listaPremium.style.display = "none";
+      }
+    }, 100);
+  };
 
   return (
     <>
@@ -171,7 +200,7 @@ export default function Adquira() {
                 <li>Segurança reforçada em apps financeiros</li>
               </ul>
 
-              <Link to="/formulario">
+              <Link to="/formulario" onClick={handleClick}>
                 <button>R$ 69,99</button>
               </Link>
             </div>

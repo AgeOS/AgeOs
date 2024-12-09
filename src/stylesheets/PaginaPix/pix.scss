@@ -1,0 +1,87 @@
+@import "../variables.scss";
+
+// Variáveis de breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+
+// Mixins para media queries
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+.pagina-de-pix {
+  padding-top: 130px;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card-pix {
+    width: 50%;
+    height: 90vh;
+    border-radius: 20px;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3.5rem;
+      font-family: $font-family-poppins;
+      color: $color-purple;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      font-family: $font-family-poppins;
+      font-weight: 100;
+    }
+
+    .pix {
+      position: absolute;
+      bottom: 290px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .pagina-de-pix {
+    height: 150vh;
+
+    .card-pix {
+      height: 130vh;
+
+      .pix {
+        position: absolute;
+        // bottom: 10px;
+        top: 460px;
+      }
+    }
+  }
+}

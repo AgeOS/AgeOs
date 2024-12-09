@@ -15,6 +15,7 @@ import Dados from "./Components/Usuario/Dados/Dados";
 import Historico from "./Components/Usuario/Historico/Historico";
 import PagDownload from "./Components/download/PagDownload";
 import Formulario from "./Components/Fomulario/Form.jsx";
+import PaginaPix from "./Components/PaginaPix/PaginaPix.jsx";
 // import QRCodeComponent from "./Components/pix/pix";
 
 // import Usuario from "./Components/Usuario/Usuario";
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/Historico" element={<Historico />} />
         <Route path="/download" element={<PagDownload />} />
         <Route path="/formulario" element={<Formulario />} />
+        <Route path="/pix" element={<PaginaPix />} />
 
         {/* <Route
           path="/qrcodecomponent"

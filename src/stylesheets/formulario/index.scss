@@ -181,6 +181,11 @@ $breakpoint-desktop: 1200px;
       width: 85%;
       // justify-content: center;
       // gap: 20px;
+
+      .basico {
+        display: none;
+      }
+
       img {
         width: 40%;
         padding-bottom: 10px;
@@ -244,6 +249,181 @@ $breakpoint-desktop: 1200px;
         border: none;
         border-radius: 20px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .card {
+    width: 90%;
+    height: 160vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #5e329d;
+    border-radius: 24px 20px 20px 20px;
+
+    .side-form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid white;
+      .preencha {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 80px;
+        border-radius: 20px 0 0 0;
+        border: 1px solid black;
+
+        h3 {
+          font-size: 2.4rem;
+          color: $color-purple;
+          font-family: $font-family-poppins;
+        }
+      }
+
+      form {
+        display: flex;
+        width: 85%;
+        flex-direction: column;
+        gap: 10px;
+
+        label {
+          font-family: $font-family-roboto;
+          font-size: 1.5rem;
+          color: $color-white;
+          padding: 5px;
+        }
+
+        input {
+          height: 50px;
+          border-radius: 20px;
+          border: none;
+          background-color: rgba(217, 217, 217, 0.6);
+          font-size: 1.3rem;
+        }
+
+        .address {
+          padding-top: 20px;
+
+          input {
+            width: 20%;
+            font-size: 1.3rem;
+          }
+        }
+
+        .formas-pagamento {
+          h3 {
+            font-size: 2rem;
+            color: $color-white;
+            font-family: $font-family-poppins;
+            padding: 15px;
+          }
+
+          .buttons {
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            // padding-top: 10px;
+
+            button {
+              border: none;
+              background-color: transparent;
+              // padding-left: 20px;
+              cursor: pointer;
+
+              &:focus {
+                transform: scale(1.2);
+                filter: grayscale(100%);
+              }
+
+              img {
+                object-fit: cover;
+              }
+
+              p {
+                color: $color-white;
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .package-side {
+      width: 50%;
+
+      .pacote-escolhido {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 80px;
+        border-radius: 0 20px 0 0;
+        border: 1px solid black;
+
+        h3 {
+          font-size: 2.4rem;
+          color: $color-purple;
+          font-family: $font-family-poppins;
+        }
+      }
+
+      .pacote-premium {
+        display: flex;
+        height: 710px;
+        margin: 10px auto;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        background-color: $color-white;
+        width: 85% !important;
+        // justify-content: center;
+        // gap: 20px;
+
+        .basico {
+          display: none;
+        }
+
+        img {
+          width: 40%;
+          padding-bottom: 10px;
+        }
+
+        h2 {
+          font-family: $font-family-poppins;
+          font-size: 2.5rem;
+          color: $color-purple;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        a {
+          width: 100%;
+          display: flex;
+
+          button {
+            width: 30%;
+          }
+        }
+      }
+
+      .pagamento-final {
+        padding-top: 120px !important;
       }
     }
   }
