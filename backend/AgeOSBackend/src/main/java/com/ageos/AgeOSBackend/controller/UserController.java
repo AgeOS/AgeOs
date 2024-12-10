@@ -18,11 +18,9 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody UserDTO userDTO) {
+        // Validações básicas
         if (!userDTO.getSenha().equals(userDTO.getRepetirSenha())) {
             return ResponseEntity.badRequest().body("As senhas não coincidem!");
-        }
-        if (userDTO.getCpf().length() != 11) {
-            return ResponseEntity.badRequest().body("O CPF deve ter 11 dígitos!");
         }
         if (userDTO.getNome().isBlank() || userDTO.getSobrenome().isBlank() || userDTO.getEmail().isBlank() || userDTO.getSenha().isBlank()) {
             return ResponseEntity.badRequest().body("Todos os campos são obrigatórios!");
@@ -31,23 +29,22 @@ public class UserController {
         String response = userService.cadastrarUsuario(
                 userDTO.getNome(),
                 userDTO.getSobrenome(),
-                userDTO.getCpf(),
                 userDTO.getEmail(),
                 userDTO.getSenha()
         );
+
         return ResponseEntity.ok(response);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> loginUser(@RequestParam String email, @RequestParam String senha) {
-        String response = userService.loginUsuario(email, senha);
-        return ResponseEntity.ok(response);
-    }
+    public ResponseEntity<String> loginUser(@RequestBody UserDTO userDTO) {
+        String response = userService.loginUsuario(userDTO.getEmail(), userDTO.getSenha());
 
-    @PostMapping
-    public ResponseEntity<User> createUser(@RequestBody User user) {
-        User createdUser = userService.createUser(user);
-        return ResponseEntity.ok(createdUser);
+        if ("Login realizado com sucesso!".equals(response)) {
+            return ResponseEntity.ok(response);
+        } else {
+            return ResponseEntity.badRequest().body(response);
+        }
     }
 
     @GetMapping

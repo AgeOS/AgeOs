@@ -41,7 +41,6 @@ public class UserService {
         return null;
     }
 
-
     public boolean deleteUser(Long id) {
         if (userRepository.existsById(id)) {
             userRepository.deleteById(id);
@@ -64,22 +63,11 @@ public class UserService {
         return "Login realizado com sucesso!";
     }
 
-    public String cadastrarUsuario(String nome, String sobrenome, String cpf, String email, String senha) {
-        // Verifica se o e-mail já está cadastrado
-        if (userRepository.existsByEmail(email)) {
-            return "E-mail já cadastrado!";
-        }
+    public String cadastrarUsuario(String nome, String sobrenome, String email, String senha) {
 
-        // Verifica se o CPF já está cadastrado
-        if (userRepository.existsByCpf(cpf)) {
-            return "CPF já cadastrado!";
-        }
-
-        // Cria o novo usuário
         User user = new User();
         user.setName(nome);
         user.setSurname(sobrenome);
-        user.setCpf(cpf);
         user.setEmail(email);
         user.setPassword(senha);
 
@@ -87,4 +75,3 @@ public class UserService {
         return "Usuário cadastrado com sucesso!";
     }
 }
-
