@@ -17,8 +17,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<String> registerUser(@RequestBody UserDTO userDTO) {
-        // Validações básicas
+    public ResponseEntity registerUser(@RequestBody UserDTO userDTO) {
         if (!userDTO.getSenha().equals(userDTO.getRepetirSenha())) {
             return ResponseEntity.badRequest().body("As senhas não coincidem!");
         }
