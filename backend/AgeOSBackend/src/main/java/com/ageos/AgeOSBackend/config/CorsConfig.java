@@ -27,7 +27,6 @@ public class CorsConfig {
                                 "http://localhost:*",
                                 "http://127.0.0.1:*",
                                 "https://age-os.vercel.app"
-
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
