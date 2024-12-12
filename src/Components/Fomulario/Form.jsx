@@ -47,7 +47,7 @@ const Formulario = () => {
     if (selectedPayment === "visa") {
       window.location.href = "https://buy.stripe.com/00g5kq0nT83sdQk145";
     } else if (selectedPayment === "pix") {
-      navigate("/pix", { valor: "22" });
+      navigate("/pix");
     }
   };
 

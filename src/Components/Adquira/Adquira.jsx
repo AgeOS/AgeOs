@@ -21,7 +21,7 @@ import veio4 from "../../assets/Adquira/veio4.png";
 import bolaRoxa from "../../assets/Adquira/rectangle-98.png";
 import "../Hooks/Efeitos";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useIntersectionObserver } from "../Hooks/Efeitos";
 
 // import '../../stylesheets/Adquira/Adquira.scss'
@@ -29,34 +29,34 @@ import "../../stylesheets/formulario/index.scss";
 
 export default function Adquira() {
   useIntersectionObserver();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate("/formulario");
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   navigate("/formulario");
 
-    setTimeout(() => {
-      // Selecionando elementos com IDs únicos
-      const tituloBasico = document.getElementById("titulo-basico");
-      const tituloPremium = document.getElementById("titulo-premium");
-      const listaBasico = document.getElementById("lista-basico");
-      const listaPremium = document.getElementById("lista-premium");
-      const botaoBasico = document.getElementById("botão-basico");
-      const pagamentoFinal = document.getElementById("pagamento-final");
+  //   setTimeout(() => {
+  //     // Selecionando elementos com IDs únicos
+  //     const tituloBasico = document.getElementById("titulo-basico");
+  //     const tituloPremium = document.getElementById("titulo-premium");
+  //     const listaBasico = document.getElementById("lista-basico");
+  //     const listaPremium = document.getElementById("lista-premium");
+  //     const botaoBasico = document.getElementById("botão-basico");
+  //     const pagamentoFinal = document.getElementById("pagamento-final");
 
-      if (tituloBasico && tituloPremium && listaBasico && listaPremium) {
-        // Mostrando elementos básicos
-        tituloBasico.style.display = "block";
-        listaBasico.style.display = "flex";
-        botaoBasico.style.display = "flex";
-        pagamentoFinal.style.marginTop = "140px";
+  //     if (tituloBasico && tituloPremium && listaBasico && listaPremium) {
+  //       // Mostrando elementos básicos
+  //       tituloBasico.style.display = "block";
+  //       listaBasico.style.display = "flex";
+  //       botaoBasico.style.display = "flex";
+  //       pagamentoFinal.style.marginTop = "140px";
 
-        // Escondendo elementos premium
-        tituloPremium.style.display = "none";
-        listaPremium.style.display = "none";
-      }
-    }, 100);
-  };
+  //       // Escondendo elementos premium
+  //       tituloPremium.style.display = "none";
+  //       listaPremium.style.display = "none";
+  //     }
+  //   }, 100);
+  // };
 
   return (
     <>
@@ -200,7 +200,7 @@ export default function Adquira() {
                 <li>Segurança reforçada em apps financeiros</li>
               </ul>
 
-              <Link to="/formulario" onClick={handleClick}>
+              <Link to="https://buy.stripe.com/eVa4gmgmR2J83bGaEE">
                 <button>R$ 69,99</button>
               </Link>
             </div>
@@ -222,7 +222,10 @@ export default function Adquira() {
                 <li>Suporte para backup</li>
               </ul>
 
-              <Link className="button-premium" to="/formulario">
+              <Link
+                className="button-premium"
+                to="https://buy.stripe.com/00g5kq0nT83sdQk145"
+              >
                 <button>R$ 229,99</button>
               </Link>
             </div>
