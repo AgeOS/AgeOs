@@ -9,7 +9,7 @@ import "../../stylesheets/navbar/media.scss";
 import menuFechado from "../../assets/navbar/menu-fechado.png";
 import menuRoxo from "../../assets/navbar/menu-roxo.png";
 import logo from "../../assets/navbar/logo-1.png";
-// import PageTranslateComponent from "../Translate/Translate";
+import PageTranslateComponent from "../Translate/Translate";
 import {
   SignedIn,
   SignedOut,
@@ -132,9 +132,9 @@ export default function NavBar() {
           </ul>
 
           <div className="buttons">
-            {/* <button className="theme">
+            <button className="theme">
               <PageTranslateComponent />
-            </button> */}
+            </button>
 
             <SignedOut>
               <SignInButton>
