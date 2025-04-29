@@ -4,10 +4,10 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import { ClerkProvider } from "@clerk/clerk-react";
 
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+let PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_FRONTEND_API_KEY;
 
 if (!PUBLISHABLE_KEY) {
-  throw new Error("Add your Clerk Publishable Key to the .env.local file");
+  PUBLISHABLE_KEY = "pk_test_Y3VycmVudC1iZWV0bGUtNTIuY2xlcmsuYWNjb3VudHMuZGV2JA"
 }
 
 createRoot(document.getElementById("root")).render(
