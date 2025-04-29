@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.form-page {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.form-page h1 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #3D1887;
+}
+
+.card {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #5e329d;
+  border-radius: 24px 20px 20px 20px;
+}
+.card .side-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid white;
+}
+.card .side-form .preencha {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 80px;
+  border-radius: 20px 0 0 0;
+  border: 1px solid black;
+}
+.card .side-form .preencha h3 {
+  font-size: 2.4rem;
+  color: #3D1887;
+  font-family: "Poppins", sans-serif;
+}
+.card .side-form form {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  gap: 10px;
+}
+.card .side-form form label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #FAF8FB;
+  padding: 5px;
+}
+.card .side-form form input {
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(217, 217, 217, 0.6);
+  font-size: 1.3rem;
+}
+.card .side-form form .address {
+  padding-top: 20px;
+}
+.card .side-form form .address input {
+  width: 24%;
+  font-size: 1.3rem;
+}
+.card .side-form form .formas-pagamento h3 {
+  font-size: 2rem;
+  color: #FAF8FB;
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+}
+.card .side-form form .formas-pagamento .buttons {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.card .side-form form .formas-pagamento .buttons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card .side-form form .formas-pagamento .buttons button:focus {
+  transform: scale(1.2);
+  filter: grayscale(100%);
+}
+.card .side-form form .formas-pagamento .buttons button img {
+  object-fit: cover;
+}
+.card .side-form form .formas-pagamento .buttons button p {
+  color: #FAF8FB;
+  font-size: 1.3rem;
+}
+.card .package-side {
+  width: 50%;
+}
+.card .package-side .pacote-escolhido {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 80px;
+  border-radius: 0 20px 0 0;
+  border: 1px solid black;
+}
+.card .package-side .pacote-escolhido h3 {
+  font-size: 2.4rem;
+  color: #3D1887;
+  font-family: "Poppins", sans-serif;
+}
+.card .package-side .pacote-premium {
+  display: flex;
+  height: 710px;
+  margin: 10px auto;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAF8FB;
+  width: 85%;
+}
+.card .package-side .pacote-premium .basico {
+  display: none;
+}
+.card .package-side .pacote-premium img {
+  width: 40%;
+  padding-bottom: 10px;
+}
+.card .package-side .pacote-premium h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: #3D1887;
+}
+.card .package-side .pacote-premium ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card .package-side .pacote-premium ul li {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.card .package-side .pacote-premium a {
+  display: flex;
+}
+.card .package-side .pacote-premium a button {
+  height: 55px;
+  width: 30%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 0 20px 0 20px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  background: #3D1887;
+  color: #FAF8FB;
+  margin-top: 20px;
+}
+.card .package-side .pagamento-final {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 20px;
+}
+.card .package-side .pagamento-final button {
+  width: 50% !important;
+  height: 60px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black !important;
+  background-color: #ffea73 !important;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .card {
+    width: 90%;
+    height: 160vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #5e329d;
+    border-radius: 24px 20px 20px 20px;
+  }
+  .card .side-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid white;
+  }
+  .card .side-form .preencha {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    border-radius: 20px 0 0 0;
+    border: 1px solid black;
+  }
+  .card .side-form .preencha h3 {
+    font-size: 2.4rem;
+    color: #3D1887;
+    font-family: "Poppins", sans-serif;
+  }
+  .card .side-form form {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card .side-form form label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #FAF8FB;
+    padding: 5px;
+  }
+  .card .side-form form input {
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.6);
+    font-size: 1.3rem;
+  }
+  .card .side-form form .address {
+    padding-top: 20px;
+  }
+  .card .side-form form .address input {
+    width: 20%;
+    font-size: 1.3rem;
+  }
+  .card .side-form form .formas-pagamento h3 {
+    font-size: 2rem;
+    color: #FAF8FB;
+    font-family: "Poppins", sans-serif;
+    padding: 15px;
+  }
+  .card .side-form form .formas-pagamento .buttons {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  .card .side-form form .formas-pagamento .buttons button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .card .side-form form .formas-pagamento .buttons button:focus {
+    transform: scale(1.2);
+    filter: grayscale(100%);
+  }
+  .card .side-form form .formas-pagamento .buttons button img {
+    object-fit: cover;
+  }
+  .card .side-form form .formas-pagamento .buttons button p {
+    color: #FAF8FB;
+    font-size: 1.3rem;
+  }
+  .card .package-side {
+    width: 50%;
+  }
+  .card .package-side .pacote-escolhido {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    border-radius: 0 20px 0 0;
+    border: 1px solid black;
+  }
+  .card .package-side .pacote-escolhido h3 {
+    font-size: 2.4rem;
+    color: #3D1887;
+    font-family: "Poppins", sans-serif;
+  }
+  .card .package-side .pacote-premium {
+    display: flex;
+    height: 710px;
+    margin: 10px auto;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF8FB;
+    width: 85% !important;
+  }
+  .card .package-side .pacote-premium .basico {
+    display: none;
+  }
+  .card .package-side .pacote-premium img {
+    width: 40%;
+    padding-bottom: 10px;
+  }
+  .card .package-side .pacote-premium h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    color: #3D1887;
+  }
+  .card .package-side .pacote-premium ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card .package-side .pacote-premium a {
+    width: 100%;
+    display: flex;
+  }
+  .card .package-side .pacote-premium a button {
+    width: 30%;
+  }
+  .card .package-side .pagamento-final {
+    padding-top: 120px !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
